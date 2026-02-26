@@ -1,0 +1,11 @@
+<div class="cline" [class.cline--hl]="highlight()">
+  @if (showLineNumber()) {
+    <span class="cline__num" [class.cline__num--hl]="highlight()">{{ lineNumber() }}</span>
+  }
+  <span
+    class="cline__code"
+    [class.cline__code--hl]="highlight()"
+    [style.padding-left.px]="indentPx() + 16"
+    [innerHTML]="colorizedHtml()"
+  ></span>
+</div>

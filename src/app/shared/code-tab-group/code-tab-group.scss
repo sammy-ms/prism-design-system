@@ -1,0 +1,152 @@
+:host {
+  display: block;
+}
+
+.ctg {
+  display: flex;
+  gap: 0;
+
+  &--vertical {
+    flex-direction: column;
+  }
+
+  // ── Underline variant ──
+  &--underline {
+    padding: 0 24px;
+    background: var(--semantics-surface-subtle-primary-default, #fff);
+    border-bottom: 1px solid var(--semantics-border-subtle-secondary, #e0e0e0);
+  }
+
+  // ── White pill variant ──
+  &--white-pill {
+    padding: 4px;
+    gap: 4px;
+    background: var(--semantics-surface-subtle-tertiary-default, #ebebeb);
+    border-radius: 10px;
+  }
+
+  // ── Grey pill variant ──
+  &--grey-pill {
+    padding: 4px;
+    gap: 4px;
+    background: var(--semantics-surface-subtle-primary-default, #fff);
+    border-radius: 10px;
+  }
+}
+
+// ── Tab item base ──
+.ctg__tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 450;
+  outline: none;
+  position: relative;
+  transition:
+    color 0.15s,
+    background 0.15s;
+
+  // ── Underline tab ──
+  &--underline {
+    padding: 8px 12px;
+    min-height: 40px;
+    color: var(--semantics-text-subtle-secondary-secondary, #6a6b6d);
+
+    &:hover,
+    &.ctg__tab--hover {
+      color: var(--semantics-text-subtle-primary-default, #1b1f22);
+    }
+
+    &.ctg__tab--selected {
+      color: var(--semantics-text-subtle-primary-default, #1b1f22);
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: var(--semantics-border-brand-default, #0084ff);
+        border-radius: 2px 2px 0 0;
+      }
+    }
+  }
+
+  // ── White pill tab ──
+  &--white-pill {
+    padding: 6px 14px;
+    border-radius: 8px;
+    color: var(--semantics-text-subtle-secondary-secondary, #6a6b6d);
+
+    &:hover,
+    &.ctg__tab--hover {
+      color: var(--semantics-text-subtle-primary-default, #1b1f22);
+      background: rgba(255, 255, 255, 0.5);
+    }
+
+    &.ctg__tab--selected {
+      color: var(--semantics-text-subtle-primary-default, #1b1f22);
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  // ── Grey pill tab ──
+  &--grey-pill {
+    padding: 6px 14px;
+    border-radius: 8px;
+    color: var(--semantics-text-subtle-secondary-secondary, #6a6b6d);
+
+    &:hover,
+    &.ctg__tab--hover {
+      color: var(--semantics-text-subtle-primary-default, #1b1f22);
+      background: rgba(0, 0, 0, 0.04);
+    }
+
+    &.ctg__tab--selected {
+      color: var(--semantics-text-subtle-primary-default, #1b1f22);
+      background: var(--semantics-surface-subtle-tertiary-default, #ebebeb);
+    }
+  }
+
+  // ── Shared states ──
+  &--disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  &--skeleton {
+    pointer-events: none;
+
+    .ctg__label {
+      background: #e0e0e0;
+      color: transparent;
+      border-radius: 4px;
+      animation: skeleton-pulse 1.5s ease-in-out infinite;
+    }
+  }
+
+  &--focus {
+    box-shadow: 0 0 0 2px var(--semantics-border-brand-default, #0084ff);
+  }
+}
+
+.ctg__icon {
+  flex-shrink: 0;
+}
+
+@keyframes skeleton-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}

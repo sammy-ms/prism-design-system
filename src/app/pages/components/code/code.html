@@ -42,20 +42,18 @@
         <section class="comp-section" id="doc-collapsed">
           <h2 class="comp-section__title">Documentation Collapsed</h2>
           <p class="comp-section__desc">
-            Collapsed toolbar only. Click "Show code" to expand and see the code.
+            Toolbar only. This variant cannot expand — it shows the action bar as a static element.
           </p>
           <app-code-block [type]="'doc-collapsed'" [code]="reactCode" />
         </section>
 
-        <!-- Usage — live demos using the component's own API -->
+        <!-- Usage — live demos -->
         <section class="comp-section" id="usage">
           <h2 class="comp-section__title">Usage</h2>
           <p class="comp-section__desc">
-            Import the component and use it with different configurations. Below, each code snippet
-            is shown followed by its live rendered output.
+            Import the component and use it with different configurations.
           </p>
 
-          <!-- Usage 1: With Line + highlights -->
           <div class="comp-usage">
             <h3 class="comp-usage__label">With Line + highlighted lines</h3>
             <app-code-block [code]="usageLineCode" [type]="'line'" [showLineNumbers]="false" />
@@ -69,7 +67,6 @@
             </div>
           </div>
 
-          <!-- Usage 2: Doc Expanded with tabs -->
           <div class="comp-usage">
             <h3 class="comp-usage__label">Documentation Expanded with tabs</h3>
             <app-code-block [code]="usageDocCode" [type]="'line'" [showLineNumbers]="false" />
@@ -78,7 +75,6 @@
             </div>
           </div>
 
-          <!-- Usage 3: Doc Collapsed -->
           <div class="comp-usage">
             <h3 class="comp-usage__label">Documentation Collapsed</h3>
             <app-code-block [code]="usageCollapsedCode" [type]="'line'" [showLineNumbers]="false" />
@@ -91,11 +87,12 @@
 
       <!-- ═══════════ PROPERTIES TAB ═══════════ -->
       @if (activeTab() === 'properties') {
-        <section class="comp-section" id="inputs">
-          <h2 class="comp-section__title">Inputs</h2>
+        <!-- Code Block -->
+        <section class="comp-section" id="code-block-inputs">
+          <h2 class="comp-section__title">Code Block</h2>
           <p class="comp-section__desc">
-            All available inputs on the
-            <code class="comp-props__code">&lt;app-code-block&gt;</code> component.
+            The main orchestrator component
+            <code class="comp-props__code">&lt;app-code-block&gt;</code>.
           </p>
           <div class="comp-props">
             <div class="comp-props__wrap">
@@ -109,7 +106,159 @@
                   </tr>
                 </thead>
                 <tbody>
-                  @for (p of inputProps; track p.property) {
+                  @for (p of codeBlockProps; track p.property) {
+                    <tr>
+                      <td>
+                        <code class="comp-props__code">{{ p.property }}</code>
+                      </td>
+                      <td>
+                        <code class="comp-props__type">{{ p.type }}</code>
+                      </td>
+                      <td>
+                        <code class="comp-props__default">{{ p.default }}</code>
+                      </td>
+                      <td>{{ p.description }}</td>
+                    </tr>
+                  }
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Code Link -->
+        <section class="comp-section" id="code-link-inputs">
+          <h2 class="comp-section__title">Code Link (Atomic)</h2>
+          <p class="comp-section__desc">
+            Toolbar action button
+            <code class="comp-props__code">&lt;app-code-link&gt;</code>. Used for Show code, Copy,
+            and Edit actions.
+          </p>
+          <div class="comp-props">
+            <div class="comp-props__wrap">
+              <table class="comp-props__table">
+                <thead>
+                  <tr>
+                    <th>Property</th>
+                    <th>Type</th>
+                    <th>Default</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  @for (p of codeLinkProps; track p.property) {
+                    <tr>
+                      <td>
+                        <code class="comp-props__code">{{ p.property }}</code>
+                      </td>
+                      <td>
+                        <code class="comp-props__type">{{ p.type }}</code>
+                      </td>
+                      <td>
+                        <code class="comp-props__default">{{ p.default }}</code>
+                      </td>
+                      <td>{{ p.description }}</td>
+                    </tr>
+                  }
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Code Line -->
+        <section class="comp-section" id="code-line-inputs">
+          <h2 class="comp-section__title">Code Line (Molecule)</h2>
+          <p class="comp-section__desc">
+            Single code line
+            <code class="comp-props__code">&lt;app-code-line&gt;</code>. Renders one line of
+            syntax-highlighted code with optional line number and indent.
+          </p>
+          <div class="comp-props">
+            <div class="comp-props__wrap">
+              <table class="comp-props__table">
+                <thead>
+                  <tr>
+                    <th>Property</th>
+                    <th>Type</th>
+                    <th>Default</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  @for (p of codeLineProps; track p.property) {
+                    <tr>
+                      <td>
+                        <code class="comp-props__code">{{ p.property }}</code>
+                      </td>
+                      <td>
+                        <code class="comp-props__type">{{ p.type }}</code>
+                      </td>
+                      <td>
+                        <code class="comp-props__default">{{ p.default }}</code>
+                      </td>
+                      <td>{{ p.description }}</td>
+                    </tr>
+                  }
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Tab Group -->
+        <section class="comp-section" id="code-tab-group-inputs">
+          <h2 class="comp-section__title">Tab Group</h2>
+          <p class="comp-section__desc">
+            Language tab strip
+            <code class="comp-props__code">&lt;app-code-tab-group&gt;</code>.
+          </p>
+          <div class="comp-props">
+            <div class="comp-props__wrap">
+              <table class="comp-props__table">
+                <thead>
+                  <tr>
+                    <th>Property</th>
+                    <th>Type</th>
+                    <th>Default</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  @for (p of codeTabGroupProps; track p.property) {
+                    <tr>
+                      <td>
+                        <code class="comp-props__code">{{ p.property }}</code>
+                      </td>
+                      <td>
+                        <code class="comp-props__type">{{ p.type }}</code>
+                      </td>
+                      <td>
+                        <code class="comp-props__default">{{ p.default }}</code>
+                      </td>
+                      <td>{{ p.description }}</td>
+                    </tr>
+                  }
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h3 class="comp-section__subtitle">TabItemConfig</h3>
+          <p class="comp-section__desc">Each tab in the array accepts these properties:</p>
+          <div class="comp-props">
+            <div class="comp-props__wrap">
+              <table class="comp-props__table">
+                <thead>
+                  <tr>
+                    <th>Property</th>
+                    <th>Type</th>
+                    <th>Default</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  @for (p of tabItemProps; track p.property) {
                     <tr>
                       <td>
                         <code class="comp-props__code">{{ p.property }}</code>
@@ -140,6 +289,7 @@
 
           <div class="pg">
             <div class="pg__controls">
+              <!-- Row 1: Core controls -->
               <div class="pg__field">
                 <label class="pg__label" for="pg-type">Type</label>
                 <select
@@ -154,14 +304,104 @@
                 </select>
               </div>
 
-              @if (pgType() === 'line') {
+              <div class="pg__field">
+                <label class="pg__label" for="pg-lines">Show Line Numbers</label>
+                <select
+                  id="pg-lines"
+                  class="pg__select"
+                  [value]="pgShowLineNumbers() ? 'true' : 'false'"
+                  (change)="onPgLineNumbers($event)"
+                >
+                  <option value="true">True</option>
+                  <option value="false">False</option>
+                </select>
+              </div>
+
+              <div class="pg__field">
+                <label class="pg__label" for="pg-hl">Highlighted Lines</label>
+                <select
+                  id="pg-hl"
+                  class="pg__select"
+                  [value]="pgHighlight()"
+                  (change)="onPgHighlight($event)"
+                >
+                  <option value="none">None</option>
+                  <option value="few">Few (lines 2, 5)</option>
+                  <option value="many">Many (lines 1-3, 6-8)</option>
+                </select>
+              </div>
+
+              <div class="pg__field">
+                <label class="pg__label" for="pg-indent">Indent Level</label>
+                <select
+                  id="pg-indent"
+                  class="pg__select"
+                  [value]="pgIndentLevel()"
+                  (change)="onPgIndent($event)"
+                >
+                  <option value="0">0 (none)</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+
+              <!-- Row 2: Link controls (doc types only) -->
+              @if (pgType() !== 'line') {
                 <div class="pg__field">
-                  <label class="pg__label" for="pg-lines">Show Line Numbers</label>
+                  <label class="pg__label" for="pg-link-size">Link Size</label>
                   <select
-                    id="pg-lines"
+                    id="pg-link-size"
                     class="pg__select"
-                    [value]="pgShowLineNumbers() ? 'true' : 'false'"
-                    (change)="onPgLineNumbers($event)"
+                    [value]="pgLinkSize()"
+                    (change)="onPgLinkSize($event)"
+                  >
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                  </select>
+                </div>
+
+                <div class="pg__field">
+                  <label class="pg__label" for="pg-link-style">Show Code Style</label>
+                  <select
+                    id="pg-link-style"
+                    class="pg__select"
+                    [value]="pgLinkStyle()"
+                    (change)="onPgLinkStyle($event)"
+                  >
+                    <option value="primary">Primary</option>
+                    <option value="subtle">Subtle</option>
+                    <option value="warning">Warning</option>
+                    <option value="destructive">Destructive</option>
+                  </select>
+                </div>
+
+                <div class="pg__field">
+                  <label class="pg__label" for="pg-copy-style">Copy / Edit Style</label>
+                  <select
+                    id="pg-copy-style"
+                    class="pg__select"
+                    [value]="pgCopyStyle()"
+                    (change)="onPgCopyStyle($event)"
+                  >
+                    <option value="primary">Primary</option>
+                    <option value="subtle">Subtle</option>
+                    <option value="warning">Warning</option>
+                    <option value="destructive">Destructive</option>
+                  </select>
+                </div>
+
+                <div class="pg__field">
+                  <label class="pg__label" for="pg-trailing">Show Trailing Icon</label>
+                  <select
+                    id="pg-trailing"
+                    class="pg__select"
+                    [value]="pgShowTrailingIcon() ? 'true' : 'false'"
+                    (change)="onPgShowTrailingIcon($event)"
                   >
                     <option value="true">True</option>
                     <option value="false">False</option>
@@ -169,16 +409,45 @@
                 </div>
 
                 <div class="pg__field">
-                  <label class="pg__label" for="pg-hl">Highlighted Lines</label>
+                  <label class="pg__label" for="pg-show-label">Show Label</label>
                   <select
-                    id="pg-hl"
+                    id="pg-show-label"
                     class="pg__select"
-                    [value]="pgHighlight()"
-                    (change)="onPgHighlight($event)"
+                    [value]="pgShowLabel() ? 'true' : 'false'"
+                    (change)="onPgShowLabel($event)"
                   >
-                    <option value="none">None</option>
-                    <option value="few">Few (lines 2, 5)</option>
-                    <option value="many">Many (lines 1-3, 6-8)</option>
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                  </select>
+                </div>
+              }
+
+              <!-- Row 3: Tab group controls (doc-expanded only) -->
+              @if (pgType() === 'doc-expanded') {
+                <div class="pg__field">
+                  <label class="pg__label" for="pg-tab-type">Tab Type</label>
+                  <select
+                    id="pg-tab-type"
+                    class="pg__select"
+                    [value]="pgTabType()"
+                    (change)="onPgTabType($event)"
+                  >
+                    <option value="underline">Underline</option>
+                    <option value="white-pill">White Pill</option>
+                    <option value="grey-pill">Grey Pill</option>
+                  </select>
+                </div>
+
+                <div class="pg__field">
+                  <label class="pg__label" for="pg-tab-orient">Tab Orientation</label>
+                  <select
+                    id="pg-tab-orient"
+                    class="pg__select"
+                    [value]="pgTabOrientation()"
+                    (change)="onPgTabOrientation($event)"
+                  >
+                    <option value="horizontal">Horizontal</option>
+                    <option value="vertical">Vertical</option>
                   </select>
                 </div>
               }
@@ -191,9 +460,20 @@
                   [type]="'line'"
                   [showLineNumbers]="pgShowLineNumbers()"
                   [highlightLines]="pgHighlightLines()"
+                  [indentLevel]="pgIndentLevel()"
                 />
               } @else {
-                <app-code-block [type]="pgType()" [codeTabs]="docTabs" />
+                <app-code-block
+                  [type]="pgType()"
+                  [codeTabs]="docTabs"
+                  [showLineNumbers]="pgShowLineNumbers()"
+                  [highlightLines]="pgHighlightLines()"
+                  [indentLevel]="pgIndentLevel()"
+                  [showCodeLink]="pgShowCodeLinkConfig()"
+                  [copyLink]="pgCopyLinkConfig()"
+                  [editLink]="pgEditLinkConfig()"
+                  [tabGroupConfig]="pgTabGroupConfig()"
+                />
               }
             </div>
           </div>

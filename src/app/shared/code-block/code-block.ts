@@ -1,14 +1,19 @@
-import {
-  Component,
-  input,
-  signal,
-  inject,
-  computed,
-  linkedSignal,
-  PLATFORM_ID,
-} from '@angular/core';
+import { Component, input, signal, inject, computed, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import {
+  CodeLink,
+  CodeLinkSize,
+  CodeLinkStyle,
+  CodeLinkState,
+  CodeLinkIcon,
+} from '../code-link/code-link';
+import { CodeLineComponent, IndentLevel } from '../code-line/code-line';
+import {
+  CodeTabGroup,
+  TabGroupType,
+  TabOrientation,
+  TabItemConfig,
+} from '../code-tab-group/code-tab-group';
 
 export type CodeBlockType = 'line' | 'doc-expanded' | 'doc-collapsed';
 
@@ -17,35 +22,115 @@ export interface CodeTab {
   code: string;
 }
 
-export interface CodeLine {
-  num: number;
-  html: SafeHtml;
-  hl: boolean;
+export interface CodeLinkConfig {
+  size: CodeLinkSize;
+  style: CodeLinkStyle;
+  state: CodeLinkState;
+  showTrailingIcon: boolean;
+  showLabel: boolean;
+  label: string;
+  icon: CodeLinkIcon;
+}
+
+export interface CodeLineConfig {
+  highlight: boolean;
+  showLineNumber: boolean;
+  lineNumber: number;
+  code: string;
+  indentLevel: IndentLevel;
+}
+
+export interface TabGroupConfig {
+  type: TabGroupType;
+  orientation: TabOrientation;
+  tabs: TabItemConfig[];
 }
 
 @Component({
   selector: 'app-code-block',
   standalone: true,
+  imports: [CodeLink, CodeLineComponent, CodeTabGroup],
   templateUrl: './code-block.html',
   styleUrl: './code-block.scss',
 })
 export class CodeBlock {
-  private readonly sanitizer = inject(DomSanitizer);
   private readonly platformId = inject(PLATFORM_ID);
 
-  // ── Inputs ──
+  // ── Core inputs ──
   readonly type = input<CodeBlockType>('line');
   readonly code = input('');
   readonly showLineNumbers = input(true);
   readonly highlightLines = input<number[]>([]);
+  readonly indentLevel = input<IndentLevel>(0);
   readonly codeTabs = input<CodeTab[]>([]);
+
+  // ── Link config inputs ──
+  readonly showCodeLink = input<Partial<CodeLinkConfig>>({});
+  readonly copyLink = input<Partial<CodeLinkConfig>>({});
+  readonly editLink = input<Partial<CodeLinkConfig>>({});
+
+  // ── Tab group config input ──
+  readonly tabGroupConfig = input<Partial<TabGroupConfig>>({});
 
   // ── Internal state ──
   readonly isCopied = signal(false);
-  readonly isExpanded = linkedSignal(() => this.type() !== 'doc-collapsed');
+  readonly isExpanded = signal(true);
   readonly activeTabIndex = signal(0);
 
-  /** The code string currently being displayed — either from `code` or the active tab. */
+  // ── Resolved link configs ──
+  readonly resolvedShowCodeLink = computed<CodeLinkConfig>(() => ({
+    size: 'medium',
+    style: 'subtle',
+    state: 'default',
+    showTrailingIcon: true,
+    showLabel: true,
+    label: 'Show code',
+    icon: 'chevron' as CodeLinkIcon,
+    ...this.showCodeLink(),
+  }));
+
+  readonly resolvedCopyLink = computed<CodeLinkConfig>(() => ({
+    size: 'medium',
+    style: 'primary',
+    state: 'default',
+    showTrailingIcon: true,
+    showLabel: true,
+    label: this.isCopied() ? 'Copied!' : 'Copy',
+    icon: 'copy' as CodeLinkIcon,
+    ...this.copyLink(),
+  }));
+
+  readonly resolvedEditLink = computed<CodeLinkConfig>(() => ({
+    size: 'medium',
+    style: 'primary',
+    state: 'default',
+    showTrailingIcon: true,
+    showLabel: true,
+    label: 'Edit',
+    icon: 'edit' as CodeLinkIcon,
+    ...this.editLink(),
+  }));
+
+  // ── Resolved tab group config ──
+  readonly resolvedTabGroup = computed<TabGroupConfig>(() => {
+    const cfg = this.tabGroupConfig();
+    const tabs = this.codeTabs();
+    const defaultTabs: TabItemConfig[] = tabs.map((t, i) => ({
+      show: true,
+      label: t.label,
+      showLabel: true,
+      showTrailingIcon: false,
+      state: 'rest' as const,
+      focus: false,
+    }));
+    return {
+      type: cfg.type ?? 'underline',
+      orientation: cfg.orientation ?? 'horizontal',
+      tabs: cfg.tabs ?? defaultTabs,
+    };
+  });
+
+  // ── Display code: from active tab or raw code input ──
   readonly displayCode = computed(() => {
     const tabs = this.codeTabs();
     if (tabs.length) {
@@ -54,26 +139,31 @@ export class CodeBlock {
     return this.code();
   });
 
-  /** Parsed + colorized lines for rendering. */
-  readonly lines = computed<CodeLine[]>(() => {
+  // ── Parsed lines for rendering ──
+  readonly lines = computed<CodeLineConfig[]>(() => {
     const raw = this.displayCode();
     const hlSet = new Set(this.highlightLines());
+    const indent = this.indentLevel();
     const parts = raw.split('\n');
     if (parts.length > 1 && parts[parts.length - 1].trim() === '') {
       parts.pop();
     }
     return parts.map((text, i) => ({
-      num: i + 1,
-      html: this.colorize(text),
-      hl: hlSet.has(i + 1),
+      highlight: hlSet.has(i + 1),
+      showLineNumber: this.showLineNumbers(),
+      lineNumber: i + 1,
+      code: text,
+      indentLevel: indent,
     }));
   });
 
   toggleCode(): void {
+    // doc-collapsed cannot expand
+    if (this.type() === 'doc-collapsed') return;
     this.isExpanded.update((v) => !v);
   }
 
-  selectTab(index: number): void {
+  onTabSelected(index: number): void {
     this.activeTabIndex.set(index);
   }
 
@@ -83,38 +173,5 @@ export class CodeBlock {
       this.isCopied.set(true);
       setTimeout(() => this.isCopied.set(false), 1500);
     });
-  }
-
-  private colorize(text: string): SafeHtml {
-    let s = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-
-    // 1. Comments (gray italic)
-    if (/^\s*\/\//.test(s)) {
-      s = s.replace(/^(\s*)(\/\/.*)$/, '$1<span style="color:#6a6b6d;font-style:italic">$2</span>');
-      return this.sanitizer.bypassSecurityTrustHtml(s || '&nbsp;');
-    }
-
-    // 2. Strings: 'text' and `text` (green)
-    s = s.replace(
-      /('(?:[^'\\]|\\.)*'|`(?:[^`\\]|\\.)*`)/g,
-      '<span style="color:#548519">$1</span>',
-    );
-
-    // 3. Keywords (purple)
-    s = s.replace(
-      /\b(import|from|export|default|class|extends|const|let|var|return|this|new|if|else|function|async|await)\b/g,
-      '<span style="color:#7b51c8">$1</span>',
-    );
-
-    // 4. Attributes (red)
-    s = s.replace(
-      /\b(className|onClick|onChange|disabled|type|href|src|alt)\b/g,
-      '<span style="color:#da3e37">$1</span>',
-    );
-
-    // 5. Function calls — word( (blue)
-    s = s.replace(/\b([a-zA-Z_]\w*)\(/g, '<span style="color:#006fd6">$1</span>(');
-
-    return this.sanitizer.bypassSecurityTrustHtml(s || '&nbsp;');
   }
 }

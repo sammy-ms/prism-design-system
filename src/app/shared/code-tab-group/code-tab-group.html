@@ -1,0 +1,34 @@
+<div
+  class="ctg"
+  [class.ctg--underline]="type() === 'underline'"
+  [class.ctg--white-pill]="type() === 'white-pill'"
+  [class.ctg--grey-pill]="type() === 'grey-pill'"
+  [class.ctg--vertical]="orientation() === 'vertical'"
+>
+  @for (tab of visibleTabs(); track tab.label; let i = $index) {
+    <button
+      [class]="getTabClasses(tab, i)"
+      [disabled]="tab.state === 'disabled'"
+      (click)="onSelect(i, tab)"
+    >
+      @if (tab.showLabel) {
+        <span class="ctg__label">{{ tab.label }}</span>
+      }
+      @if (tab.showTrailingIcon) {
+        <svg
+          class="ctg__icon"
+          width="12"
+          height="12"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M9 6l6 6-6 6" />
+        </svg>
+      }
+    </button>
+  }
+</div>

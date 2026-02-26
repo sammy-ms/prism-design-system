@@ -2,13 +2,14 @@
 @if (type() === 'line') {
   <div class="cb cb--line">
     <div class="cb__code">
-      @for (line of lines(); track line.num) {
-        <div class="cb__row">
-          @if (showLineNumbers()) {
-            <span class="cb__num" [class.cb__num--hl]="line.hl">{{ line.num }}</span>
-          }
-          <span class="cb__line" [class.cb__line--hl]="line.hl" [innerHTML]="line.html"></span>
-        </div>
+      @for (line of lines(); track line.lineNumber) {
+        <app-code-line
+          [highlight]="line.highlight"
+          [showLineNumber]="line.showLineNumber"
+          [lineNumber]="line.lineNumber"
+          [code]="line.code"
+          [indentLevel]="line.indentLevel"
+        />
       }
     </div>
   </div>
@@ -16,92 +17,70 @@
 
 <!-- ═══ Type = Documentation (Expanded or Collapsed) ═══ -->
 @if (type() === 'doc-expanded' || type() === 'doc-collapsed') {
-  <div class="cb cb--doc" [class.cb--doc-collapsed]="!isExpanded()">
+  <div
+    class="cb cb--doc"
+    [class.cb--doc-collapsed]="type() === 'doc-collapsed'"
+    [class.cb--doc-no-content]="type() === 'doc-collapsed' || !isExpanded()"
+  >
     <!-- Toolbar — always visible -->
     <div class="cb__toolbar">
-      <button class="cb__toggle" (click)="toggleCode()">
-        <span class="cb__toggle-label">Show code</span>
-        <svg
-          class="cb__toggle-chevron"
-          [class.cb__toggle-chevron--open]="isExpanded()"
-          width="14"
-          height="14"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path d="M9 6l6 6-6 6" />
-        </svg>
-      </button>
+      <app-code-link
+        [size]="resolvedShowCodeLink().size"
+        [variant]="resolvedShowCodeLink().style"
+        [state]="type() === 'doc-collapsed' ? 'disabled' : resolvedShowCodeLink().state"
+        [showTrailingIcon]="resolvedShowCodeLink().showTrailingIcon"
+        [showLabel]="resolvedShowCodeLink().showLabel"
+        [label]="resolvedShowCodeLink().label"
+        [icon]="resolvedShowCodeLink().icon"
+        [iconRotated]="isExpanded() && type() !== 'doc-collapsed'"
+        (pressed)="toggleCode()"
+      />
 
       <div class="cb__actions">
-        <button class="cb__action-btn" (click)="copyCode()">
-          @if (isCopied()) {
-            <span class="cb__action-done">Copied!</span>
-          } @else {
-            <span>Copy</span>
-          }
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path
-              d="M8 8m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z"
-            />
-            <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
-          </svg>
-        </button>
-        <a class="cb__action-btn">
-          <span>Edit</span>
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
-            <path d="M11 13l9 -9" />
-            <path d="M15 4l5 5" />
-          </svg>
-        </a>
+        <app-code-link
+          [size]="resolvedCopyLink().size"
+          [variant]="isCopied() ? 'subtle' : resolvedCopyLink().style"
+          [state]="resolvedCopyLink().state"
+          [showTrailingIcon]="resolvedCopyLink().showTrailingIcon"
+          [showLabel]="resolvedCopyLink().showLabel"
+          [label]="resolvedCopyLink().label"
+          [icon]="resolvedCopyLink().icon"
+          (pressed)="copyCode()"
+        />
+        <app-code-link
+          [size]="resolvedEditLink().size"
+          [variant]="resolvedEditLink().style"
+          [state]="resolvedEditLink().state"
+          [showTrailingIcon]="resolvedEditLink().showTrailingIcon"
+          [showLabel]="resolvedEditLink().showLabel"
+          [label]="resolvedEditLink().label"
+          [icon]="resolvedEditLink().icon"
+        />
       </div>
     </div>
 
-    <!-- Expandable content -->
-    @if (isExpanded()) {
-      <!-- Tabs only on doc-expanded -->
-      @if (type() === 'doc-expanded' && codeTabs().length) {
-        <div class="cb__tab-group">
-          @for (tab of codeTabs(); track tab.label; let i = $index) {
-            <button
-              class="cb__tab"
-              [class.cb__tab--active]="activeTabIndex() === i"
-              (click)="selectTab(i)"
-            >
-              {{ tab.label }}
-            </button>
-          }
-        </div>
+    <!-- Expandable content (doc-expanded only) -->
+    @if (isExpanded() && type() === 'doc-expanded') {
+      <!-- Tab group -->
+      @if (codeTabs().length) {
+        <app-code-tab-group
+          [type]="resolvedTabGroup().type"
+          [orientation]="resolvedTabGroup().orientation"
+          [tabs]="resolvedTabGroup().tabs"
+          [activeIndex]="activeTabIndex()"
+          (tabSelected)="onTabSelected($event)"
+        />
       }
 
       <div class="cb__code cb__code--doc">
-        @for (line of lines(); track line.num) {
-          <div class="cb__row">
-            <span class="cb__line" [innerHTML]="line.html"></span>
-          </div>
+        @for (line of lines(); track line.lineNumber) {
+          <app-code-line
+            [highlight]="line.highlight"
+            [showLineNumber]="line.showLineNumber"
+            [lineNumber]="line.lineNumber"
+            [code]="line.code"
+            [indentLevel]="line.indentLevel"
+          />
         }
       </div>
     }

@@ -63,6 +63,7 @@ export class CodeBlock {
   readonly highlightLines = input<number[]>([]);
   readonly indentLevel = input<IndentLevel>(0);
   readonly codeTabs = input<CodeTab[]>([]);
+  readonly lineConfigs = input<CodeLineConfig[] | null>(null);
 
   // ── Link config inputs ──
   readonly showCodeLink = input<Partial<CodeLinkConfig>>({});
@@ -141,6 +142,9 @@ export class CodeBlock {
 
   // ── Parsed lines for rendering ──
   readonly lines = computed<CodeLineConfig[]>(() => {
+    const direct = this.lineConfigs();
+    if (direct) return direct;
+
     const raw = this.displayCode();
     const hlSet = new Set(this.highlightLines());
     const indent = this.indentLevel();

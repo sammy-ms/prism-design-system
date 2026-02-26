@@ -278,20 +278,14 @@
         <section class="comp-section">
           <h2 class="comp-section__title">Playground</h2>
           <p class="comp-section__desc">
-            Customize every property like Figma and see a live preview below.
+            Customize every property like Figma and see a live preview.
           </p>
 
           <div class="pg">
             <!-- ── LIVE PREVIEW ── -->
             <div class="pg__preview">
               @if (pgType() === 'line') {
-                <app-code-block
-                  [code]="reactCode"
-                  [type]="'line'"
-                  [showLineNumbers]="pgShowLineNumbers()"
-                  [highlightLines]="pgHighlightLines()"
-                  [indentLevel]="pgIndentLevel()"
-                />
+                <app-code-block [type]="'line'" [lineConfigs]="pgComputedLineConfigs()" />
               } @else {
                 <app-code-block
                   [type]="pgType()"
@@ -321,42 +315,90 @@
                 </select>
               </div>
 
-              <div class="pg__field">
-                <label class="pg__label">Show Line Numbers</label>
-                <select
-                  class="pg__select"
-                  [value]="pgShowLineNumbers() ? 'true' : 'false'"
-                  (change)="onBool(pgShowLineNumbers, $event)"
-                >
-                  <option value="true">True</option>
-                  <option value="false">False</option>
-                </select>
-              </div>
+              <!-- ══ LINE TYPE: per-line controls ══ -->
+              @if (pgType() === 'line') {
+                @for (line of pgLines; track $index; let i = $index) {
+                  <div class="pg__group-title">Line {{ i + 1 }}</div>
 
-              <div class="pg__field">
-                <label class="pg__label">Highlighted Lines</label>
-                <select class="pg__select" [value]="pgHighlight()" (change)="onPgHighlight($event)">
-                  <option value="none">None</option>
-                  <option value="few">Few (2, 5)</option>
-                  <option value="many">Many (1-3, 6-8)</option>
-                </select>
-              </div>
+                  <div class="pg__field pg__field--row">
+                    <label class="pg__label">Highlight</label>
+                    <button
+                      class="pg__toggle"
+                      [class.pg__toggle--on]="line.highlight()"
+                      (click)="onToggle(line.highlight)"
+                    ></button>
+                  </div>
 
-              <div class="pg__field">
-                <label class="pg__label">Indent Level</label>
-                <select class="pg__select" [value]="pgIndentLevel()" (change)="onPgIndent($event)">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                </select>
-              </div>
+                  <div class="pg__field pg__field--row">
+                    <label class="pg__label">Show Line Number</label>
+                    <button
+                      class="pg__toggle"
+                      [class.pg__toggle--on]="line.showLineNumber()"
+                      (click)="onToggle(line.showLineNumber)"
+                    ></button>
+                  </div>
 
-              <!-- ── SHOW CODE LINK ── -->
+                  @if (line.showLineNumber()) {
+                    <div class="pg__field">
+                      <label class="pg__label">Number</label>
+                      <input
+                        class="pg__input"
+                        type="number"
+                        [value]="line.lineNumber()"
+                        (input)="onNumber(line.lineNumber, $event)"
+                      />
+                    </div>
+                  }
+
+                  <div class="pg__field">
+                    <label class="pg__label">Code</label>
+                    <input
+                      class="pg__input"
+                      type="text"
+                      [value]="line.code()"
+                      (input)="onText(line.code, $event)"
+                    />
+                  </div>
+
+                  <div class="pg__field">
+                    <label class="pg__label">Indent Level</label>
+                    <select
+                      class="pg__select"
+                      [value]="line.indentLevel()"
+                      (change)="onIndent(line.indentLevel, $event)"
+                    >
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                    </select>
+                  </div>
+                }
+              }
+
+              <!-- ══ DOC TYPES: indent + links ══ -->
               @if (pgType() !== 'line') {
+                <div class="pg__field">
+                  <label class="pg__label">Indent Level</label>
+                  <select
+                    class="pg__select"
+                    [value]="pgIndentLevel()"
+                    (change)="onIndent(pgIndentLevel, $event)"
+                  >
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>
+                </div>
+
+                <!-- ── SHOW CODE LINK ── -->
                 <div class="pg__group-title">Show Code Link</div>
 
                 <div class="pg__field">
@@ -400,39 +442,35 @@
                   </select>
                 </div>
 
-                <div class="pg__field">
+                <div class="pg__field pg__field--row">
                   <label class="pg__label">Show Trailing Icon</label>
-                  <select
-                    class="pg__select"
-                    [value]="pgShowCode.showTrailingIcon() ? 'true' : 'false'"
-                    (change)="onBool(pgShowCode.showTrailingIcon, $event)"
-                  >
-                    <option value="true">True</option>
-                    <option value="false">False</option>
-                  </select>
+                  <button
+                    class="pg__toggle"
+                    [class.pg__toggle--on]="pgShowCode.showTrailingIcon()"
+                    (click)="onToggle(pgShowCode.showTrailingIcon)"
+                  ></button>
                 </div>
 
-                <div class="pg__field">
+                <div class="pg__field pg__field--row">
                   <label class="pg__label">Show Label</label>
-                  <select
-                    class="pg__select"
-                    [value]="pgShowCode.showLabel() ? 'true' : 'false'"
-                    (change)="onBool(pgShowCode.showLabel, $event)"
-                  >
-                    <option value="true">True</option>
-                    <option value="false">False</option>
-                  </select>
+                  <button
+                    class="pg__toggle"
+                    [class.pg__toggle--on]="pgShowCode.showLabel()"
+                    (click)="onToggle(pgShowCode.showLabel)"
+                  ></button>
                 </div>
 
-                <div class="pg__field">
-                  <label class="pg__label">Label</label>
-                  <input
-                    class="pg__input"
-                    type="text"
-                    [value]="pgShowCode.label()"
-                    (input)="onText(pgShowCode.label, $event)"
-                  />
-                </div>
+                @if (pgShowCode.showLabel()) {
+                  <div class="pg__field">
+                    <label class="pg__label">Label</label>
+                    <input
+                      class="pg__input"
+                      type="text"
+                      [value]="pgShowCode.label()"
+                      (input)="onText(pgShowCode.label, $event)"
+                    />
+                  </div>
+                }
 
                 <!-- ── COPY LINK ── -->
                 <div class="pg__group-title">Copy Link</div>
@@ -478,39 +516,35 @@
                   </select>
                 </div>
 
-                <div class="pg__field">
+                <div class="pg__field pg__field--row">
                   <label class="pg__label">Show Trailing Icon</label>
-                  <select
-                    class="pg__select"
-                    [value]="pgCopy.showTrailingIcon() ? 'true' : 'false'"
-                    (change)="onBool(pgCopy.showTrailingIcon, $event)"
-                  >
-                    <option value="true">True</option>
-                    <option value="false">False</option>
-                  </select>
+                  <button
+                    class="pg__toggle"
+                    [class.pg__toggle--on]="pgCopy.showTrailingIcon()"
+                    (click)="onToggle(pgCopy.showTrailingIcon)"
+                  ></button>
                 </div>
 
-                <div class="pg__field">
+                <div class="pg__field pg__field--row">
                   <label class="pg__label">Show Label</label>
-                  <select
-                    class="pg__select"
-                    [value]="pgCopy.showLabel() ? 'true' : 'false'"
-                    (change)="onBool(pgCopy.showLabel, $event)"
-                  >
-                    <option value="true">True</option>
-                    <option value="false">False</option>
-                  </select>
+                  <button
+                    class="pg__toggle"
+                    [class.pg__toggle--on]="pgCopy.showLabel()"
+                    (click)="onToggle(pgCopy.showLabel)"
+                  ></button>
                 </div>
 
-                <div class="pg__field">
-                  <label class="pg__label">Label</label>
-                  <input
-                    class="pg__input"
-                    type="text"
-                    [value]="pgCopy.label()"
-                    (input)="onText(pgCopy.label, $event)"
-                  />
-                </div>
+                @if (pgCopy.showLabel()) {
+                  <div class="pg__field">
+                    <label class="pg__label">Label</label>
+                    <input
+                      class="pg__input"
+                      type="text"
+                      [value]="pgCopy.label()"
+                      (input)="onText(pgCopy.label, $event)"
+                    />
+                  </div>
+                }
 
                 <!-- ── EDIT LINK ── -->
                 <div class="pg__group-title">Edit Link</div>
@@ -556,43 +590,63 @@
                   </select>
                 </div>
 
-                <div class="pg__field">
+                <div class="pg__field pg__field--row">
                   <label class="pg__label">Show Trailing Icon</label>
-                  <select
-                    class="pg__select"
-                    [value]="pgEdit.showTrailingIcon() ? 'true' : 'false'"
-                    (change)="onBool(pgEdit.showTrailingIcon, $event)"
-                  >
-                    <option value="true">True</option>
-                    <option value="false">False</option>
-                  </select>
+                  <button
+                    class="pg__toggle"
+                    [class.pg__toggle--on]="pgEdit.showTrailingIcon()"
+                    (click)="onToggle(pgEdit.showTrailingIcon)"
+                  ></button>
                 </div>
 
-                <div class="pg__field">
+                <div class="pg__field pg__field--row">
                   <label class="pg__label">Show Label</label>
-                  <select
-                    class="pg__select"
-                    [value]="pgEdit.showLabel() ? 'true' : 'false'"
-                    (change)="onBool(pgEdit.showLabel, $event)"
-                  >
-                    <option value="true">True</option>
-                    <option value="false">False</option>
-                  </select>
+                  <button
+                    class="pg__toggle"
+                    [class.pg__toggle--on]="pgEdit.showLabel()"
+                    (click)="onToggle(pgEdit.showLabel)"
+                  ></button>
                 </div>
 
-                <div class="pg__field">
-                  <label class="pg__label">Label</label>
-                  <input
-                    class="pg__input"
-                    type="text"
-                    [value]="pgEdit.label()"
-                    (input)="onText(pgEdit.label, $event)"
-                  />
-                </div>
+                @if (pgEdit.showLabel()) {
+                  <div class="pg__field">
+                    <label class="pg__label">Label</label>
+                    <input
+                      class="pg__input"
+                      type="text"
+                      [value]="pgEdit.label()"
+                      (input)="onText(pgEdit.label, $event)"
+                    />
+                  </div>
+                }
               }
 
-              <!-- ── TAB GROUP ── -->
+              <!-- ══ DOC-EXPANDED ONLY: code lines + tabs ══ -->
               @if (pgType() === 'doc-expanded') {
+                <div class="pg__group-title">Code Lines</div>
+
+                <div class="pg__field pg__field--row">
+                  <label class="pg__label">Show Line Numbers</label>
+                  <button
+                    class="pg__toggle"
+                    [class.pg__toggle--on]="pgShowLineNumbers()"
+                    (click)="onToggle(pgShowLineNumbers)"
+                  ></button>
+                </div>
+
+                <div class="pg__field">
+                  <label class="pg__label">Highlighted Lines</label>
+                  <select
+                    class="pg__select"
+                    [value]="pgHighlight()"
+                    (change)="onPgHighlight($event)"
+                  >
+                    <option value="none">None</option>
+                    <option value="few">Few (2, 5)</option>
+                    <option value="many">Many (1-3, 6-8)</option>
+                  </select>
+                </div>
+
                 <div class="pg__group-title">Tab Group</div>
 
                 <div class="pg__field">
@@ -624,16 +678,13 @@
                 @for (tabItem of pgTabItems; track tabItem.label; let i = $index) {
                   <div class="pg__group-title">Tab {{ i + 1 }}: {{ tabItem.label }}</div>
 
-                  <div class="pg__field">
+                  <div class="pg__field pg__field--row">
                     <label class="pg__label">Show</label>
-                    <select
-                      class="pg__select"
-                      [value]="tabItem.show() ? 'true' : 'false'"
-                      (change)="onBool(tabItem.show, $event)"
-                    >
-                      <option value="true">True</option>
-                      <option value="false">False</option>
-                    </select>
+                    <button
+                      class="pg__toggle"
+                      [class.pg__toggle--on]="tabItem.show()"
+                      (click)="onToggle(tabItem.show)"
+                    ></button>
                   </div>
 
                   @if (tabItem.show()) {
@@ -654,40 +705,31 @@
                       </select>
                     </div>
 
-                    <div class="pg__field">
+                    <div class="pg__field pg__field--row">
                       <label class="pg__label">Focus</label>
-                      <select
-                        class="pg__select"
-                        [value]="tabItem.focus() ? 'true' : 'false'"
-                        (change)="onBool(tabItem.focus, $event)"
-                      >
-                        <option value="true">True</option>
-                        <option value="false">False</option>
-                      </select>
+                      <button
+                        class="pg__toggle"
+                        [class.pg__toggle--on]="tabItem.focus()"
+                        (click)="onToggle(tabItem.focus)"
+                      ></button>
                     </div>
 
-                    <div class="pg__field">
+                    <div class="pg__field pg__field--row">
                       <label class="pg__label">Show Label</label>
-                      <select
-                        class="pg__select"
-                        [value]="tabItem.showLabel() ? 'true' : 'false'"
-                        (change)="onBool(tabItem.showLabel, $event)"
-                      >
-                        <option value="true">True</option>
-                        <option value="false">False</option>
-                      </select>
+                      <button
+                        class="pg__toggle"
+                        [class.pg__toggle--on]="tabItem.showLabel()"
+                        (click)="onToggle(tabItem.showLabel)"
+                      ></button>
                     </div>
 
-                    <div class="pg__field">
+                    <div class="pg__field pg__field--row">
                       <label class="pg__label">Show Trailing Icon</label>
-                      <select
-                        class="pg__select"
-                        [value]="tabItem.showTrailingIcon() ? 'true' : 'false'"
-                        (change)="onBool(tabItem.showTrailingIcon, $event)"
-                      >
-                        <option value="true">True</option>
-                        <option value="false">False</option>
-                      </select>
+                      <button
+                        class="pg__toggle"
+                        [class.pg__toggle--on]="tabItem.showTrailingIcon()"
+                        (click)="onToggle(tabItem.showTrailingIcon)"
+                      ></button>
                     </div>
                   }
                 }

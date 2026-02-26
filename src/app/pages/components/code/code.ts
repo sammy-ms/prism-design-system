@@ -15,6 +15,7 @@ import {
   CodeBlockType,
   CodeTab,
   CodeLinkConfig,
+  CodeLineConfig,
 } from '../../../shared/code-block/code-block';
 import {
   CodeLink,
@@ -49,6 +50,14 @@ interface TabSignals {
   showLabel: WritableSignal<boolean>;
   showTrailingIcon: WritableSignal<boolean>;
   label: string;
+}
+
+interface LineSignals {
+  highlight: WritableSignal<boolean>;
+  showLineNumber: WritableSignal<boolean>;
+  lineNumber: WritableSignal<number>;
+  code: WritableSignal<string>;
+  indentLevel: WritableSignal<IndentLevel>;
 }
 
 @Component({
@@ -433,9 +442,36 @@ export default greet;`,
 
   // ── Core ──
   readonly pgType = signal<CodeBlockType>('line');
+
+  // ── Per-line config (line type) ──
+  readonly pgLineCode = `const greet = (name) => {
+  return 'Hello, ' + name;
+};
+
+export default greet;`;
+
+  readonly pgLines: LineSignals[] = this.pgLineCode.split('\n').map((text, i) => ({
+    highlight: signal(i === 1),
+    showLineNumber: signal(true),
+    lineNumber: signal(i + 1),
+    code: signal(text),
+    indentLevel: signal<IndentLevel>(0),
+  }));
+
+  readonly pgComputedLineConfigs = computed<CodeLineConfig[]>(() =>
+    this.pgLines.map((l) => ({
+      highlight: l.highlight(),
+      showLineNumber: l.showLineNumber(),
+      lineNumber: l.lineNumber(),
+      code: l.code(),
+      indentLevel: l.indentLevel(),
+    })),
+  );
+
+  // ── Doc type globals ──
+  readonly pgIndentLevel = signal<IndentLevel>(0);
   readonly pgShowLineNumbers = signal(true);
   readonly pgHighlight = signal<'none' | 'few' | 'many'>('none');
-  readonly pgIndentLevel = signal<IndentLevel>(0);
 
   // ── Show Code link ──
   readonly pgShowCode: LinkSignals = {
@@ -653,12 +689,20 @@ export default greet;`,
     sig.set((event.target as HTMLSelectElement).value);
   }
 
-  onBool(sig: WritableSignal<boolean>, event: Event): void {
-    sig.set((event.target as HTMLSelectElement).value === 'true');
+  onToggle(sig: WritableSignal<boolean>): void {
+    sig.update((v) => !v);
   }
 
   onText(sig: WritableSignal<string>, event: Event): void {
     sig.set((event.target as HTMLInputElement).value);
+  }
+
+  onNumber(sig: WritableSignal<number>, event: Event): void {
+    sig.set(+(event.target as HTMLInputElement).value);
+  }
+
+  onIndent(sig: WritableSignal<IndentLevel>, event: Event): void {
+    sig.set(+(event.target as HTMLSelectElement).value as IndentLevel);
   }
 
   onPgType(event: Event): void {
@@ -667,10 +711,6 @@ export default greet;`,
 
   onPgHighlight(event: Event): void {
     this.pgHighlight.set((event.target as HTMLSelectElement).value as 'none' | 'few' | 'many');
-  }
-
-  onPgIndent(event: Event): void {
-    this.pgIndentLevel.set(+(event.target as HTMLSelectElement).value as IndentLevel);
   }
 
   private setupObserver(): void {

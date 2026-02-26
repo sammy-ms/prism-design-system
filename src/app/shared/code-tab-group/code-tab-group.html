@@ -5,16 +5,16 @@
   [class.ctg--grey-pill]="type() === 'grey-pill'"
   [class.ctg--vertical]="orientation() === 'vertical'"
 >
-  @for (tab of visibleTabs(); track tab.label; let i = $index) {
+  @for (entry of visibleTabEntries(); track entry.index) {
     <button
-      [class]="getTabClasses(tab, i)"
-      [disabled]="tab.state === 'disabled'"
-      (click)="onSelect(i, tab)"
+      [class]="getTabClasses(entry.tab, entry.index)"
+      [disabled]="entry.tab.state === 'disabled'"
+      (click)="onSelect(entry.index, entry.tab)"
     >
-      @if (tab.showLabel) {
-        <span class="ctg__label">{{ tab.label }}</span>
+      @if (entry.tab.showLabel) {
+        <span class="ctg__label">{{ entry.tab.label }}</span>
       }
-      @if (tab.showTrailingIcon) {
+      @if (entry.tab.showTrailingIcon) {
         <svg
           class="ctg__icon"
           width="12"

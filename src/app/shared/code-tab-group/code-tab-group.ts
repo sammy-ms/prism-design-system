@@ -35,7 +35,11 @@ export class CodeTabGroup {
 
   readonly tabSelected = output<number>();
 
-  readonly visibleTabs = computed(() => this.tabs().filter((t) => t.show));
+  readonly visibleTabEntries = computed(() =>
+    this.tabs()
+      .map((tab, index) => ({ tab, index }))
+      .filter((entry) => entry.tab.show),
+  );
 
   getTabClasses(tab: TabItemConfig, index: number): string {
     const t = tab.type ?? this.type();

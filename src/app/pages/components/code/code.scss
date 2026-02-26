@@ -310,8 +310,48 @@
     }
   }
 
+  &__group-title {
+    grid-column: 1 / -1;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #1b1f22;
+    margin-top: 4px;
+    padding-top: 12px;
+    border-top: 1px solid #e0e0e0;
+
+    &:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+  }
+
+  &__input {
+    padding: 8px 12px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1b1f22;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.15s;
+
+    &:hover {
+      border-color: #c0c0c0;
+    }
+
+    &:focus {
+      border-color: #0084ff;
+      box-shadow: 0 0 0 3px rgba(0, 132, 255, 0.1);
+    }
+  }
+
   &__preview {
-    // Live preview area — no extra spacing needed, code-block has its own border
+    // Live preview area
   }
 }
 

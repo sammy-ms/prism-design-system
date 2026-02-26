@@ -7,6 +7,7 @@ import {
   AfterViewInit,
   OnDestroy,
   ElementRef,
+  WritableSignal,
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import {
@@ -15,15 +16,40 @@ import {
   CodeTab,
   CodeLinkConfig,
 } from '../../../shared/code-block/code-block';
-import { CodeLink } from '../../../shared/code-link/code-link';
+import {
+  CodeLink,
+  CodeLinkSize,
+  CodeLinkStyle,
+  CodeLinkState,
+} from '../../../shared/code-link/code-link';
 import { CodeLineComponent, IndentLevel } from '../../../shared/code-line/code-line';
 import {
   CodeTabGroup,
   TabGroupType,
+  TabOrientation,
+  TabState,
   TabItemConfig,
 } from '../../../shared/code-tab-group/code-tab-group';
 
 type Tab = 'examples' | 'properties' | 'playground';
+
+interface LinkSignals {
+  size: WritableSignal<CodeLinkSize>;
+  style: WritableSignal<CodeLinkStyle>;
+  state: WritableSignal<CodeLinkState>;
+  showTrailingIcon: WritableSignal<boolean>;
+  showLabel: WritableSignal<boolean>;
+  label: WritableSignal<string>;
+}
+
+interface TabSignals {
+  show: WritableSignal<boolean>;
+  state: WritableSignal<TabState>;
+  focus: WritableSignal<boolean>;
+  showLabel: WritableSignal<boolean>;
+  showTrailingIcon: WritableSignal<boolean>;
+  label: string;
+}
 
 @Component({
   selector: 'app-code-page',
@@ -241,8 +267,7 @@ export class CodePage implements AfterViewInit, OnDestroy {
       property: 'tabs',
       type: 'TabItemConfig[]',
       default: '[]',
-      description:
-        'Array of tab item configurations. Each tab has show, label, state, focus, showLabel, showTrailingIcon.',
+      description: 'Array of tab item configurations.',
     },
     {
       property: 'activeIndex',
@@ -322,9 +347,39 @@ export default Button;`;
   Disabled
 </button>`;
 
+  readonly cssCode = `.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+}`;
+
+  readonly vueCode = `<template>
+  <button :class="classes" @click="onClick">
+    <slot />
+  </button>
+</template>`;
+
+  readonly svelteCode = `<script>
+  export let variant = 'primary';
+</script>
+
+<button class="btn btn-{variant}" on:click>
+  <slot />
+</button>`;
+
   readonly docTabs: CodeTab[] = [
     { label: 'React', code: this.reactCode },
     { label: 'HTML', code: this.htmlCode },
+  ];
+
+  readonly playgroundTabs: CodeTab[] = [
+    { label: 'React', code: this.reactCode },
+    { label: 'HTML', code: this.htmlCode },
+    { label: 'CSS', code: this.cssCode },
+    { label: 'Vue', code: this.vueCode },
+    { label: 'Svelte', code: this.svelteCode },
   ];
 
   // ── Usage examples ──
@@ -345,7 +400,6 @@ export default Button;`;
   readonly usageCollapsedCode = `<app-code-block
   [type]="'doc-collapsed'"
   [code]="myCode"
-  [showCodeLink]="{ label: 'View source', style: 'primary' }"
 />`;
 
   readonly demoCode = `const greet = (name) => {
@@ -377,21 +431,131 @@ export default greet;`,
   // Playground state
   // ═══════════════════════════════════════
 
+  // ── Core ──
   readonly pgType = signal<CodeBlockType>('line');
   readonly pgShowLineNumbers = signal(true);
   readonly pgHighlight = signal<'none' | 'few' | 'many'>('none');
   readonly pgIndentLevel = signal<IndentLevel>(0);
 
-  // Link controls
-  readonly pgLinkSize = signal<'small' | 'medium' | 'large'>('medium');
-  readonly pgLinkStyle = signal<'primary' | 'subtle' | 'warning' | 'destructive'>('subtle');
-  readonly pgCopyStyle = signal<'primary' | 'subtle' | 'warning' | 'destructive'>('primary');
-  readonly pgShowTrailingIcon = signal(true);
-  readonly pgShowLabel = signal(true);
+  // ── Show Code link ──
+  readonly pgShowCode: LinkSignals = {
+    size: signal<CodeLinkSize>('medium'),
+    style: signal<CodeLinkStyle>('subtle'),
+    state: signal<CodeLinkState>('default'),
+    showTrailingIcon: signal(true),
+    showLabel: signal(true),
+    label: signal('Show code'),
+  };
 
-  // Tab group controls
+  // ── Copy link ──
+  readonly pgCopy: LinkSignals = {
+    size: signal<CodeLinkSize>('medium'),
+    style: signal<CodeLinkStyle>('primary'),
+    state: signal<CodeLinkState>('default'),
+    showTrailingIcon: signal(true),
+    showLabel: signal(true),
+    label: signal('Copy'),
+  };
+
+  // ── Edit link ──
+  readonly pgEdit: LinkSignals = {
+    size: signal<CodeLinkSize>('medium'),
+    style: signal<CodeLinkStyle>('primary'),
+    state: signal<CodeLinkState>('default'),
+    showTrailingIcon: signal(true),
+    showLabel: signal(true),
+    label: signal('Edit'),
+  };
+
+  // ── Tab group ──
   readonly pgTabType = signal<TabGroupType>('underline');
-  readonly pgTabOrientation = signal<'horizontal' | 'vertical'>('horizontal');
+  readonly pgTabOrientation = signal<TabOrientation>('horizontal');
+
+  // ── Per-tab config (1–10, 5 pre-filled) ──
+  readonly pgTabItems: TabSignals[] = [
+    {
+      show: signal(true),
+      state: signal<TabState>('rest'),
+      focus: signal(false),
+      showLabel: signal(true),
+      showTrailingIcon: signal(false),
+      label: 'React',
+    },
+    {
+      show: signal(true),
+      state: signal<TabState>('rest'),
+      focus: signal(false),
+      showLabel: signal(true),
+      showTrailingIcon: signal(false),
+      label: 'HTML',
+    },
+    {
+      show: signal(false),
+      state: signal<TabState>('rest'),
+      focus: signal(false),
+      showLabel: signal(true),
+      showTrailingIcon: signal(false),
+      label: 'CSS',
+    },
+    {
+      show: signal(false),
+      state: signal<TabState>('rest'),
+      focus: signal(false),
+      showLabel: signal(true),
+      showTrailingIcon: signal(false),
+      label: 'Vue',
+    },
+    {
+      show: signal(false),
+      state: signal<TabState>('rest'),
+      focus: signal(false),
+      showLabel: signal(true),
+      showTrailingIcon: signal(false),
+      label: 'Svelte',
+    },
+    {
+      show: signal(false),
+      state: signal<TabState>('rest'),
+      focus: signal(false),
+      showLabel: signal(true),
+      showTrailingIcon: signal(false),
+      label: 'Tab 6',
+    },
+    {
+      show: signal(false),
+      state: signal<TabState>('rest'),
+      focus: signal(false),
+      showLabel: signal(true),
+      showTrailingIcon: signal(false),
+      label: 'Tab 7',
+    },
+    {
+      show: signal(false),
+      state: signal<TabState>('rest'),
+      focus: signal(false),
+      showLabel: signal(true),
+      showTrailingIcon: signal(false),
+      label: 'Tab 8',
+    },
+    {
+      show: signal(false),
+      state: signal<TabState>('rest'),
+      focus: signal(false),
+      showLabel: signal(true),
+      showTrailingIcon: signal(false),
+      label: 'Tab 9',
+    },
+    {
+      show: signal(false),
+      state: signal<TabState>('rest'),
+      focus: signal(false),
+      showLabel: signal(true),
+      showTrailingIcon: signal(false),
+      label: 'Tab 10',
+    },
+  ];
+
+  // ── Computed playground configs ──
 
   readonly pgHighlightLines = computed(() => {
     switch (this.pgHighlight()) {
@@ -404,30 +568,57 @@ export default greet;`,
     }
   });
 
-  readonly pgShowCodeLinkConfig = computed<Partial<CodeLinkConfig>>(() => ({
-    size: this.pgLinkSize(),
-    style: this.pgLinkStyle(),
-    showTrailingIcon: this.pgShowTrailingIcon(),
-    showLabel: this.pgShowLabel(),
+  readonly pgShowCodeConfig = computed<Partial<CodeLinkConfig>>(() => ({
+    size: this.pgShowCode.size(),
+    style: this.pgShowCode.style(),
+    state: this.pgShowCode.state(),
+    showTrailingIcon: this.pgShowCode.showTrailingIcon(),
+    showLabel: this.pgShowCode.showLabel(),
+    label: this.pgShowCode.label(),
   }));
 
-  readonly pgCopyLinkConfig = computed<Partial<CodeLinkConfig>>(() => ({
-    size: this.pgLinkSize(),
-    style: this.pgCopyStyle(),
-    showTrailingIcon: this.pgShowTrailingIcon(),
-    showLabel: this.pgShowLabel(),
+  readonly pgCopyConfig = computed<Partial<CodeLinkConfig>>(() => ({
+    size: this.pgCopy.size(),
+    style: this.pgCopy.style(),
+    state: this.pgCopy.state(),
+    showTrailingIcon: this.pgCopy.showTrailingIcon(),
+    showLabel: this.pgCopy.showLabel(),
+    label: this.pgCopy.label(),
   }));
 
-  readonly pgEditLinkConfig = computed<Partial<CodeLinkConfig>>(() => ({
-    size: this.pgLinkSize(),
-    style: this.pgCopyStyle(),
-    showTrailingIcon: this.pgShowTrailingIcon(),
-    showLabel: this.pgShowLabel(),
+  readonly pgEditConfig = computed<Partial<CodeLinkConfig>>(() => ({
+    size: this.pgEdit.size(),
+    style: this.pgEdit.style(),
+    state: this.pgEdit.state(),
+    showTrailingIcon: this.pgEdit.showTrailingIcon(),
+    showLabel: this.pgEdit.showLabel(),
+    label: this.pgEdit.label(),
   }));
+
+  readonly pgResolvedCodeTabs = computed<CodeTab[]>(() => {
+    const items = this.pgTabItems;
+    return this.playgroundTabs
+      .filter((_, i) => i < items.length && items[i].show())
+      .map((tab, i) => {
+        const matchIdx = this.playgroundTabs.indexOf(tab);
+        return { label: items[matchIdx]?.label ?? tab.label, code: tab.code };
+      });
+  });
 
   readonly pgTabGroupConfig = computed(() => ({
     type: this.pgTabType(),
     orientation: this.pgTabOrientation(),
+    tabs: this.pgTabItems.map(
+      (t) =>
+        ({
+          show: t.show(),
+          label: t.label,
+          showLabel: t.showLabel(),
+          showTrailingIcon: t.showTrailingIcon(),
+          state: t.state(),
+          focus: t.focus(),
+        }) as TabItemConfig,
+    ),
   }));
 
   // ═══════════════════════════════════════
@@ -456,12 +647,22 @@ export default greet;`,
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
-  onPgType(event: Event): void {
-    this.pgType.set((event.target as HTMLSelectElement).value as CodeBlockType);
+  // ── Generic handlers ──
+
+  onSelect(sig: WritableSignal<string>, event: Event): void {
+    sig.set((event.target as HTMLSelectElement).value);
   }
 
-  onPgLineNumbers(event: Event): void {
-    this.pgShowLineNumbers.set((event.target as HTMLSelectElement).value === 'true');
+  onBool(sig: WritableSignal<boolean>, event: Event): void {
+    sig.set((event.target as HTMLSelectElement).value === 'true');
+  }
+
+  onText(sig: WritableSignal<string>, event: Event): void {
+    sig.set((event.target as HTMLInputElement).value);
+  }
+
+  onPgType(event: Event): void {
+    this.pgType.set((event.target as HTMLSelectElement).value as CodeBlockType);
   }
 
   onPgHighlight(event: Event): void {
@@ -470,40 +671,6 @@ export default greet;`,
 
   onPgIndent(event: Event): void {
     this.pgIndentLevel.set(+(event.target as HTMLSelectElement).value as IndentLevel);
-  }
-
-  onPgLinkSize(event: Event): void {
-    this.pgLinkSize.set((event.target as HTMLSelectElement).value as 'small' | 'medium' | 'large');
-  }
-
-  onPgLinkStyle(event: Event): void {
-    this.pgLinkStyle.set(
-      (event.target as HTMLSelectElement).value as 'primary' | 'subtle' | 'warning' | 'destructive',
-    );
-  }
-
-  onPgCopyStyle(event: Event): void {
-    this.pgCopyStyle.set(
-      (event.target as HTMLSelectElement).value as 'primary' | 'subtle' | 'warning' | 'destructive',
-    );
-  }
-
-  onPgShowTrailingIcon(event: Event): void {
-    this.pgShowTrailingIcon.set((event.target as HTMLSelectElement).value === 'true');
-  }
-
-  onPgShowLabel(event: Event): void {
-    this.pgShowLabel.set((event.target as HTMLSelectElement).value === 'true');
-  }
-
-  onPgTabType(event: Event): void {
-    this.pgTabType.set((event.target as HTMLSelectElement).value as TabGroupType);
-  }
-
-  onPgTabOrientation(event: Event): void {
-    this.pgTabOrientation.set(
-      (event.target as HTMLSelectElement).value as 'horizontal' | 'vertical',
-    );
   }
 
   private setupObserver(): void {

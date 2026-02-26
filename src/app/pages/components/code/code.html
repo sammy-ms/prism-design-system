@@ -282,6 +282,32 @@
           </p>
 
           <div class="pg">
+            <!-- ── LIVE PREVIEW ── -->
+            <div class="pg__preview">
+              @if (pgType() === 'line') {
+                <app-code-block
+                  [code]="reactCode"
+                  [type]="'line'"
+                  [showLineNumbers]="pgShowLineNumbers()"
+                  [highlightLines]="pgHighlightLines()"
+                  [indentLevel]="pgIndentLevel()"
+                />
+              } @else {
+                <app-code-block
+                  [type]="pgType()"
+                  [codeTabs]="pgResolvedCodeTabs()"
+                  [code]="reactCode"
+                  [showLineNumbers]="pgShowLineNumbers()"
+                  [highlightLines]="pgHighlightLines()"
+                  [indentLevel]="pgIndentLevel()"
+                  [showCodeLink]="pgShowCodeConfig()"
+                  [copyLink]="pgCopyConfig()"
+                  [editLink]="pgEditConfig()"
+                  [tabGroupConfig]="pgTabGroupConfig()"
+                />
+              }
+            </div>
+
             <div class="pg__controls">
               <!-- ── CODE BLOCK ── -->
               <div class="pg__group-title">Code Block</div>
@@ -665,32 +691,6 @@
                     </div>
                   }
                 }
-              }
-            </div>
-
-            <!-- ── LIVE PREVIEW ── -->
-            <div class="pg__preview">
-              @if (pgType() === 'line') {
-                <app-code-block
-                  [code]="reactCode"
-                  [type]="'line'"
-                  [showLineNumbers]="pgShowLineNumbers()"
-                  [highlightLines]="pgHighlightLines()"
-                  [indentLevel]="pgIndentLevel()"
-                />
-              } @else {
-                <app-code-block
-                  [type]="pgType()"
-                  [codeTabs]="pgResolvedCodeTabs()"
-                  [code]="reactCode"
-                  [showLineNumbers]="pgShowLineNumbers()"
-                  [highlightLines]="pgHighlightLines()"
-                  [indentLevel]="pgIndentLevel()"
-                  [showCodeLink]="pgShowCodeConfig()"
-                  [copyLink]="pgCopyConfig()"
-                  [editLink]="pgEditConfig()"
-                  [tabGroupConfig]="pgTabGroupConfig()"
-                />
               }
             </div>
           </div>

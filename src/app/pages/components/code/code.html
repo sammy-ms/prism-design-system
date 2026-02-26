@@ -28,7 +28,7 @@
           <p class="comp-section__desc">
             Standalone code block with numbered lines and syntax highlighting.
           </p>
-          <app-code-block [code]="reactCode" [type]="'line'" />
+          <app-code-block [code]="reactCode" [type]="'line'" [highlightLines]="[4, 5, 6]" />
         </section>
 
         <section class="comp-section" id="doc-expanded">
@@ -285,7 +285,19 @@
             <!-- ── LIVE PREVIEW ── -->
             <div class="pg__preview">
               @if (pgType() === 'line') {
-                <app-code-block [type]="'line'" [lineConfigs]="pgComputedLineConfigs()" />
+                <div class="pg__line-wrap">
+                  <div class="pg__line-code">
+                    @for (line of pgLines; track $index) {
+                      <app-code-line
+                        [highlight]="line.highlight()"
+                        [showLineNumber]="line.showLineNumber()"
+                        [lineNumber]="line.lineNumber()"
+                        [code]="line.code()"
+                        [indentLevel]="line.indentLevel()"
+                      />
+                    }
+                  </div>
+                </div>
               } @else {
                 <app-code-block
                   [type]="pgType()"

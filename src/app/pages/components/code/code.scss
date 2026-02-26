@@ -266,6 +266,19 @@
     top: 160px;
   }
 
+  &__line-wrap {
+    overflow: hidden;
+    background: var(--semantics-surface-subtle-primary-default, #fff);
+    border: 1px solid var(--semantics-border-subtle-secondary, #e0e0e0);
+    border-radius: 8px;
+  }
+
+  &__line-code {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+  }
+
   &__controls {
     display: flex;
     flex-direction: column;

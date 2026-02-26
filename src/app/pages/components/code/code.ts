@@ -15,7 +15,6 @@ import {
   CodeBlockType,
   CodeTab,
   CodeLinkConfig,
-  CodeLineConfig,
 } from '../../../shared/code-block/code-block';
 import {
   CodeLink,
@@ -398,17 +397,22 @@ export default Button;`;
   [type]="'line'"
   [showLineNumbers]="true"
   [highlightLines]="[2, 4]"
+  [indentLevel]="0"
 />`;
 
   readonly usageDocCode = `<app-code-block
   [type]="'doc-expanded'"
   [codeTabs]="myTabs"
   [tabGroupConfig]="{ type: 'white-pill' }"
+  [showCodeLink]="{ size: 'medium', style: 'subtle' }"
+  [copyLink]="{ label: 'Copy' }"
+  [editLink]="{ label: 'Edit' }"
 />`;
 
   readonly usageCollapsedCode = `<app-code-block
   [type]="'doc-collapsed'"
   [code]="myCode"
+  [showCodeLink]="{ label: 'Show code' }"
 />`;
 
   readonly demoCode = `const greet = (name) => {
@@ -457,16 +461,6 @@ export default greet;`;
     code: signal(text),
     indentLevel: signal<IndentLevel>(0),
   }));
-
-  readonly pgComputedLineConfigs = computed<CodeLineConfig[]>(() =>
-    this.pgLines.map((l) => ({
-      highlight: l.highlight(),
-      showLineNumber: l.showLineNumber(),
-      lineNumber: l.lineNumber(),
-      code: l.code(),
-      indentLevel: l.indentLevel(),
-    })),
-  );
 
   // ── Doc type globals ──
   readonly pgIndentLevel = signal<IndentLevel>(0);

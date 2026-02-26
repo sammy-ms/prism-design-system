@@ -1,0 +1,37 @@
+// Prism Design System — Background Semantic Color Tokens
+:root {
+  --semantics-bg-subtle-primary-default: var(--primitives-neutral-gray-50);
+  --semantics-bg-subtle-primary-disabled: var(--primitives-neutral-gray-100);
+  --semantics-bg-subtle-primary-hover: var(--primitives-neutral-gray-100);
+  --semantics-bg-subtle-primary-inversed-dynamic: var(--primitives-neutral-gray-900);
+  --semantics-bg-subtle-primary-inversed-static: var(--primitives-neutral-gray-900);
+  --semantics-bg-subtle-primary-pressed: var(--primitives-neutral-gray-100);
+  --semantics-bg-subtle-secondary-default: var(--primitives-neutral-default);
+  --semantics-bg-subtle-secondary-hover: var(--primitives-neutral-gray-50);
+  --semantics-bg-subtle-secondary-inversed-dynamic: var(--primitives-neutral-inversed);
+  --semantics-bg-subtle-secondary-inversed-static: var(--primitives-neutral-inversed);
+  --semantics-bg-subtle-secondary-pressed: var(--primitives-neutral-gray-50);
+  --semantics-bg-subtle-tertiary-hover: var(--primitives-neutral-gray-200);
+  --semantics-bg-subtle-tertiary-pressed: var(--primitives-neutral-gray-200);
+  --semantics-bg-brand-primary-default: var(--primitives-brand-blue-50);
+  --semantics-bg-brand-primary-hover: var(--primitives-brand-blue-100);
+  --semantics-bg-brand-primary-inversed-dynamic: var(--primitives-brand-blue-900);
+  --semantics-bg-brand-primary-inversed-static: var(--primitives-brand-blue-900);
+  --semantics-bg-brand-primary-pressed: var(--primitives-brand-blue-100);
+  --semantics-bg-brand-secondary-default: var(--primitives-brand-blue-100);
+  --semantics-bg-brand-secondary-hover: var(--primitives-brand-blue-200);
+  --semantics-bg-brand-secondary-inversed-dynamic: var(--primitives-brand-blue-800);
+  --semantics-bg-brand-secondary-inversed-static: var(--primitives-brand-blue-800);
+  --semantics-bg-brand-secondary-pressed: var(--primitives-brand-blue-200);
+  --semantics-bg-subtle-tertiary-default: var(--primitives-neutral-gray-100);
+}
+
+[data-theme='dark'] {
+  --semantics-bg-subtle-primary-default: var(--primitives-neutral-default);
+  --semantics-bg-subtle-primary-disabled: var(--primitives-neutral-gray-50);
+  --semantics-bg-subtle-primary-inversed-static: var(--primitives-neutral-gray-50);
+  --semantics-bg-subtle-secondary-default: var(--primitives-neutral-gray-50);
+  --semantics-bg-subtle-secondary-inversed-static: var(--primitives-neutral-default);
+  --semantics-bg-brand-primary-inversed-static: var(--primitives-brand-blue-100);
+  --semantics-bg-brand-secondary-inversed-static: var(--primitives-brand-blue-200);
+}

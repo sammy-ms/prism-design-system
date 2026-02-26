@@ -1,0 +1,9 @@
+<div class="ms-shell" [class.ms-shell--collapsed]="sidebarCollapsed()">
+  <app-sidebar [collapsed]="sidebarCollapsed()" (collapseToggle)="toggleSidebar()" />
+  <div class="ms-shell__main">
+    <app-topbar [pageTitle]="pageTitle()" (sidebarToggle)="toggleSidebar()" />
+    <main class="ms-shell__content">
+      <router-outlet />
+    </main>
+  </div>
+</div>

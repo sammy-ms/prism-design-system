@@ -1,0 +1,2345 @@
+<frame id="1654:22674" name="Frame 2147229289" x="-22" y="-387" width="1564" height="2846.55859375">
+  <frame id="1654:22661" name="Frame 2147229274" x="0" y="0" width="1564" height="180">
+    <frame id="1654:22662" name="Frame 2147229253" x="32" y="32" width="169" height="24">
+      <frame id="1654:22663" name="Prism Logo" x="0" y="0" width="24" height="24">
+        <vector id="1654:22664" name="Vector 5" x="6.444433689117432" y="3.999986171722412" width="11.111111640930176" height="16.000001907348633" />
+      </frame>
+      <text id="1654:22665" name="Prism Design System" x="28" y="3" width="141" height="18" />
+    </frame>
+    <line id="1654:22666" name="Line 11" x="32" y="68" width="1500" height="0" />
+    <frame id="1654:22667" name="Frame 2147229254" x="32" y="80" width="1500" height="68">
+      <frame id="1654:22668" name="Frame 2147229254" x="0" y="0" width="1500" height="68">
+        <text id="1654:22669" name="Icons" x="0" y="0" width="82" height="40" />
+        <text id="1654:22670" name="Icons are visual symbols that represent actions, objects, or concepts. Use them to enhance recognition, save space, and improve navigation." x="0" y="48" width="1500" height="20" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="1037:31637" name=" " x="0" y="180" width="1564" height="2666.55859375">
+    <frame id="1045:2318" name="Icons" x="0" y="0" width="1564" height="2666.55859375">
+      <frame id="1045:1944" name="Arrow-back-up" x="32" y="32" width="229" height="40">
+        <frame id="1045:1945" name="Frame 2147229255" x="0" y="12" width="100" height="16">
+          <frame id="1045:2076" name="arrow-back-up" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1045:1948" name="arrow-back-up" x="0" y="0" width="93" height="16" />
+        </frame>
+        <frame id="1045:1949" name="Icon/arrow-back-up" x="129" y="0" width="100" height="40">
+          <symbol id="1045:2083" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1045:1952" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1045:2085" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1045:2129" name="Gear-play-automation" x="32" y="85.44000244140625" width="229" height="40">
+        <frame id="1045:2130" name="Frame 2147229255" x="0" y="12" width="100" height="16">
+          <frame id="1045:2239" name="automation (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1045:2133" name="automation" x="0" y="0" width="70" height="16" />
+        </frame>
+        <frame id="1045:2134" name="Icon/Gear-play-automation" x="129" y="0" width="100" height="40">
+          <symbol id="1045:2247" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1045:2137" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1045:2249" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1037:32542" name="Book-open" x="325" y="192.31991577148438" width="229" height="40">
+        <frame id="1037:32543" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1037:32563" name="book-open (source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1037:32549" name="Text" x="0" y="0" width="68" height="16" />
+        </frame>
+        <frame id="1037:32550" name="Icon/book-open" x="129" y="0" width="100" height="40">
+          <symbol id="1037:32567" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1037:32555" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1037:32569" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1048:3686" name="Close-X" x="325" y="85.43997192382812" width="229" height="40">
+        <frame id="1048:3687" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1048:3688" name="x" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1048:3690" name="Text" x="0" y="0" width="45" height="16" />
+        </frame>
+        <frame id="1048:3691" name="Icon/x" x="129" y="0" width="100" height="40">
+          <symbol id="361:8336" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1048:3694" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1048:3696" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1037:32574" name="Users" x="325" y="32" width="229" height="40">
+        <frame id="1037:32575" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1037:32590" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1037:32578" name="Text" x="0" y="0" width="34" height="16" />
+        </frame>
+        <frame id="1037:32579" name="Icon/users" x="129" y="0" width="100" height="40">
+          <symbol id="1037:32594" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1037:32582" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1037:32596" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1618:4073" name="Sparkles" x="618" y="32" width="229" height="40">
+        <frame id="1618:4074" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1618:4075" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1618:4077" name="Text" x="0" y="0" width="52" height="16" />
+        </frame>
+        <frame id="1618:4078" name="Icon/sparkles" x="129" y="0" width="100" height="40">
+          <symbol id="361:8341" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="173:4638" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1618:4090" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1045:2142" name="File-bar-chart" x="325" y="726.719482421875" width="229" height="40">
+        <frame id="1045:2143" name="Frame 2147229255" x="0" y="12" width="100" height="16">
+          <frame id="1045:2257" name="file-bar-chart (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1045:2146" name="file-bar-chart" x="0" y="0" width="84" height="16" />
+        </frame>
+        <frame id="1045:2147" name="Icon/file-bar-chart" x="129" y="0" width="100" height="40">
+          <symbol id="1045:2261" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1045:2150" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1045:2263" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1045:1825" name="Server" x="32" y="833.599365234375" width="229" height="40">
+        <frame id="1045:1826" name="Label Container" x="0" y="12" width="100" height="16">
+          <frame id="1045:1844" name="server (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1045:1832" name="Label" x="0" y="0" width="40" height="16" />
+        </frame>
+        <frame id="1045:1833" name="Icon/server" x="129" y="0" width="100" height="40">
+          <symbol id="1045:1848" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1045:1836" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1045:1850" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1045:1931" name="Ticket" x="325" y="1047.359130859375" width="229" height="40">
+        <frame id="1045:1932" name="Frame 2147229255" x="0" y="12" width="100" height="16">
+          <frame id="1045:2055" name="ticket (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1045:1935" name="ticket" x="0" y="0" width="35" height="16" />
+        </frame>
+        <frame id="1045:1936" name="Icon/ticket" x="129" y="0" width="100" height="40">
+          <symbol id="1045:1939" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1045:2064" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1045:2066" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1618:4093" name="Bold" x="618" y="85.43997192382812" width="229" height="40">
+        <frame id="1618:4094" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1618:4095" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1618:4097" name="Text" x="0" y="0" width="28" height="16" />
+        </frame>
+        <frame id="1618:4098" name="Icon/bold" x="129" y="0" width="100" height="40">
+          <symbol id="361:8342" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1618:7954" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1618:7958" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1618:7941" name="Underline" x="911" y="192.31991577148438" width="229" height="40">
+        <frame id="1618:7942" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1618:7943" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1618:7945" name="Text" x="0" y="0" width="58" height="16" />
+        </frame>
+        <frame id="1618:7946" name="Icon/underline" x="129" y="0" width="100" height="40">
+          <symbol id="361:8344" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1621:12928" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1621:12932" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6380:59446" name="Like" x="1208" y="192.31991577148438" width="229" height="40">
+        <frame id="6380:59447" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6380:59448" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6380:59450" name="Text" x="0" y="0" width="25" height="16" />
+        </frame>
+        <frame id="6380:59451" name="Icon/like" x="129" y="0" width="100" height="40">
+          <symbol id="6380:59452" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6380:59456" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6380:59460" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1622:20346" name="Circle-check" x="911" y="32" width="229" height="40">
+        <frame id="1622:20347" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1622:20348" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1622:20350" name="Text" x="0" y="0" width="38" height="16" />
+        </frame>
+        <frame id="1622:20351" name="Icon/Circle-check-solid" x="129" y="0" width="100" height="40">
+          <symbol id="1352:17858" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1622:20374" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1622:20378" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1622:20400" name="Warning" x="911" y="85.43997192382812" width="229" height="40">
+        <frame id="1622:20401" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1622:20402" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1622:20404" name="Text" x="0" y="0" width="50" height="16" />
+        </frame>
+        <frame id="1622:20405" name="Icon/warning" x="129" y="0" width="100" height="40">
+          <symbol id="1352:18014" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1622:20456" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1622:20460" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1622:20315" name="Spinner" x="32" y="192.32000732421875" width="229" height="40">
+        <frame id="1622:20316" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1622:20317" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1622:20319" name="Text" x="0" y="0" width="46" height="16" />
+        </frame>
+        <frame id="1622:20320" name="Icon/Spinner" x="129" y="0" width="100" height="40">
+          <symbol id="1352:17851" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1622:20340" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1622:20343" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1070:2962" name="Circle-exclamation" x="618" y="192.31991577148438" width="229" height="40">
+        <frame id="1070:2963" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1070:2985" name="exclamation-circle (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1070:2966" name="Text" x="0" y="0" width="114" height="16" />
+        </frame>
+        <frame id="1070:2967" name="exclamation-circle" x="129" y="0" width="100" height="40">
+          <symbol id="1070:2970" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1157:98391" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1157:98393" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1622:21152" name="Stack" x="32" y="1261.1187744140625" width="229" height="40">
+        <frame id="1622:21153" name="Frame 2147229255" x="0" y="12" width="100" height="16">
+          <frame id="1622:21154" name="ticket (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1622:21156" name="stack" x="0" y="0" width="34" height="16" />
+        </frame>
+        <frame id="1622:21157" name="Icon/stack" x="129" y="0" width="100" height="40">
+          <symbol id="643:55307" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1622:21169" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1622:21171" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1621:19774" name="Sidebar-right-expand" x="618" y="833.599365234375" width="229" height="40.000003814697266">
+        <frame id="1621:19775" name="Text Container" x="0" y="4.000001907348633" width="100" height="32">
+          <frame id="1621:19776" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1621:19778" name="Text" x="0" y="0" width="87" height="32" />
+        </frame>
+        <frame id="1621:19779" name="Icon/sidebar-right-expand" x="129" y="0" width="100.00000762939453" height="40.000003814697266">
+          <symbol id="464:25434" name="Size=Small (16px)" x="8" y="12.000000953674316" width="16" height="16" />
+          <symbol id="218:2796" name="Size=Medium (20px)" x="56" y="30.000001907348633" width="20.00000174845559" height="20.00000174845559" />
+          <symbol id="1621:19807" name="Size=Large (24px)" x="92" y="32.000003814697266" width="24.000002098146638" height="24.000002098146638" />
+        </frame>
+      </frame>
+      <frame id="1045:1694" name="Device-user" x="32" y="245.760009765625" width="229" height="40">
+        <frame id="1045:1695" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1045:1715" name="id-badge (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1045:1700" name="Label" x="0" y="0" width="57" height="16" />
+        </frame>
+        <frame id="1045:1701" name="Icon/Device-user" x="129" y="0" width="100" height="40">
+          <symbol id="1045:1704" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1045:1724" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1045:1728" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1622:21447" name="At-sign" x="325" y="1314.5587158203125" width="229" height="40">
+        <frame id="1622:21448" name="Frame 2147229255" x="0" y="12" width="100" height="16">
+          <frame id="1622:21449" name="ticket (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1622:21451" name="at-sign" x="0" y="0" width="44" height="16" />
+        </frame>
+        <frame id="1622:21452" name="Icon/at-sign" x="129" y="0" width="100" height="40">
+          <symbol id="514:7813" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1622:21460" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1622:21462" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1050:4270" name="CHeck" x="618" y="1261.1187744140625" width="229" height="40">
+        <frame id="1050:4271" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1050:4285" name="check (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1050:4274" name="Text" x="0" y="0" width="38" height="16" />
+        </frame>
+        <frame id="1050:4275" name="Icon/check" x="129" y="0" width="100" height="40">
+          <symbol id="361:8355" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="205:2345" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1621:13270" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1622:21546" name="Pencil" x="325" y="512.959716796875" width="229" height="40">
+        <frame id="1622:21547" name="Frame 2147229255" x="0" y="12" width="100" height="16">
+          <frame id="1622:21548" name="ticket (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1622:21550" name="pencil" x="0" y="0" width="37" height="16" />
+        </frame>
+        <frame id="1622:21551" name="Icon/pencil" x="129" y="0" width="100" height="40">
+          <symbol id="514:6611" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1622:21563" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1622:21565" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1200:8" name="Folder" x="618" y="1314.5587158203125" width="229" height="40">
+        <frame id="1200:9" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1200:24" name="folder" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1200:12" name="Text" x="0" y="0" width="37" height="16" />
+        </frame>
+        <frame id="1200:13" name="Icon/folder" x="129" y="0" width="100" height="40">
+          <symbol id="1200:28" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1200:16" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1200:30" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1341:7489" name="Truck-delivery" x="618" y="726.719482421875" width="229" height="40">
+        <frame id="1341:7490" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1341:7508" name="truck-delivery" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1341:7493" name="Text" x="0" y="0" width="87" height="16" />
+        </frame>
+        <frame id="1341:7494" name="Icon/truck-delivery" x="129" y="0" width="100" height="40">
+          <symbol id="1341:7517" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1341:7497" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1341:7519" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1621:19832" name="Search" x="325" y="833.599365234375" width="229" height="40">
+        <frame id="1621:19833" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1621:19834" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1621:19836" name="Text" x="0" y="0" width="42" height="16" />
+        </frame>
+        <frame id="1621:19837" name="Icon/search" x="129" y="0" width="100" height="40">
+          <symbol id="501:10859" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1621:19854" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1621:19856" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1622:21329" name="Bookmark" x="618" y="1047.359130859375" width="229" height="40">
+        <frame id="1622:21330" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1622:21331" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1622:21333" name="Text" x="0" y="0" width="62" height="16" />
+        </frame>
+        <frame id="1622:21334" name="Icon/bookmark" x="129" y="0" width="100" height="40">
+          <symbol id="643:54974" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1622:21411" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1622:21413" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1621:13059" name="List" x="911" y="512.959716796875" width="229" height="40">
+        <frame id="1621:13060" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1621:13061" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1621:13063" name="Text" x="0" y="0" width="64" height="16" />
+        </frame>
+        <frame id="1621:13064" name="Icon/list" x="129" y="0" width="100" height="40">
+          <symbol id="361:8350" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="173:4648" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1621:13080" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6682:105642" name="List" x="1208" y="512.959716796875" width="229" height="40">
+        <frame id="6682:105643" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6682:105644" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6682:105646" name="Text" x="0" y="0" width="64" height="16" />
+        </frame>
+        <frame id="6682:105647" name="Icon/unverified" x="129" y="0" width="100" height="40">
+          <symbol id="6682:105648" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6682:105656" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6682:105664" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1341:515" name="Arrow-up" x="618" y="512.959716796875" width="229" height="40">
+        <frame id="1341:516" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1341:7526" name="arrow-up (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1341:519" name="Text" x="0" y="0" width="57" height="16" />
+        </frame>
+        <frame id="1341:520" name="Icon/arrow-up" x="129" y="0" width="100" height="40">
+          <symbol id="1341:7530" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1341:523" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1341:7532" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1045:1957" name="Boxes" x="325" y="245.7598876953125" width="229" height="40">
+        <frame id="1045:1958" name="Frame 2147229255" x="0" y="12" width="100" height="16">
+          <frame id="1045:2092" name="boxes (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1045:1961" name="boxes" x="0" y="0" width="37" height="16" />
+        </frame>
+        <frame id="1045:1962" name="Icon/boxes" x="129" y="0" width="100" height="40">
+          <symbol id="1045:1965" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1045:2096" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1045:2098" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1079:3395" name="Info" x="618" y="245.7598876953125" width="229" height="40">
+        <frame id="1079:3396" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1079:3412" name="info (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1079:3399" name="Text" x="0" y="0" width="24" height="16" />
+        </frame>
+        <frame id="1079:3400" name="Icon/info" x="129" y="0" width="100" height="40">
+          <symbol id="1079:3416" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1079:3427" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1079:3429" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1621:12936" name="Align-left" x="911" y="245.7598876953125" width="229" height="40">
+        <frame id="1621:12937" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1621:12938" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1621:12940" name="Text" x="0" y="0" width="56" height="16" />
+        </frame>
+        <frame id="1621:12941" name="Icon/align-left" x="129" y="0" width="100" height="40">
+          <symbol id="361:8345" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="173:4643" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1621:12957" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6380:59527" name="Unlike" x="1208" y="245.7598876953125" width="229" height="40">
+        <frame id="6380:59528" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6380:59529" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6380:59531" name="Text" x="0" y="0" width="39" height="16" />
+        </frame>
+        <frame id="6380:59532" name="Icon/unlike" x="129" y="0" width="100" height="40">
+          <symbol id="6380:59533" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6380:59535" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6380:59537" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1624:36994" name="List-number" x="32" y="299.20001220703125" width="229" height="40">
+        <frame id="1624:36995" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1624:36996" name="id-badge (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1624:37001" name="Label" x="0" y="0" width="72" height="16" />
+        </frame>
+        <frame id="1624:37002" name="Icon/list-number" x="129" y="0" width="100" height="40">
+          <symbol id="1624:37045" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1624:37047" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1624:37054" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1045:2116" name="Chalkboard" x="325" y="299.1998596191406" width="229" height="40">
+        <frame id="1045:2117" name="Frame 2147229255" x="0" y="12" width="100" height="16">
+          <frame id="1045:2219" name="chalkboard (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1045:2120" name="chalkboard" x="0" y="0" width="69" height="16" />
+        </frame>
+        <frame id="1045:2121" name="Icon/chalkboard" x="129" y="0" width="100" height="40">
+          <symbol id="1045:2226" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1045:2124" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1045:2228" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1097:36061" name="Clock" x="618" y="299.1998596191406" width="229" height="40">
+        <frame id="1097:36062" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1097:36078" name="clock" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1097:36065" name="Text" x="0" y="0" width="33" height="16" />
+        </frame>
+        <frame id="1097:36066" name="Icon/clock" x="129" y="0" width="100" height="40">
+          <symbol id="1097:36082" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1097:36069" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1097:36084" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1621:12961" name="Align-center" x="911" y="299.1998596191406" width="229" height="40">
+        <frame id="1621:12962" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1621:12963" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1621:12965" name="Text" x="0" y="0" width="76" height="16" />
+        </frame>
+        <frame id="1621:12966" name="Icon/align-center" x="129" y="0" width="100" height="40">
+          <symbol id="361:8346" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="173:4644" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1621:12979" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6409:131294" name="Align-center" x="1208" y="299.1998596191406" width="229" height="40">
+        <frame id="6409:131295" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6409:131296" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6409:131298" name="Text" x="0" y="0" width="25" height="16" />
+        </frame>
+        <frame id="6409:131299" name="Icon/grid" x="129" y="0" width="100" height="40">
+          <symbol id="6409:131300" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6409:131305" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6409:131310" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1624:37071" name="List-letters" x="32" y="352.6400146484375" width="229" height="40">
+        <frame id="1624:37072" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1624:37073" name="id-badge (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1624:37078" name="Label" x="0" y="0" width="64" height="16" />
+        </frame>
+        <frame id="1624:37079" name="Icon/list-letters" x="129" y="0" width="100" height="40">
+          <symbol id="1624:37126" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1624:37128" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1624:37136" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1341:8302" name="Triangle-alert" x="325" y="352.63983154296875" width="229" height="40">
+        <frame id="1341:8303" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1341:8318" name="triangle-alert (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1341:8307" name="Text" x="0" y="0" width="81" height="16" />
+        </frame>
+        <frame id="1341:8308" name="Icon/triangle-alert" x="129" y="0" width="100" height="40">
+          <symbol id="1341:8322" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1341:8311" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1341:8324" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1122:19458" name="Calendar" x="618" y="352.63983154296875" width="229" height="40">
+        <frame id="1122:19459" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1122:19475" name="calendar" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1122:19462" name="Text" x="0" y="0" width="54" height="16" />
+        </frame>
+        <frame id="1122:19463" name="Icon/calendar" x="129" y="0" width="100" height="40">
+          <symbol id="1122:19479" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1122:19466" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1122:19481" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1621:12984" name="Align-right" x="911" y="352.63983154296875" width="229" height="40">
+        <frame id="1621:12985" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1621:12986" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1621:12988" name="Text" x="0" y="0" width="64" height="16" />
+        </frame>
+        <frame id="1621:12989" name="Icon/align-right" x="129" y="0" width="100" height="40">
+          <symbol id="361:8347" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="173:4645" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1621:13008" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1718:16224" name="Command" x="32" y="459.519775390625" width="229" height="40">
+        <frame id="1718:16225" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1718:16226" name="id-badge (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1718:16231" name="Label" x="0" y="0" width="62" height="16" />
+        </frame>
+        <frame id="1718:16232" name="Icon/command" x="129" y="0" width="100" height="40">
+          <symbol id="1718:16247" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1718:16249" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1718:16255" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1731:26172" name="Dark-mode" x="32" y="566.3997802734375" width="229" height="40">
+        <frame id="1731:26173" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1731:26174" name="id-badge (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1731:26179" name="Label" x="0" y="0" width="68" height="16" />
+        </frame>
+        <frame id="1731:26180" name="Icon/dark-mode" x="129" y="0" width="100" height="40">
+          <symbol id="1731:26263" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1731:26265" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1731:26270" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1037:31407" name="Dashboard" x="325" y="459.519775390625" width="229" height="40">
+        <frame id="1037:31401" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1037:31402" name="dashboard (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1037:31400" name="Text" x="0" y="0" width="67" height="16" />
+        </frame>
+        <frame id="1037:31380" name="Icon/dashboard" x="129" y="0" width="100" height="40">
+          <symbol id="361:8160" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1037:31381" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="361:7986" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1622:21579" name="Arrow-right" x="618" y="459.519775390625" width="229" height="37.439998626708984">
+        <frame id="1622:21580" name="Container" x="0" y="10.719999313354492" width="100" height="16">
+          <frame id="1622:21581" name="arrow-left" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1622:21583" name="Text" x="0" y="0" width="70" height="16" />
+        </frame>
+        <frame id="1622:21584" name="Icon/arrow-right" x="129" y="-1.2800006866455078" width="100" height="40">
+          <symbol id="1622:21585" name="Size=Small (16px)" x="8" y="28" width="16" height="16" />
+          <symbol id="1622:21587" name="Size=Medium (20px)" x="36" y="30" width="20" height="20" />
+          <symbol id="1622:21589" name="Size=Large (24px)" x="68" y="32" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1621:13033" name="Image" x="911" y="459.519775390625" width="229" height="40">
+        <frame id="1621:13034" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1621:13035" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1621:13037" name="Text" x="0" y="0" width="64" height="16" />
+        </frame>
+        <frame id="1621:13038" name="Icon/image" x="129" y="0" width="100" height="40">
+          <symbol id="361:8349" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="173:4647" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1621:13057" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6666:115498" name="Image" x="1208" y="459.519775390625" width="229" height="40">
+        <frame id="6666:115499" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6666:115500" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6666:115502" name="Text" x="0" y="0" width="104" height="16" />
+        </frame>
+        <frame id="6666:115503" name="Icon/knowledge-base" x="129" y="0" width="100" height="40">
+          <symbol id="6666:115504" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6666:115506" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6666:115508" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1037:32456" name="Devices" x="325" y="566.3997192382812" width="229" height="40">
+        <frame id="1037:32457" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1037:32483" name="devices (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1037:32459" name="Label" x="0" y="0" width="48" height="16" />
+        </frame>
+        <frame id="1037:32460" name="Icon/devices" x="129" y="0" width="100" height="40">
+          <symbol id="1037:32464" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1037:32501" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1037:32505" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1622:21377" name="Arrow-down" x="618" y="566.3997192382812" width="229" height="40">
+        <frame id="1622:21378" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1622:21379" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1622:21381" name="Text" x="0" y="0" width="76" height="16" />
+        </frame>
+        <frame id="1622:21382" name="Icon/arrow-down" x="129" y="0" width="100" height="40">
+          <symbol id="608:7848" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1622:21438" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1622:21440" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1621:13088" name="Table-dashed" x="911" y="566.3997192382812" width="229" height="40">
+        <frame id="1621:13089" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1621:13090" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1621:13092" name="Text" x="0" y="0" width="83" height="16" />
+        </frame>
+        <frame id="1621:13093" name="Icon/table-dashed" x="129" y="0" width="100" height="40">
+          <symbol id="361:8351" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="173:4649" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1621:13124" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6707:104345" name="Table-dashed" x="1208" y="566.3997192382812" width="229" height="40">
+        <frame id="6707:104346" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6707:104347" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6707:104349" name="Text" x="0" y="0" width="39" height="16" />
+        </frame>
+        <frame id="6707:104350" name="Icon/article" x="129" y="0" width="100" height="40">
+          <symbol id="6707:104351" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6707:104356" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6707:104361" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1731:26233" name="Light-mode" x="32" y="512.9597778320312" width="229" height="40">
+        <frame id="1731:26234" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1731:26235" name="id-badge (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1731:26240" name="Label" x="0" y="0" width="68" height="16" />
+        </frame>
+        <frame id="1731:26241" name="Icon/light-mode" x="129" y="0" width="100" height="40">
+          <symbol id="1731:26242" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1731:26245" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1731:26248" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1731:26215" name="Brand-Github" x="32" y="619.8397827148438" width="229" height="40">
+        <frame id="1731:26216" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1731:26217" name="id-badge (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1731:26222" name="Label" x="0" y="0" width="40" height="16" />
+        </frame>
+        <frame id="1731:26223" name="Icon/github" x="129" y="0" width="100" height="40">
+          <symbol id="1731:26277" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1731:26279" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1731:26281" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1045:1858" name="Device-dollar" x="325" y="619.839599609375" width="229" height="40">
+        <frame id="1045:1859" name="Frame 2147229255" x="0" y="12" width="100" height="16">
+          <frame id="1045:1879" name="device-dollar (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1045:1862" name="device-dollar" x="0" y="0" width="82" height="16" />
+        </frame>
+        <frame id="1045:1863" name="Icon/device-dollar" x="129" y="0" width="100" height="40">
+          <symbol id="1045:1889" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1045:1866" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1045:1891" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1341:489" name="External-link" x="618" y="619.839599609375" width="229" height="40">
+        <frame id="1341:490" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1341:504" name="external-link" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1341:493" name="Text" x="0" y="0" width="78" height="16" />
+        </frame>
+        <frame id="1341:494" name="Icon/external-link" x="129" y="0" width="100" height="40">
+          <symbol id="1341:508" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1341:497" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1341:510" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1751:3248" name="Copy" x="32" y="673.279541015625" width="229" height="40">
+        <frame id="1751:3249" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1751:3250" name="id-badge (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1751:3255" name="Label" x="0" y="0" width="31" height="16" />
+        </frame>
+        <frame id="1751:3310" name="Icon/copy" x="129" y="0" width="100" height="40">
+          <symbol id="1751:3311" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1751:3313" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1751:3315" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1045:1897" name="Device-mobile" x="325" y="673.279541015625" width="229" height="40">
+        <frame id="1045:1898" name="Frame 2147229255" x="0" y="12" width="100" height="16">
+          <frame id="1045:1916" name="device-mobile (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1045:1901" name="device-mobile" x="0" y="0" width="89" height="16" />
+        </frame>
+        <frame id="1045:1902" name="Icon/device-mobile" x="129" y="0" width="100" height="40">
+          <symbol id="1045:1905" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1045:1924" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1045:1926" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1200:36" name="File-box" x="618" y="673.279541015625" width="229" height="40">
+        <frame id="1200:37" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1200:53" name="file-box" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1200:40" name="Text" x="0" y="0" width="48" height="16" />
+        </frame>
+        <frame id="1200:41" name="Icon/file-box" x="129" y="0" width="100" height="40">
+          <symbol id="1200:57" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1200:44" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1200:59" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1765:6007" name="History" x="32" y="726.719482421875" width="229" height="40">
+        <frame id="1765:6008" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1765:6009" name="id-badge (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1765:6014" name="Label" x="0" y="0" width="43" height="16" />
+        </frame>
+        <frame id="1765:6015" name="Icon/history" x="129" y="0" width="100" height="40">
+          <symbol id="1765:6027" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1765:6029" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1765:6033" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1045:2155" name="Brand-Apple" x="32" y="138.8800048828125" width="229" height="40">
+        <frame id="1045:2156" name="Frame 2147229255" x="0" y="12" width="100" height="16">
+          <frame id="1045:2273" name="brand-apple" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1045:2159" name="brand-apple" x="0" y="0" width="77" height="16" />
+        </frame>
+        <frame id="1045:2160" name="Icon/brand-apple" x="129" y="0" width="100" height="40">
+          <symbol id="1045:2163" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1045:2280" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1045:2282" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1048:10301" name="Chevrons-up-down" x="325" y="138.87994384765625" width="229" height="40">
+        <frame id="1048:10302" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1048:10316" name="chevrons-up-down (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1048:10305" name="Text" x="0" y="0" width="119" height="16" />
+        </frame>
+        <frame id="1048:10306" name="Icon/chevrons-up-down" x="129" y="0" width="100" height="40">
+          <symbol id="1048:10320" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1674:12213" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1674:12216" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1618:4795" name="Italic" x="618" y="138.87994384765625" width="229" height="40">
+        <frame id="1618:4796" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1618:4797" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1618:4799" name="Text" x="0" y="0" width="29" height="16" />
+        </frame>
+        <frame id="1618:4800" name="Icon/italic" x="129" y="0" width="100" height="40">
+          <symbol id="361:8343" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1618:7963" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1618:7965" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1798:25274" name="Circle-cross" x="911" y="138.87994384765625" width="229" height="40">
+        <frame id="1798:25275" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1798:25276" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1798:25278" name="Text" x="0" y="0" width="73" height="16" />
+        </frame>
+        <frame id="1798:25279" name="Icon/Circle-cross" x="129" y="0" width="100" height="40">
+          <symbol id="1798:25301" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1798:25303" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1798:25307" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1622:21263" name="Copy-plus" x="32" y="780.159423828125" width="229" height="40">
+        <frame id="1622:21264" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1622:21265" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1622:21267" name="Text" x="0" y="0" width="62" height="16" />
+        </frame>
+        <frame id="1622:21268" name="Icon/copy-plus" x="129" y="0" width="100" height="40">
+          <symbol id="643:55054" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1622:21280" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1622:21282" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1618:4822" name="Plus" x="325" y="780.159423828125" width="229" height="40">
+        <frame id="1618:4823" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1618:4824" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1618:4826" name="Text" x="0" y="0" width="26" height="16" />
+        </frame>
+        <frame id="1618:4827" name="Icon/plus" x="129" y="0" width="100" height="40">
+          <symbol id="485:7012" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1618:7754" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1618:7756" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1621:13247" name="Sidebar-left-expand" x="618" y="780.159423828125" width="229" height="40">
+        <frame id="1621:13248" name="Text Container" x="0" y="4" width="100" height="32">
+          <frame id="1621:13249" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1621:13251" name="Text" x="0" y="0" width="78" height="32" />
+        </frame>
+        <frame id="1621:13252" name="Icon/sidebar-left-expand" x="129" y="0" width="100" height="40">
+          <symbol id="361:8356" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1761:4405" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1621:19767" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1048:3674" name="Gear-Setting" x="32" y="887.039306640625" width="229" height="40">
+        <frame id="1048:3675" name="Frame 2147229255" x="0" y="12" width="100" height="16">
+          <frame id="1048:3676" name="settings (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1048:3678" name="settings" x="0" y="0" width="50" height="16" />
+        </frame>
+        <frame id="1048:3679" name="Icon/settings" x="129" y="0" width="100" height="40">
+          <symbol id="1048:3680" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1048:3682" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1048:3684" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1622:21186" name="Star" x="325" y="887.039306640625" width="229" height="40">
+        <frame id="1622:21187" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1622:21188" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1622:21190" name="Text" x="0" y="0" width="24" height="16" />
+        </frame>
+        <frame id="1622:21191" name="Icon/star" x="129" y="0" width="100" height="40">
+          <symbol id="643:55084" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1622:21203" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1622:21205" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1621:19911" name="Minus" x="618" y="887.039306640625" width="229" height="40">
+        <frame id="1621:19912" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1621:19913" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1621:19915" name="Text" x="0" y="0" width="37" height="16" />
+        </frame>
+        <frame id="1621:19916" name="Icon/minus" x="129" y="0" width="100" height="40">
+          <symbol id="1352:2879" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1352:2883" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1621:19935" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1622:20003" name="Upload" x="32" y="1047.359130859375" width="229" height="40">
+        <frame id="1622:20004" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1622:20005" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1622:20007" name="Text" x="0" y="0" width="43" height="16" />
+        </frame>
+        <frame id="1622:20008" name="Icon/upload" x="129" y="0" width="100" height="40">
+          <symbol id="1352:17980" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1622:20022" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1622:20026" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1622:20030" name="File-plus" x="325" y="1261.1187744140625" width="229" height="40">
+        <frame id="1622:20031" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1622:20032" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1622:20034" name="Text" x="0" y="0" width="51" height="16" />
+        </frame>
+        <frame id="1622:20035" name="Icon/file-plus" x="129" y="0" width="100" height="40">
+          <symbol id="1364:5420" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1622:20069" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1622:20074" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1621:13177" name="Eye-closed" x="911" y="619.839599609375" width="229" height="40">
+        <frame id="1621:13178" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1621:13179" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1621:13181" name="Text" x="0" y="0" width="69" height="16" />
+        </frame>
+        <frame id="1621:13182" name="Icon/eye-closed" x="129" y="0" width="100" height="40">
+          <symbol id="361:8353" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="173:3255" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1621:13206" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="7462:138301" name="Eye-closed" x="1208" y="619.839599609375" width="229" height="40">
+        <frame id="7462:138302" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="7462:138303" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="7462:138305" name="Text" x="0" y="0" width="41" height="16" />
+        </frame>
+        <frame id="7462:138306" name="Icon/refund" x="129" y="0" width="100" height="40">
+          <symbol id="7462:138307" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="7462:138314" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="7462:138321" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1621:13213" name="Eye" x="911" y="673.279541015625" width="229" height="40">
+        <frame id="1621:13214" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1621:13215" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1621:13217" name="Text" x="0" y="0" width="23" height="16" />
+        </frame>
+        <frame id="1621:13218" name="Icon/eye" x="129" y="0" width="100" height="40">
+          <symbol id="361:8354" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="173:3256" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1621:13244" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="7462:138384" name="Eye" x="1208" y="673.279541015625" width="229" height="40">
+        <frame id="7462:138385" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="7462:138386" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="7462:138388" name="Text" x="0" y="0" width="27" height="16" />
+        </frame>
+        <frame id="7462:138389" name="Icon/hold" x="129" y="0" width="100" height="40">
+          <symbol id="7462:138390" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="7462:138393" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="7462:138396" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1622:21464" name="Smile" x="911" y="726.719482421875" width="229" height="40">
+        <frame id="1622:21465" name="Frame 2147229255" x="0" y="12" width="100" height="16">
+          <frame id="1622:21466" name="ticket (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1622:21468" name="mood-smile" x="0" y="0" width="74" height="16" />
+        </frame>
+        <frame id="1622:21469" name="Icon/smile" x="129" y="0" width="100" height="40">
+          <symbol id="514:7776" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1622:21477" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1622:21479" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="7462:138400" name="Smile" x="1208" y="726.719482421875" width="229" height="40">
+        <frame id="7462:138401" name="Frame 2147229255" x="0" y="12" width="100" height="16">
+          <frame id="7462:138402" name="ticket (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="7462:138404" name="not-ship" x="0" y="0" width="52" height="16" />
+        </frame>
+        <frame id="7462:138405" name="Icon/not-ship" x="129" y="0" width="100" height="40">
+          <symbol id="7462:138406" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="7462:138409" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="7462:138412" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1805:28823" name="Sad" x="911" y="780.159423828125" width="229" height="40">
+        <frame id="1805:28824" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1805:28825" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1805:28827" name="Text" x="0" y="0" width="23" height="16" />
+        </frame>
+        <frame id="1805:28828" name="Icon/sad" x="129" y="0" width="100" height="40">
+          <symbol id="1805:28907" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1805:28909" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1805:28915" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="7462:138416" name="Sad" x="1208" y="780.159423828125" width="229" height="40">
+        <frame id="7462:138417" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="7462:138418" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="7462:138420" name="Text" x="0" y="0" width="69" height="16" />
+        </frame>
+        <frame id="7462:138421" name="Icon/mark-issue" x="129" y="0" width="100" height="40">
+          <symbol id="7462:138422" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="7462:138428" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="7462:138434" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1805:28838" name="Cry" x="911" y="833.599365234375" width="229" height="40">
+        <frame id="1805:28839" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1805:28840" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1805:28842" name="Text" x="0" y="0" width="20" height="16" />
+        </frame>
+        <frame id="1805:28843" name="Icon/cry" x="129" y="0" width="100" height="40">
+          <symbol id="1805:28921" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1805:28923" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1805:28930" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="7462:138441" name="Cry" x="1208" y="833.599365234375" width="229" height="40">
+        <frame id="7462:138442" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="7462:138443" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="7462:138445" name="Text" x="0" y="0" width="95" height="16" />
+        </frame>
+        <frame id="7462:138446" name="Icon/login-customer" x="129" y="0" width="100" height="40">
+          <symbol id="7462:138447" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="7462:138454" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="7462:138461" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1805:28853" name="Happy" x="911" y="887.039306640625" width="229" height="40">
+        <frame id="1805:28854" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1805:28855" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1805:28857" name="Text" x="0" y="0" width="39" height="16" />
+        </frame>
+        <frame id="1805:28858" name="Icon/happy" x="129" y="0" width="100" height="40">
+          <symbol id="1805:28937" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1805:28939" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1805:28944" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="7462:138469" name="Happy" x="1208" y="887.039306640625" width="229" height="40">
+        <frame id="7462:138470" name="Text Container" x="0" y="4" width="100" height="32">
+          <frame id="7462:138471" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="7462:138473" name="Text" x="0" y="0" width="73" height="32" />
+        </frame>
+        <frame id="7462:138474" name="Icon/mark-suspicous" x="129" y="0" width="100" height="40">
+          <symbol id="7462:138475" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="7462:138480" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="7462:138485" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1037:32410" name="Shopping-bag" x="32" y="940.479248046875" width="229" height="40">
+        <frame id="1037:32411" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1037:32479" name="shopping-bag (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1037:32417" name="Label" x="0" y="0" width="87" height="16" />
+        </frame>
+        <frame id="1037:32418" name="Icon/shopping-bag" x="129" y="0" width="100" height="40">
+          <symbol id="1037:32424" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1037:32444" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1037:32447" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1622:21296" name="Eye-edit" x="325" y="940.479248046875" width="229" height="40">
+        <frame id="1622:21297" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1622:21298" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1622:21300" name="Text" x="0" y="0" width="52" height="16" />
+        </frame>
+        <frame id="1622:21301" name="Icon/eye-edit" x="129" y="0" width="100" height="40">
+          <symbol id="643:55011" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1622:21325" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1622:21327" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1622:20079" name="File-pdf" x="618" y="940.479248046875" width="229" height="40">
+        <frame id="1622:20080" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1622:20081" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1622:20083" name="Text" x="0" y="0" width="46" height="16" />
+        </frame>
+        <frame id="1622:20084" name="Icon/File-pdf" x="129" y="0" width="100" height="40">
+          <symbol id="1366:2780" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1622:20231" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1622:20237" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1945:124562" name="Happy" x="911" y="940.479248046875" width="229" height="40">
+        <frame id="1945:124563" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1945:124564" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1945:124566" name="Text" x="0" y="0" width="70" height="16" />
+        </frame>
+        <frame id="1945:124567" name="notification" x="129" y="0" width="100" height="40">
+          <symbol id="1945:124588" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1945:124590" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1945:124594" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="7462:138491" name="Happy" x="1208" y="940.479248046875" width="229" height="40">
+        <frame id="7462:138492" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="7462:138493" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="7462:138495" name="Text" x="0" y="0" width="84" height="16" />
+        </frame>
+        <frame id="7462:138496" name="Icon/blacklist-user" x="129" y="0" width="100" height="40">
+          <symbol id="7462:138497" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="7462:138501" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="7462:138505" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1045:1611" name="Tags" x="32" y="993.919189453125" width="229" height="40">
+        <frame id="1045:1612" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1045:1629" name="tags (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1045:1615" name="Label" x="0" y="0" width="28" height="16" />
+        </frame>
+        <frame id="1045:1616" name="Icon/tags" x="129" y="0" width="100" height="40">
+          <symbol id="1045:1635" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1045:1619" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1045:1637" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1622:21308" name="Trash" x="325" y="993.919189453125" width="229" height="40">
+        <frame id="1622:21309" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1622:21310" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1622:21312" name="Text" x="0" y="0" width="32" height="16" />
+        </frame>
+        <frame id="1622:21313" name="Icon/trash" x="129" y="0" width="100" height="40">
+          <symbol id="643:54992" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1622:21406" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1622:21408" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1048:10639" name="Chevron-up" x="618" y="993.919189453125" width="229" height="40">
+        <frame id="1048:10640" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1048:10641" name="chevron-down (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1048:10643" name="Text" x="0" y="0" width="72" height="16" />
+        </frame>
+        <frame id="1048:10644" name="Icon/chevron-up" x="129" y="0" width="100" height="40">
+          <symbol id="361:8337" name="Size=Small (16px)" x="8" y="12" width="16.000001907348633" height="15.999999046325684" />
+          <symbol id="1048:10647" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1048:10649" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="2049:8231" name="Happy" x="911" y="993.919189453125" width="229" height="40">
+        <frame id="2049:8232" name="Text Container" x="0" y="4" width="100" height="32">
+          <frame id="2049:8233" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="2049:8235" name="Text" x="0" y="0" width="100" height="32" />
+        </frame>
+        <frame id="2049:8236" name="flag-united states" x="129" y="0" width="100" height="40">
+          <symbol id="2049:8399" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="2049:8381" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="2049:8390" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="2049:8249" name="Happy" x="911" y="1047.359130859375" width="229" height="40">
+        <frame id="2049:8250" name="Text Container" x="0" y="4" width="100" height="32">
+          <frame id="2049:8251" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="2049:8253" name="Text" x="0" y="0" width="100" height="32" />
+        </frame>
+        <frame id="2049:8254" name="flag-united kingdom" x="129" y="0" width="100" height="40">
+          <symbol id="2049:8327" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="2049:8363" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="2049:8345" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1622:20489" name="Download" x="32" y="1100.799072265625" width="229" height="40">
+        <frame id="1622:20490" name="Frame 2147229255" x="0" y="12" width="100" height="16">
+          <frame id="1622:20491" name="ticket (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1622:20493" name="download" x="0" y="0" width="61" height="16" />
+        </frame>
+        <frame id="1622:20494" name="Icon/download" x="129" y="0" width="100" height="40">
+          <symbol id="643:55353" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1622:20507" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1622:20509" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1622:21341" name="Filter" x="325" y="1100.799072265625" width="229" height="40">
+        <frame id="1622:21342" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1622:21343" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1622:21345" name="Text" x="0" y="0" width="29" height="16" />
+        </frame>
+        <frame id="1622:21346" name="Icon/filter" x="129" y="0" width="100" height="40">
+          <symbol id="643:53780" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1622:21420" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1622:21422" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6429:187131" name="Filter" x="618" y="1100.799072265625" width="229" height="40">
+        <frame id="6429:187132" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6429:187133" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6429:187135" name="Text" x="0" y="0" width="55" height="16" />
+        </frame>
+        <frame id="6429:187136" name="filter-dot" x="129" y="0" width="100" height="40">
+          <symbol id="6429:187137" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6429:187139" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6429:187141" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1048:4377" name="Chevron-down" x="911" y="1100.799072265625" width="229" height="40">
+        <frame id="1048:4378" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1048:4392" name="chevron-down (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1048:4381" name="Text" x="0" y="0" width="90" height="16" />
+        </frame>
+        <frame id="1048:4382" name="Icon/chevron-down" x="129" y="0" width="100" height="40">
+          <symbol id="361:8338" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1199:591" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1618:9900" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1622:20511" name="Dots-vertical" x="32" y="1154.2388916015625" width="229" height="40">
+        <frame id="1622:20512" name="Frame 2147229255" x="0" y="12" width="100" height="16">
+          <frame id="1622:20513" name="ticket (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1622:20515" name="dots-vertical" x="0" y="0" width="80" height="16" />
+        </frame>
+        <frame id="1622:20516" name="Icon/dots-vertical" x="129" y="0" width="100" height="40">
+          <symbol id="711:50079" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1622:20571" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1622:20573" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1622:21353" name="Setting" x="325" y="1154.2388916015625" width="229" height="40">
+        <frame id="1622:21354" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1622:21355" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1622:21357" name="Text" x="0" y="0" width="50" height="16" />
+        </frame>
+        <frame id="1622:21358" name="Icon/settings" x="129" y="0" width="100" height="40">
+          <symbol id="643:53766" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1622:21425" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1622:21427" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1097:23882" name="Chevron-left" x="618" y="1154.2388916015625" width="229" height="40">
+        <frame id="1097:23883" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1097:23884" name="chevron-down (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1097:23886" name="Text" x="0" y="0" width="77" height="16" />
+        </frame>
+        <frame id="1097:23887" name="Icon/chevron-left" x="129" y="0" width="100" height="40">
+          <symbol id="361:8339" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1122:18647" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1122:18649" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="2159:106389" name="Happy" x="911" y="1154.2388916015625" width="229" height="40">
+        <frame id="2159:106390" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="2159:106391" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="2159:106393" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="2159:106394" name="drag" x="129" y="0" width="100" height="40">
+          <symbol id="2159:106442" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="2159:106447" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="2159:106457" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1622:20575" name="Dots-horizontal" x="32" y="1207.6788330078125" width="229" height="40">
+        <frame id="1622:20576" name="Frame 2147229255" x="0" y="12" width="100" height="16">
+          <frame id="1622:20577" name="ticket (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1622:20579" name="dots-horizontal" x="0" y="0" width="95" height="16" />
+        </frame>
+        <frame id="1622:20580" name="Icon/dots-horizontal" x="129" y="0" width="100" height="40">
+          <symbol id="643:54675" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1622:20593" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1622:20595" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1622:21365" name="Pin" x="325" y="1207.6788330078125" width="229" height="40">
+        <frame id="1622:21366" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1622:21367" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1622:21369" name="Text" x="0" y="0" width="19" height="16" />
+        </frame>
+        <frame id="1622:21370" name="Icon/pin" x="129" y="0" width="100" height="40">
+          <symbol id="643:44903" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1622:21433" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1622:21435" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1097:23894" name="Chevron-right" x="618" y="1207.6788330078125" width="229" height="40">
+        <frame id="1097:23895" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1097:23896" name="chevron-down (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1097:23898" name="Text" x="0" y="0" width="85" height="16" />
+        </frame>
+        <frame id="1097:23899" name="Icon/chevron-right" x="129" y="0" width="100" height="40">
+          <symbol id="361:8340" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1097:23902" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1122:18667" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="2175:34158" name="Happy" x="911" y="1207.6788330078125" width="229" height="40">
+        <frame id="2175:34159" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="2175:34160" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="2175:34162" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="2175:34163" name="enlarge" x="129" y="0" width="100" height="40">
+          <symbol id="2175:34201" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="2175:34207" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="2175:34212" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="2198:193152" name="History" x="911" y="1261.1187744140625" width="229" height="40">
+        <frame id="2198:193153" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="2198:193154" name="id-badge (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="2198:193159" name="Label" x="0" y="0" width="32" height="16" />
+        </frame>
+        <frame id="2198:193160" name="reset" x="129" y="0" width="100" height="40">
+          <symbol id="2198:193161" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="2198:193165" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="2198:193169" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="2209:47969" name="History" x="32" y="1314.5587158203125" width="229" height="40">
+        <frame id="2209:47970" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="2209:47971" name="id-badge (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="2209:47976" name="Label" x="0" y="0" width="32" height="16" />
+        </frame>
+        <frame id="2209:47977" name="reset" x="129" y="0" width="100" height="40">
+          <symbol id="2209:47978" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="2209:47981" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="2209:47984" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1045:1645" name="Database" x="911" y="1314.5587158203125" width="229" height="40">
+        <frame id="1045:1646" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1045:1667" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1045:1649" name="Text" x="0" y="0" width="58" height="16" />
+        </frame>
+        <frame id="1045:1650" name="Icon/database" x="129" y="0" width="100" height="40">
+          <symbol id="1045:1654" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1045:1676" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1045:1680" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="2209:49931" name="Database" x="32" y="1367.9986572265625" width="229" height="40">
+        <frame id="2209:49932" name="Text Container" x="0" y="4" width="100" height="32">
+          <frame id="2209:49933" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="2209:49937" name="Text" x="0" y="0" width="100" height="32" />
+        </frame>
+        <frame id="2209:49938" name="chevron-solid-down" x="129" y="0" width="100" height="40">
+          <symbol id="2209:49977" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="2209:49979" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="2209:49981" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="2209:49954" name="Database" x="618" y="1367.9986572265625" width="229" height="40">
+        <frame id="2209:49955" name="Text Container" x="0" y="4" width="100" height="32">
+          <frame id="2209:49956" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="2209:49960" name="Text" x="0" y="0" width="100" height="32" />
+        </frame>
+        <frame id="2209:49961" name="chevron-solid-up" x="129" y="0" width="100" height="40">
+          <symbol id="2209:49983" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="2209:49985" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="2209:49987" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="2209:49996" name="Database" x="911" y="1367.9986572265625" width="229" height="40">
+        <frame id="2209:49997" name="Text Container" x="0" y="4" width="100" height="32">
+          <frame id="2209:49998" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="2209:50002" name="Text" x="0" y="0" width="100" height="32" />
+        </frame>
+        <frame id="2209:50003" name="chevron-solid-left" x="129" y="0" width="100" height="40">
+          <symbol id="2209:50035" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="2209:50037" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="2209:50041" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="2245:849593" name="Database" x="32" y="1421.4385986328125" width="229" height="40">
+        <frame id="2245:849594" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="2245:849595" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="2245:849599" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="2245:849600" name="remove" x="129" y="0" width="100" height="40">
+          <symbol id="2245:849611" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="2245:849613" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="2245:849616" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="2421:65988" name="Database" x="325" y="1421.4385986328125" width="229" height="40">
+        <frame id="2421:65989" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="2421:65990" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="2421:65994" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="2421:65995" name="save" x="129" y="0" width="100" height="40">
+          <symbol id="2421:66010" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="2421:66012" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="2421:66016" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="2292:309151" name="Database" x="618" y="1421.4385986328125" width="229" height="40">
+        <frame id="2292:309152" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="2292:309153" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="2292:309157" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="2292:309158" name="multi-column" x="129" y="0" width="100" height="40">
+          <symbol id="2292:309172" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="2292:309174" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="2292:309177" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="2342:214147" name="Database" x="911" y="1421.4385986328125" width="229" height="40">
+        <frame id="2342:214148" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="2342:214149" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="2342:214153" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="2342:214154" name="email" x="129" y="0" width="100" height="40">
+          <symbol id="2387:3390" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="2387:3392" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="2387:3395" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="2390:64502" name="Database" x="32" y="1474.8785400390625" width="229" height="40">
+        <frame id="2390:64503" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="2390:64504" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="2390:64508" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="2390:64509" name="star-filled" x="129" y="0" width="100" height="40">
+          <symbol id="2390:64523" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="2390:64525" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="2390:64527" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="3009:98768" name="Database" x="325" y="1474.8785400390625" width="229" height="40">
+        <frame id="3009:98769" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="3009:98770" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="3009:98774" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="3009:98775" name="archive" x="129" y="0" width="100" height="40">
+          <symbol id="3009:98787" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="3009:98789" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="3009:98793" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="2754:67487" name="Database" x="618" y="1474.8785400390625" width="229" height="40">
+        <frame id="2754:67488" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="2754:67489" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="2754:67493" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="2754:68668" name="sort-ascending" x="129" y="0" width="100" height="40">
+          <symbol id="2754:68669" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="2754:68673" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="2754:68677" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="2754:67501" name="Database" x="911" y="1474.8785400390625" width="229" height="40">
+        <frame id="2754:67502" name="Text Container" x="0" y="4" width="100" height="32">
+          <frame id="2754:67503" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="2754:67507" name="Text" x="0" y="0" width="100" height="32" />
+        </frame>
+        <frame id="2754:68719" name="sort-descending" x="129" y="0" width="100" height="40">
+          <symbol id="2754:68720" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="2754:68724" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="2754:68728" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="2909:214782" name="Database" x="32" y="1528.3184814453125" width="229" height="40">
+        <frame id="2909:214783" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="2909:214784" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="2909:214788" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="2909:214802" name="shipment" x="129" y="0" width="100" height="40">
+          <symbol id="2909:214803" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="2909:214810" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="2909:214817" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="3148:178973" name="Database" x="325" y="1528.3184814453125" width="229" height="40">
+        <frame id="3148:178974" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="3148:178975" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="3148:178979" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="3148:178980" name="credit-card" x="129" y="0" width="100" height="40">
+          <symbol id="3148:179007" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="3148:179009" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="3148:179013" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="3030:104712" name="Database" x="618" y="1528.3184814453125" width="229" height="40">
+        <frame id="3030:104713" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="3030:104714" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="3030:104718" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="3030:104719" name="drag-and-place" x="129" y="0" width="100" height="40">
+          <symbol id="3030:104745" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="3030:104747" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="3030:104750" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="3030:114994" name="Database" x="911" y="1528.3184814453125" width="229" height="40">
+        <frame id="3030:114995" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="3030:114996" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="3030:115000" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="3030:115001" name="horizontal-drag" x="129" y="0" width="100" height="40">
+          <symbol id="3030:115019" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="3030:115021" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="3030:115028" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="3047:140294" name="Database" x="32" y="1581.7584228515625" width="229" height="40">
+        <frame id="3047:140295" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="3047:140296" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="3047:140300" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="3047:140301" name="arrow-drag" x="129" y="0" width="100" height="40">
+          <symbol id="3047:140331" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="3047:140333" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="3047:140340" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="3455:441472" name="Database" x="32" y="1635.1982421875" width="229" height="40">
+        <frame id="3455:441473" name="Text Container" x="0" y="4" width="100" height="32">
+          <frame id="3455:441474" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="3455:441478" name="Text" x="0" y="0" width="100" height="32" />
+        </frame>
+        <frame id="3455:441479" name="flag-afghanistan" x="129" y="0" width="100" height="40">
+          <symbol id="3455:445818" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="3455:445828" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="3455:445821" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="3455:445835" name="Database" x="325" y="1635.1982421875" width="229" height="40">
+        <frame id="3455:445836" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="3455:445837" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="3455:445841" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="3455:445842" name="flag-albania" x="129" y="0" width="100" height="40">
+          <symbol id="3455:445871" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="3455:445873" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="3455:445876" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="3455:445982" name="Database" x="32" y="1688.63818359375" width="229" height="40">
+        <frame id="3455:445983" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="3455:445984" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="3455:445988" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="3455:445989" name="flag-china" x="129" y="0" width="100" height="40">
+          <symbol id="3455:446045" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="3455:446047" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="3455:446055" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="3614:190754" name="Database" x="325" y="1688.63818359375" width="229" height="40">
+        <frame id="3614:190755" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="3614:190756" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="3614:190760" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="3614:190786" name="usps" x="129" y="0" width="100" height="40">
+          <symbol id="3614:190787" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="3614:190793" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="3614:190799" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="3472:496126" name="Database" x="32" y="1742.078125" width="229" height="40">
+        <frame id="3472:496127" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="3472:496128" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="3472:496132" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="3472:496133" name="state" x="129" y="0" width="100" height="40">
+          <symbol id="3472:496156" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="3472:496158" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="3472:496164" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="3472:507622" name="Database" x="325" y="1742.078125" width="229" height="40">
+        <frame id="3472:507623" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="3472:507624" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="3472:507628" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="3472:507629" name="plane" x="129" y="0" width="100" height="40">
+          <symbol id="3472:507655" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="3472:507657" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="3472:507662" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="2209:50010" name="Database" x="325" y="1367.9986572265625" width="229" height="40">
+        <frame id="2209:50011" name="Text Container" x="0" y="4" width="100" height="32">
+          <frame id="2209:50012" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="2209:50016" name="Text" x="0" y="0" width="100" height="32" />
+        </frame>
+        <frame id="2209:50017" name="chevron-solid-right" x="129" y="0" width="100" height="40">
+          <symbol id="2209:50029" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="2209:50031" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="2209:50033" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="4256:150244" name="Database" x="32" y="1795.51806640625" width="229" height="40">
+        <frame id="4256:150245" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="4256:150246" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="4256:150250" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="4256:150251" name="flag-germany" x="129" y="0" width="100" height="40">
+          <symbol id="4256:150252" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="4256:150302" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="4256:150306" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="4258:88172" name="Database" x="325" y="1795.51806640625" width="229" height="40">
+        <frame id="4258:88173" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="4258:88174" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="4258:88178" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="4258:88179" name="flag-japan" x="129" y="0" width="100" height="40">
+          <symbol id="4258:88180" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="4258:88213" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="4258:88217" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="4502:149103" name="Database" x="32" y="1848.9580078125" width="229" height="40">
+        <frame id="4502:149104" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="4502:149105" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="4502:149109" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="4502:149110" name="lithium-battery" x="129" y="0" width="100" height="40">
+          <symbol id="4502:149134" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="4502:149136" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="4502:149140" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="4619:125761" name="Database" x="325" y="1848.9580078125" width="229" height="40">
+        <frame id="4619:125762" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="4619:125763" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="4619:125767" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="4619:125768" name="calendar-today" x="129" y="0" width="100" height="40">
+          <symbol id="4619:125788" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="4619:125790" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="4619:125795" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="3335:127452" name="Database" x="1208" y="32" width="324" height="40">
+        <frame id="3335:127453" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="3335:127454" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="3335:127458" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="3335:127459" name="logo-fedex" x="129" y="0" width="195" height="40">
+          <symbol id="3301:33417" name="Size=Extra Small (12px)" x="8" y="14" width="30" height="12" />
+          <symbol id="3335:127482" name="Size=Medium (20px)" x="50" y="10" width="56" height="20" />
+          <symbol id="3335:127484" name="Size=Large (24px)" x="118" y="8" width="69" height="24" />
+        </frame>
+      </frame>
+      <frame id="3614:190833" name="Database" x="1208" y="85.43997192382812" width="324" height="36">
+        <frame id="3614:190834" name="Text Container" x="0" y="10" width="100" height="16">
+          <frame id="3614:190835" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="3614:190839" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="3614:190840" name="logo-amazon" x="129" y="0" width="195" height="36">
+          <symbol id="3614:190841" name="Size=Extra Small (12px)" x="8" y="12" width="30" height="12" />
+          <symbol id="3614:190885" name="Size=Small (16px)" x="50" y="10" width="40" height="16" />
+          <symbol id="3614:190879" name="Size=Medium (20px)" x="102" y="8" width="50" height="20" />
+        </frame>
+      </frame>
+      <frame id="3335:127486" name="Database" x="1208" y="138.87994384765625" width="324" height="40">
+        <frame id="3335:127487" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="3335:127488" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="3335:127492" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="3335:127493" name="logo-ups" x="129" y="0" width="195" height="40">
+          <symbol id="3326:127187" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="3335:127501" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="3335:127503" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="5443:133821" name="Database" x="325" y="1581.7584228515625" width="229" height="40">
+        <frame id="5443:133822" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="5443:133823" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="5443:133827" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="5443:133828" name="product" x="129" y="0" width="100" height="40">
+          <symbol id="5443:133849" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="5443:133851" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="5443:133855" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="3455:445879" name="Database" x="618" y="1581.7584228515625" width="229" height="40">
+        <frame id="3455:445880" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="3455:445881" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="3455:445885" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="3455:445886" name="flag-algeria" x="129" y="0" width="100" height="40">
+          <symbol id="3455:445909" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="3455:445911" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="3455:445917" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="3471:496054" name="Database" x="618" y="1635.1982421875" width="229" height="40">
+        <frame id="3471:496055" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="3471:496056" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="3471:496060" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="3471:496061" name="country" x="129" y="0" width="100" height="40">
+          <symbol id="3471:496106" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="3471:496116" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="3471:496121" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="4286:216544" name="Database" x="618" y="1688.63818359375" width="229" height="40">
+        <frame id="4286:216545" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="4286:216546" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="4286:216550" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="4286:216551" name="exclamation" x="129" y="0" width="100" height="40">
+          <symbol id="4286:216566" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="4286:216568" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="4286:216572" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="4619:125800" name="Database" x="618" y="1742.078125" width="229" height="40">
+        <frame id="4619:125801" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="4619:125802" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="4619:125806" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="4619:125807" name="price-tag" x="129" y="0" width="100" height="40">
+          <symbol id="4619:125854" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="4619:125863" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="4619:125856" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="4634:114194" name="Database" x="618" y="1795.51806640625" width="229" height="40">
+        <frame id="4634:114195" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="4634:114196" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="4634:114200" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="4634:114201" name="tag" x="129" y="0" width="100" height="40">
+          <symbol id="4634:114215" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="4634:114217" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="4634:114220" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="3455:445923" name="Database" x="911" y="1581.7584228515625" width="229" height="40">
+        <frame id="3455:445924" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="3455:445925" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="3455:445929" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="3455:445930" name="flag-canada" x="129" y="0" width="100" height="40">
+          <symbol id="3455:445962" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="3455:445976" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="3455:445964" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="4256:150221" name="Database" x="911" y="1635.1982421875" width="229" height="40">
+        <frame id="4256:150222" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="4256:150223" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="4256:150227" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="4256:150228" name="flag-france" x="129" y="0" width="100" height="40">
+          <symbol id="4256:150229" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="4256:150285" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="4256:150289" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="4291:257185" name="Database" x="911" y="1688.63818359375" width="229" height="40">
+        <frame id="4291:257186" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="4291:257187" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="4291:257191" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="4291:257192" name="calendar-time" x="129" y="0" width="100" height="40">
+          <symbol id="4291:257212" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="4291:257214" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="4291:257220" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="4619:125870" name="Database" x="911" y="1742.078125" width="229" height="40">
+        <frame id="4619:125871" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="4619:125872" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="4619:125876" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="4619:125877" name="map-pin" x="129" y="0" width="100" height="40">
+          <symbol id="4620:3198" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="4620:3200" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="4620:3204" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="5443:133775" name="Database" x="911" y="1795.51806640625" width="229" height="40">
+        <frame id="5443:133776" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="5443:133777" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="5443:133781" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="5443:133782" name="package" x="129" y="0" width="100" height="40">
+          <symbol id="5443:133809" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="5443:133811" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="5443:133816" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="4634:114165" name="Database" x="618" y="1848.9580078125" width="229" height="40">
+        <frame id="4634:114166" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="4634:114167" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="4634:114171" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="4634:114172" name="shield-check" x="129" y="0" width="100" height="40">
+          <symbol id="4634:114186" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="4634:114188" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="4634:114191" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="4631:111584" name="Database" x="911" y="1848.9580078125" width="229" height="40">
+        <frame id="4631:111585" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="4631:111586" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="4631:111590" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="4631:111591" name="box" x="129" y="0" width="100" height="40">
+          <symbol id="4634:111621" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="4634:114159" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="4634:114162" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="5798:147535" name="Database" x="32" y="1902.39794921875" width="229" height="40">
+        <frame id="5798:147536" name="Text Container" x="0" y="4" width="100" height="32">
+          <frame id="5798:147537" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="5798:147541" name="Text" x="0" y="0" width="100" height="32" />
+        </frame>
+        <frame id="5798:147542" name="package-network" x="129" y="0" width="100" height="40">
+          <symbol id="5798:147560" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="5798:147562" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="5798:147569" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="5837:125411" name="Database" x="325" y="1902.39794921875" width="229" height="40">
+        <frame id="5837:125412" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="5837:125413" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="5837:125417" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="5837:125418" name="supplier" x="129" y="0" width="100" height="40">
+          <symbol id="5837:125444" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="5837:125446" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="5837:125449" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="5837:187853" name="Database" x="618" y="1902.39794921875" width="229" height="40">
+        <frame id="5837:187854" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="5837:187855" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="5837:187859" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="5837:187860" name="call" x="129" y="0" width="100" height="40">
+          <symbol id="5837:187873" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="5837:187875" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="5837:187877" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="5862:139483" name="Database" x="911" y="1902.39794921875" width="229" height="40">
+        <frame id="5862:139484" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="5862:139485" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="5862:139489" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="5862:139490" name="warehouse" x="129" y="0" width="100" height="40">
+          <symbol id="5862:139502" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="5862:139504" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="5862:139508" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="5862:155272" name="Database" x="32" y="1955.837890625" width="229" height="40">
+        <frame id="5862:155273" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="5862:155274" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="5862:155278" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="5862:155279" name="circle-check" x="129" y="0" width="100" height="40">
+          <symbol id="5862:155296" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="5862:155298" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="5862:155301" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="5871:139200" name="Database" x="325" y="1955.837890625" width="229" height="40">
+        <frame id="5871:139201" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="5871:139202" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="5871:139206" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="5871:139207" name="database" x="129" y="0" width="100" height="40">
+          <symbol id="5871:139223" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="5871:139230" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="5871:139225" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6134:178293" name="Database" x="618" y="1955.837890625" width="229" height="40">
+        <frame id="6134:178294" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6134:178295" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6134:178299" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="6134:178300" name="user-round-key" x="129" y="0" width="100" height="40">
+          <symbol id="5966:10696" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6134:178318" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6134:178321" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6149:18709" name="Database" x="911" y="1955.837890625" width="229" height="40">
+        <frame id="6149:18710" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6149:18711" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6149:18715" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="6149:18716" name="globe" x="129" y="0" width="100" height="40">
+          <symbol id="6149:18731" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6149:18737" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6149:18733" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6208:58193" name="Database" x="32" y="2009.27783203125" width="229" height="40">
+        <frame id="6208:58194" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6208:58195" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6208:58199" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="6208:58200" name="speed" x="129" y="0" width="100" height="40">
+          <symbol id="6208:58220" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6208:58222" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6208:58228" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6259:2390" name="Database" x="325" y="2009.27783203125" width="229" height="40">
+        <frame id="6259:2391" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6259:2392" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6259:2396" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="6259:2397" name="report" x="129" y="0" width="100" height="40">
+          <symbol id="6259:2422" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6259:2424" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6259:2429" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6276:62508" name="Database" x="618" y="2009.27783203125" width="229" height="40">
+        <frame id="6276:62509" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6276:62510" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6276:62514" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="6276:62515" name="change" x="129" y="0" width="100" height="40">
+          <symbol id="6276:62516" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6276:62521" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6276:62526" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6429:163496" name="Database" x="911" y="2009.27783203125" width="229" height="40">
+        <frame id="6429:163497" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6429:163498" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6429:163502" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="6429:163503" name="column-group" x="129" y="0" width="100" height="40">
+          <symbol id="6429:163519" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6429:163521" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6429:163525" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6429:168013" name="Database" x="32" y="2062.718505859375" width="229" height="40">
+        <frame id="6429:168014" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6429:168015" name="database (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6429:168019" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="6429:168020" name="unpin" x="129" y="0" width="100" height="40">
+          <symbol id="6429:168041" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6429:168043" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6429:168050" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="2154:144695" name="Happy" x="325" y="2062.7177734375" width="229" height="40">
+        <frame id="2154:144696" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="2154:144697" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="2154:144699" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="2154:144700" name="sort" x="129" y="0" width="100" height="40">
+          <symbol id="2154:144761" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="2154:144763" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="2154:144768" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6510:184588" name="Happy" x="618" y="2062.7177734375" width="229" height="40">
+        <frame id="6510:184589" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6510:184590" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6510:184592" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="6510:184593" name="arrow-left-up" x="129" y="0" width="100" height="40">
+          <symbol id="6510:184613" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6510:184615" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6510:184618" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6510:196996" name="Happy" x="32" y="2116.158447265625" width="229" height="40">
+        <frame id="6510:196997" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6510:196998" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6510:197000" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="6510:197001" name="system-mode" x="129" y="0" width="100" height="40">
+          <symbol id="6510:197018" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6510:197020" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6510:197023" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6528:173910" name="Happy" x="325" y="2116.15771484375" width="229" height="40">
+        <frame id="6528:173911" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6528:173912" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6528:173914" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="6528:173915" name="barcode" x="129" y="0" width="100" height="40">
+          <symbol id="6528:173940" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6528:173949" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6528:173942" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6558:189508" name="Happy" x="618" y="2116.15771484375" width="229" height="40">
+        <frame id="6558:189509" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6558:189510" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6558:189512" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="6558:189513" name="flag" x="129" y="0" width="100" height="40">
+          <symbol id="6558:189543" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6558:189545" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6558:189548" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6558:189551" name="Happy" x="911" y="2116.15771484375" width="229" height="40">
+        <frame id="6558:189552" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6558:189553" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6558:189555" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="6558:189556" name="layout" x="129" y="0" width="100" height="40">
+          <symbol id="6558:189571" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6558:189573" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6558:189577" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6558:189599" name="Happy" x="32" y="2169.598388671875" width="229" height="40">
+        <frame id="6558:189600" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6558:189601" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6558:189603" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="6558:189604" name="list-text" x="129" y="0" width="100" height="40">
+          <symbol id="6558:189621" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6558:189623" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6558:189626" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6609:3806" name="Happy" x="325" y="2169.59765625" width="229" height="40">
+        <frame id="6609:3807" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6609:3808" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6609:3810" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="6609:3811" name="place-marker" x="129" y="0" width="100" height="40">
+          <symbol id="6609:3831" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6609:3834" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6609:3839" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6614:63001" name="Happy" x="618" y="2169.59765625" width="229" height="40">
+        <frame id="6614:63002" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6614:63003" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6614:63005" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="6614:63006" name="help" x="129" y="0" width="100" height="40">
+          <symbol id="6614:63027" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6614:63030" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6614:63034" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6624:3806" name="Happy" x="911" y="2169.59765625" width="229" height="40">
+        <frame id="6624:3807" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6624:3808" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6624:3810" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="6624:3811" name="user-solid" x="129" y="0" width="100" height="40">
+          <symbol id="6624:3829" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6624:3831" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6624:3835" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6624:5784" name="Happy" x="32" y="2223.038330078125" width="229" height="40">
+        <frame id="6624:5785" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6624:5786" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6624:5788" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="6624:5789" name="user" x="129" y="0" width="100" height="40">
+          <symbol id="6624:5806" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6624:5809" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6624:5812" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6746:178327" name="Happy" x="325" y="2223.03759765625" width="229" height="40">
+        <frame id="6746:178328" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6746:178329" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6746:178331" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="6746:178332" name="message" x="129" y="0" width="100" height="40">
+          <symbol id="6746:178357" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6746:178359" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6746:178363" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6746:178367" name="Happy" x="618" y="2223.03759765625" width="229" height="40">
+        <frame id="6746:178368" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6746:178369" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6746:178371" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="6746:178372" name="phone" x="129" y="0" width="100" height="40">
+          <symbol id="6746:178389" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6746:178391" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6746:178394" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6973:21863" name="Happy" x="911" y="2223.03759765625" width="229" height="40">
+        <frame id="6973:21864" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6973:21865" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6973:21867" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="6973:21868" name="csv" x="129" y="0" width="100" height="40">
+          <symbol id="6979:22039" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6979:22041" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6979:22049" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6973:21925" name="Happy" x="32" y="2276.478271484375" width="229" height="40">
+        <frame id="6973:21926" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6973:21927" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6973:21929" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="6973:21930" name="excel" x="129" y="0" width="100" height="40">
+          <symbol id="6979:21973" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6979:22007" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6979:22023" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="7014:185255" name="Happy" x="325" y="2276.4775390625" width="229" height="40">
+        <frame id="7014:185256" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="7014:185257" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="7014:185259" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="7014:185260" name="delay" x="129" y="0" width="100" height="40">
+          <symbol id="7014:185261" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="7014:185277" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="7014:185293" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="7069:3576" name="Happy" x="618" y="2276.4775390625" width="229" height="40">
+        <frame id="7069:3577" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="7069:3578" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="7069:3580" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="7069:3581" name="cloud-arrow" x="129" y="0" width="100" height="40">
+          <symbol id="7069:3594" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="7069:3596" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="7069:3601" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="7083:117" name="Happy" x="911" y="2276.4775390625" width="233" height="40">
+        <frame id="7083:118" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="7083:119" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="7083:121" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="7083:122" name="translate" x="129" y="0" width="104" height="40">
+          <symbol id="7085:70473" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="7085:70475" name="Size=Medium (20px)" x="36" y="8" width="24" height="24" />
+          <symbol id="7085:70485" name="Size=Large (24px)" x="72" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="7155:105327" name="Happy" x="32" y="2329.91796875" width="229" height="40">
+        <frame id="7155:105328" name="Text Container" x="0" y="4" width="100" height="32">
+          <frame id="7155:105329" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="7155:105331" name="Text" x="0" y="0" width="100" height="32" />
+        </frame>
+        <frame id="7155:105332" name="flag-sout-korea" x="129" y="0" width="100" height="40">
+          <symbol id="7155:105516" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="7155:105540" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="7155:105518" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="7155:105363" name="Happy" x="325" y="2329.91748046875" width="229" height="40">
+        <frame id="7155:105364" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="7155:105365" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="7155:105367" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="7155:105368" name="flag-italy" x="129" y="0" width="100" height="40">
+          <symbol id="7155:105577" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="7155:105571" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="7155:105573" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="7155:105399" name="Happy" x="618" y="2329.91748046875" width="229" height="40">
+        <frame id="7155:105400" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="7155:105401" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="7155:105403" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="7155:105404" name="flag-portugal" x="129" y="0" width="100" height="40">
+          <symbol id="7155:105597" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="7155:105599" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="7155:105605" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="7155:105435" name="Happy" x="911" y="2329.91748046875" width="229" height="40">
+        <frame id="7155:105436" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="7155:105437" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="7155:105439" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="7155:105440" name="flag-russia" x="129" y="0" width="100" height="40">
+          <symbol id="7155:105620" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="7155:105626" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="7155:105622" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="7492:12730" name="Happy" x="32" y="2383.35791015625" width="229" height="40">
+        <frame id="7492:12731" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="7492:12732" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="7492:12734" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="7492:12735" name="cursor-solid" x="129" y="0" width="100" height="40">
+          <symbol id="7492:12750" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="7492:12752" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="7492:12754" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="7744:191036" name="Happy" x="325" y="2383.357421875" width="229" height="40">
+        <frame id="7744:191037" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="7744:191038" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="7744:191040" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="7744:191041" name="envelope" x="129" y="0" width="100" height="40">
+          <symbol id="7744:191061" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="7744:191063" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="7744:191068" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="7851:105482" name="Happy" x="618" y="2383.357421875" width="229" height="40">
+        <frame id="7851:105483" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="7851:105484" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="7851:105486" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="7851:105487" name="text-box" x="129" y="0" width="100" height="40">
+          <symbol id="7851:105534" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="7851:105537" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="7851:105540" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="7851:105503" name="Happy" x="911" y="2383.357421875" width="229" height="40">
+        <frame id="7851:105504" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="7851:105505" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="7851:105507" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="7851:105508" name="dropdown" x="129" y="0" width="100" height="40">
+          <symbol id="7851:105535" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="7851:105544" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="7851:105550" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="8107:157975" name="Happy" x="32" y="2436.79736328125" width="229" height="40">
+        <frame id="8107:157976" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="8107:157977" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="8107:157979" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="8107:157980" name="sigma" x="129" y="0" width="100" height="40">
+          <symbol id="8107:158182" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="8107:158184" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="8107:158186" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="8107:158188" name="Close-X" x="325" y="2436.79736328125" width="229" height="37.439971923828125">
+        <frame id="8107:158189" name="Container" x="0" y="10.719985961914062" width="100" height="16">
+          <frame id="8107:158190" name="x" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="8107:158192" name="Text" x="0" y="0" width="35" height="16" />
+        </frame>
+        <frame id="8107:158193" name="mean" x="129" y="-1.2800140380859375" width="100" height="40">
+          <symbol id="8107:158194" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="8107:158196" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="8107:158198" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="8107:158047" name="Happy" x="911" y="2436.79736328125" width="229" height="40">
+        <frame id="8107:158048" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="8107:158049" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="8107:158051" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="8107:158052" name="count-empty" x="129" y="0" width="100" height="40">
+          <symbol id="8107:158173" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="8107:158177" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="8107:158175" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="8107:158095" name="Happy" x="32" y="2490.2373046875" width="229" height="40">
+        <frame id="8107:158096" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="8107:158097" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="8107:158099" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="8107:158100" name="range" x="129" y="0" width="100" height="40">
+          <symbol id="8107:158124" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="8107:158126" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="8107:158130" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="8253:2510" name="Happy" x="325" y="2490.2373046875" width="229" height="40">
+        <frame id="8253:2511" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="8253:2512" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="8253:2514" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="8253:2515" name="permission" x="129" y="0" width="100" height="40">
+          <symbol id="8253:2532" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="8253:2534" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="8253:2537" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="8922:53257" name="Happy" x="618" y="2490.2373046875" width="229" height="40">
+        <frame id="8922:53258" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="8922:53259" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="8922:53261" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="8922:53262" name="procurement" x="129" y="0" width="100" height="40">
+          <symbol id="8922:53283" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="8922:53285" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="8922:53291" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="8922:53402" name="Happy" x="911" y="2490.2373046875" width="229" height="40">
+        <frame id="8922:53403" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="8922:53404" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="8922:53406" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="8922:53407" name="buyback" x="129" y="0" width="100" height="40">
+          <symbol id="8922:53434" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="8922:53436" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="8922:53443" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="8922:53603" name="Happy" x="32" y="2543.67724609375" width="229" height="40">
+        <frame id="8922:53604" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="8922:53605" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="8922:53607" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="8922:53608" name="graduation-cap" x="129" y="0" width="100" height="40">
+          <symbol id="8922:53637" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="8922:53639" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="8922:53643" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="8923:1502" name="Happy" x="325" y="2543.67724609375" width="229" height="40">
+        <frame id="8923:1503" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="8923:1504" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="8923:1506" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="8923:1507" name="folder-setting" x="129" y="0" width="100" height="40">
+          <symbol id="8923:1520" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="8923:1522" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="8923:1526" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="8923:17611" name="Happy" x="618" y="2543.67724609375" width="229" height="40">
+        <frame id="8923:17612" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="8923:17613" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="8923:17615" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="8923:17616" name="light-bulb" x="129" y="0" width="100" height="40">
+          <symbol id="8923:17635" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="8923:17637" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="8923:17642" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="8923:22284" name="Happy" x="911" y="2543.67724609375" width="229" height="40">
+        <frame id="8923:22285" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="8923:22286" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="8923:22288" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="8923:22289" name="setting-tool" x="129" y="0" width="100" height="40">
+          <symbol id="8923:22321" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="8923:22323" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="8923:22326" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="9019:2824" name="Happy" x="32" y="2597.1171875" width="229" height="40">
+        <frame id="9019:2825" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="9019:2826" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="9019:2828" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="9019:2829" name="flag-finland" x="129" y="0" width="100" height="40">
+          <symbol id="9019:2846" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="9019:2848" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="9019:2851" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6606:109532" name="Globe - Languages" x="1208" y="352.63983154296875" width="229" height="40">
+        <text id="6606:109533" name="Text" x="0" y="4" width="100" height="32" />
+        <frame id="6606:105678" name="Globe - Languages" x="129" y="0" width="100" height="40">
+          <symbol id="6606:105677" name="Size=Default" x="8" y="12" width="16" height="16" />
+          <symbol id="6606:105676" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6606:105675" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1624:37188" name="Image-plus" x="32" y="406.0798034667969" width="229" height="40">
+        <frame id="1624:37189" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1624:37190" name="id-badge (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1624:37195" name="Label" x="0" y="0" width="70" height="16" />
+        </frame>
+        <frame id="1624:37196" name="Icon/image-plus" x="129" y="0" width="100" height="40">
+          <symbol id="1624:37230" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1624:37232" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1624:37234" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1045:2103" name="Circle-code" x="325" y="406.0798034667969" width="229" height="40">
+        <frame id="1045:2104" name="Frame 2147229255" x="0" y="12" width="100" height="16">
+          <frame id="1045:2199" name="code-circle (Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1045:2107" name="code-circle" x="0" y="0" width="71" height="16" />
+        </frame>
+        <frame id="1045:2108" name="Icon/circle-code" x="129" y="0" width="100" height="40">
+          <symbol id="1045:2207" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1045:2111" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1045:2209" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1189:3901" name="Arrow-left" x="618" y="406.0798034667969" width="229" height="40">
+        <frame id="1189:3902" name="Container" x="0" y="12" width="100" height="16">
+          <frame id="1189:3918" name="arrow-left" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1189:3905" name="Text" x="0" y="0" width="62" height="16" />
+        </frame>
+        <frame id="1189:3906" name="Icon/arrow-left" x="129" y="0" width="100" height="40">
+          <symbol id="1189:3922" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="1189:3909" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1189:3924" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="1621:13010" name="Link" x="911" y="406.0798034667969" width="229" height="40">
+        <frame id="1621:13011" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="1621:13012" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="1621:13014" name="Text" x="0" y="0" width="64" height="16" />
+        </frame>
+        <frame id="1621:13015" name="Icon/link" x="129" y="0" width="100" height="40">
+          <symbol id="361:8348" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="173:4646" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="1621:13028" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6614:2848" name="Globe - Languages" x="1208" y="406.0798034667969" width="215" height="40">
+        <text id="6614:2849" name="Text" x="0" y="4" width="100" height="32" />
+        <frame id="6614:2850" name="logo-mobilesentrix" x="129" y="0" width="86" height="40">
+          <symbol id="6614:2878" name="Size=Large" x="8" y="8" width="70" height="24" />
+        </frame>
+      </frame>
+      <frame id="8107:158134" name="Happy" x="618" y="2436.79736328125" width="229" height="40">
+        <frame id="8107:158135" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="8107:158136" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="8107:158138" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="8107:158139" name="hashtag" x="129" y="0" width="100" height="40">
+          <symbol id="8107:158158" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="8107:158160" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="8107:158165" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="8246:17823" name="Happy" x="1208" y="993.919189453125" width="229" height="40">
+        <frame id="8246:17824" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="8246:17825" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="8246:17827" name="Text" x="0" y="0" width="42" height="16" />
+        </frame>
+        <frame id="8246:17828" name="Icon/asterik" x="129" y="0" width="100" height="40">
+          <symbol id="8246:17871" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="8246:17869" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="8246:17847" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="6510:184793" name="Happy" x="911" y="2062.7177734375" width="229" height="40">
+        <frame id="6510:184794" name="Text Container" x="0" y="12" width="100" height="16">
+          <frame id="6510:184795" name="users(Source)" x="0" y="0" width="20" height="20" hidden="true" />
+          <text id="6510:184797" name="Text" x="0" y="0" width="100" height="16" />
+        </frame>
+        <frame id="6510:184798" name="log-out" x="129" y="0" width="100" height="40">
+          <symbol id="6510:184813" name="Size=Small (16px)" x="8" y="12" width="16" height="16" />
+          <symbol id="6510:184815" name="Size=Medium (20px)" x="36" y="10" width="20" height="20" />
+          <symbol id="6510:184819" name="Size=Large (24px)" x="68" y="8" width="24" height="24" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+</frame>

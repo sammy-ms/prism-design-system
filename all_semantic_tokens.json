@@ -1,0 +1,3250 @@
+{
+  "Background": [
+    {
+      "name": "semantics/bg/subtle/primary/default",
+      "light_prim": "primitives/neutral/gray-50",
+      "light_hex": "#F5F5F5",
+      "dark_prim": "primitives/neutral/default",
+      "dark_hex": "#0E0F10"
+    },
+    {
+      "name": "semantics/bg/subtle/primary/disabled",
+      "light_prim": "primitives/neutral/gray-100",
+      "light_hex": "#EBEBEB",
+      "dark_prim": "primitives/neutral/gray-50",
+      "dark_hex": "#14171A"
+    },
+    {
+      "name": "semantics/bg/subtle/primary/hover",
+      "light_prim": "primitives/neutral/gray-100",
+      "light_hex": "#EBEBEB",
+      "dark_prim": "primitives/neutral/gray-100",
+      "dark_hex": "#1B1F22"
+    },
+    {
+      "name": "semantics/bg/subtle/primary/inversed-dynamic",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/bg/subtle/primary/inversed-static",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-50",
+      "dark_hex": "#14171A"
+    },
+    {
+      "name": "semantics/bg/subtle/primary/pressed",
+      "light_prim": "primitives/neutral/gray-100",
+      "light_hex": "#EBEBEB",
+      "dark_prim": "primitives/neutral/gray-100",
+      "dark_hex": "#1B1F22"
+    },
+    {
+      "name": "semantics/bg/subtle/secondary/default",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/gray-50",
+      "dark_hex": "#14171A"
+    },
+    {
+      "name": "semantics/bg/subtle/secondary/hover",
+      "light_prim": "primitives/neutral/gray-50",
+      "light_hex": "#F5F5F5",
+      "dark_prim": "primitives/neutral/gray-50",
+      "dark_hex": "#14171A"
+    },
+    {
+      "name": "semantics/bg/subtle/secondary/inversed-dynamic",
+      "light_prim": "primitives/neutral/inversed",
+      "light_hex": "#0E0F10",
+      "dark_prim": "primitives/neutral/inversed",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/bg/subtle/secondary/inversed-static",
+      "light_prim": "primitives/neutral/inversed",
+      "light_hex": "#0E0F10",
+      "dark_prim": "primitives/neutral/default",
+      "dark_hex": "#0E0F10"
+    },
+    {
+      "name": "semantics/bg/subtle/secondary/pressed",
+      "light_prim": "primitives/neutral/gray-50",
+      "light_hex": "#F5F5F5",
+      "dark_prim": "primitives/neutral/gray-50",
+      "dark_hex": "#14171A"
+    },
+    {
+      "name": "semantics/bg/subtle/tertiary/hover",
+      "light_prim": "primitives/neutral/gray-200",
+      "light_hex": "#E0E0E0",
+      "dark_prim": "primitives/neutral/gray-200",
+      "dark_hex": "#22262B"
+    },
+    {
+      "name": "semantics/bg/subtle/tertiary/pressed",
+      "light_prim": "primitives/neutral/gray-200",
+      "light_hex": "#E0E0E0",
+      "dark_prim": "primitives/neutral/gray-200",
+      "dark_hex": "#22262B"
+    },
+    {
+      "name": "semantics/bg/brand/primary/default",
+      "light_prim": "primitives/brand/blue-50",
+      "light_hex": "#E5F2FF",
+      "dark_prim": "primitives/brand/blue-50",
+      "dark_hex": "#01203C"
+    },
+    {
+      "name": "semantics/bg/brand/primary/hover",
+      "light_prim": "primitives/brand/blue-100",
+      "light_hex": "#B7DCFF",
+      "dark_prim": "primitives/brand/blue-100",
+      "dark_hex": "#023564"
+    },
+    {
+      "name": "semantics/bg/brand/primary/inversed-dynamic",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-900",
+      "dark_hex": "#C8E3FE"
+    },
+    {
+      "name": "semantics/bg/brand/primary/inversed-static",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-100",
+      "dark_hex": "#023564"
+    },
+    {
+      "name": "semantics/bg/brand/primary/pressed",
+      "light_prim": "primitives/brand/blue-100",
+      "light_hex": "#B7DCFF",
+      "dark_prim": "primitives/brand/blue-100",
+      "dark_hex": "#023564"
+    },
+    {
+      "name": "semantics/bg/brand/secondary/default",
+      "light_prim": "primitives/brand/blue-100",
+      "light_hex": "#B7DCFF",
+      "dark_prim": "primitives/brand/blue-100",
+      "dark_hex": "#023564"
+    },
+    {
+      "name": "semantics/bg/brand/secondary/hover",
+      "light_prim": "primitives/brand/blue-200",
+      "light_hex": "#8AC6FF",
+      "dark_prim": "primitives/brand/blue-200",
+      "dark_hex": "#034A8C"
+    },
+    {
+      "name": "semantics/bg/brand/secondary/inversed-dynamic",
+      "light_prim": "primitives/brand/blue-800",
+      "light_hex": "#004585",
+      "dark_prim": "primitives/brand/blue-800",
+      "dark_hex": "#9BCDFD"
+    },
+    {
+      "name": "semantics/bg/brand/secondary/inversed-static",
+      "light_prim": "primitives/brand/blue-800",
+      "light_hex": "#004585",
+      "dark_prim": "primitives/brand/blue-200",
+      "dark_hex": "#034A8C"
+    },
+    {
+      "name": "semantics/bg/brand/secondary/pressed",
+      "light_prim": "primitives/brand/blue-200",
+      "light_hex": "#8AC6FF",
+      "dark_prim": "primitives/brand/blue-200",
+      "dark_hex": "#034A8C"
+    },
+    {
+      "name": "semantics/bg/subtle/tertiary/default",
+      "light_prim": "primitives/neutral/gray-100",
+      "light_hex": "#EBEBEB",
+      "dark_prim": "primitives/neutral/gray-100",
+      "dark_hex": "#1B1F22"
+    }
+  ],
+  "Fill": [
+    {
+      "name": "semantics/fill/subtle/primary/default",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/fill/subtle/primary/disabled",
+      "light_prim": "primitives/neutral/gray-100",
+      "light_hex": "#EBEBEB",
+      "dark_prim": "primitives/neutral/gray-100",
+      "dark_hex": "#1B1F22"
+    },
+    {
+      "name": "semantics/fill/subtle/primary/focus",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/fill/subtle/primary/hover",
+      "light_prim": "primitives/neutral/gray-800",
+      "light_hex": "#6A6B6D",
+      "dark_prim": "primitives/neutral/gray-800",
+      "dark_hex": "#677583"
+    },
+    {
+      "name": "semantics/fill/subtle/primary/inversed-dynamic",
+      "light_prim": "primitives/neutral/gray-50",
+      "light_hex": "#F5F5F5",
+      "dark_prim": "primitives/neutral/gray-50",
+      "dark_hex": "#14171A"
+    },
+    {
+      "name": "semantics/fill/subtle/primary/inversed-static",
+      "light_prim": "primitives/neutral/gray-50",
+      "light_hex": "#F5F5F5",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/fill/subtle/primary/pressed",
+      "light_prim": "primitives/neutral/gray-800",
+      "light_hex": "#6A6B6D",
+      "dark_prim": "primitives/neutral/gray-800",
+      "dark_hex": "#677583"
+    },
+    {
+      "name": "semantics/fill/subtle/secondary/default",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/gray-100",
+      "dark_hex": "#1B1F22"
+    },
+    {
+      "name": "semantics/fill/subtle/secondary/focus",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/gray-100",
+      "dark_hex": "#1B1F22"
+    },
+    {
+      "name": "semantics/fill/subtle/secondary/hover",
+      "light_prim": "primitives/neutral/gray-50",
+      "light_hex": "#F5F5F5",
+      "dark_prim": "primitives/neutral/gray-200",
+      "dark_hex": "#22262B"
+    },
+    {
+      "name": "semantics/fill/subtle/secondary/inversed-dynamic",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/fill/subtle/secondary/inversed-static",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-100",
+      "dark_hex": "#1B1F22"
+    },
+    {
+      "name": "semantics/fill/subtle/secondary/pressed",
+      "light_prim": "primitives/neutral/gray-100",
+      "light_hex": "#EBEBEB",
+      "dark_prim": "primitives/neutral/gray-300",
+      "dark_hex": "#282E33"
+    },
+    {
+      "name": "semantics/fill/subtle/tertiary/default",
+      "light_prim": "primitives/neutral/gray-100",
+      "light_hex": "#EBEBEB",
+      "dark_prim": "primitives/neutral/gray-100",
+      "dark_hex": "#1B1F22"
+    },
+    {
+      "name": "semantics/fill/subtle/tertiary/focus",
+      "light_prim": "primitives/neutral/gray-100",
+      "light_hex": "#EBEBEB",
+      "dark_prim": "primitives/neutral/gray-100",
+      "dark_hex": "#1B1F22"
+    },
+    {
+      "name": "semantics/fill/subtle/tertiary/hover",
+      "light_prim": "primitives/neutral/gray-200",
+      "light_hex": "#E0E0E0",
+      "dark_prim": "primitives/neutral/gray-200",
+      "dark_hex": "#22262B"
+    },
+    {
+      "name": "semantics/fill/subtle/tertiary/pressed",
+      "light_prim": "primitives/neutral/gray-200",
+      "light_hex": "#E0E0E0",
+      "dark_prim": "primitives/neutral/gray-500",
+      "dark_hex": "#363D44"
+    },
+    {
+      "name": "semantics/fill/brand/default",
+      "light_prim": "primitives/brand/blue-500",
+      "light_hex": "#0084FF",
+      "dark_prim": "primitives/brand/blue-500",
+      "dark_hex": "#148BFA"
+    },
+    {
+      "name": "semantics/fill/brand/focus",
+      "light_prim": "primitives/brand/blue-500",
+      "light_hex": "#0084FF",
+      "dark_prim": "primitives/brand/blue-500",
+      "dark_hex": "#148BFA"
+    },
+    {
+      "name": "semantics/fill/brand/hover",
+      "light_prim": "primitives/brand/blue-600",
+      "light_hex": "#006FD6",
+      "dark_prim": "primitives/brand/blue-600",
+      "dark_hex": "#41A1FB"
+    },
+    {
+      "name": "semantics/fill/brand/pressed",
+      "light_prim": "primitives/brand/blue-700",
+      "light_hex": "#005AAD",
+      "dark_prim": "primitives/brand/blue-700",
+      "dark_hex": "#73B9FC"
+    },
+    {
+      "name": "semantics/fill/status/error/primary/default",
+      "light_prim": "primitives/error/red-500",
+      "light_hex": "#DA3E37",
+      "dark_prim": "primitives/error/red-500",
+      "dark_hex": "#E64D47"
+    },
+    {
+      "name": "semantics/fill/status/error/primary/focus",
+      "light_prim": "primitives/error/red-500",
+      "light_hex": "#DA3E37",
+      "dark_prim": "primitives/error/red-500",
+      "dark_hex": "#E64D47"
+    },
+    {
+      "name": "semantics/fill/status/error/primary/hover",
+      "light_prim": "primitives/error/red-600",
+      "light_hex": "#AE302A",
+      "dark_prim": "primitives/error/red-600",
+      "dark_hex": "#E7716E"
+    },
+    {
+      "name": "semantics/fill/status/error/primary/pressed",
+      "light_prim": "primitives/error/red-700",
+      "light_hex": "#85221E",
+      "dark_prim": "primitives/error/red-700",
+      "dark_hex": "#EB908E"
+    },
+    {
+      "name": "semantics/fill/status/error/secondary/default",
+      "light_prim": "primitives/error/red-500-10",
+      "light_hex": "#DA3E37 @10%",
+      "dark_prim": "primitives/error/red-500-25",
+      "dark_hex": "#E64D47 @25%"
+    },
+    {
+      "name": "semantics/fill/status/error/secondary/disabled",
+      "light_prim": "primitives/error/red-500-15",
+      "light_hex": "#DA3E37 @15%",
+      "dark_prim": "primitives/error/red-500-25",
+      "dark_hex": "#E64D47 @25%"
+    },
+    {
+      "name": "semantics/fill/status/error/secondary/focus",
+      "light_prim": "primitives/error/red-500-10",
+      "light_hex": "#DA3E37 @10%",
+      "dark_prim": "primitives/error/red-500-25",
+      "dark_hex": "#E64D47 @25%"
+    },
+    {
+      "name": "semantics/fill/status/error/secondary/hover",
+      "light_prim": "primitives/error/red-500-25",
+      "light_hex": "#DA3E37 @25%",
+      "dark_prim": "primitives/error/red-500-50",
+      "dark_hex": "#E64D47 @50%"
+    },
+    {
+      "name": "semantics/fill/status/error/secondary/pressed",
+      "light_prim": "primitives/error/red-500-25",
+      "light_hex": "#DA3E37 @25%",
+      "dark_prim": "primitives/error/red-500-50",
+      "dark_hex": "#E64D47 @50%"
+    },
+    {
+      "name": "semantics/fill/status/info/primary/default",
+      "light_prim": "primitives/brand/blue-500",
+      "light_hex": "#0084FF",
+      "dark_prim": "primitives/brand/blue-500",
+      "dark_hex": "#148BFA"
+    },
+    {
+      "name": "semantics/fill/status/info/primary/focus",
+      "light_prim": "primitives/brand/blue-500",
+      "light_hex": "#0084FF",
+      "dark_prim": "primitives/brand/blue-500",
+      "dark_hex": "#148BFA"
+    },
+    {
+      "name": "semantics/fill/status/info/primary/hover",
+      "light_prim": "primitives/brand/blue-600",
+      "light_hex": "#006FD6",
+      "dark_prim": "primitives/brand/blue-600",
+      "dark_hex": "#41A1FB"
+    },
+    {
+      "name": "semantics/fill/status/info/primary/pressed",
+      "light_prim": "primitives/brand/blue-700",
+      "light_hex": "#005AAD",
+      "dark_prim": "primitives/brand/blue-700",
+      "dark_hex": "#73B9FC"
+    },
+    {
+      "name": "semantics/fill/status/info/secondary/default",
+      "light_prim": "primitives/brand/blue-500-10",
+      "light_hex": "#0084FF @10%",
+      "dark_prim": "primitives/brand/blue-500-25",
+      "dark_hex": "#148BFA @25%"
+    },
+    {
+      "name": "semantics/fill/status/info/secondary/disabled",
+      "light_prim": "primitives/brand/blue-500-15",
+      "light_hex": "#0084FF @15%",
+      "dark_prim": "primitives/brand/blue-500-25",
+      "dark_hex": "#148BFA @25%"
+    },
+    {
+      "name": "semantics/fill/status/info/secondary/focus",
+      "light_prim": "primitives/brand/blue-500-10",
+      "light_hex": "#0084FF @10%",
+      "dark_prim": "primitives/brand/blue-500-25",
+      "dark_hex": "#148BFA @25%"
+    },
+    {
+      "name": "semantics/fill/status/info/secondary/hover",
+      "light_prim": "primitives/brand/blue-500-25",
+      "light_hex": "#0084FF @25%",
+      "dark_prim": "primitives/brand/blue-500-50",
+      "dark_hex": "#148BFA @50%"
+    },
+    {
+      "name": "semantics/fill/status/info/secondary/pressed",
+      "light_prim": "primitives/brand/blue-500-25",
+      "light_hex": "#0084FF @25%",
+      "dark_prim": "primitives/brand/blue-500-50",
+      "dark_hex": "#148BFA @50%"
+    },
+    {
+      "name": "semantics/fill/status/subtle/primary/default",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/fill/status/subtle/primary/focus",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/fill/status/subtle/primary/hover",
+      "light_prim": "primitives/neutral/gray-800",
+      "light_hex": "#6A6B6D",
+      "dark_prim": "primitives/neutral/gray-800",
+      "dark_hex": "#677583"
+    },
+    {
+      "name": "semantics/fill/status/subtle/primary/inversed-dynamic",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/default",
+      "dark_hex": "#0E0F10"
+    },
+    {
+      "name": "semantics/fill/status/subtle/primary/inversed-static",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/inversed",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/fill/status/subtle/primary/pressed",
+      "light_prim": "primitives/neutral/gray-800",
+      "light_hex": "#6A6B6D",
+      "dark_prim": "primitives/neutral/gray-800",
+      "dark_hex": "#677583"
+    },
+    {
+      "name": "semantics/fill/status/subtle/secondary/default",
+      "light_prim": "primitives/neutral/black-shade-10",
+      "light_hex": "#1F2428 @10%",
+      "dark_prim": "primitives/neutral/black-shade-10",
+      "dark_hex": "#FFFFFF @10%"
+    },
+    {
+      "name": "semantics/fill/status/subtle/secondary/disabled",
+      "light_prim": "primitives/neutral/gray-200",
+      "light_hex": "#E0E0E0",
+      "dark_prim": "primitives/neutral/gray-200",
+      "dark_hex": "#22262B"
+    },
+    {
+      "name": "semantics/fill/status/subtle/secondary/focus",
+      "light_prim": "primitives/neutral/black-shade-10",
+      "light_hex": "#1F2428 @10%",
+      "dark_prim": "primitives/neutral/black-shade-10",
+      "dark_hex": "#FFFFFF @10%"
+    },
+    {
+      "name": "semantics/fill/status/subtle/secondary/hover",
+      "light_prim": "primitives/neutral/black-shade-15",
+      "light_hex": "#1F2428 @15%",
+      "dark_prim": "primitives/neutral/black-shade-15",
+      "dark_hex": "#FFFFFF @15%"
+    },
+    {
+      "name": "semantics/fill/status/subtle/secondary/inversed-dynamic",
+      "light_prim": "primitives/neutral/50-tint-15",
+      "light_hex": "#F5F5F5 @15%",
+      "dark_prim": "primitives/neutral/50-tint-15",
+      "dark_hex": "#1F2428 @15%"
+    },
+    {
+      "name": "semantics/fill/status/subtle/secondary/inversed-static",
+      "light_prim": "primitives/neutral/50-tint-15",
+      "light_hex": "#F5F5F5 @15%",
+      "dark_prim": "primitives/neutral/black-shade-15",
+      "dark_hex": "#FFFFFF @15%"
+    },
+    {
+      "name": "semantics/fill/status/subtle/secondary/pressed",
+      "light_prim": "primitives/neutral/black-shade-25",
+      "light_hex": "#1F2428 @25%",
+      "dark_prim": "primitives/neutral/black-shade-25",
+      "dark_hex": "#FFFFFF @25%"
+    },
+    {
+      "name": "semantics/fill/status/success/primary/default",
+      "light_prim": "primitives/success/green-500",
+      "light_hex": "#00935C",
+      "dark_prim": "primitives/success/green-500",
+      "dark_hex": "#3C9F7B"
+    },
+    {
+      "name": "semantics/fill/status/success/primary/focus",
+      "light_prim": "primitives/success/green-500",
+      "light_hex": "#00935C",
+      "dark_prim": "primitives/success/green-500",
+      "dark_hex": "#3C9F7B"
+    },
+    {
+      "name": "semantics/fill/status/success/primary/hover",
+      "light_prim": "primitives/success/green-600",
+      "light_hex": "#007C4E",
+      "dark_prim": "primitives/success/green-600",
+      "dark_hex": "#55B995"
+    },
+    {
+      "name": "semantics/fill/status/success/primary/pressed",
+      "light_prim": "primitives/success/green-700",
+      "light_hex": "#00663F",
+      "dark_prim": "primitives/success/green-700",
+      "dark_hex": "#6DC5A5"
+    },
+    {
+      "name": "semantics/fill/status/success/secondary/default",
+      "light_prim": "primitives/success/green-500-10",
+      "light_hex": "#00935C @10%",
+      "dark_prim": "primitives/success/green-500-25",
+      "dark_hex": "#3C9F7B @25%"
+    },
+    {
+      "name": "semantics/fill/status/success/secondary/disabled",
+      "light_prim": "primitives/success/green-500-15",
+      "light_hex": "#00935C @15%",
+      "dark_prim": "primitives/success/green-500-25",
+      "dark_hex": "#3C9F7B @25%"
+    },
+    {
+      "name": "semantics/fill/status/success/secondary/focus",
+      "light_prim": "primitives/success/green-500-10",
+      "light_hex": "#00935C @10%",
+      "dark_prim": "primitives/success/green-500-25",
+      "dark_hex": "#3C9F7B @25%"
+    },
+    {
+      "name": "semantics/fill/status/success/secondary/hover",
+      "light_prim": "primitives/success/green-500-25",
+      "light_hex": "#00935C @25%",
+      "dark_prim": "primitives/success/green-500-50",
+      "dark_hex": "#3C9F7B @50%"
+    },
+    {
+      "name": "semantics/fill/status/success/secondary/pressed",
+      "light_prim": "primitives/success/green-500-25",
+      "light_hex": "#00935C @25%",
+      "dark_prim": "primitives/success/green-500-50",
+      "dark_hex": "#3C9F7B @50%"
+    },
+    {
+      "name": "semantics/fill/status/warning/primary/default",
+      "light_prim": "primitives/warning/orange-500",
+      "light_hex": "#F58600",
+      "dark_prim": "primitives/warning/orange-500",
+      "dark_hex": "#F08505"
+    },
+    {
+      "name": "semantics/fill/status/warning/primary/focus",
+      "light_prim": "primitives/warning/orange-500",
+      "light_hex": "#F58600",
+      "dark_prim": "primitives/warning/orange-500",
+      "dark_hex": "#F08505"
+    },
+    {
+      "name": "semantics/fill/status/warning/primary/hover",
+      "light_prim": "primitives/warning/orange-600",
+      "light_hex": "#DB7800",
+      "dark_prim": "primitives/warning/orange-600",
+      "dark_hex": "#FB9A41"
+    },
+    {
+      "name": "semantics/fill/status/warning/primary/pressed",
+      "light_prim": "primitives/warning/orange-700",
+      "light_hex": "#A85A00",
+      "dark_prim": "primitives/warning/orange-700",
+      "dark_hex": "#FCA95A"
+    },
+    {
+      "name": "semantics/fill/status/warning/secondary/default",
+      "light_prim": "primitives/warning/orange-500-10",
+      "light_hex": "#F58600 @10%",
+      "dark_prim": "primitives/warning/orange-500-25",
+      "dark_hex": "#FB9923 @25%"
+    },
+    {
+      "name": "semantics/fill/status/warning/secondary/disabled",
+      "light_prim": "primitives/warning/orange-500-15",
+      "light_hex": "#F58600 @15%",
+      "dark_prim": "primitives/warning/orange-500-25",
+      "dark_hex": "#FB9923 @25%"
+    },
+    {
+      "name": "semantics/fill/status/warning/secondary/focus",
+      "light_prim": "primitives/warning/orange-500-10",
+      "light_hex": "#F58600 @10%",
+      "dark_prim": "primitives/warning/orange-500-25",
+      "dark_hex": "#FB9923 @25%"
+    },
+    {
+      "name": "semantics/fill/status/warning/secondary/hover",
+      "light_prim": "primitives/warning/orange-500-25",
+      "light_hex": "#F58600 @25%",
+      "dark_prim": "primitives/warning/orange-500-50",
+      "dark_hex": "#FB9923 @50%"
+    },
+    {
+      "name": "semantics/fill/status/warning/secondary/pressed",
+      "light_prim": "primitives/warning/orange-500-25",
+      "light_hex": "#F58600 @25%",
+      "dark_prim": "primitives/warning/orange-500-50",
+      "dark_hex": "#FB9923 @50%"
+    },
+    {
+      "name": "semantics/icon/on-fill/error/default",
+      "light_prim": "primitives/error/red-600",
+      "light_hex": "#AE302A",
+      "dark_prim": "primitives/error/red-600",
+      "dark_hex": "#E7716E"
+    },
+    {
+      "name": "semantics/icon/on-fill/error/focus",
+      "light_prim": "primitives/error/red-600",
+      "light_hex": "#AE302A",
+      "dark_prim": "primitives/error/red-600",
+      "dark_hex": "#E7716E"
+    },
+    {
+      "name": "semantics/icon/on-fill/error/hover",
+      "light_prim": "primitives/error/red-700",
+      "light_hex": "#85221E",
+      "dark_prim": "primitives/error/red-700",
+      "dark_hex": "#EB908E"
+    },
+    {
+      "name": "semantics/icon/on-fill/error/inversed-dynamic",
+      "light_prim": "primitives/error/red 900",
+      "light_hex": "#3A0A08",
+      "dark_prim": "primitives/error/red 900",
+      "dark_hex": "#F7D4D4"
+    },
+    {
+      "name": "semantics/icon/on-fill/error/inversed-static",
+      "light_prim": "primitives/error/red 900",
+      "light_hex": "#3A0A08",
+      "dark_prim": "primitives/error/red-100",
+      "dark_hex": "#43110F"
+    },
+    {
+      "name": "semantics/icon/on-fill/error/pressed",
+      "light_prim": "primitives/error/red-800",
+      "light_hex": "#5E1512",
+      "dark_prim": "primitives/error/red-800",
+      "dark_hex": "#F3C5C3"
+    },
+    {
+      "name": "semantics/icon/on-fill/info/default",
+      "light_prim": "primitives/brand/blue-600",
+      "light_hex": "#006FD6",
+      "dark_prim": "primitives/brand/blue-600",
+      "dark_hex": "#41A1FB"
+    },
+    {
+      "name": "semantics/icon/on-fill/info/focus",
+      "light_prim": "primitives/brand/blue-600",
+      "light_hex": "#006FD6",
+      "dark_prim": "primitives/brand/blue-600",
+      "dark_hex": "#41A1FB"
+    },
+    {
+      "name": "semantics/icon/on-fill/info/hover",
+      "light_prim": "primitives/brand/blue-700",
+      "light_hex": "#005AAD",
+      "dark_prim": "primitives/brand/blue-700",
+      "dark_hex": "#73B9FC"
+    },
+    {
+      "name": "semantics/icon/on-fill/info/inversed-dynamic",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-900",
+      "dark_hex": "#C8E3FE"
+    },
+    {
+      "name": "semantics/icon/on-fill/info/inversed-static",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-100",
+      "dark_hex": "#023564"
+    },
+    {
+      "name": "semantics/icon/on-fill/info/pressed",
+      "light_prim": "primitives/brand/blue-800",
+      "light_hex": "#004585",
+      "dark_prim": "primitives/brand/blue-800",
+      "dark_hex": "#9BCDFD"
+    },
+    {
+      "name": "semantics/icon/on-fill/subtle/disabled",
+      "light_prim": "primitives/neutral/gray-700",
+      "light_hex": "#ABABAB",
+      "dark_prim": "primitives/neutral/gray-700",
+      "dark_hex": "#434C56"
+    },
+    {
+      "name": "semantics/icon/on-fill/subtle/inversed-dynamic",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/default",
+      "dark_hex": "#0E0F10"
+    },
+    {
+      "name": "semantics/icon/on-fill/subtle/inversed-static",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/inversed",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/icon/on-fill/subtle/primary",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/icon/on-fill/subtle/secondary",
+      "light_prim": "primitives/neutral/gray-800",
+      "light_hex": "#6A6B6D",
+      "dark_prim": "primitives/neutral/gray-800",
+      "dark_hex": "#677583"
+    },
+    {
+      "name": "semantics/icon/on-fill/success/default",
+      "light_prim": "primitives/success/green-600",
+      "light_hex": "#007C4E",
+      "dark_prim": "primitives/success/green-600",
+      "dark_hex": "#55B995"
+    },
+    {
+      "name": "semantics/icon/on-fill/success/focus",
+      "light_prim": "primitives/success/green-600",
+      "light_hex": "#007C4E",
+      "dark_prim": "primitives/success/green-600",
+      "dark_hex": "#55B995"
+    },
+    {
+      "name": "semantics/icon/on-fill/success/hover",
+      "light_prim": "primitives/success/green-700",
+      "light_hex": "#00663F",
+      "dark_prim": "primitives/success/green-700",
+      "dark_hex": "#6DC5A5"
+    },
+    {
+      "name": "semantics/icon/on-fill/success/inversed-dynamic",
+      "light_prim": "primitives/success/green-900",
+      "light_hex": "#003A24",
+      "dark_prim": "primitives/success/green-900",
+      "dark_hex": "#D1EBE0"
+    },
+    {
+      "name": "semantics/icon/on-fill/success/inversed-static",
+      "light_prim": "primitives/success/green-900",
+      "light_hex": "#003A24",
+      "dark_prim": "primitives/success/green-100",
+      "dark_hex": "#012D1D"
+    },
+    {
+      "name": "semantics/icon/on-fill/success/pressed",
+      "light_prim": "primitives/success/green-800",
+      "light_hex": "#004F32",
+      "dark_prim": "primitives/success/green-800",
+      "dark_hex": "#AEDBCB"
+    },
+    {
+      "name": "semantics/icon/on-fill/warning/default",
+      "light_prim": "primitives/warning/orange-600",
+      "light_hex": "#DB7800",
+      "dark_prim": "primitives/warning/orange-600",
+      "dark_hex": "#FB9A41"
+    },
+    {
+      "name": "semantics/icon/on-fill/warning/focus",
+      "light_prim": "primitives/warning/orange-600",
+      "light_hex": "#DB7800",
+      "dark_prim": "primitives/warning/orange-600",
+      "dark_hex": "#FB9A41"
+    },
+    {
+      "name": "semantics/icon/on-fill/warning/hover",
+      "light_prim": "primitives/warning/orange-700",
+      "light_hex": "#A85A00",
+      "dark_prim": "primitives/warning/orange-700",
+      "dark_hex": "#FCA95A"
+    },
+    {
+      "name": "semantics/icon/on-fill/warning/inversed-dynamic",
+      "light_prim": "primitives/warning/orange-900",
+      "light_hex": "#381E00",
+      "dark_prim": "primitives/warning/orange-900",
+      "dark_hex": "#FFE5C7"
+    },
+    {
+      "name": "semantics/icon/on-fill/warning/inversed-static",
+      "light_prim": "primitives/warning/orange-900",
+      "light_hex": "#381E00",
+      "dark_prim": "primitives/warning/orange-100",
+      "dark_hex": "#502C02"
+    },
+    {
+      "name": "semantics/icon/on-fill/warning/pressed",
+      "light_prim": "primitives/warning/orange-800",
+      "light_hex": "#6B3A00",
+      "dark_prim": "primitives/warning/orange-800",
+      "dark_hex": "#FDD1A0"
+    },
+    {
+      "name": "semantics/text/on-fill/error/default",
+      "light_prim": "primitives/error/red-600",
+      "light_hex": "#AE302A",
+      "dark_prim": "primitives/error/red-600",
+      "dark_hex": "#E7716E"
+    },
+    {
+      "name": "semantics/text/on-fill/error/focus",
+      "light_prim": "primitives/error/red-600",
+      "light_hex": "#AE302A",
+      "dark_prim": "primitives/error/red-600",
+      "dark_hex": "#E7716E"
+    },
+    {
+      "name": "semantics/text/on-fill/error/hover",
+      "light_prim": "primitives/error/red-700",
+      "light_hex": "#85221E",
+      "dark_prim": "primitives/error/red-700",
+      "dark_hex": "#EB908E"
+    },
+    {
+      "name": "semantics/text/on-fill/error/inversed-dynamic",
+      "light_prim": "primitives/error/red 900",
+      "light_hex": "#3A0A08",
+      "dark_prim": "primitives/error/red-100",
+      "dark_hex": "#43110F"
+    },
+    {
+      "name": "semantics/text/on-fill/error/inversed-static",
+      "light_prim": "primitives/error/red 900",
+      "light_hex": "#3A0A08",
+      "dark_prim": "primitives/error/red 900",
+      "dark_hex": "#F7D4D4"
+    },
+    {
+      "name": "semantics/text/on-fill/error/pressed",
+      "light_prim": "primitives/error/red-800",
+      "light_hex": "#5E1512",
+      "dark_prim": "primitives/error/red-800",
+      "dark_hex": "#F3C5C3"
+    },
+    {
+      "name": "semantics/text/on-fill/info/default",
+      "light_prim": "primitives/brand/blue-600",
+      "light_hex": "#006FD6",
+      "dark_prim": "primitives/brand/blue-600",
+      "dark_hex": "#41A1FB"
+    },
+    {
+      "name": "semantics/text/on-fill/info/focus",
+      "light_prim": "primitives/brand/blue-600",
+      "light_hex": "#006FD6",
+      "dark_prim": "primitives/brand/blue-600",
+      "dark_hex": "#41A1FB"
+    },
+    {
+      "name": "semantics/text/on-fill/info/hover",
+      "light_prim": "primitives/brand/blue-700",
+      "light_hex": "#005AAD",
+      "dark_prim": "primitives/brand/blue-700",
+      "dark_hex": "#73B9FC"
+    },
+    {
+      "name": "semantics/text/on-fill/info/inversed-dynamic",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-900",
+      "dark_hex": "#C8E3FE"
+    },
+    {
+      "name": "semantics/text/on-fill/info/inversed-static",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-100",
+      "dark_hex": "#023564"
+    },
+    {
+      "name": "semantics/text/on-fill/info/pressed",
+      "light_prim": "primitives/brand/blue-800",
+      "light_hex": "#004585",
+      "dark_prim": "primitives/brand/blue-800",
+      "dark_hex": "#9BCDFD"
+    },
+    {
+      "name": "semantics/text/on-fill/subtle/disabled",
+      "light_prim": "primitives/neutral/gray-700",
+      "light_hex": "#ABABAB",
+      "dark_prim": "primitives/neutral/gray-700",
+      "dark_hex": "#434C56"
+    },
+    {
+      "name": "semantics/text/on-fill/subtle/inversed-dynamic",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/default",
+      "dark_hex": "#0E0F10"
+    },
+    {
+      "name": "semantics/text/on-fill/subtle/inversed-static",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/inversed",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/text/on-fill/subtle/primary",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/text/on-fill/subtle/secondary",
+      "light_prim": "primitives/neutral/gray-800",
+      "light_hex": "#6A6B6D",
+      "dark_prim": "primitives/neutral/gray-800",
+      "dark_hex": "#677583"
+    },
+    {
+      "name": "semantics/text/on-fill/success/default",
+      "light_prim": "primitives/success/green-600",
+      "light_hex": "#007C4E",
+      "dark_prim": "primitives/success/green-600",
+      "dark_hex": "#55B995"
+    },
+    {
+      "name": "semantics/text/on-fill/success/focus",
+      "light_prim": "primitives/success/green-600",
+      "light_hex": "#007C4E",
+      "dark_prim": "primitives/success/green-600",
+      "dark_hex": "#55B995"
+    },
+    {
+      "name": "semantics/text/on-fill/success/hover",
+      "light_prim": "primitives/success/green-700",
+      "light_hex": "#00663F",
+      "dark_prim": "primitives/success/green-700",
+      "dark_hex": "#6DC5A5"
+    },
+    {
+      "name": "semantics/text/on-fill/success/inversed-dynamic",
+      "light_prim": "primitives/success/green-900",
+      "light_hex": "#003A24",
+      "dark_prim": "primitives/success/green-900",
+      "dark_hex": "#D1EBE0"
+    }
+  ],
+  "Text": [
+    {
+      "name": "semantics/text/subtle/primary/default",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/text/subtle/primary/disabled",
+      "light_prim": "primitives/neutral/gray-700",
+      "light_hex": "#ABABAB",
+      "dark_prim": "primitives/neutral/gray-700",
+      "dark_hex": "#434C56"
+    },
+    {
+      "name": "semantics/text/subtle/primary/focus",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/text/subtle/primary/hover",
+      "light_prim": "primitives/neutral/gray-800",
+      "light_hex": "#6A6B6D",
+      "dark_prim": "primitives/neutral/gray-800",
+      "dark_hex": "#677583"
+    },
+    {
+      "name": "semantics/text/subtle/primary/inversed-dynamic",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/default",
+      "dark_hex": "#0E0F10"
+    },
+    {
+      "name": "semantics/text/subtle/primary/inversed-static",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/inversed",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/text/subtle/primary/pressed",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/text/subtle/secondary/focus",
+      "light_prim": "primitives/neutral/gray-800",
+      "light_hex": "#6A6B6D",
+      "dark_prim": "primitives/neutral/gray-800",
+      "dark_hex": "#677583"
+    },
+    {
+      "name": "semantics/text/subtle/secondary/hover",
+      "light_prim": "primitives/neutral/gray-700",
+      "light_hex": "#ABABAB",
+      "dark_prim": "primitives/neutral/gray-700",
+      "dark_hex": "#434C56"
+    },
+    {
+      "name": "semantics/text/brand/default",
+      "light_prim": "primitives/brand/blue-500",
+      "light_hex": "#0084FF",
+      "dark_prim": "primitives/brand/blue-500",
+      "dark_hex": "#148BFA"
+    },
+    {
+      "name": "semantics/text/brand/focus",
+      "light_prim": "primitives/brand/blue-500",
+      "light_hex": "#0084FF",
+      "dark_prim": "primitives/brand/blue-500",
+      "dark_hex": "#148BFA"
+    },
+    {
+      "name": "semantics/text/brand/hover",
+      "light_prim": "primitives/brand/blue-600",
+      "light_hex": "#006FD6",
+      "dark_prim": "primitives/brand/blue-600",
+      "dark_hex": "#41A1FB"
+    },
+    {
+      "name": "semantics/text/brand/inversed-dynamic",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-900",
+      "dark_hex": "#C8E3FE"
+    },
+    {
+      "name": "semantics/text/brand/inversed-static",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-100",
+      "dark_hex": "#023564"
+    },
+    {
+      "name": "semantics/text/brand/pressed",
+      "light_prim": "primitives/brand/blue-700",
+      "light_hex": "#005AAD",
+      "dark_prim": "primitives/brand/blue-700",
+      "dark_hex": "#73B9FC"
+    },
+    {
+      "name": "semantics/text/link/brand/default",
+      "light_prim": "primitives/brand/blue-500",
+      "light_hex": "#0084FF",
+      "dark_prim": "primitives/brand/blue-500",
+      "dark_hex": "#148BFA"
+    },
+    {
+      "name": "semantics/text/link/brand/hover",
+      "light_prim": "primitives/brand/blue-600",
+      "light_hex": "#006FD6",
+      "dark_prim": "primitives/brand/blue-600",
+      "dark_hex": "#41A1FB"
+    },
+    {
+      "name": "semantics/text/link/brand/inversed-dynamic",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-900",
+      "dark_hex": "#C8E3FE"
+    },
+    {
+      "name": "semantics/text/link/brand/inversed-static",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-100",
+      "dark_hex": "#023564"
+    },
+    {
+      "name": "semantics/text/link/brand/pressed",
+      "light_prim": "primitives/brand/blue-700",
+      "light_hex": "#005AAD",
+      "dark_prim": "primitives/brand/blue-700",
+      "dark_hex": "#73B9FC"
+    },
+    {
+      "name": "semantics/text/link/status/error/default",
+      "light_prim": "primitives/error/red-500",
+      "light_hex": "#DA3E37",
+      "dark_prim": "primitives/error/red-500",
+      "dark_hex": "#E64D47"
+    },
+    {
+      "name": "semantics/text/link/status/error/hover",
+      "light_prim": "primitives/error/red-600",
+      "light_hex": "#AE302A",
+      "dark_prim": "primitives/error/red-600",
+      "dark_hex": "#E7716E"
+    },
+    {
+      "name": "semantics/text/link/status/error/inversed-dynamic",
+      "light_prim": "primitives/error/red 900",
+      "light_hex": "#3A0A08",
+      "dark_prim": "primitives/error/red 900",
+      "dark_hex": "#F7D4D4"
+    },
+    {
+      "name": "semantics/text/link/status/error/inversed-static",
+      "light_prim": "primitives/error/red 900",
+      "light_hex": "#3A0A08",
+      "dark_prim": "primitives/error/red-100",
+      "dark_hex": "#43110F"
+    },
+    {
+      "name": "semantics/text/link/status/error/pressed",
+      "light_prim": "primitives/error/red-700",
+      "light_hex": "#85221E",
+      "dark_prim": "primitives/error/red-700",
+      "dark_hex": "#EB908E"
+    },
+    {
+      "name": "semantics/text/link/status/info/default",
+      "light_prim": "primitives/brand/blue-500",
+      "light_hex": "#0084FF",
+      "dark_prim": "primitives/brand/blue-500",
+      "dark_hex": "#148BFA"
+    },
+    {
+      "name": "semantics/text/link/status/info/hover",
+      "light_prim": "primitives/brand/blue-600",
+      "light_hex": "#006FD6",
+      "dark_prim": "primitives/brand/blue-600",
+      "dark_hex": "#41A1FB"
+    },
+    {
+      "name": "semantics/text/link/status/info/inversed-dynamic",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-900",
+      "dark_hex": "#C8E3FE"
+    },
+    {
+      "name": "semantics/text/link/status/info/inversed-static",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-100",
+      "dark_hex": "#023564"
+    },
+    {
+      "name": "semantics/text/link/status/info/pressed",
+      "light_prim": "primitives/brand/blue-700",
+      "light_hex": "#005AAD",
+      "dark_prim": "primitives/brand/blue-700",
+      "dark_hex": "#73B9FC"
+    },
+    {
+      "name": "semantics/text/link/status/success/default",
+      "light_prim": "primitives/success/green-500",
+      "light_hex": "#00935C",
+      "dark_prim": "primitives/success/green-500",
+      "dark_hex": "#3C9F7B"
+    },
+    {
+      "name": "semantics/text/link/status/success/hover",
+      "light_prim": "primitives/success/green-600",
+      "light_hex": "#007C4E",
+      "dark_prim": "primitives/success/green-600",
+      "dark_hex": "#55B995"
+    },
+    {
+      "name": "semantics/text/link/status/success/inversed-dynamic",
+      "light_prim": "primitives/success/green-900",
+      "light_hex": "#003A24",
+      "dark_prim": "primitives/success/green-900",
+      "dark_hex": "#D1EBE0"
+    },
+    {
+      "name": "semantics/text/link/status/success/inversed-static",
+      "light_prim": "primitives/success/green-900",
+      "light_hex": "#003A24",
+      "dark_prim": "primitives/success/green-100",
+      "dark_hex": "#012D1D"
+    },
+    {
+      "name": "semantics/text/link/status/success/pressed",
+      "light_prim": "primitives/success/green-700",
+      "light_hex": "#00663F",
+      "dark_prim": "primitives/success/green-700",
+      "dark_hex": "#6DC5A5"
+    },
+    {
+      "name": "semantics/text/link/status/warning/default",
+      "light_prim": "primitives/warning/orange-500",
+      "light_hex": "#F58600",
+      "dark_prim": "primitives/warning/orange-500",
+      "dark_hex": "#F08505"
+    },
+    {
+      "name": "semantics/text/link/status/warning/hover",
+      "light_prim": "primitives/warning/orange-600",
+      "light_hex": "#DB7800",
+      "dark_prim": "primitives/warning/orange-600",
+      "dark_hex": "#FB9A41"
+    },
+    {
+      "name": "semantics/text/link/status/warning/inversed-dynamic",
+      "light_prim": "primitives/warning/orange-900",
+      "light_hex": "#381E00",
+      "dark_prim": "primitives/warning/orange-900",
+      "dark_hex": "#FFE5C7"
+    },
+    {
+      "name": "semantics/text/link/status/warning/inversed-static",
+      "light_prim": "primitives/warning/orange-900",
+      "light_hex": "#381E00",
+      "dark_prim": "primitives/warning/orange-100",
+      "dark_hex": "#502C02"
+    },
+    {
+      "name": "semantics/text/link/status/warning/pressed",
+      "light_prim": "primitives/warning/orange-700",
+      "light_hex": "#A85A00",
+      "dark_prim": "primitives/warning/orange-700",
+      "dark_hex": "#FCA95A"
+    },
+    {
+      "name": "semantics/text/link/subtle/default",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/text/link/subtle/disabled",
+      "light_prim": "primitives/neutral/gray-700",
+      "light_hex": "#ABABAB",
+      "dark_prim": "primitives/neutral/gray-700",
+      "dark_hex": "#434C56"
+    },
+    {
+      "name": "semantics/text/link/subtle/hover",
+      "light_prim": "primitives/neutral/gray-800",
+      "light_hex": "#6A6B6D",
+      "dark_prim": "primitives/neutral/gray-800",
+      "dark_hex": "#677583"
+    },
+    {
+      "name": "semantics/text/link/subtle/inversed-dynamic",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/text/link/subtle/inversed-static",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-50",
+      "dark_hex": "#14171A"
+    },
+    {
+      "name": "semantics/text/link/subtle/pressed",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/text/on-fill/error/default",
+      "light_prim": "primitives/error/red-600",
+      "light_hex": "#AE302A",
+      "dark_prim": "primitives/error/red-600",
+      "dark_hex": "#E7716E"
+    },
+    {
+      "name": "semantics/text/on-fill/error/focus",
+      "light_prim": "primitives/error/red-600",
+      "light_hex": "#AE302A",
+      "dark_prim": "primitives/error/red-600",
+      "dark_hex": "#E7716E"
+    },
+    {
+      "name": "semantics/text/on-fill/error/hover",
+      "light_prim": "primitives/error/red-700",
+      "light_hex": "#85221E",
+      "dark_prim": "primitives/error/red-700",
+      "dark_hex": "#EB908E"
+    },
+    {
+      "name": "semantics/text/on-fill/error/inversed-dynamic",
+      "light_prim": "primitives/error/red 900",
+      "light_hex": "#3A0A08",
+      "dark_prim": "primitives/error/red-100",
+      "dark_hex": "#43110F"
+    },
+    {
+      "name": "semantics/text/on-fill/error/inversed-static",
+      "light_prim": "primitives/error/red 900",
+      "light_hex": "#3A0A08",
+      "dark_prim": "primitives/error/red 900",
+      "dark_hex": "#F7D4D4"
+    },
+    {
+      "name": "semantics/text/on-fill/error/pressed",
+      "light_prim": "primitives/error/red-800",
+      "light_hex": "#5E1512",
+      "dark_prim": "primitives/error/red-800",
+      "dark_hex": "#F3C5C3"
+    },
+    {
+      "name": "semantics/text/on-fill/info/default",
+      "light_prim": "primitives/brand/blue-600",
+      "light_hex": "#006FD6",
+      "dark_prim": "primitives/brand/blue-600",
+      "dark_hex": "#41A1FB"
+    },
+    {
+      "name": "semantics/text/on-fill/info/focus",
+      "light_prim": "primitives/brand/blue-600",
+      "light_hex": "#006FD6",
+      "dark_prim": "primitives/brand/blue-600",
+      "dark_hex": "#41A1FB"
+    },
+    {
+      "name": "semantics/text/on-fill/info/hover",
+      "light_prim": "primitives/brand/blue-700",
+      "light_hex": "#005AAD",
+      "dark_prim": "primitives/brand/blue-700",
+      "dark_hex": "#73B9FC"
+    },
+    {
+      "name": "semantics/text/on-fill/info/inversed-dynamic",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-900",
+      "dark_hex": "#C8E3FE"
+    },
+    {
+      "name": "semantics/text/on-fill/info/inversed-static",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-100",
+      "dark_hex": "#023564"
+    },
+    {
+      "name": "semantics/text/on-fill/info/pressed",
+      "light_prim": "primitives/brand/blue-800",
+      "light_hex": "#004585",
+      "dark_prim": "primitives/brand/blue-800",
+      "dark_hex": "#9BCDFD"
+    },
+    {
+      "name": "semantics/text/on-fill/subtle/disabled",
+      "light_prim": "primitives/neutral/gray-700",
+      "light_hex": "#ABABAB",
+      "dark_prim": "primitives/neutral/gray-700",
+      "dark_hex": "#434C56"
+    },
+    {
+      "name": "semantics/text/on-fill/subtle/inversed-dynamic",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/default",
+      "dark_hex": "#0E0F10"
+    },
+    {
+      "name": "semantics/text/on-fill/subtle/inversed-static",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/inversed",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/text/on-fill/subtle/primary",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/text/on-fill/subtle/secondary",
+      "light_prim": "primitives/neutral/gray-800",
+      "light_hex": "#6A6B6D",
+      "dark_prim": "primitives/neutral/gray-800",
+      "dark_hex": "#677583"
+    },
+    {
+      "name": "semantics/text/on-fill/success/default",
+      "light_prim": "primitives/success/green-600",
+      "light_hex": "#007C4E",
+      "dark_prim": "primitives/success/green-600",
+      "dark_hex": "#55B995"
+    },
+    {
+      "name": "semantics/text/on-fill/success/focus",
+      "light_prim": "primitives/success/green-600",
+      "light_hex": "#007C4E",
+      "dark_prim": "primitives/success/green-600",
+      "dark_hex": "#55B995"
+    },
+    {
+      "name": "semantics/text/on-fill/success/hover",
+      "light_prim": "primitives/success/green-700",
+      "light_hex": "#00663F",
+      "dark_prim": "primitives/success/green-700",
+      "dark_hex": "#6DC5A5"
+    },
+    {
+      "name": "semantics/text/on-fill/success/inversed-dynamic",
+      "light_prim": "primitives/success/green-900",
+      "light_hex": "#003A24",
+      "dark_prim": "primitives/success/green-900",
+      "dark_hex": "#D1EBE0"
+    },
+    {
+      "name": "semantics/text/on-fill/success/inversed-static",
+      "light_prim": "primitives/success/green-900",
+      "light_hex": "#003A24",
+      "dark_prim": "primitives/success/green-100",
+      "dark_hex": "#012D1D"
+    },
+    {
+      "name": "semantics/text/on-fill/success/pressed",
+      "light_prim": "primitives/success/green-800",
+      "light_hex": "#004F32",
+      "dark_prim": "primitives/success/green-800",
+      "dark_hex": "#AEDBCB"
+    },
+    {
+      "name": "semantics/text/on-fill/warning/default",
+      "light_prim": "primitives/warning/orange-600",
+      "light_hex": "#DB7800",
+      "dark_prim": "primitives/warning/orange-600",
+      "dark_hex": "#FB9A41"
+    },
+    {
+      "name": "semantics/text/on-fill/warning/focus",
+      "light_prim": "primitives/warning/orange-600",
+      "light_hex": "#DB7800",
+      "dark_prim": "primitives/warning/orange-600",
+      "dark_hex": "#FB9A41"
+    },
+    {
+      "name": "semantics/text/on-fill/warning/hover",
+      "light_prim": "primitives/warning/orange-700",
+      "light_hex": "#A85A00",
+      "dark_prim": "primitives/warning/orange-700",
+      "dark_hex": "#FCA95A"
+    },
+    {
+      "name": "semantics/text/on-fill/warning/inversed-dynamic",
+      "light_prim": "primitives/warning/orange-900",
+      "light_hex": "#381E00",
+      "dark_prim": "primitives/warning/orange-900",
+      "dark_hex": "#FFE5C7"
+    },
+    {
+      "name": "semantics/text/on-fill/warning/inversed-static",
+      "light_prim": "primitives/warning/orange-900",
+      "light_hex": "#381E00",
+      "dark_prim": "primitives/warning/orange-100",
+      "dark_hex": "#502C02"
+    },
+    {
+      "name": "semantics/text/on-fill/warning/pressed",
+      "light_prim": "primitives/warning/orange-800",
+      "light_hex": "#6B3A00",
+      "dark_prim": "primitives/warning/orange-800",
+      "dark_hex": "#FDD1A0"
+    },
+    {
+      "name": "semantics/text/status/error/default",
+      "light_prim": "primitives/error/red-500",
+      "light_hex": "#DA3E37",
+      "dark_prim": "primitives/error/red-500",
+      "dark_hex": "#E64D47"
+    },
+    {
+      "name": "semantics/text/status/error/focus",
+      "light_prim": "primitives/error/red-500",
+      "light_hex": "#DA3E37",
+      "dark_prim": "primitives/error/red-500",
+      "dark_hex": "#E64D47"
+    },
+    {
+      "name": "semantics/text/status/error/hover",
+      "light_prim": "primitives/error/red-600",
+      "light_hex": "#AE302A",
+      "dark_prim": "primitives/error/red-600",
+      "dark_hex": "#E7716E"
+    },
+    {
+      "name": "semantics/text/status/error/inversed-dynamic",
+      "light_prim": "primitives/error/red 900",
+      "light_hex": "#3A0A08",
+      "dark_prim": "primitives/error/red 900",
+      "dark_hex": "#F7D4D4"
+    },
+    {
+      "name": "semantics/text/status/error/inversed-static",
+      "light_prim": "primitives/error/red 900",
+      "light_hex": "#3A0A08",
+      "dark_prim": "primitives/error/red-100",
+      "dark_hex": "#43110F"
+    },
+    {
+      "name": "semantics/text/status/error/pressed",
+      "light_prim": "primitives/error/red-700",
+      "light_hex": "#85221E",
+      "dark_prim": "primitives/error/red-700",
+      "dark_hex": "#EB908E"
+    },
+    {
+      "name": "semantics/text/status/info/default",
+      "light_prim": "primitives/brand/blue-500",
+      "light_hex": "#0084FF",
+      "dark_prim": "primitives/brand/blue-500",
+      "dark_hex": "#148BFA"
+    },
+    {
+      "name": "semantics/text/status/info/focus",
+      "light_prim": "primitives/brand/blue-500",
+      "light_hex": "#0084FF",
+      "dark_prim": "primitives/brand/blue-500",
+      "dark_hex": "#148BFA"
+    },
+    {
+      "name": "semantics/text/status/info/hover",
+      "light_prim": "primitives/brand/blue-600",
+      "light_hex": "#006FD6",
+      "dark_prim": "primitives/brand/blue-600",
+      "dark_hex": "#41A1FB"
+    },
+    {
+      "name": "semantics/text/status/info/inversed-dynamic",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-900",
+      "dark_hex": "#C8E3FE"
+    },
+    {
+      "name": "semantics/text/status/info/inversed-static",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-100",
+      "dark_hex": "#023564"
+    },
+    {
+      "name": "semantics/text/status/info/pressed",
+      "light_prim": "primitives/brand/blue-700",
+      "light_hex": "#005AAD",
+      "dark_prim": "primitives/brand/blue-700",
+      "dark_hex": "#73B9FC"
+    },
+    {
+      "name": "semantics/text/status/subtle/default",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/text/status/subtle/focus",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/text/status/subtle/hover",
+      "light_prim": "primitives/neutral/gray-800",
+      "light_hex": "#6A6B6D",
+      "dark_prim": "primitives/neutral/gray-800",
+      "dark_hex": "#677583"
+    },
+    {
+      "name": "semantics/text/status/subtle/inversed-dynamic",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/default",
+      "dark_hex": "#0E0F10"
+    },
+    {
+      "name": "semantics/text/status/subtle/inversed-static",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/inversed",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/text/status/subtle/pressed",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/text/status/success/default",
+      "light_prim": "primitives/success/green-500",
+      "light_hex": "#00935C",
+      "dark_prim": "primitives/success/green-500",
+      "dark_hex": "#3C9F7B"
+    },
+    {
+      "name": "semantics/text/status/success/focus",
+      "light_prim": "primitives/success/green-500",
+      "light_hex": "#00935C",
+      "dark_prim": "primitives/success/green-500",
+      "dark_hex": "#3C9F7B"
+    },
+    {
+      "name": "semantics/text/status/success/hover",
+      "light_prim": "primitives/success/green-600",
+      "light_hex": "#007C4E",
+      "dark_prim": "primitives/success/green-600",
+      "dark_hex": "#55B995"
+    },
+    {
+      "name": "semantics/text/status/success/inversed-dynamic",
+      "light_prim": "primitives/success/green-900",
+      "light_hex": "#003A24",
+      "dark_prim": "primitives/success/green-900",
+      "dark_hex": "#D1EBE0"
+    },
+    {
+      "name": "semantics/text/status/success/inversed-static",
+      "light_prim": "primitives/success/green-900",
+      "light_hex": "#003A24",
+      "dark_prim": "primitives/success/green-100",
+      "dark_hex": "#012D1D"
+    },
+    {
+      "name": "semantics/text/status/success/pressed",
+      "light_prim": "primitives/success/green-700",
+      "light_hex": "#00663F",
+      "dark_prim": "primitives/success/green-700",
+      "dark_hex": "#6DC5A5"
+    },
+    {
+      "name": "semantics/text/status/warning/default",
+      "light_prim": "primitives/warning/orange-500",
+      "light_hex": "#F58600",
+      "dark_prim": "primitives/warning/orange-500",
+      "dark_hex": "#F08505"
+    },
+    {
+      "name": "semantics/text/status/warning/focus",
+      "light_prim": "primitives/warning/orange-500",
+      "light_hex": "#F58600",
+      "dark_prim": "primitives/warning/orange-500",
+      "dark_hex": "#F08505"
+    },
+    {
+      "name": "semantics/text/status/warning/hover",
+      "light_prim": "primitives/warning/orange-600",
+      "light_hex": "#DB7800",
+      "dark_prim": "primitives/warning/orange-600",
+      "dark_hex": "#FB9A41"
+    },
+    {
+      "name": "semantics/text/status/warning/inversed-dynamic",
+      "light_prim": "primitives/warning/orange-900",
+      "light_hex": "#381E00",
+      "dark_prim": "primitives/warning/orange-900",
+      "dark_hex": "#FFE5C7"
+    },
+    {
+      "name": "semantics/text/status/warning/inversed-static",
+      "light_prim": "primitives/warning/orange-900",
+      "light_hex": "#381E00",
+      "dark_prim": "primitives/warning/orange-100",
+      "dark_hex": "#502C02"
+    },
+    {
+      "name": "semantics/text/status/warning/pressed",
+      "light_prim": "primitives/warning/orange-700",
+      "light_hex": "#A85A00",
+      "dark_prim": "primitives/warning/orange-700",
+      "dark_hex": "#FCA95A"
+    }
+  ],
+  "Border": [
+    {
+      "name": "semantics/border/subtle/primary",
+      "light_prim": "primitives/neutral/gray-400",
+      "light_hex": "#CCCCCC",
+      "dark_prim": "primitives/neutral/gray-400",
+      "dark_hex": "#2F353C"
+    },
+    {
+      "name": "semantics/border/subtle/inversed-dynamic",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/gray-50",
+      "dark_hex": "#14171A"
+    },
+    {
+      "name": "semantics/border/subtle/inversed-static",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/inversed",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/border/subtle/secondary",
+      "light_prim": "primitives/neutral/gray-200",
+      "light_hex": "#E0E0E0",
+      "dark_prim": "primitives/neutral/gray-200",
+      "dark_hex": "#22262B"
+    },
+    {
+      "name": "semantics/border/subtle/disabled",
+      "light_prim": "primitives/neutral/gray-400",
+      "light_hex": "#CCCCCC",
+      "dark_prim": "primitives/neutral/gray-400",
+      "dark_hex": "#2F353C"
+    },
+    {
+      "name": "semantics/border/brand/default",
+      "light_prim": "primitives/brand/blue-500",
+      "light_hex": "#0084FF",
+      "dark_prim": "primitives/brand/blue-500",
+      "dark_hex": "#148BFA"
+    },
+    {
+      "name": "semantics/border/brand/focus",
+      "light_prim": "primitives/brand/blue-500",
+      "light_hex": "#0084FF",
+      "dark_prim": "primitives/brand/blue-500",
+      "dark_hex": "#148BFA"
+    },
+    {
+      "name": "semantics/border/brand/hover",
+      "light_prim": "primitives/brand/blue-600",
+      "light_hex": "#006FD6",
+      "dark_prim": "primitives/brand/blue-600",
+      "dark_hex": "#41A1FB"
+    },
+    {
+      "name": "semantics/border/brand/pressed",
+      "light_prim": "primitives/brand/blue-700",
+      "light_hex": "#005AAD",
+      "dark_prim": "primitives/brand/blue-700",
+      "dark_hex": "#73B9FC"
+    },
+    {
+      "name": "semantics/border/status/error/primary/default",
+      "light_prim": "primitives/error/red-500",
+      "light_hex": "#DA3E37",
+      "dark_prim": "primitives/error/red-500",
+      "dark_hex": "#E64D47"
+    },
+    {
+      "name": "semantics/border/status/error/primary/focus",
+      "light_prim": "primitives/error/red-500",
+      "light_hex": "#DA3E37",
+      "dark_prim": "primitives/error/red-500",
+      "dark_hex": "#E64D47"
+    },
+    {
+      "name": "semantics/border/status/error/primary/hover",
+      "light_prim": "primitives/error/red-600",
+      "light_hex": "#AE302A",
+      "dark_prim": "primitives/error/red-600",
+      "dark_hex": "#E7716E"
+    },
+    {
+      "name": "semantics/border/status/error/primary/pressed",
+      "light_prim": "primitives/error/red-700",
+      "light_hex": "#85221E",
+      "dark_prim": "primitives/error/red-700",
+      "dark_hex": "#EB908E"
+    },
+    {
+      "name": "semantics/border/status/error/secondary/default",
+      "light_prim": "primitives/error/red-100",
+      "light_hex": "#F9DCDB",
+      "dark_prim": "primitives/error/red-100",
+      "dark_hex": "#43110F"
+    },
+    {
+      "name": "semantics/border/status/error/secondary/focus",
+      "light_prim": "primitives/error/red-500",
+      "light_hex": "#DA3E37",
+      "dark_prim": "primitives/error/red-500",
+      "dark_hex": "#E64D47"
+    },
+    {
+      "name": "semantics/border/status/error/secondary/hover",
+      "light_prim": "primitives/error/red-200",
+      "light_hex": "#F4B7B6",
+      "dark_prim": "primitives/error/red-200",
+      "dark_hex": "#691E1B"
+    },
+    {
+      "name": "semantics/border/status/error/secondary/pressed",
+      "light_prim": "primitives/error/red-300",
+      "light_hex": "#F0918F",
+      "dark_prim": "primitives/error/red-300",
+      "dark_hex": "#902C27"
+    },
+    {
+      "name": "semantics/border/status/info/primary/default",
+      "light_prim": "primitives/brand/blue-500",
+      "light_hex": "#0084FF",
+      "dark_prim": "primitives/brand/blue-500",
+      "dark_hex": "#148BFA"
+    },
+    {
+      "name": "semantics/border/status/info/primary/focus",
+      "light_prim": "primitives/brand/blue-500",
+      "light_hex": "#0084FF",
+      "dark_prim": "primitives/brand/blue-500",
+      "dark_hex": "#148BFA"
+    },
+    {
+      "name": "semantics/border/status/info/primary/hover",
+      "light_prim": "primitives/brand/blue-600",
+      "light_hex": "#006FD6",
+      "dark_prim": "primitives/brand/blue-600",
+      "dark_hex": "#41A1FB"
+    },
+    {
+      "name": "semantics/border/status/info/primary/pressed",
+      "light_prim": "primitives/brand/blue-700",
+      "light_hex": "#005AAD",
+      "dark_prim": "primitives/brand/blue-700",
+      "dark_hex": "#73B9FC"
+    },
+    {
+      "name": "semantics/border/status/info/secondary/default",
+      "light_prim": "primitives/brand/blue-100",
+      "light_hex": "#B7DCFF",
+      "dark_prim": "primitives/brand/blue-100",
+      "dark_hex": "#023564"
+    },
+    {
+      "name": "semantics/border/status/info/secondary/focus",
+      "light_prim": "primitives/brand/blue-500",
+      "light_hex": "#0084FF",
+      "dark_prim": "primitives/brand/blue-500",
+      "dark_hex": "#148BFA"
+    },
+    {
+      "name": "semantics/border/status/info/secondary/hover",
+      "light_prim": "primitives/brand/blue-200",
+      "light_hex": "#8AC6FF",
+      "dark_prim": "primitives/brand/blue-200",
+      "dark_hex": "#034A8C"
+    },
+    {
+      "name": "semantics/border/status/info/secondary/pressed",
+      "light_prim": "primitives/brand/blue-300",
+      "light_hex": "#5CB0FF",
+      "dark_prim": "primitives/brand/blue-300",
+      "dark_hex": "#045FB4"
+    },
+    {
+      "name": "semantics/border/status/success/primary/default",
+      "light_prim": "primitives/success/green-500",
+      "light_hex": "#00935C",
+      "dark_prim": "primitives/success/green-500",
+      "dark_hex": "#3C9F7B"
+    },
+    {
+      "name": "semantics/border/status/success/primary/focus",
+      "light_prim": "primitives/success/green-500",
+      "light_hex": "#00935C",
+      "dark_prim": "primitives/success/green-500",
+      "dark_hex": "#3C9F7B"
+    },
+    {
+      "name": "semantics/border/status/success/primary/hover",
+      "light_prim": "primitives/success/green-600",
+      "light_hex": "#007C4E",
+      "dark_prim": "primitives/success/green-600",
+      "dark_hex": "#55B995"
+    },
+    {
+      "name": "semantics/border/status/success/primary/pressed",
+      "light_prim": "primitives/success/green-700",
+      "light_hex": "#00663F",
+      "dark_prim": "primitives/success/green-700",
+      "dark_hex": "#6DC5A5"
+    },
+    {
+      "name": "semantics/border/status/success/secondary/default",
+      "light_prim": "primitives/success/green-100",
+      "light_hex": "#B5DECF",
+      "dark_prim": "primitives/success/green-100",
+      "dark_hex": "#012D1D"
+    },
+    {
+      "name": "semantics/border/status/success/secondary/focus",
+      "light_prim": "primitives/success/green-500",
+      "light_hex": "#00935C",
+      "dark_prim": "primitives/success/green-500",
+      "dark_hex": "#3C9F7B"
+    },
+    {
+      "name": "semantics/border/status/success/secondary/hover",
+      "light_prim": "primitives/success/green-200",
+      "light_hex": "#9BD7C1",
+      "dark_prim": "primitives/success/green-200",
+      "dark_hex": "#005C39"
+    },
+    {
+      "name": "semantics/border/status/success/secondary/pressed",
+      "light_prim": "primitives/success/green-300",
+      "light_hex": "#63BF9E",
+      "dark_prim": "primitives/success/green-300",
+      "dark_hex": "#025A39"
+    },
+    {
+      "name": "semantics/border/status/warning/primary/default",
+      "light_prim": "primitives/warning/orange-500",
+      "light_hex": "#F58600",
+      "dark_prim": "primitives/warning/orange-500",
+      "dark_hex": "#F08505"
+    },
+    {
+      "name": "semantics/border/status/warning/primary/focus",
+      "light_prim": "primitives/warning/orange-500",
+      "light_hex": "#F58600",
+      "dark_prim": "primitives/warning/orange-500",
+      "dark_hex": "#F08505"
+    },
+    {
+      "name": "semantics/border/status/warning/primary/hover",
+      "light_prim": "primitives/warning/orange-600",
+      "light_hex": "#DB7800",
+      "dark_prim": "primitives/warning/orange-600",
+      "dark_hex": "#FB9A41"
+    },
+    {
+      "name": "semantics/border/status/warning/primary/pressed",
+      "light_prim": "primitives/warning/orange-700",
+      "light_hex": "#A85A00",
+      "dark_prim": "primitives/warning/orange-700",
+      "dark_hex": "#FCA95A"
+    },
+    {
+      "name": "semantics/border/status/warning/secondary/default",
+      "light_prim": "primitives/warning/orange-100",
+      "light_hex": "#FFE1BF",
+      "dark_prim": "primitives/warning/orange-100",
+      "dark_hex": "#502C02"
+    },
+    {
+      "name": "semantics/border/status/warning/secondary/focus",
+      "light_prim": "primitives/warning/orange-500",
+      "light_hex": "#F58600",
+      "dark_prim": "primitives/warning/orange-500",
+      "dark_hex": "#F08505"
+    },
+    {
+      "name": "semantics/border/status/warning/secondary/hover",
+      "light_prim": "primitives/warning/orange-200",
+      "light_hex": "#FFCB99",
+      "dark_prim": "primitives/warning/orange-200",
+      "dark_hex": "#874A03"
+    },
+    {
+      "name": "semantics/border/status/warning/secondary/pressed",
+      "light_prim": "primitives/warning/orange-300",
+      "light_hex": "#FFAF66",
+      "dark_prim": "primitives/warning/orange-300",
+      "dark_hex": "#B96704"
+    }
+  ],
+  "Surface": [
+    {
+      "name": "semantics/surface/subtle/primary/default",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/gray-50",
+      "dark_hex": "#14171A"
+    },
+    {
+      "name": "semantics/surface/subtle/primary/disabled",
+      "light_prim": "primitives/neutral/gray-50",
+      "light_hex": "#F5F5F5",
+      "dark_prim": "primitives/neutral/gray-50",
+      "dark_hex": "#14171A"
+    },
+    {
+      "name": "semantics/surface/subtle/primary/focus",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/gray-50",
+      "dark_hex": "#14171A"
+    },
+    {
+      "name": "semantics/surface/subtle/primary/hover",
+      "light_prim": "primitives/neutral/gray-50",
+      "light_hex": "#F5F5F5",
+      "dark_prim": "primitives/neutral/gray-50",
+      "dark_hex": "#14171A"
+    },
+    {
+      "name": "semantics/surface/subtle/primary/inversed-dynamic",
+      "light_prim": "primitives/neutral/inversed",
+      "light_hex": "#0E0F10",
+      "dark_prim": "primitives/neutral/inversed",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/surface/subtle/primary/inversed-static",
+      "light_prim": "primitives/neutral/inversed",
+      "light_hex": "#0E0F10",
+      "dark_prim": "primitives/neutral/default",
+      "dark_hex": "#0E0F10"
+    },
+    {
+      "name": "semantics/surface/subtle/primary/pressed",
+      "light_prim": "primitives/neutral/gray-100",
+      "light_hex": "#EBEBEB",
+      "dark_prim": "primitives/neutral/gray-50",
+      "dark_hex": "#14171A"
+    },
+    {
+      "name": "semantics/surface/subtle/secondary/default",
+      "light_prim": "primitives/neutral/gray-50",
+      "light_hex": "#F5F5F5",
+      "dark_prim": "primitives/neutral/gray-100",
+      "dark_hex": "#1B1F22"
+    },
+    {
+      "name": "semantics/surface/subtle/secondary/hover",
+      "light_prim": "primitives/neutral/gray-100",
+      "light_hex": "#EBEBEB",
+      "dark_prim": "primitives/neutral/gray-200",
+      "dark_hex": "#22262B"
+    },
+    {
+      "name": "semantics/surface/subtle/secondary/inversed-dynamic",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/surface/subtle/secondary/inversed-static",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-50",
+      "dark_hex": "#14171A"
+    },
+    {
+      "name": "semantics/surface/subtle/secondary/pressed",
+      "light_prim": "primitives/neutral/gray-200",
+      "light_hex": "#E0E0E0",
+      "dark_prim": "primitives/neutral/gray-200",
+      "dark_hex": "#22262B"
+    },
+    {
+      "name": "semantics/surface/subtle/tertiary/default",
+      "light_prim": "primitives/neutral/gray-100",
+      "light_hex": "#EBEBEB",
+      "dark_prim": "primitives/neutral/gray-100",
+      "dark_hex": "#1B1F22"
+    },
+    {
+      "name": "semantics/surface/subtle/tertiary/hover",
+      "light_prim": "primitives/neutral/gray-200",
+      "light_hex": "#E0E0E0",
+      "dark_prim": "primitives/neutral/gray-200",
+      "dark_hex": "#22262B"
+    },
+    {
+      "name": "semantics/surface/subtle/tertiary/pressed",
+      "light_prim": "primitives/neutral/gray-300",
+      "light_hex": "#D6D6D6",
+      "dark_prim": "primitives/neutral/gray-200",
+      "dark_hex": "#22262B"
+    },
+    {
+      "name": "semantics/surface/brand/default",
+      "light_prim": "primitives/brand/blue-500-10",
+      "light_hex": "#0084FF @10%",
+      "dark_prim": "primitives/brand/blue-500-10",
+      "dark_hex": "#148BFA @10%"
+    },
+    {
+      "name": "semantics/surface/brand/hover",
+      "light_prim": "primitives/brand/blue-500-15",
+      "light_hex": "#0084FF @15%",
+      "dark_prim": "primitives/brand/blue-500-15",
+      "dark_hex": "#148BFA @15%"
+    },
+    {
+      "name": "semantics/surface/brand/pressed",
+      "light_prim": "primitives/brand/blue-500-10",
+      "light_hex": "#0084FF @10%",
+      "dark_prim": "primitives/brand/blue-500-10",
+      "dark_hex": "#0084FF @10%"
+    },
+    {
+      "name": "semantics/surface/status/error/primary/default",
+      "light_prim": "primitives/error/red-500",
+      "light_hex": "#DA3E37",
+      "dark_prim": "primitives/error/red-500",
+      "dark_hex": "#E64D47"
+    },
+    {
+      "name": "semantics/surface/status/error/primary/hover",
+      "light_prim": "primitives/error/red-600",
+      "light_hex": "#AE302A",
+      "dark_prim": "primitives/error/red-600",
+      "dark_hex": "#E7716E"
+    },
+    {
+      "name": "semantics/surface/status/error/primary/inversed-dynamic",
+      "light_prim": "primitives/error/red 900",
+      "light_hex": "#3A0A08",
+      "dark_prim": "primitives/error/red 900",
+      "dark_hex": "#F7D4D4"
+    },
+    {
+      "name": "semantics/surface/status/error/primary/inversed-static",
+      "light_prim": "primitives/error/red 900",
+      "light_hex": "#3A0A08",
+      "dark_prim": "primitives/error/red-100",
+      "dark_hex": "#43110F"
+    },
+    {
+      "name": "semantics/surface/status/error/primary/pressed",
+      "light_prim": "primitives/error/red-700",
+      "light_hex": "#85221E",
+      "dark_prim": "primitives/error/red-700",
+      "dark_hex": "#EB908E"
+    },
+    {
+      "name": "semantics/surface/status/error/secondary/default",
+      "light_prim": "primitives/error/red-500-10",
+      "light_hex": "#DA3E37 @10%",
+      "dark_prim": "primitives/error/red-500-10",
+      "dark_hex": "#E75550 @10%"
+    },
+    {
+      "name": "semantics/surface/status/error/secondary/hover",
+      "light_prim": "primitives/error/red-500-15",
+      "light_hex": "#DA3E37 @15%",
+      "dark_prim": "primitives/error/red-500-15",
+      "dark_hex": "#E64D47 @15%"
+    },
+    {
+      "name": "semantics/surface/status/error/secondary/pressed",
+      "light_prim": "primitives/error/red-500-25",
+      "light_hex": "#DA3E37 @25%",
+      "dark_prim": "primitives/error/red-500-25",
+      "dark_hex": "#E64D47 @25%"
+    },
+    {
+      "name": "semantics/surface/status/info/primary/default",
+      "light_prim": "primitives/brand/blue-500",
+      "light_hex": "#0084FF",
+      "dark_prim": "primitives/brand/blue-500",
+      "dark_hex": "#148BFA"
+    },
+    {
+      "name": "semantics/surface/status/info/primary/hover",
+      "light_prim": "primitives/brand/blue-600",
+      "light_hex": "#006FD6",
+      "dark_prim": "primitives/brand/blue-600",
+      "dark_hex": "#41A1FB"
+    },
+    {
+      "name": "semantics/surface/status/info/primary/inversed-dynamic",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-900",
+      "dark_hex": "#C8E3FE"
+    },
+    {
+      "name": "semantics/surface/status/info/primary/inversed-static",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-100",
+      "dark_hex": "#023564"
+    },
+    {
+      "name": "semantics/surface/status/info/primary/pressed",
+      "light_prim": "primitives/brand/blue-600",
+      "light_hex": "#006FD6",
+      "dark_prim": "primitives/brand/blue-600",
+      "dark_hex": "#41A1FB"
+    },
+    {
+      "name": "semantics/surface/status/info/secondary/default",
+      "light_prim": "primitives/brand/blue-500-10",
+      "light_hex": "#0084FF @10%",
+      "dark_prim": "primitives/brand/blue-500-10",
+      "dark_hex": "#148BFA @10%"
+    },
+    {
+      "name": "semantics/surface/status/info/secondary/hover",
+      "light_prim": "primitives/brand/blue-500-15",
+      "light_hex": "#0084FF @15%",
+      "dark_prim": "primitives/brand/blue-500-15",
+      "dark_hex": "#148BFA @15%"
+    },
+    {
+      "name": "semantics/surface/status/info/secondary/pressed",
+      "light_prim": "primitives/brand/blue-500-25",
+      "light_hex": "#0084FF @25%",
+      "dark_prim": "primitives/brand/blue-500-25",
+      "dark_hex": "#148BFA @25%"
+    },
+    {
+      "name": "semantics/surface/status/subtle/primary/default",
+      "light_prim": "primitives/neutral/inversed",
+      "light_hex": "#0E0F10",
+      "dark_prim": "primitives/neutral/inversed",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/surface/status/subtle/primary/hover",
+      "light_prim": "primitives/neutral/gray-800",
+      "light_hex": "#6A6B6D",
+      "dark_prim": "primitives/neutral/gray-800",
+      "dark_hex": "#677583"
+    },
+    {
+      "name": "semantics/surface/status/subtle/primary/inversed-dynamic",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/default",
+      "dark_hex": "#0E0F10"
+    },
+    {
+      "name": "semantics/surface/status/subtle/primary/inversed-static",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/inversed",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/surface/status/subtle/primary/pressed",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/surface/status/subtle/secondary/default",
+      "light_prim": "primitives/neutral/black-shade-5",
+      "light_hex": "#1F2428 @5%",
+      "dark_prim": "primitives/neutral/black-shade-5",
+      "dark_hex": "#FFFFFF @5%"
+    },
+    {
+      "name": "semantics/surface/status/subtle/secondary/hover",
+      "light_prim": "primitives/neutral/black-shade-15",
+      "light_hex": "#1F2428 @15%",
+      "dark_prim": "primitives/neutral/black-shade-15",
+      "dark_hex": "#FFFFFF @15%"
+    },
+    {
+      "name": "semantics/surface/status/subtle/secondary/inversed-dynamic",
+      "light_prim": "primitives/neutral/50-tint-5",
+      "light_hex": "#F5F5F5 @5%",
+      "dark_prim": "primitives/neutral/50-tint-5",
+      "dark_hex": "#1F2428 @5%"
+    },
+    {
+      "name": "semantics/surface/status/subtle/secondary/pressed",
+      "light_prim": "primitives/neutral/black-shade-25",
+      "light_hex": "#1F2428 @25%",
+      "dark_prim": "primitives/neutral/black-shade-25",
+      "dark_hex": "#FFFFFF @25%"
+    },
+    {
+      "name": "semantics/surface/status/success/primary/default",
+      "light_prim": "primitives/success/green-500",
+      "light_hex": "#00935C",
+      "dark_prim": "primitives/success/green-500",
+      "dark_hex": "#3C9F7B"
+    },
+    {
+      "name": "semantics/surface/status/success/primary/hover",
+      "light_prim": "primitives/success/green-600",
+      "light_hex": "#007C4E",
+      "dark_prim": "primitives/success/green-600",
+      "dark_hex": "#55B995"
+    },
+    {
+      "name": "semantics/surface/status/success/primary/inversed-dynamic",
+      "light_prim": "primitives/success/green-900",
+      "light_hex": "#003A24",
+      "dark_prim": "primitives/success/green-900",
+      "dark_hex": "#D1EBE0"
+    },
+    {
+      "name": "semantics/surface/status/success/primary/inversed-static",
+      "light_prim": "primitives/success/green-900",
+      "light_hex": "#003A24",
+      "dark_prim": "primitives/success/green-100",
+      "dark_hex": "#012D1D"
+    },
+    {
+      "name": "semantics/surface/status/success/primary/pressed",
+      "light_prim": "primitives/success/green-700",
+      "light_hex": "#00663F",
+      "dark_prim": "primitives/success/green-700",
+      "dark_hex": "#6DC5A5"
+    },
+    {
+      "name": "semantics/surface/status/success/secondary/default",
+      "light_prim": "primitives/success/green-500-10",
+      "light_hex": "#00935C @10%",
+      "dark_prim": "primitives/success/green-500-10",
+      "dark_hex": "#3FB98D @10%"
+    },
+    {
+      "name": "semantics/surface/status/success/secondary/hover",
+      "light_prim": "primitives/success/green-500-15",
+      "light_hex": "#00935C @15%",
+      "dark_prim": "primitives/success/green-500-15",
+      "dark_hex": "#3C9F7B @15%"
+    },
+    {
+      "name": "semantics/surface/status/success/secondary/pressed",
+      "light_prim": "primitives/success/green-500-25",
+      "light_hex": "#00935C @25%",
+      "dark_prim": "primitives/success/green-500-25",
+      "dark_hex": "#3C9F7B @25%"
+    },
+    {
+      "name": "semantics/surface/status/warning/primary/default",
+      "light_prim": "primitives/warning/orange-500",
+      "light_hex": "#F58600",
+      "dark_prim": "primitives/warning/orange-500",
+      "dark_hex": "#F08505"
+    },
+    {
+      "name": "semantics/surface/status/warning/primary/hover",
+      "light_prim": "primitives/warning/orange-600",
+      "light_hex": "#DB7800",
+      "dark_prim": "primitives/warning/orange-600",
+      "dark_hex": "#FB9A41"
+    },
+    {
+      "name": "semantics/surface/status/warning/primary/inversed-dynamic",
+      "light_prim": "primitives/warning/orange-900",
+      "light_hex": "#381E00",
+      "dark_prim": "primitives/warning/orange-900",
+      "dark_hex": "#FFE5C7"
+    },
+    {
+      "name": "semantics/surface/status/warning/primary/inversed-static",
+      "light_prim": "primitives/warning/orange-900",
+      "light_hex": "#381E00",
+      "dark_prim": "primitives/warning/orange-100",
+      "dark_hex": "#502C02"
+    },
+    {
+      "name": "semantics/surface/status/warning/primary/pressed",
+      "light_prim": "primitives/warning/orange-700",
+      "light_hex": "#A85A00",
+      "dark_prim": "primitives/warning/orange-700",
+      "dark_hex": "#FCA95A"
+    },
+    {
+      "name": "semantics/surface/status/warning/secondary/default",
+      "light_prim": "primitives/warning/orange-500-10",
+      "light_hex": "#F58600 @10%",
+      "dark_prim": "primitives/warning/orange-500-10",
+      "dark_hex": "#FB9923 @10%"
+    },
+    {
+      "name": "semantics/surface/status/warning/secondary/hover",
+      "light_prim": "primitives/warning/orange-500-15",
+      "light_hex": "#F58600 @15%",
+      "dark_prim": "primitives/warning/orange-500-15",
+      "dark_hex": "#FB9923 @15%"
+    },
+    {
+      "name": "semantics/surface/status/warning/secondary/pressed",
+      "light_prim": "primitives/warning/orange-500-25",
+      "light_hex": "#F58600 @25%",
+      "dark_prim": "primitives/warning/orange-500-25",
+      "dark_hex": "#FB9923 @25%"
+    }
+  ],
+  "Icon": [
+    {
+      "name": "semantics/icon/subtle/primary/default",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/icon/subtle/primary/disabled",
+      "light_prim": "primitives/neutral/gray-700",
+      "light_hex": "#ABABAB",
+      "dark_prim": "primitives/neutral/gray-700",
+      "dark_hex": "#434C56"
+    },
+    {
+      "name": "semantics/icon/subtle/primary/hover",
+      "light_prim": "primitives/neutral/gray-800",
+      "light_hex": "#6A6B6D",
+      "dark_prim": "primitives/neutral/gray-800",
+      "dark_hex": "#677583"
+    },
+    {
+      "name": "semantics/icon/subtle/primary/inversed-dynamic",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/default",
+      "dark_hex": "#0E0F10"
+    },
+    {
+      "name": "semantics/icon/subtle/primary/inversed-static",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/inversed",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/icon/subtle/primary/pressed",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/icon/subtle/secondary/default",
+      "light_prim": "primitives/neutral/gray-800",
+      "light_hex": "#6A6B6D",
+      "dark_prim": "primitives/neutral/gray-800",
+      "dark_hex": "#677583"
+    },
+    {
+      "name": "semantics/icon/subtle/secondary/hover",
+      "light_prim": "primitives/neutral/gray-700",
+      "light_hex": "#ABABAB",
+      "dark_prim": "primitives/neutral/gray-700",
+      "dark_hex": "#434C56"
+    },
+    {
+      "name": "semantics/icon/subtle/secondary/inversed-dynamic",
+      "light_prim": "primitives/neutral/gray-50",
+      "light_hex": "#F5F5F5",
+      "dark_prim": "primitives/neutral/gray-50",
+      "dark_hex": "#14171A"
+    },
+    {
+      "name": "semantics/icon/subtle/secondary/inversed-static",
+      "light_prim": "primitives/neutral/gray-50",
+      "light_hex": "#F5F5F5",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/icon/subtle/secondary/pressed",
+      "light_prim": "primitives/neutral/gray-800",
+      "light_hex": "#6A6B6D",
+      "dark_prim": "primitives/neutral/gray-800",
+      "dark_hex": "#677583"
+    },
+    {
+      "name": "semantics/icon/brand/default",
+      "light_prim": "primitives/brand/blue-500",
+      "light_hex": "#0084FF",
+      "dark_prim": "primitives/brand/blue-500",
+      "dark_hex": "#148BFA"
+    },
+    {
+      "name": "semantics/icon/brand/focus",
+      "light_prim": "primitives/brand/blue-500",
+      "light_hex": "#0084FF",
+      "dark_prim": "primitives/brand/blue-500",
+      "dark_hex": "#148BFA"
+    },
+    {
+      "name": "semantics/icon/brand/hover",
+      "light_prim": "primitives/brand/blue-600",
+      "light_hex": "#006FD6",
+      "dark_prim": "primitives/brand/blue-600",
+      "dark_hex": "#41A1FB"
+    },
+    {
+      "name": "semantics/icon/brand/inversed-dynamic",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-900",
+      "dark_hex": "#C8E3FE"
+    },
+    {
+      "name": "semantics/icon/brand/inversed-static",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-100",
+      "dark_hex": "#023564"
+    },
+    {
+      "name": "semantics/icon/brand/pressed",
+      "light_prim": "primitives/brand/blue-700",
+      "light_hex": "#005AAD",
+      "dark_prim": "primitives/brand/blue-700",
+      "dark_hex": "#73B9FC"
+    },
+    {
+      "name": "semantics/icon/on-fill/error/default",
+      "light_prim": "primitives/error/red-600",
+      "light_hex": "#AE302A",
+      "dark_prim": "primitives/error/red-600",
+      "dark_hex": "#E7716E"
+    },
+    {
+      "name": "semantics/icon/on-fill/error/focus",
+      "light_prim": "primitives/error/red-600",
+      "light_hex": "#AE302A",
+      "dark_prim": "primitives/error/red-600",
+      "dark_hex": "#E7716E"
+    },
+    {
+      "name": "semantics/icon/on-fill/error/hover",
+      "light_prim": "primitives/error/red-700",
+      "light_hex": "#85221E",
+      "dark_prim": "primitives/error/red-700",
+      "dark_hex": "#EB908E"
+    },
+    {
+      "name": "semantics/icon/on-fill/error/inversed-dynamic",
+      "light_prim": "primitives/error/red 900",
+      "light_hex": "#3A0A08",
+      "dark_prim": "primitives/error/red 900",
+      "dark_hex": "#F7D4D4"
+    },
+    {
+      "name": "semantics/icon/on-fill/error/inversed-static",
+      "light_prim": "primitives/error/red 900",
+      "light_hex": "#3A0A08",
+      "dark_prim": "primitives/error/red-100",
+      "dark_hex": "#43110F"
+    },
+    {
+      "name": "semantics/icon/on-fill/error/pressed",
+      "light_prim": "primitives/error/red-800",
+      "light_hex": "#5E1512",
+      "dark_prim": "primitives/error/red-800",
+      "dark_hex": "#F3C5C3"
+    },
+    {
+      "name": "semantics/icon/on-fill/info/default",
+      "light_prim": "primitives/brand/blue-600",
+      "light_hex": "#006FD6",
+      "dark_prim": "primitives/brand/blue-600",
+      "dark_hex": "#41A1FB"
+    },
+    {
+      "name": "semantics/icon/on-fill/info/focus",
+      "light_prim": "primitives/brand/blue-600",
+      "light_hex": "#006FD6",
+      "dark_prim": "primitives/brand/blue-600",
+      "dark_hex": "#41A1FB"
+    },
+    {
+      "name": "semantics/icon/on-fill/info/hover",
+      "light_prim": "primitives/brand/blue-700",
+      "light_hex": "#005AAD",
+      "dark_prim": "primitives/brand/blue-700",
+      "dark_hex": "#73B9FC"
+    },
+    {
+      "name": "semantics/icon/on-fill/info/inversed-dynamic",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-900",
+      "dark_hex": "#C8E3FE"
+    },
+    {
+      "name": "semantics/icon/on-fill/info/inversed-static",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-100",
+      "dark_hex": "#023564"
+    },
+    {
+      "name": "semantics/icon/on-fill/info/pressed",
+      "light_prim": "primitives/brand/blue-800",
+      "light_hex": "#004585",
+      "dark_prim": "primitives/brand/blue-800",
+      "dark_hex": "#9BCDFD"
+    },
+    {
+      "name": "semantics/icon/on-fill/subtle/disabled",
+      "light_prim": "primitives/neutral/gray-700",
+      "light_hex": "#ABABAB",
+      "dark_prim": "primitives/neutral/gray-700",
+      "dark_hex": "#434C56"
+    },
+    {
+      "name": "semantics/icon/on-fill/subtle/inversed-dynamic",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/default",
+      "dark_hex": "#0E0F10"
+    },
+    {
+      "name": "semantics/icon/on-fill/subtle/inversed-static",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/inversed",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/icon/on-fill/subtle/primary",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/icon/on-fill/subtle/secondary",
+      "light_prim": "primitives/neutral/gray-800",
+      "light_hex": "#6A6B6D",
+      "dark_prim": "primitives/neutral/gray-800",
+      "dark_hex": "#677583"
+    },
+    {
+      "name": "semantics/icon/on-fill/success/default",
+      "light_prim": "primitives/success/green-600",
+      "light_hex": "#007C4E",
+      "dark_prim": "primitives/success/green-600",
+      "dark_hex": "#55B995"
+    },
+    {
+      "name": "semantics/icon/on-fill/success/focus",
+      "light_prim": "primitives/success/green-600",
+      "light_hex": "#007C4E",
+      "dark_prim": "primitives/success/green-600",
+      "dark_hex": "#55B995"
+    },
+    {
+      "name": "semantics/icon/on-fill/success/hover",
+      "light_prim": "primitives/success/green-700",
+      "light_hex": "#00663F",
+      "dark_prim": "primitives/success/green-700",
+      "dark_hex": "#6DC5A5"
+    },
+    {
+      "name": "semantics/icon/on-fill/success/inversed-dynamic",
+      "light_prim": "primitives/success/green-900",
+      "light_hex": "#003A24",
+      "dark_prim": "primitives/success/green-900",
+      "dark_hex": "#D1EBE0"
+    },
+    {
+      "name": "semantics/icon/on-fill/success/inversed-static",
+      "light_prim": "primitives/success/green-900",
+      "light_hex": "#003A24",
+      "dark_prim": "primitives/success/green-100",
+      "dark_hex": "#012D1D"
+    },
+    {
+      "name": "semantics/icon/on-fill/success/pressed",
+      "light_prim": "primitives/success/green-800",
+      "light_hex": "#004F32",
+      "dark_prim": "primitives/success/green-800",
+      "dark_hex": "#AEDBCB"
+    },
+    {
+      "name": "semantics/icon/on-fill/warning/default",
+      "light_prim": "primitives/warning/orange-600",
+      "light_hex": "#DB7800",
+      "dark_prim": "primitives/warning/orange-600",
+      "dark_hex": "#FB9A41"
+    },
+    {
+      "name": "semantics/icon/on-fill/warning/focus",
+      "light_prim": "primitives/warning/orange-600",
+      "light_hex": "#DB7800",
+      "dark_prim": "primitives/warning/orange-600",
+      "dark_hex": "#FB9A41"
+    },
+    {
+      "name": "semantics/icon/on-fill/warning/hover",
+      "light_prim": "primitives/warning/orange-700",
+      "light_hex": "#A85A00",
+      "dark_prim": "primitives/warning/orange-700",
+      "dark_hex": "#FCA95A"
+    },
+    {
+      "name": "semantics/icon/on-fill/warning/inversed-dynamic",
+      "light_prim": "primitives/warning/orange-900",
+      "light_hex": "#381E00",
+      "dark_prim": "primitives/warning/orange-900",
+      "dark_hex": "#FFE5C7"
+    },
+    {
+      "name": "semantics/icon/on-fill/warning/inversed-static",
+      "light_prim": "primitives/warning/orange-900",
+      "light_hex": "#381E00",
+      "dark_prim": "primitives/warning/orange-100",
+      "dark_hex": "#502C02"
+    },
+    {
+      "name": "semantics/icon/on-fill/warning/pressed",
+      "light_prim": "primitives/warning/orange-800",
+      "light_hex": "#6B3A00",
+      "dark_prim": "primitives/warning/orange-800",
+      "dark_hex": "#FDD1A0"
+    },
+    {
+      "name": "semantics/icon/status/error/primary/default",
+      "light_prim": "primitives/error/red-500",
+      "light_hex": "#DA3E37",
+      "dark_prim": "primitives/error/red-500",
+      "dark_hex": "#E64D47"
+    },
+    {
+      "name": "semantics/icon/status/error/primary/focus",
+      "light_prim": "primitives/error/red-500",
+      "light_hex": "#DA3E37",
+      "dark_prim": "primitives/error/red-500",
+      "dark_hex": "#E64D47"
+    },
+    {
+      "name": "semantics/icon/status/error/primary/hover",
+      "light_prim": "primitives/error/red-600",
+      "light_hex": "#AE302A",
+      "dark_prim": "primitives/error/red-600",
+      "dark_hex": "#E7716E"
+    },
+    {
+      "name": "semantics/icon/status/error/primary/inversed-dynamic",
+      "light_prim": "primitives/error/red 900",
+      "light_hex": "#3A0A08",
+      "dark_prim": "primitives/error/red 900",
+      "dark_hex": "#F7D4D4"
+    },
+    {
+      "name": "semantics/icon/status/error/primary/inversed-static",
+      "light_prim": "primitives/error/red 900",
+      "light_hex": "#3A0A08",
+      "dark_prim": "primitives/error/red-100",
+      "dark_hex": "#43110F"
+    },
+    {
+      "name": "semantics/icon/status/error/primary/pressed",
+      "light_prim": "primitives/error/red-700",
+      "light_hex": "#85221E",
+      "dark_prim": "primitives/error/red-700",
+      "dark_hex": "#EB908E"
+    },
+    {
+      "name": "semantics/icon/status/error/secondary/default",
+      "light_prim": "primitives/error/red-500-50",
+      "light_hex": "#DA3E37 @50%",
+      "dark_prim": "primitives/error/red-500-75",
+      "dark_hex": "#E64D47 @75%"
+    },
+    {
+      "name": "semantics/icon/status/error/secondary/focus",
+      "light_prim": "primitives/error/red-500-50",
+      "light_hex": "#DA3E37 @50%",
+      "dark_prim": "primitives/error/red-500-75",
+      "dark_hex": "#E64D47 @75%"
+    },
+    {
+      "name": "semantics/icon/status/error/secondary/hover",
+      "light_prim": "primitives/error/red-500-75",
+      "light_hex": "#DA3E37 @75%",
+      "dark_prim": "primitives/error/red-500",
+      "dark_hex": "#E64D47"
+    },
+    {
+      "name": "semantics/icon/status/error/secondary/pressed",
+      "light_prim": "primitives/error/red-500",
+      "light_hex": "#DA3E37",
+      "dark_prim": "primitives/error/red-600",
+      "dark_hex": "#E7716E"
+    },
+    {
+      "name": "semantics/icon/status/info/primary/default",
+      "light_prim": "primitives/brand/blue-500",
+      "light_hex": "#0084FF",
+      "dark_prim": "primitives/brand/blue-500",
+      "dark_hex": "#148BFA"
+    },
+    {
+      "name": "semantics/icon/status/info/primary/focus",
+      "light_prim": "primitives/brand/blue-500",
+      "light_hex": "#0084FF",
+      "dark_prim": "primitives/brand/blue-500",
+      "dark_hex": "#148BFA"
+    },
+    {
+      "name": "semantics/icon/status/info/primary/hover",
+      "light_prim": "primitives/brand/blue-600",
+      "light_hex": "#006FD6",
+      "dark_prim": "primitives/brand/blue-600",
+      "dark_hex": "#41A1FB"
+    },
+    {
+      "name": "semantics/icon/status/info/primary/inversed-dynamic",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-900",
+      "dark_hex": "#C8E3FE"
+    },
+    {
+      "name": "semantics/icon/status/info/primary/inversed-static",
+      "light_prim": "primitives/brand/blue-900",
+      "light_hex": "#00305C",
+      "dark_prim": "primitives/brand/blue-100",
+      "dark_hex": "#023564"
+    },
+    {
+      "name": "semantics/icon/status/info/primary/pressed",
+      "light_prim": "primitives/brand/blue-700",
+      "light_hex": "#005AAD",
+      "dark_prim": "primitives/brand/blue-700",
+      "dark_hex": "#73B9FC"
+    },
+    {
+      "name": "semantics/icon/status/info/secondary/default",
+      "light_prim": "primitives/brand/blue-500-50",
+      "light_hex": "#0084FF @50%",
+      "dark_prim": "primitives/brand/blue-500-75",
+      "dark_hex": "#148BFA @75%"
+    },
+    {
+      "name": "semantics/icon/status/info/secondary/focus",
+      "light_prim": "primitives/brand/blue-500-50",
+      "light_hex": "#0084FF @50%",
+      "dark_prim": "primitives/brand/blue-500-75",
+      "dark_hex": "#148BFA @75%"
+    },
+    {
+      "name": "semantics/icon/status/info/secondary/hover",
+      "light_prim": "primitives/brand/blue-500-75",
+      "light_hex": "#0084FF @75%",
+      "dark_prim": "primitives/brand/blue-500",
+      "dark_hex": "#148BFA"
+    },
+    {
+      "name": "semantics/icon/status/info/secondary/pressed",
+      "light_prim": "primitives/brand/blue-500",
+      "light_hex": "#0084FF",
+      "dark_prim": "primitives/brand/blue-600",
+      "dark_hex": "#41A1FB"
+    },
+    {
+      "name": "semantics/icon/status/subtle/primary/default",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/icon/status/subtle/primary/hover",
+      "light_prim": "primitives/neutral/gray-800",
+      "light_hex": "#6A6B6D",
+      "dark_prim": "primitives/neutral/gray-800",
+      "dark_hex": "#677583"
+    },
+    {
+      "name": "semantics/icon/status/subtle/primary/inversed-dynamic",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/default",
+      "dark_hex": "#0E0F10"
+    },
+    {
+      "name": "semantics/icon/status/subtle/primary/inversed-static",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/inversed",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/icon/status/subtle/primary/pressed",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/icon/status/subtle/secondary/default",
+      "light_prim": "primitives/neutral/black-shade-50",
+      "light_hex": "#1F2428 @50%",
+      "dark_prim": "primitives/neutral/black-shade-50",
+      "dark_hex": "#FFFFFF @50%"
+    },
+    {
+      "name": "semantics/icon/status/subtle/secondary/focus",
+      "light_prim": "primitives/neutral/black-shade-50",
+      "light_hex": "#1F2428 @50%",
+      "dark_prim": "primitives/neutral/black-shade-50",
+      "dark_hex": "#FFFFFF @50%"
+    },
+    {
+      "name": "semantics/icon/status/subtle/secondary/hover",
+      "light_prim": "primitives/neutral/black-shade-75",
+      "light_hex": "#1F2428 @75%",
+      "dark_prim": "primitives/neutral/black-shade-75",
+      "dark_hex": "#FFFFFF @75%"
+    },
+    {
+      "name": "semantics/icon/status/subtle/secondary/pressed",
+      "light_prim": "primitives/neutral/gray-900",
+      "light_hex": "#1B1F22",
+      "dark_prim": "primitives/neutral/gray-900",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/icon/status/success/primary/default",
+      "light_prim": "primitives/success/green-500",
+      "light_hex": "#00935C",
+      "dark_prim": "primitives/success/green-500",
+      "dark_hex": "#3C9F7B"
+    },
+    {
+      "name": "semantics/icon/status/success/primary/focus",
+      "light_prim": "primitives/success/green-500",
+      "light_hex": "#00935C",
+      "dark_prim": "primitives/success/green-500",
+      "dark_hex": "#3C9F7B"
+    },
+    {
+      "name": "semantics/icon/status/success/primary/hover",
+      "light_prim": "primitives/success/green-600",
+      "light_hex": "#007C4E",
+      "dark_prim": "primitives/success/green-600",
+      "dark_hex": "#55B995"
+    },
+    {
+      "name": "semantics/icon/status/success/primary/inversed-dynamic",
+      "light_prim": "primitives/success/green-900",
+      "light_hex": "#003A24",
+      "dark_prim": "primitives/success/green-900",
+      "dark_hex": "#D1EBE0"
+    },
+    {
+      "name": "semantics/icon/status/success/primary/inversed-static",
+      "light_prim": "primitives/success/green-900",
+      "light_hex": "#003A24",
+      "dark_prim": "primitives/success/green-100",
+      "dark_hex": "#012D1D"
+    },
+    {
+      "name": "semantics/icon/status/success/primary/pressed",
+      "light_prim": "primitives/success/green-700",
+      "light_hex": "#00663F",
+      "dark_prim": "primitives/success/green-700",
+      "dark_hex": "#6DC5A5"
+    },
+    {
+      "name": "semantics/icon/status/success/secondary/default",
+      "light_prim": "primitives/success/green-500-50",
+      "light_hex": "#00935C @50%",
+      "dark_prim": "primitives/success/green-500-75",
+      "dark_hex": "#3C9F7B @75%"
+    },
+    {
+      "name": "semantics/icon/status/success/secondary/focus",
+      "light_prim": "primitives/success/green-500-50",
+      "light_hex": "#00935C @50%",
+      "dark_prim": "primitives/success/green-500-75",
+      "dark_hex": "#3C9F7B @75%"
+    },
+    {
+      "name": "semantics/icon/status/success/secondary/hover",
+      "light_prim": "primitives/success/green-500-75",
+      "light_hex": "#00935C @75%",
+      "dark_prim": "primitives/success/green-500",
+      "dark_hex": "#3C9F7B"
+    },
+    {
+      "name": "semantics/icon/status/success/secondary/pressed",
+      "light_prim": "primitives/success/green-500",
+      "light_hex": "#00935C",
+      "dark_prim": "primitives/success/green-600",
+      "dark_hex": "#55B995"
+    },
+    {
+      "name": "semantics/icon/status/warning/primary/default",
+      "light_prim": "primitives/warning/orange-500",
+      "light_hex": "#F58600",
+      "dark_prim": "primitives/warning/orange-500",
+      "dark_hex": "#F08505"
+    },
+    {
+      "name": "semantics/icon/status/warning/primary/focus",
+      "light_prim": "primitives/warning/orange-500",
+      "light_hex": "#F58600",
+      "dark_prim": "primitives/warning/orange-500",
+      "dark_hex": "#F08505"
+    },
+    {
+      "name": "semantics/icon/status/warning/primary/hover",
+      "light_prim": "primitives/warning/orange-600",
+      "light_hex": "#DB7800",
+      "dark_prim": "primitives/warning/orange-600",
+      "dark_hex": "#FB9A41"
+    },
+    {
+      "name": "semantics/icon/status/warning/primary/inversed-dynamic",
+      "light_prim": "primitives/warning/orange-900",
+      "light_hex": "#381E00",
+      "dark_prim": "primitives/warning/orange-900",
+      "dark_hex": "#FFE5C7"
+    },
+    {
+      "name": "semantics/icon/status/warning/primary/inversed-static",
+      "light_prim": "primitives/warning/orange-900",
+      "light_hex": "#381E00",
+      "dark_prim": "primitives/warning/orange-100",
+      "dark_hex": "#502C02"
+    },
+    {
+      "name": "semantics/icon/status/warning/primary/pressed",
+      "light_prim": "primitives/warning/orange-700",
+      "light_hex": "#A85A00",
+      "dark_prim": "primitives/warning/orange-700",
+      "dark_hex": "#FCA95A"
+    },
+    {
+      "name": "semantics/icon/status/warning/secondary/default",
+      "light_prim": "primitives/warning/orange-500-50",
+      "light_hex": "#F58600 @50%",
+      "dark_prim": "primitives/warning/orange-500-75",
+      "dark_hex": "#FB9923 @75%"
+    },
+    {
+      "name": "semantics/icon/status/warning/secondary/focus",
+      "light_prim": "primitives/warning/orange-500-50",
+      "light_hex": "#F58600 @50%",
+      "dark_prim": "primitives/warning/orange-500-75",
+      "dark_hex": "#FB9923 @75%"
+    },
+    {
+      "name": "semantics/icon/status/warning/secondary/hover",
+      "light_prim": "primitives/warning/orange-500-75",
+      "light_hex": "#F58600 @75%",
+      "dark_prim": "primitives/warning/orange-500",
+      "dark_hex": "#F08505"
+    },
+    {
+      "name": "semantics/icon/status/warning/secondary/pressed",
+      "light_prim": "primitives/warning/orange-500",
+      "light_hex": "#F58600",
+      "dark_prim": "primitives/warning/orange-600",
+      "dark_hex": "#FB9A41"
+    }
+  ],
+  "Other": [
+    {
+      "name": "semantics/avatar/one",
+      "light_prim": "primitives/brand/blue-500",
+      "light_hex": "#0084FF",
+      "dark_prim": "primitives/brand/blue-500",
+      "dark_hex": "#148BFA"
+    },
+    {
+      "name": "semantics/avatar/two",
+      "light_prim": "primitives/warning/orange-500",
+      "light_hex": "#F58600",
+      "dark_prim": "primitives/warning/orange-500",
+      "dark_hex": "#F08505"
+    },
+    {
+      "name": "semantics/avatar/three",
+      "light_prim": "primitives/error/red-500",
+      "light_hex": "#DA3E37",
+      "dark_prim": "primitives/error/red-500",
+      "dark_hex": "#E64D47"
+    },
+    {
+      "name": "semantics/avatar/four",
+      "light_prim": "primitives/success/green-500",
+      "light_hex": "#00935C",
+      "dark_prim": "primitives/success/green-500",
+      "dark_hex": "#3C9F7B"
+    },
+    {
+      "name": "semantics/avatar/five",
+      "light_prim": "primitives/neutral/gray-800",
+      "light_hex": "#6A6B6D",
+      "dark_prim": "primitives/neutral/gray-800",
+      "dark_hex": "#677583"
+    },
+    {
+      "name": "semantics/avatar/six",
+      "light_prim": "primitives/neutral/gray-100",
+      "light_hex": "#EBEBEB",
+      "dark_prim": "primitives/neutral/gray-100",
+      "dark_hex": "#1B1F22"
+    },
+    {
+      "name": "semantics/avatar/seven",
+      "light_prim": "primitives/neutral/gray-200",
+      "light_hex": "#E0E0E0",
+      "dark_prim": "primitives/neutral/gray-200",
+      "dark_hex": "#22262B"
+    },
+    {
+      "name": "semantics/code/comment",
+      "light_prim": "primitives/neutral/gray-800",
+      "light_hex": "#6A6B6D",
+      "dark_prim": "primitives/neutral/gray-800",
+      "dark_hex": "#677583"
+    },
+    {
+      "name": "semantics/code/function",
+      "light_prim": "primitives/brand/blue-600",
+      "light_hex": "#006FD6",
+      "dark_prim": "primitives/brand/blue-600",
+      "dark_hex": "#41A1FB"
+    },
+    {
+      "name": "semantics/code/inversed-dynamic",
+      "light_prim": "primitives/neutral/default",
+      "light_hex": "#FFFFFF",
+      "dark_prim": "primitives/neutral/default",
+      "dark_hex": "#0E0F10"
+    },
+    {
+      "name": "semantics/code/keyword",
+      "light_prim": "primitives/utilities/purple-600",
+      "light_hex": "#7B51C8",
+      "dark_prim": "primitives/utilities/purple-600",
+      "dark_hex": "#9975DA"
+    },
+    {
+      "name": "semantics/code/overlay",
+      "light_prim": "primitives/neutral/black-shade-2",
+      "light_hex": "#1F2428 @2%",
+      "dark_prim": "primitives/neutral/black-shade-2",
+      "dark_hex": "#FFFFFF @2%"
+    },
+    {
+      "name": "semantics/code/properties",
+      "light_prim": "primitives/error/red-500",
+      "light_hex": "#DA3E37",
+      "dark_prim": "primitives/error/red-500",
+      "dark_hex": "#E64D47"
+    },
+    {
+      "name": "semantics/code/string",
+      "light_prim": "primitives/utilities/lime-700",
+      "light_hex": "#548519",
+      "dark_prim": "primitives/utilities/lime-700",
+      "dark_hex": "#7BAD35"
+    },
+    {
+      "name": "semantics/code/text",
+      "light_prim": "primitives/neutral/inversed",
+      "light_hex": "#0E0F10",
+      "dark_prim": "primitives/neutral/inversed",
+      "dark_hex": "#FFFFFF"
+    },
+    {
+      "name": "semantics/sidebar/default",
+      "light_prim": "primitives/neutral/gray-50",
+      "light_hex": "#F5F5F5",
+      "dark_prim": "primitives/neutral/default",
+      "dark_hex": "#0E0F10"
+    },
+    {
+      "name": "semantics/sidebar/hover",
+      "light_prim": "primitives/neutral/gray-100",
+      "light_hex": "#EBEBEB",
+      "dark_prim": "primitives/neutral/gray-200",
+      "dark_hex": "#22262B"
+    },
+    {
+      "name": "semantics/sidebar/collapsed hover",
+      "light_prim": "primitives/neutral/gray-50",
+      "light_hex": "#F5F5F5",
+      "dark_prim": "primitives/neutral/gray-200",
+      "dark_hex": "#22262B"
+    }
+  ]
+}

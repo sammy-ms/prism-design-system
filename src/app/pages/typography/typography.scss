@@ -1,0 +1,255 @@
+// =============================================================================
+// Prism Design System — Typography Documentation Page
+// Matches Figma: flat table, gray header bar, IBM Plex Mono throughout
+// =============================================================================
+
+// ---------------------------------------------------------------------------
+// Host
+// ---------------------------------------------------------------------------
+:host {
+  display: block;
+  width: 100%;
+  background: var(--semantics-surface-subtle-secondary-default, #ffffff);
+}
+
+// ---------------------------------------------------------------------------
+// Page Layout
+// ---------------------------------------------------------------------------
+.ms-typo-page {
+  max-width: 960px;
+  padding: 40px 32px 80px 32px;
+
+  &__header {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 34px;
+    color: var(--semantics-text-subtle-primary-default, #1b1f22);
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
+  }
+
+  &__description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--semantics-text-subtle-primary-hover, #6a6b6d);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Table Wrapper
+// ---------------------------------------------------------------------------
+.ms-typo-table-wrapper {
+  display: flex;
+}
+
+// ---------------------------------------------------------------------------
+// Table
+// ---------------------------------------------------------------------------
+.ms-typo-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--semantics-border-subtle-secondary, #e0e0e0);
+  border-radius: 10px;
+
+  // Header row — matches other pages
+  &__th {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: var(--semantics-text-subtle-primary-default, #1b1f22);
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--semantics-border-subtle-secondary, #e0e0e0);
+    white-space: nowrap;
+    background: var(--semantics-bg-subtle-tertiary-default, #f5f5f5);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    &--type {
+      width: 40px;
+    }
+  }
+
+  // Section label row
+  &__section-row {
+    background: transparent;
+  }
+
+  &__section-label {
+    padding: 12px 14px 6px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    color: var(--semantics-text-subtle-primary-default, #1b1f22);
+  }
+
+  // Data rows
+  &__row {
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--semantics-border-subtle-secondary, #ebebeb);
+    }
+
+    &--highlight {
+      animation: ms-typo-row-highlight 1.8s ease;
+    }
+  }
+
+  // Cells
+  &__td {
+    padding: 8px 14px;
+    vertical-align: middle;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    line-height: 18px;
+    white-space: nowrap;
+
+    &--type {
+      width: 40px;
+      text-align: center;
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Type Icon
+// ---------------------------------------------------------------------------
+.ms-typo-type-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+}
+
+// ---------------------------------------------------------------------------
+// Token Name (plain text)
+// ---------------------------------------------------------------------------
+.ms-typo-token-name {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: normal;
+  color: #404040;
+}
+
+// ---------------------------------------------------------------------------
+// Value (plain, non-alias)
+// ---------------------------------------------------------------------------
+.ms-typo-value {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: normal;
+  color: #4d4d4d;
+}
+
+// ---------------------------------------------------------------------------
+// Alias Badge (semantic text web/mobile values)
+// ---------------------------------------------------------------------------
+.ms-typo-alias-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: normal;
+  color: #4d4d4d;
+  background: #ebebeb;
+  padding: 3px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+  border: none;
+
+  &--clickable {
+    cursor: pointer;
+    transition: background 0.15s ease;
+
+    &:hover {
+      background: #e0e0e0;
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Highlight keyframe
+// ---------------------------------------------------------------------------
+@keyframes ms-typo-row-highlight {
+  0% {
+    background: rgba(0, 132, 255, 0.14);
+  }
+  60% {
+    background: rgba(0, 132, 255, 0.07);
+  }
+  100% {
+    background: transparent;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Scope Badge — ALL gray, not color-coded
+// ---------------------------------------------------------------------------
+.ms-typo-scope-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: normal;
+  color: #4d4d4d;
+  background: #e8e8e8;
+  padding: 3px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+// ---------------------------------------------------------------------------
+// Total
+// ---------------------------------------------------------------------------
+.ms-typo-total {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  font-weight: 400;
+  color: #999999;
+  margin-top: 24px;
+}
+
+// ---------------------------------------------------------------------------
+// Responsive
+// ---------------------------------------------------------------------------
+@media (max-width: 1100px) {
+  .ms-typo-page {
+    padding: 32px 24px 60px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ms-typo-page {
+    padding: 24px 16px 48px 16px;
+  }
+
+  .ms-typo-page__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .ms-typo-table {
+    &__th--mobile,
+    &__td--mobile {
+      display: none;
+    }
+
+    &__th,
+    &__td {
+      padding: 2px 6px;
+    }
+  }
+}

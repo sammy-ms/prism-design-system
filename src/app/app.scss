@@ -1,0 +1,32 @@
+.ms-shell {
+  display: flex;
+  min-height: 100vh;
+
+  &__main {
+    flex: 1;
+    min-width: 0;
+    margin-left: 240px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: margin-left 0.2s ease;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &--collapsed {
+    .ms-shell__main {
+      margin-left: 64px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .ms-shell {
+    &__main {
+      margin-left: 64px;
+    }
+  }
+}

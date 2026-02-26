@@ -1,0 +1,49 @@
+// Prism Design System — Border Semantic Color Tokens
+:root {
+  --semantics-border-subtle-primary: var(--primitives-neutral-gray-400);
+  --semantics-border-subtle-inversed-dynamic: var(--primitives-neutral-default);
+  --semantics-border-subtle-inversed-static: var(--primitives-neutral-default);
+  --semantics-border-subtle-secondary: var(--primitives-neutral-gray-200);
+  --semantics-border-subtle-disabled: var(--primitives-neutral-gray-400);
+  --semantics-border-brand-default: var(--primitives-brand-blue-500);
+  --semantics-border-brand-focus: var(--primitives-brand-blue-500);
+  --semantics-border-brand-hover: var(--primitives-brand-blue-600);
+  --semantics-border-brand-pressed: var(--primitives-brand-blue-700);
+  --semantics-border-status-error-primary-default: var(--primitives-error-red-500);
+  --semantics-border-status-error-primary-focus: var(--primitives-error-red-500);
+  --semantics-border-status-error-primary-hover: var(--primitives-error-red-600);
+  --semantics-border-status-error-primary-pressed: var(--primitives-error-red-700);
+  --semantics-border-status-error-secondary-default: var(--primitives-error-red-100);
+  --semantics-border-status-error-secondary-focus: var(--primitives-error-red-500);
+  --semantics-border-status-error-secondary-hover: var(--primitives-error-red-200);
+  --semantics-border-status-error-secondary-pressed: var(--primitives-error-red-300);
+  --semantics-border-status-info-primary-default: var(--primitives-brand-blue-500);
+  --semantics-border-status-info-primary-focus: var(--primitives-brand-blue-500);
+  --semantics-border-status-info-primary-hover: var(--primitives-brand-blue-600);
+  --semantics-border-status-info-primary-pressed: var(--primitives-brand-blue-700);
+  --semantics-border-status-info-secondary-default: var(--primitives-brand-blue-100);
+  --semantics-border-status-info-secondary-focus: var(--primitives-brand-blue-500);
+  --semantics-border-status-info-secondary-hover: var(--primitives-brand-blue-200);
+  --semantics-border-status-info-secondary-pressed: var(--primitives-brand-blue-300);
+  --semantics-border-status-success-primary-default: var(--primitives-success-green-500);
+  --semantics-border-status-success-primary-focus: var(--primitives-success-green-500);
+  --semantics-border-status-success-primary-hover: var(--primitives-success-green-600);
+  --semantics-border-status-success-primary-pressed: var(--primitives-success-green-700);
+  --semantics-border-status-success-secondary-default: var(--primitives-success-green-100);
+  --semantics-border-status-success-secondary-focus: var(--primitives-success-green-500);
+  --semantics-border-status-success-secondary-hover: var(--primitives-success-green-200);
+  --semantics-border-status-success-secondary-pressed: var(--primitives-success-green-300);
+  --semantics-border-status-warning-primary-default: var(--primitives-warning-orange-500);
+  --semantics-border-status-warning-primary-focus: var(--primitives-warning-orange-500);
+  --semantics-border-status-warning-primary-hover: var(--primitives-warning-orange-600);
+  --semantics-border-status-warning-primary-pressed: var(--primitives-warning-orange-700);
+  --semantics-border-status-warning-secondary-default: var(--primitives-warning-orange-100);
+  --semantics-border-status-warning-secondary-focus: var(--primitives-warning-orange-500);
+  --semantics-border-status-warning-secondary-hover: var(--primitives-warning-orange-200);
+  --semantics-border-status-warning-secondary-pressed: var(--primitives-warning-orange-300);
+}
+
+[data-theme='dark'] {
+  --semantics-border-subtle-inversed-dynamic: var(--primitives-neutral-gray-50);
+  --semantics-border-subtle-inversed-static: var(--primitives-neutral-inversed);
+}

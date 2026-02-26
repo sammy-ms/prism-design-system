@@ -1,0 +1,222 @@
+// =============================================================================
+// Prism Design System — Spacing Documentation Page
+// =============================================================================
+
+// ---------------------------------------------------------------------------
+// Host
+// ---------------------------------------------------------------------------
+:host {
+  display: block;
+  width: 100%;
+  background: var(--semantics-surface-subtle-secondary-default, #ffffff);
+}
+
+// ---------------------------------------------------------------------------
+// Page Layout
+// ---------------------------------------------------------------------------
+.ms-spacing-page {
+  max-width: 960px;
+  padding: 40px 32px 80px 32px;
+}
+
+// ---------------------------------------------------------------------------
+// Section Header
+// ---------------------------------------------------------------------------
+.ms-spacing-section__header {
+  margin-bottom: 20px;
+}
+
+.ms-spacing-section__title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 34px;
+  color: var(--semantics-text-subtle-primary-default, #1b1f22);
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+
+.ms-spacing-section__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--semantics-text-subtle-primary-hover, #6a6b6d);
+}
+
+// ---------------------------------------------------------------------------
+// Table
+// ---------------------------------------------------------------------------
+.ms-spacing-table-wrapper {
+  display: flex;
+}
+
+.ms-spacing-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--semantics-border-subtle-secondary, #e0e0e0);
+  border-radius: 10px;
+
+  // Header
+  &__th {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: var(--semantics-text-subtle-primary-default, #1b1f22);
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--semantics-border-subtle-secondary, #e0e0e0);
+    white-space: nowrap;
+    background: var(--semantics-bg-subtle-tertiary-default, #f5f5f5);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    &--type {
+      width: 50px;
+      text-align: center;
+    }
+
+    &--size {
+      width: 70px;
+    }
+  }
+
+  // Rows
+  &__row {
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--semantics-border-subtle-secondary, #ebebeb);
+    }
+  }
+
+  // Cells
+  &__td {
+    padding: 8px 14px;
+    vertical-align: middle;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    line-height: 18px;
+    white-space: nowrap;
+
+    &--type {
+      width: 50px;
+      text-align: center;
+    }
+
+    &--size {
+      width: 70px;
+    }
+
+    &--scope {
+      white-space: normal;
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Type Icon
+// ---------------------------------------------------------------------------
+.ms-spacing-type-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+}
+
+// ---------------------------------------------------------------------------
+// Token Name (plain text)
+// ---------------------------------------------------------------------------
+.ms-spacing-token-name {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #404040;
+}
+
+// ---------------------------------------------------------------------------
+// Size Value
+// ---------------------------------------------------------------------------
+.ms-spacing-size {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: normal;
+  color: #4d4d4d;
+}
+
+// ---------------------------------------------------------------------------
+// Example Bar
+// ---------------------------------------------------------------------------
+.ms-spacing-bar {
+  min-width: 2px;
+  min-height: 2px;
+  background: var(--semantics-surface-brand-default, rgba(0, 132, 255, 0.1));
+  border-radius: 2px;
+}
+
+.ms-spacing-bar-empty {
+  font-size: 13px;
+  color: var(--semantics-text-subtle-primary-hover, #9a9a9a);
+}
+
+// ---------------------------------------------------------------------------
+// Scope Badges
+// ---------------------------------------------------------------------------
+.ms-spacing-scope-badges {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.ms-spacing-scope-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: normal;
+  padding: 3px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+  background: #e8e8e8;
+  color: #4d4d4d;
+
+  &--gap {
+    background: #e8f5e2;
+    color: #66b24d;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Responsive
+// ---------------------------------------------------------------------------
+@media (max-width: 1100px) {
+  .ms-spacing-page {
+    padding: 32px 24px 60px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ms-spacing-page {
+    padding: 24px 16px 48px 16px;
+  }
+
+  .ms-spacing-section__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .ms-spacing-table {
+    &__th,
+    &__td {
+      padding: 7px 10px;
+    }
+
+    &__th--scope,
+    &__td--scope {
+      display: none;
+    }
+  }
+}

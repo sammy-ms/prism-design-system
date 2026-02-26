@@ -1,0 +1,112 @@
+:host {
+  display: block;
+}
+
+.ms-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  padding: 0 24px;
+  background: var(--semantics-surface-subtle-secondary-default, #ffffff);
+  border-bottom: 1px solid var(--semantics-border-subtle-secondary, #e0e0e0);
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__hamburger {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    cursor: pointer;
+    color: var(--semantics-text-subtle-primary-default, #1b1f22);
+
+    &:hover {
+      background: var(--semantics-surface-subtle-secondary-hover, #f5f5f5);
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--semantics-text-subtle-primary-default, #1b1f22);
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--semantics-border-subtle-secondary, #e0e0e0);
+    background: var(--semantics-surface-subtle-secondary-default, #ffffff);
+  }
+
+  &__search-icon {
+    flex-shrink: 0;
+    color: var(--semantics-icon-subtle-secondary-default, #9b9b9b);
+  }
+
+  &__search-input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--semantics-text-subtle-primary-default, #1b1f22);
+    width: 180px;
+
+    &::placeholder {
+      color: var(--semantics-text-subtle-primary-hover, #6a6b6d);
+    }
+  }
+
+  &__icon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    cursor: pointer;
+    color: var(--semantics-icon-subtle-secondary-default, #9b9b9b);
+
+    &:hover {
+      background: var(--semantics-surface-subtle-secondary-hover, #f5f5f5);
+      color: var(--semantics-text-subtle-primary-default, #1b1f22);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .ms-topbar {
+    padding: 0 16px;
+
+    &__hamburger {
+      display: flex;
+    }
+
+    &__search {
+      display: none;
+    }
+  }
+}

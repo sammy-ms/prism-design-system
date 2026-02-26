@@ -1,0 +1,203 @@
+// =============================================================================
+// Prism Design System — Primitive Color Tokens
+// Auto-generated from Figma (node 25:546)
+// 88 tokens across 6 families: Brand, Error, Success, Warning, Neutral, Utilities
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// Light Theme Primitives (default)
+// -----------------------------------------------------------------------------
+:root {
+  // Brand (Blue) — 15 tokens
+  --primitives-brand-blue-50: #e5f2ff;
+  --primitives-brand-blue-100: #b7dcff;
+  --primitives-brand-blue-200: #8ac6ff;
+  --primitives-brand-blue-300: #5cb0ff;
+  --primitives-brand-blue-400: #2e9aff;
+  --primitives-brand-blue-500: #0084ff;
+  --primitives-brand-blue-600: #006fd6;
+  --primitives-brand-blue-700: #005aad;
+  --primitives-brand-blue-800: #004585;
+  --primitives-brand-blue-900: #00305c;
+  --primitives-brand-blue-500-10: rgba(0, 132, 255, 0.1);
+  --primitives-brand-blue-500-15: rgba(0, 132, 255, 0.15);
+  --primitives-brand-blue-500-25: rgba(0, 132, 255, 0.25);
+  --primitives-brand-blue-500-50: rgba(0, 132, 255, 0.5);
+  --primitives-brand-blue-500-75: rgba(0, 132, 255, 0.75);
+
+  // Error (Red) — 15 tokens
+  --primitives-error-red-50: #fceded;
+  --primitives-error-red-100: #f9dcdb;
+  --primitives-error-red-200: #f4b7b6;
+  --primitives-error-red-300: #f0918f;
+  --primitives-error-red-400: #ed6560;
+  --primitives-error-red-500: #da3e37;
+  --primitives-error-red-600: #ae302a;
+  --primitives-error-red-700: #85221e;
+  --primitives-error-red-800: #5e1512;
+  --primitives-error-red-900: #3a0a08;
+  --primitives-error-red-500-10: rgba(218, 62, 55, 0.1);
+  --primitives-error-red-500-15: rgba(218, 62, 55, 0.15);
+  --primitives-error-red-500-25: rgba(218, 62, 55, 0.25);
+  --primitives-error-red-500-50: rgba(218, 62, 55, 0.5);
+  --primitives-error-red-500-75: rgba(218, 62, 55, 0.75);
+
+  // Success (Green) — 15 tokens
+  --primitives-success-green-50: #d8eee5;
+  --primitives-success-green-100: #b5decf;
+  --primitives-success-green-200: #9bd7c1;
+  --primitives-success-green-300: #63bf9e;
+  --primitives-success-green-400: #3fb98d;
+  --primitives-success-green-500: #00935c;
+  --primitives-success-green-600: #007c4e;
+  --primitives-success-green-700: #00663f;
+  --primitives-success-green-800: #004f32;
+  --primitives-success-green-900: #003a24;
+  --primitives-success-green-500-10: rgba(0, 147, 92, 0.1);
+  --primitives-success-green-500-15: rgba(0, 147, 92, 0.15);
+  --primitives-success-green-500-25: rgba(0, 147, 92, 0.25);
+  --primitives-success-green-500-50: rgba(0, 147, 92, 0.5);
+  --primitives-success-green-500-75: rgba(0, 147, 92, 0.75);
+
+  // Warning (Orange) — 15 tokens
+  --primitives-warning-orange-50: #fff3e5;
+  --primitives-warning-orange-100: #ffe1bf;
+  --primitives-warning-orange-200: #ffcb99;
+  --primitives-warning-orange-300: #ffaf66;
+  --primitives-warning-orange-400: #ffa73d;
+  --primitives-warning-orange-500: #f58600;
+  --primitives-warning-orange-600: #db7800;
+  --primitives-warning-orange-700: #a85a00;
+  --primitives-warning-orange-800: #6b3a00;
+  --primitives-warning-orange-900: #381e00;
+  --primitives-warning-orange-500-10: rgba(245, 134, 0, 0.1);
+  --primitives-warning-orange-500-15: rgba(245, 134, 0, 0.15);
+  --primitives-warning-orange-500-25: rgba(245, 134, 0, 0.25);
+  --primitives-warning-orange-500-50: rgba(245, 134, 0, 0.5);
+  --primitives-warning-orange-500-75: rgba(245, 134, 0, 0.75);
+
+  // Neutral (Gray) — 26 tokens
+  --primitives-neutral-default: #ffffff;
+  --primitives-neutral-inversed: #0e0f10;
+  --primitives-neutral-gray-50: #f5f5f5;
+  --primitives-neutral-gray-100: #ebebeb;
+  --primitives-neutral-gray-200: #e0e0e0;
+  --primitives-neutral-gray-300: #d6d6d6;
+  --primitives-neutral-gray-400: #cccccc;
+  --primitives-neutral-gray-500: #c2c2c2;
+  --primitives-neutral-gray-600: #b8b8b8;
+  --primitives-neutral-gray-700: #ababab;
+  --primitives-neutral-gray-800: #6a6b6d;
+  --primitives-neutral-gray-900: #1b1f22;
+  --primitives-neutral-50-tint-3: rgba(245, 245, 245, 0.03);
+  --primitives-neutral-50-tint-5: rgba(245, 245, 245, 0.05);
+  --primitives-neutral-50-tint-15: rgba(245, 245, 245, 0.15);
+  --primitives-neutral-50-tint-25: rgba(245, 245, 245, 0.25);
+  --primitives-neutral-50-tint-50: rgba(245, 245, 245, 0.5);
+  --primitives-neutral-50-tint-75: rgba(245, 245, 245, 0.75);
+  --primitives-neutral-black-shade-2: rgba(31, 36, 40, 0.02);
+  --primitives-neutral-black-shade-3: rgba(31, 36, 40, 0.03);
+  --primitives-neutral-black-shade-5: rgba(31, 36, 40, 0.05);
+  --primitives-neutral-black-shade-10: rgba(31, 36, 40, 0.1);
+  --primitives-neutral-black-shade-15: rgba(31, 36, 40, 0.15);
+  --primitives-neutral-black-shade-25: rgba(31, 36, 40, 0.25);
+  --primitives-neutral-black-shade-50: rgba(31, 36, 40, 0.5);
+  --primitives-neutral-black-shade-75: rgba(31, 36, 40, 0.75);
+
+  // Utilities — 2 tokens
+  --primitives-utilities-lime-700: #548519;
+  --primitives-utilities-purple-600: #7b51c8;
+}
+
+// -----------------------------------------------------------------------------
+// Dark Theme Primitives
+// All tokens that differ from light theme
+// -----------------------------------------------------------------------------
+[data-theme='dark'] {
+  // Brand (Blue) — dark overrides
+  --primitives-brand-blue-50: #01203c;
+  --primitives-brand-blue-100: #023564;
+  --primitives-brand-blue-200: #034a8c;
+  --primitives-brand-blue-300: #045fb4;
+  --primitives-brand-blue-500: #148bfa;
+  --primitives-brand-blue-600: #41a1fb;
+  --primitives-brand-blue-700: #73b9fc;
+  --primitives-brand-blue-800: #9bcdfd;
+  --primitives-brand-blue-900: #c8e3fe;
+  --primitives-brand-blue-500-10: rgba(20, 139, 250, 0.1);
+  --primitives-brand-blue-500-15: rgba(20, 139, 250, 0.15);
+  --primitives-brand-blue-500-25: rgba(20, 139, 250, 0.25);
+  --primitives-brand-blue-500-50: rgba(20, 139, 250, 0.5);
+  --primitives-brand-blue-500-75: rgba(20, 139, 250, 0.75);
+
+  // Error (Red) — dark overrides
+  --primitives-error-red-100: #43110f;
+  --primitives-error-red-200: #691e1b;
+  --primitives-error-red-300: #902c27;
+  --primitives-error-red-500: #e64d47;
+  --primitives-error-red-600: #e7716e;
+  --primitives-error-red-700: #eb908e;
+  --primitives-error-red-800: #f3c5c3;
+  --primitives-error-red-900: #f7d4d4;
+  --primitives-error-red-500-10: rgba(231, 85, 80, 0.1);
+  --primitives-error-red-500-15: rgba(230, 77, 71, 0.15);
+  --primitives-error-red-500-25: rgba(230, 77, 71, 0.25);
+  --primitives-error-red-500-50: rgba(230, 77, 71, 0.5);
+  --primitives-error-red-500-75: rgba(230, 77, 71, 0.75);
+
+  // Success (Green) — dark overrides
+  --primitives-success-green-100: #012d1d;
+  --primitives-success-green-200: #005c39;
+  --primitives-success-green-300: #025a39;
+  --primitives-success-green-500: #3c9f7b;
+  --primitives-success-green-600: #55b995;
+  --primitives-success-green-700: #6dc5a5;
+  --primitives-success-green-800: #aedbcb;
+  --primitives-success-green-900: #d1ebe0;
+  --primitives-success-green-500-10: rgba(63, 185, 141, 0.1);
+  --primitives-success-green-500-15: rgba(60, 159, 123, 0.15);
+  --primitives-success-green-500-25: rgba(60, 159, 123, 0.25);
+  --primitives-success-green-500-50: rgba(60, 159, 123, 0.5);
+  --primitives-success-green-500-75: rgba(60, 159, 123, 0.75);
+
+  // Warning (Orange) — dark overrides
+  --primitives-warning-orange-100: #502c02;
+  --primitives-warning-orange-200: #874a03;
+  --primitives-warning-orange-300: #b96704;
+  --primitives-warning-orange-500: #f08505;
+  --primitives-warning-orange-600: #fb9a41;
+  --primitives-warning-orange-700: #fca95a;
+  --primitives-warning-orange-800: #fdd1a0;
+  --primitives-warning-orange-900: #ffe5c7;
+  --primitives-warning-orange-500-10: rgba(251, 153, 35, 0.1);
+  --primitives-warning-orange-500-15: rgba(251, 153, 35, 0.15);
+  --primitives-warning-orange-500-25: rgba(251, 153, 35, 0.25);
+  --primitives-warning-orange-500-50: rgba(251, 153, 35, 0.5);
+  --primitives-warning-orange-500-75: rgba(251, 153, 35, 0.75);
+
+  // Neutral (Gray) — dark overrides
+  --primitives-neutral-default: #0e0f10;
+  --primitives-neutral-inversed: #ffffff;
+  --primitives-neutral-gray-50: #14171a;
+  --primitives-neutral-gray-100: #1b1f22;
+  --primitives-neutral-gray-200: #22262b;
+  --primitives-neutral-gray-300: #282e33;
+  --primitives-neutral-gray-400: #2f353c;
+  --primitives-neutral-gray-500: #363d44;
+  --primitives-neutral-gray-700: #434c56;
+  --primitives-neutral-gray-800: #677583;
+  --primitives-neutral-gray-900: #ffffff;
+  --primitives-neutral-50-tint-5: rgba(31, 36, 40, 0.05);
+  --primitives-neutral-50-tint-15: rgba(31, 36, 40, 0.15);
+  --primitives-neutral-black-shade-2: rgba(255, 255, 255, 0.02);
+  --primitives-neutral-black-shade-5: rgba(255, 255, 255, 0.05);
+  --primitives-neutral-black-shade-10: rgba(255, 255, 255, 0.1);
+  --primitives-neutral-black-shade-15: rgba(255, 255, 255, 0.15);
+  --primitives-neutral-black-shade-25: rgba(255, 255, 255, 0.25);
+  --primitives-neutral-black-shade-50: rgba(255, 255, 255, 0.5);
+  --primitives-neutral-black-shade-75: rgba(255, 255, 255, 0.75);
+
+  // Utilities — dark overrides
+  --primitives-utilities-lime-700: #7bad35;
+  --primitives-utilities-purple-600: #9975da;
+}

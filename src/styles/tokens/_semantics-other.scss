@@ -1,0 +1,33 @@
+// Prism Design System — Avatar, Code & Sidebar Semantic Color Tokens
+:root {
+  --semantics-avatar-one: var(--primitives-brand-blue-500);
+  --semantics-avatar-two: var(--primitives-warning-orange-500);
+  --semantics-avatar-three: var(--primitives-error-red-500);
+  --semantics-avatar-four: var(--primitives-success-green-500);
+  --semantics-avatar-five: var(--primitives-neutral-gray-800);
+  --semantics-avatar-six: var(--primitives-neutral-gray-100);
+  --semantics-avatar-seven: var(--primitives-neutral-gray-200);
+  --semantics-code-comment: var(--primitives-neutral-gray-800);
+  --semantics-code-function: var(--primitives-brand-blue-600);
+  --semantics-code-inversed-dynamic: var(--primitives-neutral-default);
+  --semantics-code-keyword: var(--primitives-utilities-purple-600);
+  --semantics-code-overlay: var(--primitives-neutral-black-shade-2);
+  --semantics-code-properties: var(--primitives-error-red-500);
+  --semantics-code-string: var(--primitives-utilities-lime-700);
+  --semantics-code-text: var(--primitives-neutral-inversed);
+  --semantics-sidebar-default: var(--primitives-neutral-gray-50);
+  --semantics-sidebar-hover: var(--primitives-neutral-gray-100);
+  --semantics-sidebar-collapsed-hover: var(--primitives-neutral-gray-50);
+  --semantics-sidebar-collapsed-pressed: var(--primitives-neutral-gray-50);
+  --semantics-sidebar-expanded-hover: var(--primitives-neutral-gray-100);
+  --semantics-sidebar-expanded-pressed: var(--primitives-neutral-default);
+}
+
+[data-theme='dark'] {
+  --semantics-sidebar-default: var(--primitives-neutral-default);
+  --semantics-sidebar-hover: var(--primitives-neutral-gray-200);
+  --semantics-sidebar-collapsed-hover: var(--primitives-neutral-gray-200);
+  --semantics-sidebar-collapsed-pressed: var(--primitives-neutral-gray-200);
+  --semantics-sidebar-expanded-hover: var(--primitives-neutral-gray-200);
+  --semantics-sidebar-expanded-pressed: var(--primitives-neutral-gray-100);
+}

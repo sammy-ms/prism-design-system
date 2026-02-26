@@ -1,0 +1,172 @@
+<div class="ms-colors-page">
+  @for (section of sections(); track section.id) {
+    <section class="ms-colors-section" [id]="section.id">
+      <!-- Section Header -->
+      <div class="ms-colors-section__header">
+        <h2 class="ms-colors-section__title">{{ section.title }}</h2>
+        <p class="ms-colors-section__description">{{ section.description }}</p>
+      </div>
+
+      <!-- Token Table -->
+      <div class="ms-colors-table-wrapper">
+        <table class="ms-colors-table">
+          <thead>
+            <tr>
+              <th class="ms-colors-table__th ms-colors-table__th--name">Token name</th>
+              <th class="ms-colors-table__th ms-colors-table__th--light">Light</th>
+              @if (section.id !== 'primitive-tokens') {
+                <th class="ms-colors-table__th ms-colors-table__th--dark">Dark</th>
+              }
+              <th class="ms-colors-table__th ms-colors-table__th--scope">Variable Scope</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (token of section.tokens; track token.name) {
+              <tr
+                class="ms-colors-table__row"
+                [id]="token.name.slice(2)"
+                [class.ms-colors-table__row--highlight]="highlightedRef() === token.displayName"
+              >
+                <!-- Token Name -->
+                <td class="ms-colors-table__td ms-colors-table__td--name">
+                  <span class="ms-colors-token-name">{{ token.displayName }}</span>
+                </td>
+
+                <!-- Light Value -->
+                <td class="ms-colors-table__td ms-colors-table__td--light">
+                  <div
+                    class="ms-colors-value"
+                    [class.ms-colors-value--boxed]="section.id !== 'primitive-tokens'"
+                  >
+                    @if (token.lightRef) {
+                      <button
+                        class="ms-colors-hex-copy"
+                        (click)="copyHex(token.lightValue)"
+                        [title]="copiedHex() === token.lightValue ? 'Copied!' : 'Click to copy hex'"
+                      >
+                        <span class="ms-colors-swatch" [style.background]="token.lightValue"></span>
+                      </button>
+                      <button
+                        class="ms-colors-ref-link"
+                        (click)="scrollToRef(token.lightRef)"
+                        [title]="'Go to ' + token.lightRef"
+                      >
+                        {{ token.lightRef }}
+                      </button>
+                      <span class="ms-colors-value__dot">&bull;</span>
+                      <button
+                        class="ms-colors-hex-copy ms-colors-hex-copy--text"
+                        [class.ms-colors-hex-copy--copied]="copiedHex() === token.lightValue"
+                        (click)="copyHex(token.lightValue)"
+                        [title]="copiedHex() === token.lightValue ? 'Copied!' : 'Click to copy hex'"
+                      >
+                        {{ token.lightValue }}
+                      </button>
+                    } @else {
+                      <button
+                        class="ms-colors-hex-copy"
+                        (click)="copyHex(token.lightValue)"
+                        [title]="copiedHex() === token.lightValue ? 'Copied!' : 'Click to copy hex'"
+                      >
+                        <span class="ms-colors-swatch" [style.background]="token.lightValue"></span>
+                      </button>
+                      <button
+                        class="ms-colors-hex-copy ms-colors-hex-copy--text"
+                        [class.ms-colors-hex-copy--copied]="copiedHex() === token.lightValue"
+                        (click)="copyHex(token.lightValue)"
+                        [title]="copiedHex() === token.lightValue ? 'Copied!' : 'Click to copy hex'"
+                      >
+                        {{ token.lightValue }}
+                      </button>
+                    }
+                  </div>
+                </td>
+
+                <!-- Dark Value (semantic sections only) -->
+                @if (section.id !== 'primitive-tokens') {
+                  <td class="ms-colors-table__td ms-colors-table__td--dark">
+                    <div class="ms-colors-value ms-colors-value--boxed">
+                      @if (token.darkRef) {
+                        <button
+                          class="ms-colors-hex-copy"
+                          (click)="copyHex(token.darkValue!)"
+                          [title]="
+                            copiedHex() === token.darkValue ? 'Copied!' : 'Click to copy hex'
+                          "
+                        >
+                          <span
+                            class="ms-colors-swatch"
+                            [style.background]="token.darkValue"
+                          ></span>
+                        </button>
+                        <button
+                          class="ms-colors-ref-link"
+                          (click)="scrollToRef(token.darkRef)"
+                          [title]="'Go to ' + token.darkRef"
+                        >
+                          {{ token.darkRef }}
+                        </button>
+                        <span class="ms-colors-value__dot">&bull;</span>
+                        <button
+                          class="ms-colors-hex-copy ms-colors-hex-copy--text"
+                          [class.ms-colors-hex-copy--copied]="copiedHex() === token.darkValue"
+                          (click)="copyHex(token.darkValue!)"
+                          [title]="
+                            copiedHex() === token.darkValue ? 'Copied!' : 'Click to copy hex'
+                          "
+                        >
+                          {{ token.darkValue }}
+                        </button>
+                      } @else {
+                        <button
+                          class="ms-colors-hex-copy"
+                          (click)="copyHex(token.darkValue!)"
+                          [title]="
+                            copiedHex() === token.darkValue ? 'Copied!' : 'Click to copy hex'
+                          "
+                        >
+                          <span
+                            class="ms-colors-swatch"
+                            [style.background]="token.darkValue"
+                          ></span>
+                        </button>
+                        <button
+                          class="ms-colors-hex-copy ms-colors-hex-copy--text"
+                          [class.ms-colors-hex-copy--copied]="copiedHex() === token.darkValue"
+                          (click)="copyHex(token.darkValue!)"
+                          [title]="
+                            copiedHex() === token.darkValue ? 'Copied!' : 'Click to copy hex'
+                          "
+                        >
+                          {{ token.darkValue }}
+                        </button>
+                      }
+                    </div>
+                  </td>
+                }
+
+                <!-- Variable Scope -->
+                <td class="ms-colors-table__td ms-colors-table__td--scope">
+                  <div class="ms-colors-scope-badges">
+                    @for (scope of token.scopes; track scope) {
+                      <span
+                        class="ms-colors-scope-badge"
+                        [class.ms-colors-scope-badge--frame-fill]="scope === 'FRAME_FILL'"
+                        [class.ms-colors-scope-badge--shape-fill]="scope === 'SHAPE_FILL'"
+                        [class.ms-colors-scope-badge--text-content]="scope === 'TEXT_CONTENT'"
+                        [class.ms-colors-scope-badge--stroke-color]="scope === 'STROKE_COLOR'"
+                        [class.ms-colors-scope-badge--all-scopes]="scope === 'ALL_SCOPES'"
+                      >
+                        {{ scope }}
+                      </span>
+                    }
+                  </div>
+                </td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    </section>
+  }
+</div>

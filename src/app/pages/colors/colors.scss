@@ -1,0 +1,315 @@
+// =============================================================================
+// Prism Design System — Colors Documentation Page
+// =============================================================================
+
+// ---------------------------------------------------------------------------
+// Host
+// ---------------------------------------------------------------------------
+:host {
+  display: block;
+  width: 100%;
+  background: var(--semantics-surface-subtle-secondary-default, #ffffff);
+}
+
+// ---------------------------------------------------------------------------
+// Page Layout
+// ---------------------------------------------------------------------------
+.ms-colors-page {
+  max-width: 960px;
+  padding: 40px 32px 80px 32px;
+}
+
+// ---------------------------------------------------------------------------
+// Section
+// ---------------------------------------------------------------------------
+.ms-colors-section {
+  margin-bottom: 52px;
+  scroll-margin-top: 24px;
+
+  &__header {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 34px;
+    color: var(--semantics-text-subtle-primary-default, #1b1f22);
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
+  }
+
+  &__description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--semantics-text-subtle-primary-hover, #6a6b6d);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Table
+// ---------------------------------------------------------------------------
+.ms-colors-table-wrapper {
+  display: flex;
+}
+
+.ms-colors-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--semantics-border-subtle-secondary, #e0e0e0);
+  border-radius: 10px;
+
+  &__th {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: var(--semantics-text-subtle-primary-default, #1b1f22);
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--semantics-border-subtle-secondary, #e0e0e0);
+    white-space: nowrap;
+    background: var(--semantics-bg-subtle-tertiary-default, #f5f5f5);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    &--name {
+      padding-left: 20px;
+    }
+  }
+
+  &__row {
+    transition: background 0.2s ease;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--semantics-border-subtle-secondary, #ebebeb);
+    }
+
+    &--highlight {
+      animation: ms-row-highlight 1.8s ease;
+    }
+  }
+
+  &__td {
+    padding: 8px 14px;
+    vertical-align: middle;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    line-height: 18px;
+
+    &--name {
+      padding-left: 20px;
+      white-space: nowrap;
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Highlight keyframe
+// ---------------------------------------------------------------------------
+@keyframes ms-row-highlight {
+  0% {
+    background: rgba(0, 132, 255, 0.14);
+  }
+  60% {
+    background: rgba(0, 132, 255, 0.07);
+  }
+  100% {
+    background: transparent;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Token Name (plain text)
+// ---------------------------------------------------------------------------
+.ms-colors-token-name {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--semantics-text-subtle-primary-default, #1b1f22);
+}
+
+// ---------------------------------------------------------------------------
+// Hex Copy (clickable swatch + hex value)
+// ---------------------------------------------------------------------------
+.ms-colors-hex-copy {
+  display: inline-flex;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 18px;
+
+  &--text {
+    color: var(--semantics-text-subtle-primary-hover, #6a6b6d);
+    white-space: nowrap;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &--copied {
+    color: var(--semantics-text-status-success-default, #00935c);
+  }
+
+  .ms-colors-swatch {
+    cursor: pointer;
+    transition: box-shadow 0.15s ease;
+
+    &:hover {
+      box-shadow: 0 0 0 2px rgba(0, 132, 255, 0.3);
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Clickable ref link (lightRef / darkRef)
+// ---------------------------------------------------------------------------
+.ms-colors-ref-link {
+  display: inline;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--semantics-text-subtle-primary-default, #1b1f22);
+  white-space: nowrap;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 2px;
+  transition:
+    color 0.15s ease,
+    text-decoration-color 0.15s ease;
+
+  &:hover {
+    color: #0084ff;
+    text-decoration-color: #0084ff;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Color Swatch + Value
+// ---------------------------------------------------------------------------
+.ms-colors-value {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  &--boxed {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: var(--semantics-bg-subtle-tertiary-default, #f5f5f5);
+    border: 1px solid var(--semantics-border-subtle-secondary, #e0e0e0);
+    border-radius: 6px;
+    padding: 3px 8px;
+  }
+
+  &__dot {
+    font-size: 11px;
+    color: var(--semantics-text-subtle-primary-hover, #9a9a9a);
+  }
+
+  &__text {
+    color: var(--semantics-text-subtle-primary-hover, #6a6b6d);
+    white-space: nowrap;
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+
+.ms-colors-swatch {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  border-radius: 3px;
+  border: 1px solid var(--semantics-border-subtle-secondary, #e0e0e0);
+  flex-shrink: 0;
+}
+
+// ---------------------------------------------------------------------------
+// Scope Badges
+// ---------------------------------------------------------------------------
+.ms-colors-scope-badges {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.ms-colors-scope-badge {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 14px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+
+  &--frame-fill {
+    color: #d32f2f;
+    background: rgba(211, 47, 47, 0.08);
+  }
+  &--shape-fill {
+    color: #2e7d32;
+    background: rgba(46, 125, 50, 0.08);
+  }
+  &--text-content {
+    color: #f57f17;
+    background: rgba(245, 127, 23, 0.08);
+  }
+  &--stroke-color {
+    color: #7b1fa2;
+    background: rgba(123, 31, 162, 0.08);
+  }
+  &--all-scopes {
+    color: #0084ff;
+    background: rgba(0, 132, 255, 0.08);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Responsive
+// ---------------------------------------------------------------------------
+@media (max-width: 1100px) {
+  .ms-colors-page {
+    padding: 32px 24px 60px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ms-colors-page {
+    padding: 24px 16px 48px 16px;
+  }
+
+  .ms-colors-section {
+    margin-bottom: 36px;
+
+    &__title {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+
+  .ms-colors-table {
+    &__th,
+    &__td {
+      padding: 7px 10px;
+    }
+
+    &__th--scope,
+    &__td--scope {
+      display: none;
+    }
+  }
+}

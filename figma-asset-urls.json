@@ -1,0 +1,1628 @@
+{
+  "icons": [
+    {
+      "name": "log-out",
+      "nodeId": "6510:184819",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/e8ca74fe-09ad-4437-beef-feb834466f6d",
+        "https://www.figma.com/api/mcp/asset/ea19dad3-26a4-45ff-8c40-0aae4f0e05a3",
+        "https://www.figma.com/api/mcp/asset/8c2d073c-765a-48fa-acdd-b1d8ba3184a1"
+      ]
+    },
+    {
+      "name": "asterik",
+      "nodeId": "8246:17847",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/a17b8402-e8fd-420e-86b9-dcbcda95aeec"
+    },
+    {
+      "name": "hashtag",
+      "nodeId": "8107:158165",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/fb4538c1-c076-41f7-a2c2-7bc0f76cfea9",
+        "https://www.figma.com/api/mcp/asset/fdb2be82-62c1-4fa6-b1ba-69e86865cfda",
+        "https://www.figma.com/api/mcp/asset/56af68ff-489e-457a-9360-ec1045da058b"
+      ]
+    },
+    {
+      "name": "logo-mobilesentrix",
+      "nodeId": null,
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/82dddd73-269b-4b25-935b-ef3e91a701ba",
+        "https://www.figma.com/api/mcp/asset/205127d2-ceba-49da-8643-8d4a29f5285f",
+        "https://www.figma.com/api/mcp/asset/c6e5bd52-94cb-4233-9be7-4c0d9f2fea77",
+        "https://www.figma.com/api/mcp/asset/02616b3a-ce91-49f4-81a0-811d2a7da5b1",
+        "https://www.figma.com/api/mcp/asset/89c0c0ee-4530-40b7-a4f3-b1744a097b38",
+        "https://www.figma.com/api/mcp/asset/a1dc6a4d-6309-4794-a9cd-4996f7e22893",
+        "https://www.figma.com/api/mcp/asset/e4ce1c60-df14-46b6-9c2b-cc0a886f3ee7",
+        "https://www.figma.com/api/mcp/asset/71056503-8f32-40dd-81d8-d0a9008091b0",
+        "https://www.figma.com/api/mcp/asset/a3116d25-67c3-4927-a956-6d74fdabbab8",
+        "https://www.figma.com/api/mcp/asset/7d11b7bc-dc55-44ff-beed-965a78d3688a",
+        "https://www.figma.com/api/mcp/asset/a543a40e-e527-43e8-8363-ca5d2589d0e6",
+        "https://www.figma.com/api/mcp/asset/04a2fba6-2c79-4dbc-bc41-a052e016d8ef",
+        "https://www.figma.com/api/mcp/asset/de66dca6-b434-4a4c-8b4d-ef21c84d94f7",
+        "https://www.figma.com/api/mcp/asset/5e63fa95-79aa-4dff-a5e1-22a01a5c429d",
+        "https://www.figma.com/api/mcp/asset/1359fb8f-db2e-4f7d-bb84-92c2cfcd2577",
+        "https://www.figma.com/api/mcp/asset/8d8f5de5-3308-4758-8b74-686c2124ea7f"
+      ]
+    },
+    {
+      "name": "link",
+      "nodeId": "1621:13028",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/a7775154-75b6-4d99-aca3-fdc7c2f09ac2",
+        "https://www.figma.com/api/mcp/asset/51c6f6bf-90f1-4d8c-9e64-ed70495bfb56",
+        "https://www.figma.com/api/mcp/asset/eca7ff72-8f68-4996-8bbc-e9fc18dab8eb",
+        "https://www.figma.com/api/mcp/asset/d9286116-3680-4861-bf72-e973d080c30e"
+      ]
+    },
+    {
+      "name": "arrow-left",
+      "nodeId": "1189:3924",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/e55d7b3c-1b6d-4cd0-bfa5-9216e40d8d7d"
+    },
+    {
+      "name": "circle-code",
+      "nodeId": "1045:2209",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/dbbf86de-d800-4129-9962-3b0cfac417b2",
+        "https://www.figma.com/api/mcp/asset/9f330246-f200-455f-849b-12342261e0b8"
+      ]
+    },
+    {
+      "name": "image-plus",
+      "nodeId": "1624:37234",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/736d7540-4964-4358-ae16-06c3fc647624"
+    },
+    {
+      "name": "globe-languages",
+      "nodeId": "6606:105675",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/d151eab8-3f73-4b70-b1e1-9725c7f2350c",
+        "https://www.figma.com/api/mcp/asset/7cda8e06-10c1-472f-975f-5c1a54f82828"
+      ]
+    },
+    {
+      "name": "flag-finland",
+      "nodeId": "9019:2851",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/55fa5704-18e3-46cf-8c30-38bc89777289",
+        "https://www.figma.com/api/mcp/asset/e1d5fe22-4a1a-45ce-8b37-397627f776c6"
+      ]
+    },
+    {
+      "name": "setting-tool",
+      "nodeId": "8923:22326",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/726205e3-b5cb-487e-b36d-596a5c6d194d",
+        "https://www.figma.com/api/mcp/asset/2555cebb-bc74-4944-b67f-2deb506fec68"
+      ]
+    },
+    {
+      "name": "light-bulb",
+      "nodeId": "8923:17642",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/ee52e22c-1ed1-4ea8-a02a-44fb9cc12778",
+        "https://www.figma.com/api/mcp/asset/2996d8b5-0366-47f9-a99b-ef8505a87c8f"
+      ]
+    },
+    {
+      "name": "folder-setting",
+      "nodeId": "8923:1526",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/4b45ea72-d20d-4bc2-98ea-5fdadb5fb9d2",
+        "https://www.figma.com/api/mcp/asset/caa0889c-ff25-4465-ab90-b734e4781646",
+        "https://www.figma.com/api/mcp/asset/6a53b07e-b423-48dd-aabc-c2fe528e61b2"
+      ]
+    },
+    {
+      "name": "graduation-cap",
+      "nodeId": "8922:53643",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/fee61467-6817-4b87-82b7-a670f241209a",
+        "https://www.figma.com/api/mcp/asset/735b498d-4be4-4dea-a9ae-da820d7993b0",
+        "https://www.figma.com/api/mcp/asset/3a2cfdeb-f868-45dc-b23d-781dc81179e0"
+      ]
+    },
+    {
+      "name": "buyback",
+      "nodeId": "8922:53443",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/7b69d6c7-5107-4994-a400-9a4a604007b8",
+        "https://www.figma.com/api/mcp/asset/8c10a766-8c7f-4ab2-8452-d41cc1d1d328",
+        "https://www.figma.com/api/mcp/asset/732cd3dc-b865-4677-b902-2ea45f40e2fa",
+        "https://www.figma.com/api/mcp/asset/d4bef3a0-42a9-4d6a-8e4a-b97ac52e9450",
+        "https://www.figma.com/api/mcp/asset/82550f76-e1b6-42c4-b02a-520cfac6c734"
+      ]
+    },
+    {
+      "name": "procurement",
+      "nodeId": "8922:53291",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/6a53b07e-b423-48dd-aabc-c2fe528e61b2",
+        "https://www.figma.com/api/mcp/asset/54dda012-6da2-4a2c-8cc7-aecb48d572ae",
+        "https://www.figma.com/api/mcp/asset/4456931a-ae9c-4ce4-abc9-7d1a022b0054",
+        "https://www.figma.com/api/mcp/asset/66dba24a-61d7-4faf-8e7d-d2a05c01db0d"
+      ]
+    },
+    {
+      "name": "permission",
+      "nodeId": "8253:2537",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/74cd294d-4dc0-4618-94fd-275f0364e89b",
+        "https://www.figma.com/api/mcp/asset/1bd49289-e97d-4d6e-a51b-f5623acb567d"
+      ]
+    },
+    {
+      "name": "range",
+      "nodeId": "8107:158130",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/70d7efe9-2173-4821-a79d-9dc3ddfbe31b",
+        "https://www.figma.com/api/mcp/asset/7e8af250-0957-4ecf-94d4-0bd9f74067a4"
+      ]
+    },
+    {
+      "name": "count-empty",
+      "nodeId": "8107:158175",
+      "assetUrl": null
+    },
+    {
+      "name": "mean",
+      "nodeId": "8107:158198",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/262478be-0ad2-4410-8285-000bc90ee69b",
+        "https://www.figma.com/api/mcp/asset/10358d83-fe86-4779-ac01-1e470dcdc9b2"
+      ]
+    },
+    {
+      "name": "sigma",
+      "nodeId": "8107:158186",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/14aa0c36-2926-4a13-a49d-7add6c82204d"
+    },
+    {
+      "name": "dropdown",
+      "nodeId": "7851:105550",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/f117089d-170a-4941-8fe2-dd7e02e9f8e5",
+        "https://www.figma.com/api/mcp/asset/db5f21fa-268e-4c9a-8cd2-833da0c44667",
+        "https://www.figma.com/api/mcp/asset/abe26160-5f02-48c2-ae30-945ce62dfaa6",
+        "https://www.figma.com/api/mcp/asset/c2d541fb-7c25-4624-98dd-124b1fe310d8"
+      ]
+    },
+    {
+      "name": "text-box",
+      "nodeId": "7851:105540",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/ed91d3b4-49e9-4b24-9cac-61f916b4c7d0"
+    },
+    {
+      "name": "envelope",
+      "nodeId": "7744:191068",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/a29b918e-8d5a-41c1-b2a6-75f4a0e68820",
+        "https://www.figma.com/api/mcp/asset/7eb1f350-3c1f-4ee7-b09b-6da8d975e1c1"
+      ]
+    },
+    {
+      "name": "cursor-solid",
+      "nodeId": "7492:12754",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/30d07cc5-6b8a-4929-b520-85b0990fb8a4"
+    },
+    {
+      "name": "flag-russia",
+      "nodeId": "7155:105622",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/55fa5704-18e3-46cf-8c30-38bc89777289",
+        "https://www.figma.com/api/mcp/asset/dc284efa-9ceb-47e2-b919-a0cd5106ef32",
+        "https://www.figma.com/api/mcp/asset/20d4505d-df8f-487b-8ccb-8f7dcc71688c"
+      ]
+    },
+    {
+      "name": "flag-portugal",
+      "nodeId": "7155:105605",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/b6fc3305-a58b-45cd-b483-b2e861d2da03",
+        "https://www.figma.com/api/mcp/asset/be8c91d1-009d-4a05-a84d-596536486e49",
+        "https://www.figma.com/api/mcp/asset/6f82d800-7034-44d9-931e-e09a44c1376c",
+        "https://www.figma.com/api/mcp/asset/bb0f7f5b-80ba-4441-bb87-fd718ec981cf",
+        "https://www.figma.com/api/mcp/asset/033a277a-38e6-4e6a-a56b-7053fe2632ad"
+      ]
+    },
+    {
+      "name": "flag-italy",
+      "nodeId": "7155:105573",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/55fa5704-18e3-46cf-8c30-38bc89777289",
+        "https://www.figma.com/api/mcp/asset/04ce5c58-b5c3-4fee-936a-1d82300a01e4",
+        "https://www.figma.com/api/mcp/asset/abb15893-6a79-4d00-9943-03f52acf3f25"
+      ]
+    },
+    {
+      "name": "flag-sout-korea",
+      "nodeId": "7155:105518",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/55fa5704-18e3-46cf-8c30-38bc89777289",
+        "https://www.figma.com/api/mcp/asset/3d533c05-533c-42a9-a9bd-5de6f20ece2e",
+        "https://www.figma.com/api/mcp/asset/5a67e85f-3a4b-40d1-8548-b476e3c4dddc",
+        "https://www.figma.com/api/mcp/asset/2772f9d9-3ea3-401e-b096-b87d164b16d6",
+        "https://www.figma.com/api/mcp/asset/7f8b0515-cf62-48a9-87f4-668582e959e8",
+        "https://www.figma.com/api/mcp/asset/828598fe-e8e7-42be-b0d7-6e82b41c10e0",
+        "https://www.figma.com/api/mcp/asset/5d5740f2-5d1a-4e54-9391-5ae6a18e3b05",
+        "https://www.figma.com/api/mcp/asset/1f7af725-277b-4a52-9e01-5df19ee77dd0",
+        "https://www.figma.com/api/mcp/asset/a730132b-0318-43e2-bca1-cb1df3a2fe6c",
+        "https://www.figma.com/api/mcp/asset/ef7b60f4-3c31-40ed-8168-b3fc8a964db8",
+        "https://www.figma.com/api/mcp/asset/89061978-74ee-4bac-b4a5-409cc1b85321",
+        "https://www.figma.com/api/mcp/asset/c1c00856-7de2-4e87-bb2c-441501a691a4",
+        "https://www.figma.com/api/mcp/asset/245d597c-a864-40b2-a5fb-e50ba48e5b97",
+        "https://www.figma.com/api/mcp/asset/22de2e1b-42f4-4224-ab75-b8bef1a6b8d4",
+        "https://www.figma.com/api/mcp/asset/543e8bc3-c714-4840-98bd-40601e9a1b34",
+        "https://www.figma.com/api/mcp/asset/4f2f82eb-fbfd-406b-a264-2bb6d40cfb28",
+        "https://www.figma.com/api/mcp/asset/1a0434b7-2ca3-41a7-97d6-1c7f5f486e91",
+        "https://www.figma.com/api/mcp/asset/5503aacb-3774-48b8-b8b2-5d4bc304b9f9",
+        "https://www.figma.com/api/mcp/asset/04ede0cb-ba42-413e-b312-2496c2294195"
+      ]
+    },
+    {
+      "name": "translate",
+      "nodeId": "7085:70485",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/ccff97e2-14f1-4b18-b73a-d761f6701844",
+        "https://www.figma.com/api/mcp/asset/11895289-f476-410b-9490-f54d6f068c7c",
+        "https://www.figma.com/api/mcp/asset/9fa81b59-8b13-4929-a796-ffe711033e14",
+        "https://www.figma.com/api/mcp/asset/b34f1462-0c71-4418-9cfc-8b7e441218c9",
+        "https://www.figma.com/api/mcp/asset/9307befe-9b65-40a6-996f-7d80804375db"
+      ]
+    },
+    {
+      "name": "cloud-arrow",
+      "nodeId": "7069:3601",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/5da132da-7af0-4fac-966f-c43e7dcc2abb",
+        "https://www.figma.com/api/mcp/asset/40772fd6-c59b-4fc6-bd98-efcd36cb4bb0",
+        "https://www.figma.com/api/mcp/asset/760ec53e-b6f6-48fa-a414-ce600a4c7a45"
+      ]
+    },
+    {
+      "name": "delay",
+      "nodeId": "7014:185293",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/7d720f36-d712-41e7-b363-19a320e89f03"
+    },
+    {
+      "name": "excel",
+      "nodeId": "6979:22023",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/613f4794-e789-49eb-8204-b6ebeea81e44"
+    },
+    {
+      "name": "csv",
+      "nodeId": "6979:22049",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/e40335e9-560f-48d8-bff4-75f0e704f2dc"
+    },
+    {
+      "name": "phone",
+      "nodeId": "6746:178394",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/0a8c84cf-256b-457f-bbe7-8f3f59fafa9e",
+        "https://www.figma.com/api/mcp/asset/6cb9551d-771b-4792-b7b1-67bcad3023ac"
+      ]
+    },
+    {
+      "name": "message",
+      "nodeId": "6746:178363",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/77da0b91-74f7-43ee-b48b-e062eba812b4",
+        "https://www.figma.com/api/mcp/asset/b82c1ec9-2690-429d-a975-fc5de28633df",
+        "https://www.figma.com/api/mcp/asset/c51cb843-3369-4d93-99fb-5f7f16f7da83"
+      ]
+    },
+    {
+      "name": "user",
+      "nodeId": "6624:5812",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/418ab146-9f9d-42cc-9c80-d7d566e2e2f3",
+        "https://www.figma.com/api/mcp/asset/ab24e3fd-3f38-4177-9e6d-46a91639f798"
+      ]
+    },
+    {
+      "name": "user-solid",
+      "nodeId": "6624:3835",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/b9dc06e3-2967-450f-98a3-61fa390337f8"
+    },
+    {
+      "name": "help",
+      "nodeId": "6614:63034",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/8aeafa95-9d8f-493a-bfde-733b45874495",
+        "https://www.figma.com/api/mcp/asset/06a9edba-a26e-4e0e-a362-d07ef7560b81",
+        "https://www.figma.com/api/mcp/asset/aa4b78d8-5bb7-4dfc-aa65-14e6e96b3698"
+      ]
+    },
+    {
+      "name": "place-marker",
+      "nodeId": "6609:3839",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/df6cde5e-4672-4979-8b66-f0ab7d50d7e5",
+        "https://www.figma.com/api/mcp/asset/eaa385e0-9402-4456-8988-49cc2ab75da8"
+      ]
+    },
+    {
+      "name": "list-text",
+      "nodeId": "6558:189626",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/a1f308e2-a833-435a-9966-15ca3009f446",
+        "https://www.figma.com/api/mcp/asset/daa3e2cf-f3e9-4fa5-80fc-101b7236a6d0"
+      ]
+    },
+    {
+      "name": "layout",
+      "nodeId": "6558:189577",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/61e328ac-25b0-4094-8014-b1a7a84927fc",
+        "https://www.figma.com/api/mcp/asset/7d9a2800-fcf7-4185-9061-d99544df563c",
+        "https://www.figma.com/api/mcp/asset/d5aec961-8bef-4d72-a76f-21ced0cf910e"
+      ]
+    },
+    {
+      "name": "flag",
+      "nodeId": "6558:189548",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/7b6e6afa-d4e7-47d6-ba08-2561aebcedc4",
+        "https://www.figma.com/api/mcp/asset/db0c6a80-fc09-4eed-afa4-8d6564153ec4"
+      ]
+    },
+    {
+      "name": "barcode",
+      "nodeId": "6528:173942",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/dde4b152-314c-480c-9684-27af6db85073",
+        "https://www.figma.com/api/mcp/asset/09cc68c0-bb72-42f7-9648-52792c6e7b2d",
+        "https://www.figma.com/api/mcp/asset/e0e2db7a-d482-4d05-9bc3-a57b13984bdb"
+      ]
+    },
+    {
+      "name": "system-mode",
+      "nodeId": "6510:197023",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/be3773ea-d209-487e-a957-3ac45046313e",
+        "https://www.figma.com/api/mcp/asset/2e2e5de5-a651-4837-81b8-6a2266255ee7"
+      ]
+    },
+    {
+      "name": "arrow-left-up",
+      "nodeId": "6510:184618",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/d5fafa45-ee24-4032-a30e-f5875994243f",
+        "https://www.figma.com/api/mcp/asset/86c68e6a-1b53-4579-b921-df8d2af37db5"
+      ]
+    },
+    {
+      "name": "sort",
+      "nodeId": "2154:144768",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/71e87864-0f59-4161-92c1-80ffb4f8e0d0",
+        "https://www.figma.com/api/mcp/asset/d14c7b2c-f85c-45f5-8ab6-b227fe9a32c6"
+      ]
+    },
+    {
+      "name": "unpin",
+      "nodeId": "6429:168050",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/fe798767-eea2-4a02-9967-ede153b3416b",
+        "https://www.figma.com/api/mcp/asset/6f79b83c-e8fb-41a9-9113-ef03eb935f88",
+        "https://www.figma.com/api/mcp/asset/833f3a81-b16b-4536-939c-5f73d61d9474",
+        "https://www.figma.com/api/mcp/asset/fd422968-a9de-4b34-bd52-03bf0f382524"
+      ]
+    },
+    {
+      "name": "column-group",
+      "nodeId": "6429:163525",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/c031f387-59d0-4db6-bfd4-646de89e0cd6",
+        "https://www.figma.com/api/mcp/asset/7de12636-c83b-4322-8e14-4d51b83ed38b"
+      ]
+    },
+    {
+      "name": "change",
+      "nodeId": "6276:62526",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/3fe51502-3a5e-4f25-9612-634aeacddd06",
+        "https://www.figma.com/api/mcp/asset/ca6dc96e-4810-4d69-a143-f77e41b55c33",
+        "https://www.figma.com/api/mcp/asset/730de9de-f6fb-4b36-8dbe-e5fc629050c8"
+      ]
+    },
+    {
+      "name": "report",
+      "nodeId": "6259:2429",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/72626b22-8d94-48e7-b362-7f67c02c3e23",
+        "https://www.figma.com/api/mcp/asset/1709587c-cc83-4481-80fd-c559abc466b5",
+        "https://www.figma.com/api/mcp/asset/bee10326-d273-47c4-9bd1-21014a73ddf4",
+        "https://www.figma.com/api/mcp/asset/07d2aa7f-453a-428d-98d6-d7ac6592697d"
+      ]
+    },
+    {
+      "name": "speed",
+      "nodeId": "6208:58228",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/6b57b93a-391d-460c-9653-48243669f978",
+        "https://www.figma.com/api/mcp/asset/fd420c1c-4346-460d-a1ff-2fbc8ab3add7",
+        "https://www.figma.com/api/mcp/asset/c39b6690-75ac-4e5c-8afd-5432cc460f90"
+      ]
+    },
+    {
+      "name": "globe",
+      "nodeId": "6149:18733",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/a5736478-1013-491c-bfb3-a8c9f4fce964",
+        "https://www.figma.com/api/mcp/asset/d88e1fe4-af8d-4011-9fcc-2939e95e81d2",
+        "https://www.figma.com/api/mcp/asset/d6018ca7-a3fe-4e02-b35f-dd53a698b7cf"
+      ]
+    },
+    {
+      "name": "user-round-key",
+      "nodeId": "6134:178321",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/b63eaf74-7d95-4261-a813-de9f91aba82a"
+    },
+    {
+      "name": "database",
+      "nodeId": "5871:139225",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/2a50f462-e19d-4dd1-9af5-7197e58776eb",
+        "https://www.figma.com/api/mcp/asset/7b9983b0-f540-430d-89e9-a8dcb7b03eed"
+      ]
+    },
+    {
+      "name": "circle-check",
+      "nodeId": "5862:155301",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/419d6e9f-9bcb-448b-a678-7ed5fbfc4d8f",
+        "https://www.figma.com/api/mcp/asset/aa4b78d8-5bb7-4dfc-aa65-14e6e96b3698"
+      ]
+    },
+    {
+      "name": "warehouse",
+      "nodeId": "5862:139508",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/4121549c-58a3-4102-a8fe-fb8d8c8c8a82",
+        "https://www.figma.com/api/mcp/asset/5a1cdc17-a18f-44d8-9150-e3c1ad45a83d",
+        "https://www.figma.com/api/mcp/asset/b8066db8-8754-4119-97f0-ee39af37d6f2"
+      ]
+    },
+    {
+      "name": "call",
+      "nodeId": "5837:187877",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/5db901a6-8c89-4c09-bc57-4ed0f303b1bb"
+    },
+    {
+      "name": "supplier",
+      "nodeId": "5837:125449",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/65d3caee-484a-4639-871b-58632a6bac4d",
+        "https://www.figma.com/api/mcp/asset/4ae0afe6-db1a-48e6-b75e-02e0f064f673"
+      ]
+    },
+    {
+      "name": "package-network",
+      "nodeId": "5798:147569",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/c3fa5ac5-1ff8-4368-baf4-eb6ba1094ff1",
+        "https://www.figma.com/api/mcp/asset/3d1a8854-ee02-4240-869f-cd3634a091d4",
+        "https://www.figma.com/api/mcp/asset/079fd925-1eab-419c-8184-991456c1b2c0",
+        "https://www.figma.com/api/mcp/asset/6ce8bae7-7048-4e63-ad62-a335e442e325",
+        "https://www.figma.com/api/mcp/asset/5d8e2ec1-e786-4258-a8f8-917141354634",
+        "https://www.figma.com/api/mcp/asset/1e5b7dcc-be96-4888-857c-22e81d5ccb37"
+      ]
+    },
+    {
+      "name": "box",
+      "nodeId": "4634:114162",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/f1065e56-faf9-40c3-bd02-72565204b371",
+        "https://www.figma.com/api/mcp/asset/2a8b085a-e5eb-48c9-82cd-bed6fea641e4"
+      ]
+    },
+    {
+      "name": "shield-check",
+      "nodeId": "4634:114191",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/ca9b3cca-d63c-4f1a-88e1-89bd9d00cf46",
+        "https://www.figma.com/api/mcp/asset/5d919bdc-196f-47f1-83bd-c66204a16410"
+      ]
+    },
+    {
+      "name": "package",
+      "nodeId": "5443:133816",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/39b8bba3-293a-46c1-a9fd-93347122a244",
+        "https://www.figma.com/api/mcp/asset/977643f8-b3e7-428b-8fd9-1ddcc3c088e5",
+        "https://www.figma.com/api/mcp/asset/d577471d-b122-44b5-a16a-8959490fa337",
+        "https://www.figma.com/api/mcp/asset/00bb37b6-9bf7-41d9-9ae5-30a02ffc2b53"
+      ]
+    },
+    {
+      "name": "map-pin",
+      "nodeId": "4620:3204",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/7301f3e6-b70f-4109-92a2-d5eb537ea8c8",
+        "https://www.figma.com/api/mcp/asset/b297db6f-c303-4b75-9318-69b3d1c0c524",
+        "https://www.figma.com/api/mcp/asset/dfb32b82-2021-4601-8721-3f094a3d5717"
+      ]
+    },
+    {
+      "name": "calendar-time",
+      "nodeId": "4291:257220",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/4c783ab7-5c86-45e0-82fc-f663ee1b87bb",
+        "https://www.figma.com/api/mcp/asset/e1a7e31b-e545-4b4b-9ddc-d6fdc2c8edf1",
+        "https://www.figma.com/api/mcp/asset/3b8946e6-ebe4-4c10-b081-097dae947e9c",
+        "https://www.figma.com/api/mcp/asset/4eede437-129c-4a67-9ea6-22251e43c24a",
+        "https://www.figma.com/api/mcp/asset/5c265b13-14e1-4c17-9b63-6e78ee8233d9"
+      ]
+    },
+    {
+      "name": "flag-france",
+      "nodeId": "4256:150289",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/55fa5704-18e3-46cf-8c30-38bc89777289",
+        "https://www.figma.com/api/mcp/asset/04ce5c58-b5c3-4fee-936a-1d82300a01e4",
+        "https://www.figma.com/api/mcp/asset/3c6b77f9-a0ce-4abc-96e9-a74a5caebcc3"
+      ]
+    },
+    {
+      "name": "flag-canada",
+      "nodeId": "3455:445964",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/e84b5743-58c4-49ba-9a36-6b771f0654dd",
+        "https://www.figma.com/api/mcp/asset/bbe08009-4f87-43bc-a624-0c75b3ffe309"
+      ]
+    },
+    {
+      "name": "tag",
+      "nodeId": "4634:114220",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/b38fae1d-072f-411f-a492-77a480cd86e5",
+        "https://www.figma.com/api/mcp/asset/1a9c5468-574b-439e-98d6-9299da3be1e2"
+      ]
+    },
+    {
+      "name": "price-tag",
+      "nodeId": "4619:125856",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/baf55698-bb4b-432d-965c-ccda311f2b2e",
+        "https://www.figma.com/api/mcp/asset/640ffb78-5cc8-4cb7-a7d1-713c7f2d4b56",
+        "https://www.figma.com/api/mcp/asset/da045532-1794-4569-8a57-6218db7f15ae",
+        "https://www.figma.com/api/mcp/asset/993624c6-62c0-4177-aad7-c7fb5c6f4b4d",
+        "https://www.figma.com/api/mcp/asset/82550f76-e1b6-42c4-b02a-520cfac6c734"
+      ]
+    },
+    {
+      "name": "exclamation",
+      "nodeId": "4286:216572",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/3fa227a5-090d-4083-a65c-dd61b9e3bf7e",
+        "https://www.figma.com/api/mcp/asset/8aeafa95-9d8f-493a-bfde-733b45874495",
+        "https://www.figma.com/api/mcp/asset/2c93e943-ad2e-4e74-a029-0f69c6c9833f"
+      ]
+    },
+    {
+      "name": "country",
+      "nodeId": "3471:496121",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/e537d354-7e79-4b1e-90de-970d55984d66",
+        "https://www.figma.com/api/mcp/asset/bf143ad5-0ded-44ea-a709-d2a3d3ebbdb2",
+        "https://www.figma.com/api/mcp/asset/bdf6be9f-585b-474e-b790-24b13cd49cbf",
+        "https://www.figma.com/api/mcp/asset/084b05ac-e6d5-40b4-9615-8958953edc1d"
+      ]
+    },
+    {
+      "name": "flag-algeria",
+      "nodeId": "3455:445917",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/3b2f097a-da2b-49f6-9fb9-e06bf32574f2",
+        "https://www.figma.com/api/mcp/asset/a282add7-4cf2-4ced-96fb-ea77f4884a78",
+        "https://www.figma.com/api/mcp/asset/8012dc27-2888-45d3-b875-4fe7c1f560d4"
+      ]
+    },
+    {
+      "name": "product",
+      "nodeId": "5443:133855",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/9534f013-3d6c-4c7d-bd7e-cfccb7ba3ee0",
+        "https://www.figma.com/api/mcp/asset/c7a474d8-c3a2-4da4-a7f1-eb5464e850af"
+      ]
+    },
+    {
+      "name": "logo-ups",
+      "nodeId": "3335:127503",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/2ee86fc0-7fa2-4d0c-b0c1-40a9f6c78de2"
+    },
+    {
+      "name": "logo-amazon",
+      "nodeId": null,
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/5429e59b-7524-4fa0-ab73-9668671a9b96",
+        "https://www.figma.com/api/mcp/asset/03a2bd5b-bb6b-4d13-8b91-a42ee4982af1"
+      ]
+    },
+    {
+      "name": "logo-fedex",
+      "nodeId": "3335:127484",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/9d65119c-88c8-408f-94b2-bbddd58d76b3"
+    },
+    {
+      "name": "calendar-today",
+      "nodeId": "4619:125795",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/0d23ccf5-cdd9-4dd1-97c9-6031f9c468fc",
+        "https://www.figma.com/api/mcp/asset/266f0b90-86bb-4196-90eb-ec639837f8ab",
+        "https://www.figma.com/api/mcp/asset/ff149164-be7a-48da-9abd-082a4d9d2219",
+        "https://www.figma.com/api/mcp/asset/d325e5f6-a441-4b96-b430-4d495ab95afd"
+      ]
+    },
+    {
+      "name": "lithium-battery",
+      "nodeId": "4502:149140",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/04740fb1-74d0-4e5a-94f0-baaaeff70c3f",
+        "https://www.figma.com/api/mcp/asset/8fed7ec7-531f-4cb8-871e-e72aabdc78ec"
+      ]
+    },
+    {
+      "name": "flag-japan",
+      "nodeId": "4258:88217",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/55fa5704-18e3-46cf-8c30-38bc89777289",
+        "https://www.figma.com/api/mcp/asset/71623c7b-13bd-4e94-94ef-c98f28a4f596"
+      ]
+    },
+    {
+      "name": "flag-germany",
+      "nodeId": "4256:150306",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/6b961655-b07b-41ea-b1de-01001a2f3d67",
+        "https://www.figma.com/api/mcp/asset/bd5d50e9-a233-42cc-b3e5-3072f47a28ca",
+        "https://www.figma.com/api/mcp/asset/6acb2212-2eef-4993-a349-a84d45efa1de"
+      ]
+    },
+    {
+      "name": "chevron-solid-right",
+      "nodeId": "2209:50033",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/db8fa5f7-54ff-4f7a-8e6a-6771448a82ed"
+    },
+    {
+      "name": "plane",
+      "nodeId": "3472:507662",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/dd1cc8a0-a4e4-46af-bbcc-ef21fd8f78c7"
+    },
+    {
+      "name": "state",
+      "nodeId": "3472:496164",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/467fbf97-c65d-4c8f-9371-3768c3eb966a",
+        "https://www.figma.com/api/mcp/asset/2a92bf16-f3a3-41b3-a70c-11b7f61e0c11",
+        "https://www.figma.com/api/mcp/asset/b0432074-5908-46b0-9d70-7a21b7c2b547",
+        "https://www.figma.com/api/mcp/asset/593ed247-a455-47c3-9900-ac0b2be05583",
+        "https://www.figma.com/api/mcp/asset/e2ca37af-a5c0-4388-b0e5-ebd64c4dcb51"
+      ]
+    },
+    {
+      "name": "usps",
+      "nodeId": "3614:190799",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/29d8051f-654e-49d0-8dcf-a99b2326c02a"
+    },
+    {
+      "name": "flag-china",
+      "nodeId": "3455:446055",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/2eac7ba1-26c4-444a-9781-930d54783853",
+        "https://www.figma.com/api/mcp/asset/d86c20eb-f0a3-4396-bbfd-acb82b65d355"
+      ]
+    },
+    {
+      "name": "flag-albania",
+      "nodeId": "3455:445876",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/2eac7ba1-26c4-444a-9781-930d54783853",
+        "https://www.figma.com/api/mcp/asset/82aede5d-575f-4972-9990-7e790de22615"
+      ]
+    },
+    {
+      "name": "flag-afghanistan",
+      "nodeId": "3455:445821",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/8dd0b460-7863-4820-92d5-1f034459aaeb",
+        "https://www.figma.com/api/mcp/asset/3e3fd6ac-487d-4fff-940d-2e9fef49b61e",
+        "https://www.figma.com/api/mcp/asset/d31ebd42-2e5a-4897-b835-6f4c14827124",
+        "https://www.figma.com/api/mcp/asset/a4171832-d605-460a-a51e-2d74aadcd581"
+      ]
+    },
+    {
+      "name": "arrow-drag",
+      "nodeId": "3047:140340",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/1c1a737a-6de1-40e9-b637-853df579de87",
+        "https://www.figma.com/api/mcp/asset/f08cdd9e-bc4a-4c63-87a9-95b03a660237",
+        "https://www.figma.com/api/mcp/asset/d14c7b2c-f85c-45f5-8ab6-b227fe9a32c6",
+        "https://www.figma.com/api/mcp/asset/4f37e08e-f1fa-4db2-849d-99a8c20d97ca",
+        "https://www.figma.com/api/mcp/asset/1e770cbc-7f3d-4cae-bb24-a8832ce4c226",
+        "https://www.figma.com/api/mcp/asset/7e8af250-0957-4ecf-94d4-0bd9f74067a4"
+      ]
+    },
+    {
+      "name": "horizontal-drag",
+      "nodeId": "3030:115028",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/cc61b7cf-d937-45f8-8f62-c2e1caace029"
+    },
+    {
+      "name": "drag-and-place",
+      "nodeId": "3030:104750",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/77e303f6-cf9e-4be3-b8ca-b7f009bd134f",
+        "https://www.figma.com/api/mcp/asset/6d6ef39e-c616-431b-9bf1-c09868b94ed2"
+      ]
+    },
+    {
+      "name": "credit-card",
+      "nodeId": "3148:179013",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/0d35fdd6-4012-4988-960f-d29c921aa57a",
+        "https://www.figma.com/api/mcp/asset/101c222c-e7f4-4637-8c5d-d14092095dde",
+        "https://www.figma.com/api/mcp/asset/7b9983b0-f540-430d-89e9-a8dcb7b03eed"
+      ]
+    },
+    {
+      "name": "shipment",
+      "nodeId": "2909:214817",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/667693d8-ec21-4b65-8deb-760b430caf40",
+        "https://www.figma.com/api/mcp/asset/aed687d2-e82d-4a43-b496-07e5b5bf19bb",
+        "https://www.figma.com/api/mcp/asset/4768d96e-314b-4f1a-b29c-87e119851899",
+        "https://www.figma.com/api/mcp/asset/e47818df-20a3-4d6c-b6c1-35e23c64b6b1",
+        "https://www.figma.com/api/mcp/asset/63ac3a4e-bb81-4e0a-a016-2c091b533df1"
+      ]
+    },
+    {
+      "name": "sort-descending",
+      "nodeId": "2754:68728",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/3426e9cd-99a9-4556-896c-905597f7fb85",
+        "https://www.figma.com/api/mcp/asset/c9295d1b-defd-4701-bbd4-1aba36e7a195",
+        "https://www.figma.com/api/mcp/asset/3f15df6e-6e62-4f23-9d65-c2e6bdb41eae"
+      ]
+    },
+    {
+      "name": "sort-ascending",
+      "nodeId": "2754:68677",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/3426e9cd-99a9-4556-896c-905597f7fb85",
+        "https://www.figma.com/api/mcp/asset/c9295d1b-defd-4701-bbd4-1aba36e7a195",
+        "https://www.figma.com/api/mcp/asset/3f15df6e-6e62-4f23-9d65-c2e6bdb41eae"
+      ]
+    },
+    {
+      "name": "archive",
+      "nodeId": "3009:98793",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/a6f7e95c-f822-4f09-a5d8-cdd4bb9e6480",
+        "https://www.figma.com/api/mcp/asset/a0651f6a-33f2-4bc8-95f8-92786f252a2b",
+        "https://www.figma.com/api/mcp/asset/33dc76be-0312-495f-af81-f26569e7719d"
+      ]
+    },
+    {
+      "name": "star-filled",
+      "nodeId": "2390:64527",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/781bae92-792e-4334-bad0-75a55c5d1a07"
+    },
+    {
+      "name": "email",
+      "nodeId": "2387:3395",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/662d5d03-3421-4906-91e8-cad8f2b230e3",
+        "https://www.figma.com/api/mcp/asset/1df39e37-d1b9-4c7b-9775-be31102e108c"
+      ]
+    },
+    {
+      "name": "multi-column",
+      "nodeId": "2292:309177",
+      "assetUrl": null
+    },
+    {
+      "name": "save",
+      "nodeId": "2421:66016",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/72d7a7f6-a92d-4823-82eb-937d2a4d16fe",
+        "https://www.figma.com/api/mcp/asset/bfeb5f51-3829-488f-929b-0200e5fc67f6",
+        "https://www.figma.com/api/mcp/asset/77373448-9df3-44d7-9bf2-2b7b1a53196e"
+      ]
+    },
+    {
+      "name": "remove",
+      "nodeId": "2245:849616",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/bfee6d92-2e25-4605-9d8f-e0ac4696d6c2",
+        "https://www.figma.com/api/mcp/asset/f231e7e5-c552-423d-8be9-30b8c8091711"
+      ]
+    },
+    {
+      "name": "chevron-solid-left",
+      "nodeId": "2209:50041",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/ee10ecdd-335e-42a5-bf12-b65e2799e729"
+    },
+    {
+      "name": "chevron-solid-up",
+      "nodeId": "2209:49987",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/56339710-de96-4d92-8040-4a5b628285e9"
+    },
+    {
+      "name": "chevron-solid-down",
+      "nodeId": "2209:49981",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/fc165824-c08c-4cf3-8925-c12a18e061b2"
+    },
+    {
+      "name": "reset",
+      "nodeId": "2209:47984",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/cac278ec-dd88-4069-ba62-f0afebbe8855",
+        "https://www.figma.com/api/mcp/asset/6e442f4e-a85e-4ba1-84ea-9d76bc3ca3ca"
+      ]
+    },
+    {
+      "name": "enlarge",
+      "nodeId": "2175:34212",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/e73e8fef-c941-45f4-b537-831e42f059aa",
+        "https://www.figma.com/api/mcp/asset/f34972ac-8901-4b04-a9be-d735fe548a26",
+        "https://www.figma.com/api/mcp/asset/32cf84b8-0e05-44d0-b11a-d2fa77df1bbf",
+        "https://www.figma.com/api/mcp/asset/e09c9010-e016-40b3-9538-6d5c31491ee3"
+      ]
+    },
+    {
+      "name": "chevron-right",
+      "nodeId": "1122:18667",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/0be1313c-a72e-44eb-9f71-183128a636ca"
+    },
+    {
+      "name": "pin",
+      "nodeId": "1622:21435",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/a13fd732-b9a8-4d22-bd65-02efa032d432"
+    },
+    {
+      "name": "dots-horizontal",
+      "nodeId": "1622:20595",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/c557ecdb-aa10-4543-89df-3c8e4ea5c999"
+    },
+    {
+      "name": "drag",
+      "nodeId": "2159:106457",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/c745b643-0144-4659-bc38-45c2b74cd9e4"
+    },
+    {
+      "name": "chevron-left",
+      "nodeId": "1122:18649",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/65f38094-364d-445b-abbf-5968b6835d1f"
+    },
+    {
+      "name": "settings",
+      "nodeId": "1622:21427",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/2181dafa-5fd8-4f4c-9620-76df48e8d566"
+    },
+    {
+      "name": "dots-vertical",
+      "nodeId": "1622:20573",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/911580bf-7f24-46e6-b411-ca8d609820a2"
+    },
+    {
+      "name": "chevron-down",
+      "nodeId": "1618:9900",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/9b9f1db3-bbe1-452c-8d4b-10fc9f5e1470"
+    },
+    {
+      "name": "filter-dot",
+      "nodeId": "6429:187141",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/9aef3618-ab9a-46e2-8e82-57e0d28c690d",
+        "https://www.figma.com/api/mcp/asset/237400a3-e637-4d89-a4f5-7acd79aea244"
+      ]
+    },
+    {
+      "name": "filter",
+      "nodeId": "1622:21422",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/9aef3618-ab9a-46e2-8e82-57e0d28c690d"
+    },
+    {
+      "name": "download",
+      "nodeId": "1622:20509",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/2180e453-6eb3-4321-9478-b71800b33864"
+    },
+    {
+      "name": "flag-united-kingdom",
+      "nodeId": "2049:8345",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/55fa5704-18e3-46cf-8c30-38bc89777289",
+        "https://www.figma.com/api/mcp/asset/52a7cb7c-9471-475d-9c57-3b9bdf08c5f0",
+        "https://www.figma.com/api/mcp/asset/99a90f1e-6faf-4857-8f2f-e4be28d7d029"
+      ]
+    },
+    {
+      "name": "flag-united-states",
+      "nodeId": "2049:8390",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/4502e62b-b024-41d2-8eb1-e8ca01b8948d"
+    },
+    {
+      "name": "chevron-up",
+      "nodeId": "1048:10649",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/9b9f1db3-bbe1-452c-8d4b-10fc9f5e1470"
+    },
+    {
+      "name": "trash",
+      "nodeId": "1622:21408",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/a266186e-2c70-4f13-a177-b0e445db88d3"
+    },
+    {
+      "name": "tags",
+      "nodeId": "1045:1637",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/372fc01a-df28-4b92-8b81-242c3a3ff2da",
+        "https://www.figma.com/api/mcp/asset/dd51e8c5-d99a-4e08-b0c0-adc30c1bc080"
+      ]
+    },
+    {
+      "name": "blacklist-user",
+      "nodeId": "7462:138505",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/50d71666-018d-4fd3-871b-4a37dc4988ea",
+        "https://www.figma.com/api/mcp/asset/0c0eed78-efef-4516-bf99-21a8b67000d8",
+        "https://www.figma.com/api/mcp/asset/8bd51471-b3fb-419f-873e-b41df281c3ac",
+        "https://www.figma.com/api/mcp/asset/07c90b0a-02ce-47ea-bf48-df4d7aed5b81",
+        "https://www.figma.com/api/mcp/asset/48f813bb-32e3-4da5-bf17-5585724b6e66",
+        "https://www.figma.com/api/mcp/asset/e06af059-9c94-4659-8183-94a434f40000"
+      ]
+    },
+    {
+      "name": "notification",
+      "nodeId": "1945:124594",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/c6fef9d3-e789-4a1d-b04a-1b3bba860abd",
+        "https://www.figma.com/api/mcp/asset/39e050f4-f2e5-4ddc-8840-247e63000f60",
+        "https://www.figma.com/api/mcp/asset/1805817f-335c-437d-a8a0-46c849f89058"
+      ]
+    },
+    {
+      "name": "file-pdf",
+      "nodeId": "1622:20237",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/0c83a102-4f26-4658-9d0b-4907861da1eb",
+        "https://www.figma.com/api/mcp/asset/2f00d74c-a784-4585-a02b-d4b56b194d09",
+        "https://www.figma.com/api/mcp/asset/ff827fdb-a603-4251-8b13-ee1dc59793d8",
+        "https://www.figma.com/api/mcp/asset/36766cbe-58fa-47aa-8043-ca52e5548098"
+      ]
+    },
+    {
+      "name": "eye-edit",
+      "nodeId": "1622:21327",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/299dedb6-8673-4f30-920c-3f233334aabb"
+    },
+    {
+      "name": "shopping-bag",
+      "nodeId": "1037:32447",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/75a91851-f841-43d5-8569-654c2412d2ca"
+    },
+    {
+      "name": "mark-suspicous",
+      "nodeId": "7462:138485",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/0b6b75d3-b50a-4443-b094-b4471ab705de",
+        "https://www.figma.com/api/mcp/asset/28f735b2-546b-4dae-9219-a39bfe8cf6cc",
+        "https://www.figma.com/api/mcp/asset/0e254925-41f9-4a04-b014-64652de8b33a",
+        "https://www.figma.com/api/mcp/asset/a7f6a19f-68f8-4ded-94d6-d77a7e8a2117",
+        "https://www.figma.com/api/mcp/asset/892bfea9-3b99-4139-95df-6415008459bf",
+        "https://www.figma.com/api/mcp/asset/d6ceff59-7d10-4115-9f6c-bdad18e1e998"
+      ]
+    },
+    {
+      "name": "happy",
+      "nodeId": "1805:28944",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/df4100e8-6aac-438b-9964-cc39421ecbb0",
+        "https://www.figma.com/api/mcp/asset/be3773ea-d209-487e-a957-3ac45046313e",
+        "https://www.figma.com/api/mcp/asset/7cd560d0-422e-421e-aca3-b1fb42f14eab",
+        "https://www.figma.com/api/mcp/asset/d9bd47ad-518b-4d17-9d50-46b71b23a451"
+      ]
+    },
+    {
+      "name": "login-customer",
+      "nodeId": "7462:138461",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/637f977c-67b3-41dd-9b1e-b424b185dea3",
+        "https://www.figma.com/api/mcp/asset/cbe4c77c-260c-45b7-bfa7-8f555843da10",
+        "https://www.figma.com/api/mcp/asset/d029d68a-6830-4c1c-a494-2bc982b69c04",
+        "https://www.figma.com/api/mcp/asset/64604f38-bb29-4240-a048-ed1be2a38691",
+        "https://www.figma.com/api/mcp/asset/e06af059-9c94-4659-8183-94a434f40000"
+      ]
+    },
+    {
+      "name": "cry",
+      "nodeId": "1805:28930",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/be3773ea-d209-487e-a957-3ac45046313e",
+        "https://www.figma.com/api/mcp/asset/1cbcc832-cedb-4101-b2b2-81a02a82962b",
+        "https://www.figma.com/api/mcp/asset/bd9a72c7-4f96-45c7-b393-4866d207d195",
+        "https://www.figma.com/api/mcp/asset/88bb7ce3-f914-4b1a-943f-911a7bbe70cb"
+      ]
+    },
+    {
+      "name": "mark-issue",
+      "nodeId": "7462:138434",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/c448ff5d-3b5f-4330-ac73-ec13f9a2edef",
+        "https://www.figma.com/api/mcp/asset/8d664f96-e4f4-42ae-9a46-ce546d7a551c",
+        "https://www.figma.com/api/mcp/asset/c5449857-08d4-4b66-8173-8d009a0a2793",
+        "https://www.figma.com/api/mcp/asset/4a4143e1-fa76-4903-ba60-f4afcb811cf8",
+        "https://www.figma.com/api/mcp/asset/e0056459-dede-4c68-89f4-810604f0d94b",
+        "https://www.figma.com/api/mcp/asset/47ffe422-d376-46f5-95a6-939d1a65d818"
+      ]
+    },
+    {
+      "name": "sad",
+      "nodeId": "1805:28915",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/df4100e8-6aac-438b-9964-cc39421ecbb0",
+        "https://www.figma.com/api/mcp/asset/be3773ea-d209-487e-a957-3ac45046313e",
+        "https://www.figma.com/api/mcp/asset/cf74256d-0125-4fe6-9078-405d39acef29"
+      ]
+    },
+    {
+      "name": "not-ship",
+      "nodeId": "7462:138412",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/f6d7b6dc-d209-46bc-bea1-da96a8df8344",
+        "https://www.figma.com/api/mcp/asset/3dd32cbc-d625-4a5f-8a16-eb4751eaa010",
+        "https://www.figma.com/api/mcp/asset/3afaa997-2b52-4565-9c37-801eeecf4159",
+        "https://www.figma.com/api/mcp/asset/26b320a1-3075-48e6-a3db-49e57dfbe391"
+      ]
+    },
+    {
+      "name": "smile",
+      "nodeId": "1622:21479",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/c6d5fc9e-1f54-4809-afda-8d46974fa100",
+        "https://www.figma.com/api/mcp/asset/9818c1f5-f273-49ff-9cfc-866c49f85d41"
+      ]
+    },
+    {
+      "name": "hold",
+      "nodeId": "7462:138396",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/e0e93600-616b-4369-a7fe-5b8a41cfed9d",
+        "https://www.figma.com/api/mcp/asset/00e42d22-90a7-4793-8b21-1267102cb05c"
+      ]
+    },
+    {
+      "name": "eye",
+      "nodeId": "1621:13244",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/40cee606-956b-483b-851c-36c0effb5e9d",
+        "https://www.figma.com/api/mcp/asset/23c08d8b-e505-4d76-9682-7f72228d233f"
+      ]
+    },
+    {
+      "name": "refund",
+      "nodeId": "7462:138321",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/1073c8e0-ac1a-42be-b5af-a71258416e1e",
+        "https://www.figma.com/api/mcp/asset/33dc76be-0312-495f-af81-f26569e7719d",
+        "https://www.figma.com/api/mcp/asset/fdbee083-c568-4e34-aaaf-bee0f8740da0",
+        "https://www.figma.com/api/mcp/asset/d4b6ee1d-33ce-403c-b74c-0b43370a85df",
+        "https://www.figma.com/api/mcp/asset/2e544d1d-f02e-45fd-8722-dae341dfec4e",
+        "https://www.figma.com/api/mcp/asset/ddcc3066-07b8-4a64-969f-01486638bc42"
+      ]
+    },
+    {
+      "name": "eye-closed",
+      "nodeId": "1621:13206",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/a7775154-75b6-4d99-aca3-fdc7c2f09ac2",
+        "https://www.figma.com/api/mcp/asset/92471144-7e4e-471d-8414-74b1a5ef6ce3",
+        "https://www.figma.com/api/mcp/asset/b14349f5-5af8-4a0b-ad52-65d7f766ad7b",
+        "https://www.figma.com/api/mcp/asset/9ac13b2d-6638-4dc9-ac5e-df22b4b91724",
+        "https://www.figma.com/api/mcp/asset/818d9dba-ee4b-4a66-8424-63f4b245c3d5",
+        "https://www.figma.com/api/mcp/asset/38c7af55-b4a1-4a06-b4b8-b26c0cb39ec4"
+      ]
+    },
+    {
+      "name": "file-plus",
+      "nodeId": "1622:20074",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/7ad1f5b0-2569-4c65-9fab-a42b3fc0a111",
+        "https://www.figma.com/api/mcp/asset/68f50699-bd92-45cd-8b60-b5e939075659",
+        "https://www.figma.com/api/mcp/asset/63587604-ce86-467b-9487-0db37edd977d",
+        "https://www.figma.com/api/mcp/asset/93022296-4753-4407-a44d-16865e189f17"
+      ]
+    },
+    {
+      "name": "upload",
+      "nodeId": "1622:20026",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/a78e2653-a462-49fe-b77b-eb73d60349b9",
+        "https://www.figma.com/api/mcp/asset/b3c7d452-a413-4fda-85bd-d5db1cd2bb97",
+        "https://www.figma.com/api/mcp/asset/3a3a83d3-3701-4c55-b10b-9075c5308cdf"
+      ]
+    },
+    {
+      "name": "minus",
+      "nodeId": "1621:19935",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/1d99928e-6753-442f-8249-0a0ec507e524"
+    },
+    {
+      "name": "star",
+      "nodeId": "1622:21205",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/40d9723d-89d8-49dd-8c33-e90d518dae99"
+    },
+    {
+      "name": "sidebar-left-expand",
+      "nodeId": "1621:19767",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/a7775154-75b6-4d99-aca3-fdc7c2f09ac2",
+        "https://www.figma.com/api/mcp/asset/05d620f3-452f-4ec7-ac5f-0effa0649d21",
+        "https://www.figma.com/api/mcp/asset/36761cd7-4a13-4b29-a506-91f05d291413",
+        "https://www.figma.com/api/mcp/asset/a38a3a53-6e98-43e3-9815-a9044dfd1d06"
+      ]
+    },
+    {
+      "name": "plus",
+      "nodeId": "1618:7756",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/70942e6a-406f-4aa5-8cbc-5767e7dbf74a"
+    },
+    {
+      "name": "copy-plus",
+      "nodeId": "1622:21282",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/d6aae0cd-3061-464f-a257-c64475464157"
+    },
+    {
+      "name": "circle-cross",
+      "nodeId": "1798:25307",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/f3dd785b-2821-49d1-abe5-f3582cd9b026",
+        "https://www.figma.com/api/mcp/asset/3fc0621e-90c4-4cce-882c-d45286b4b06e"
+      ]
+    },
+    {
+      "name": "italic",
+      "nodeId": "1618:7965",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/75dcc026-fda8-439d-94ea-fb54518caf16"
+    },
+    {
+      "name": "chevrons-up-down",
+      "nodeId": "1674:12216",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/8b5f1fd9-9510-4ed0-850f-39fa4748ce08",
+        "https://www.figma.com/api/mcp/asset/83a327ef-a122-4139-845a-7da1de0c74f5"
+      ]
+    },
+    {
+      "name": "brand-apple",
+      "nodeId": "1045:2282",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/af771a31-9c64-4f60-9e79-6488152fb714",
+        "https://www.figma.com/api/mcp/asset/d2ae8a4b-f0d5-4065-bebc-f2a6a8cdd132"
+      ]
+    },
+    {
+      "name": "history",
+      "nodeId": "1765:6033",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/cac278ec-dd88-4069-ba62-f0afebbe8855",
+        "https://www.figma.com/api/mcp/asset/6e442f4e-a85e-4ba1-84ea-9d76bc3ca3ca",
+        "https://www.figma.com/api/mcp/asset/ada3d802-96cf-45eb-8699-5bb0cc681203"
+      ]
+    },
+    {
+      "name": "file-box",
+      "nodeId": "1200:59",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/d5137ecb-e043-4850-9ed7-6f5b18998c5d"
+    },
+    {
+      "name": "device-mobile",
+      "nodeId": "1045:1926",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/3ab3fddc-6db4-4e9d-8a82-4cda6c6b5d01",
+        "https://www.figma.com/api/mcp/asset/416b7c0d-de37-4d23-836b-2b0ffeeb0bc6"
+      ]
+    },
+    {
+      "name": "copy",
+      "nodeId": "1751:3315",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/bcdf8b88-9fa6-4950-88ba-69f242e78d76"
+    },
+    {
+      "name": "external-link",
+      "nodeId": "1341:510",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/a5ac876b-c8bd-4db7-92df-b7e78c912707"
+    },
+    {
+      "name": "device-dollar",
+      "nodeId": "1045:1891",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/a4516aef-ad18-4e08-9386-9441f128137c",
+        "https://www.figma.com/api/mcp/asset/02368371-1548-4a81-8740-874b0415d175"
+      ]
+    },
+    {
+      "name": "github",
+      "nodeId": "1731:26281",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/d532c6fd-cee7-44f2-a23c-3c1c38743bd4"
+    },
+    {
+      "name": "light-mode",
+      "nodeId": "1731:26248",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/aeeaa58e-aa5f-44c0-9ea7-a1f1e9b71d11",
+        "https://www.figma.com/api/mcp/asset/0fbc9846-88eb-4099-8bdd-cefd9b88038f",
+        "https://www.figma.com/api/mcp/asset/8ed9cb7b-3baa-4de2-99b9-0a335d075d5e",
+        "https://www.figma.com/api/mcp/asset/71ca2fad-a67f-4cb4-a0fe-878a94b70a1b",
+        "https://www.figma.com/api/mcp/asset/9633ffe6-09f6-4f74-a467-7ca962ae6b05"
+      ]
+    },
+    {
+      "name": "article",
+      "nodeId": "6707:104361",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/a7775154-75b6-4d99-aca3-fdc7c2f09ac2",
+        "https://www.figma.com/api/mcp/asset/bee9884b-5afa-4150-ba3d-b20e16c7eb1f",
+        "https://www.figma.com/api/mcp/asset/4065671e-114c-47a1-84e3-f518c711b50e",
+        "https://www.figma.com/api/mcp/asset/1eff97e4-12b3-41e3-81ba-cbf1acb77932",
+        "https://www.figma.com/api/mcp/asset/7a50dbf4-cd3c-4493-9d49-582c9b48158f"
+      ]
+    },
+    {
+      "name": "table-dashed",
+      "nodeId": "1621:13124",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/a7775154-75b6-4d99-aca3-fdc7c2f09ac2",
+        "https://www.figma.com/api/mcp/asset/1d89f3d3-7c15-4762-91d3-88799f44737e",
+        "https://www.figma.com/api/mcp/asset/c1bb317c-549f-46cb-acf4-942f92d4e46c",
+        "https://www.figma.com/api/mcp/asset/50ee7e0b-f3b6-48fc-9ef9-e657f1fdeef2"
+      ]
+    },
+    {
+      "name": "arrow-down",
+      "nodeId": "1622:21440",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/b0934ede-c694-4b50-8c6a-9c53802923b1"
+    },
+    {
+      "name": "devices",
+      "nodeId": "1037:32505",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/fe57a4e9-5a71-470e-bcaf-3b976ab59d92",
+        "https://www.figma.com/api/mcp/asset/3b48c862-0565-4ac7-8e94-324643b28f8b"
+      ]
+    },
+    {
+      "name": "knowledge-base",
+      "nodeId": "6666:115508",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/cd89500c-5658-417a-bea2-f36ff51eaa9c",
+        "https://www.figma.com/api/mcp/asset/36993e24-38c6-418c-b7d9-db6b7048658f",
+        "https://www.figma.com/api/mcp/asset/26e6afde-5f20-47a1-8854-2cff3a3a8657",
+        "https://www.figma.com/api/mcp/asset/dc82d1d4-6ffb-4bd1-9c6f-a63b9ab28279"
+      ]
+    },
+    {
+      "name": "image",
+      "nodeId": "1621:13057",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/13db097f-9b77-4113-b34b-3f6c2f8968bb"
+    },
+    {
+      "name": "arrow-right",
+      "nodeId": "1622:21589",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/86eec45c-446e-4674-a7d3-06b529222d75"
+    },
+    {
+      "name": "dashboard",
+      "nodeId": "361:7986",
+      "assetUrl": null
+    },
+    {
+      "name": "dark-mode",
+      "nodeId": "1731:26270",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/68c25ca6-1f61-4811-8ce7-afd6755a475f"
+    },
+    {
+      "name": "command",
+      "nodeId": "1718:16255",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/6718c8ca-6c57-480a-b5e4-fade8efb9310",
+        "https://www.figma.com/api/mcp/asset/9899dda4-de4d-473d-8272-c5331ff75537",
+        "https://www.figma.com/api/mcp/asset/37ce25f1-b6c3-427c-a451-0134ffd7d24e",
+        "https://www.figma.com/api/mcp/asset/e713e5af-7fbb-437e-9854-8c1c4d6fc105"
+      ]
+    },
+    {
+      "name": "align-right",
+      "nodeId": "1621:13008",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/768c861d-1ae1-4870-b3c3-e0410c7c4de9"
+    },
+    {
+      "name": "calendar",
+      "nodeId": "1122:19481",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/0d23ccf5-cdd9-4dd1-97c9-6031f9c468fc",
+        "https://www.figma.com/api/mcp/asset/266f0b90-86bb-4196-90eb-ec639837f8ab",
+        "https://www.figma.com/api/mcp/asset/ff149164-be7a-48da-9abd-082a4d9d2219"
+      ]
+    },
+    {
+      "name": "triangle-alert",
+      "nodeId": "1341:8324",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/1936a13c-4b0a-4a1e-9661-1b2d9978f9a8",
+        "https://www.figma.com/api/mcp/asset/99a69b38-6e68-4922-a7d0-e1d9dd1d9398",
+        "https://www.figma.com/api/mcp/asset/2b651952-5d77-4e52-b8de-f6f49e7a9cae"
+      ]
+    },
+    {
+      "name": "list-letters",
+      "nodeId": "1624:37136",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/a7775154-75b6-4d99-aca3-fdc7c2f09ac2",
+        "https://www.figma.com/api/mcp/asset/5655bac7-1263-4410-96af-c1afba595737",
+        "https://www.figma.com/api/mcp/asset/8e5cccce-896e-410d-9b9f-21d240b8d5db",
+        "https://www.figma.com/api/mcp/asset/26d5cb95-39c7-44fe-836f-1475d5ca7819",
+        "https://www.figma.com/api/mcp/asset/978e13d5-558d-4f41-a819-6774f1dd7a9c"
+      ]
+    },
+    {
+      "name": "grid",
+      "nodeId": "6409:131310",
+      "assetUrl": null
+    },
+    {
+      "name": "align-center",
+      "nodeId": "1621:12979",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/a7775154-75b6-4d99-aca3-fdc7c2f09ac2",
+        "https://www.figma.com/api/mcp/asset/f2427b0b-b3b8-4c57-8bb4-11187d446452",
+        "https://www.figma.com/api/mcp/asset/7003eae2-b8cf-4181-9c52-b83af9430198",
+        "https://www.figma.com/api/mcp/asset/3fbbe5a9-bd39-46fb-9bf8-fdbd07562a96"
+      ]
+    },
+    {
+      "name": "clock",
+      "nodeId": "1097:36084",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/e8aa2e24-4e4f-4b82-9356-0ae027244cd2"
+    },
+    {
+      "name": "chalkboard",
+      "nodeId": "1045:2228",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/653a6f69-b331-4278-9567-b9904d2397cf"
+    },
+    {
+      "name": "list-number",
+      "nodeId": "1624:37054",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/a7775154-75b6-4d99-aca3-fdc7c2f09ac2",
+        "https://www.figma.com/api/mcp/asset/5655bac7-1263-4410-96af-c1afba595737",
+        "https://www.figma.com/api/mcp/asset/7003eae2-b8cf-4181-9c52-b83af9430198",
+        "https://www.figma.com/api/mcp/asset/d44001aa-ced8-4c2d-8413-35426eb2e53d",
+        "https://www.figma.com/api/mcp/asset/1b4f326b-4ea0-4a43-a73b-eea52881a885"
+      ]
+    },
+    {
+      "name": "unlike",
+      "nodeId": "6380:59537",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/d7b5d20b-7e36-4127-8731-3178b7e626d1",
+        "https://www.figma.com/api/mcp/asset/4da2aa1e-ee7f-4ed6-a733-18d1802f0e7b"
+      ]
+    },
+    {
+      "name": "align-left",
+      "nodeId": "1621:12957",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/8791e531-2c63-4eaa-af5f-d611250d8dc3"
+    },
+    {
+      "name": "info",
+      "nodeId": "1079:3429",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/0287bc03-bbb2-4d8c-aa6b-2acd1ee24399",
+        "https://www.figma.com/api/mcp/asset/a0e1ef67-e7ec-4c23-8217-be79fdd3b15d"
+      ]
+    },
+    {
+      "name": "boxes",
+      "nodeId": "1045:2098",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/3c75f39f-0dd1-492e-a13c-a7a501845893"
+    },
+    {
+      "name": "arrow-up",
+      "nodeId": "1341:7532",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/608718f3-5dd4-4e35-84c8-26b47f39923b"
+    },
+    {
+      "name": "unverified",
+      "nodeId": "6682:105664",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/6d32620c-de55-483e-8a93-f4ab358ea8a4",
+        "https://www.figma.com/api/mcp/asset/867693d0-9d2a-4fc3-a8b4-def0d6c8d0d1",
+        "https://www.figma.com/api/mcp/asset/ddd7bd6b-6cf2-406f-977e-11295f07b748"
+      ]
+    },
+    {
+      "name": "list",
+      "nodeId": "1621:13080",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/a7775154-75b6-4d99-aca3-fdc7c2f09ac2",
+        "https://www.figma.com/api/mcp/asset/38d4f261-ffe5-4410-933a-fcb034cf6816",
+        "https://www.figma.com/api/mcp/asset/6da001c0-ef9e-43a5-8ec1-47622397faf2",
+        "https://www.figma.com/api/mcp/asset/61fb324b-c0bd-440a-b5b4-8edb2a9229fa",
+        "https://www.figma.com/api/mcp/asset/96673ebf-8a49-4151-ad04-483c3f66ed61"
+      ]
+    },
+    {
+      "name": "bookmark",
+      "nodeId": "1622:21413",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/afa3b58c-af13-4f50-9f36-d951a9495299"
+    },
+    {
+      "name": "search",
+      "nodeId": "1621:19856",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/3a499940-c5e4-4e07-9154-e782a82c765e"
+    },
+    {
+      "name": "truck-delivery",
+      "nodeId": "1341:7519",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/09b32db0-601f-42e2-8f22-000c681c0aab"
+    },
+    {
+      "name": "folder",
+      "nodeId": "1200:30",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/0f751a34-fa76-4147-b702-ca5ef6815322"
+    },
+    {
+      "name": "pencil",
+      "nodeId": "1622:21565",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/e4963f87-b8e8-46a3-87cf-b8a6c251820a",
+        "https://www.figma.com/api/mcp/asset/7e0e8ea9-0a6a-439f-b3e0-017fe2367ea1"
+      ]
+    },
+    {
+      "name": "check",
+      "nodeId": "1621:13270",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/6befd58b-b07e-4a9d-b84a-58a3b2fec5ae"
+    },
+    {
+      "name": "at-sign",
+      "nodeId": "1622:21462",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/abc9ca5e-db53-4eb0-8250-57758a0d47c1"
+    },
+    {
+      "name": "device-user",
+      "nodeId": "1045:1728",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/f394e78b-5adf-463c-975d-7468cec08c51",
+        "https://www.figma.com/api/mcp/asset/520da299-ad56-4ed7-b7a9-7d82d55b5786",
+        "https://www.figma.com/api/mcp/asset/d0658e8b-9e67-4138-ba96-0e7743378f59"
+      ]
+    },
+    {
+      "name": "sidebar-right-expand",
+      "nodeId": "1621:19807",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/ae2b42d2-0078-4137-b330-206c3e2799f6",
+        "https://www.figma.com/api/mcp/asset/2da6b7df-30f5-4971-bfbd-81eb85a58d28",
+        "https://www.figma.com/api/mcp/asset/23ddf0e2-91fe-4802-a5f4-aab2c18e3c69",
+        "https://www.figma.com/api/mcp/asset/57f3559e-7682-4c7f-8b4f-a5dce658d063"
+      ]
+    },
+    {
+      "name": "stack",
+      "nodeId": "1622:21171",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/8195cd4e-bf72-4377-9419-622caa5f9ec5"
+    },
+    {
+      "name": "exclamation-circle",
+      "nodeId": "1157:98393",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/18308063-258f-41c8-9506-48f5a8200b6f",
+        "https://www.figma.com/api/mcp/asset/a0e1ef67-e7ec-4c23-8217-be79fdd3b15d"
+      ]
+    },
+    {
+      "name": "spinner",
+      "nodeId": "1622:20343",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/89eb67e8-3c80-4f76-bfd1-5f923c18a7ae",
+        "https://www.figma.com/api/mcp/asset/5c1cfd8b-6c61-4031-a588-492e92f3a56b"
+      ]
+    },
+    {
+      "name": "warning",
+      "nodeId": "1622:20460",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/b5075b17-d586-4c68-a1e1-06522ddc808f"
+    },
+    {
+      "name": "circle-check-solid",
+      "nodeId": "1622:20378",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/d5238110-6b55-4439-93ec-eaffe03cdac5",
+        "https://www.figma.com/api/mcp/asset/15d83952-6752-4b12-a7c1-6b464cbd498e",
+        "https://www.figma.com/api/mcp/asset/c550b33e-d148-47e8-91d6-c122ada86cf4"
+      ]
+    },
+    {
+      "name": "like",
+      "nodeId": "6380:59460",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/a3e65052-af73-405a-8e47-bbb15237f687",
+        "https://www.figma.com/api/mcp/asset/49286208-49ba-47d4-a254-07073e543e98"
+      ]
+    },
+    {
+      "name": "underline",
+      "nodeId": "1621:12932",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/a7775154-75b6-4d99-aca3-fdc7c2f09ac2",
+        "https://www.figma.com/api/mcp/asset/e9f7f32c-58c7-4cc7-9438-c798428787f3",
+        "https://www.figma.com/api/mcp/asset/c33efdf9-7ca4-4d2b-aa11-44ccc127cf35"
+      ]
+    },
+    {
+      "name": "bold",
+      "nodeId": "1618:7958",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/a7775154-75b6-4d99-aca3-fdc7c2f09ac2",
+        "https://www.figma.com/api/mcp/asset/af87272a-46ff-4512-9a67-70751654457e",
+        "https://www.figma.com/api/mcp/asset/bae2412a-3914-4a4b-8d8b-8d2b4fdab93b"
+      ]
+    },
+    {
+      "name": "ticket",
+      "nodeId": "1045:2066",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/f29c2113-cec2-4a27-8d2a-af7cece0115e"
+    },
+    {
+      "name": "server",
+      "nodeId": "1045:1850",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/982c5a3e-51f0-43f0-83ab-81b05e2036d6",
+        "https://www.figma.com/api/mcp/asset/936f5452-c2ba-47b5-8b93-746e0463ed9b"
+      ]
+    },
+    {
+      "name": "file-bar-chart",
+      "nodeId": "1045:2263",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/4ea8d9b8-0a09-4576-8494-70e2c9d15b85"
+    },
+    {
+      "name": "sparkles",
+      "nodeId": "1618:4090",
+      "assetUrls": [
+        "https://www.figma.com/api/mcp/asset/23444318-2d50-4a5c-a601-4a84f318158a",
+        "https://www.figma.com/api/mcp/asset/7e314802-76b7-4b86-9312-e05d4cd27de0"
+      ]
+    },
+    {
+      "name": "users",
+      "nodeId": "1037:32596",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/76013053-e494-48dc-95f5-71ca80c696fe"
+    },
+    {
+      "name": "x",
+      "nodeId": "1048:3696",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/4103ebba-71ca-43be-8b0c-7cdf33df23ba"
+    },
+    {
+      "name": "book-open",
+      "nodeId": "1037:32569",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/f82571ac-d404-4d87-8372-2de71536852e"
+    },
+    {
+      "name": "gear-play-automation",
+      "nodeId": "1045:2249",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/48be0e9a-bdae-4e0d-bbfb-47f1e5d4c28c"
+    },
+    {
+      "name": "arrow-back-up",
+      "nodeId": "1045:2085",
+      "assetUrl": "https://www.figma.com/api/mcp/asset/c2fe0812-f679-4c12-9814-371eb895a034"
+    }
+  ]
+}

@@ -1,0 +1,499 @@
+<div class="icons-page">
+  <!-- Header -->
+  <header class="icons-header">
+    <h1 class="icons-header__title">Icons</h1>
+    <p class="icons-header__desc">
+      Icons are visual symbols that represent actions, objects, or concepts. Use them to enhance
+      recognition, save space, and improve navigation.
+    </p>
+  </header>
+
+  <!-- Tabs -->
+  <nav class="icons-tabs">
+    @for (tab of tabs; track tab.id) {
+      <button
+        class="icons-tabs__btn"
+        [class.icons-tabs__btn--active]="activeTab() === tab.id"
+        (click)="setTab(tab.id)"
+      >
+        {{ tab.label }}
+      </button>
+    }
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  <!-- ICONS TAB                                                             -->
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  @if (activeTab() === 'icons') {
+    <!-- Search bar -->
+    <div class="icons-search">
+      <svg
+        class="icons-search__icon"
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <circle cx="11" cy="11" r="8" />
+        <path d="M21 21l-4.35-4.35" />
+      </svg>
+      <input
+        class="icons-search__input"
+        type="text"
+        placeholder="Search icons..."
+        [value]="searchQuery()"
+        (input)="onSearch($event)"
+      />
+      <span class="icons-search__count">{{ iconCount() }} of {{ totalCount() }}</span>
+    </div>
+
+    <!-- Card grid -->
+    <div class="icons-grid">
+      @for (icon of filteredIcons(); track icon.name) {
+        <div
+          class="icon-card"
+          (mouseenter)="onIconHover(icon.name)"
+          (mouseleave)="onIconHover(null)"
+        >
+          <!-- Icon preview -->
+          <div class="icon-card__preview">
+            @if (icon.iconType === 'filled') {
+              <svg
+                width="32"
+                height="32"
+                [attr.viewBox]="icon.viewBox"
+                fill="currentColor"
+                [innerHTML]="icon.trustedSvg"
+              ></svg>
+            } @else if (icon.iconType === 'image') {
+              <svg
+                width="32"
+                height="32"
+                [attr.viewBox]="icon.viewBox"
+                [innerHTML]="icon.trustedSvg"
+              ></svg>
+            } @else {
+              <svg
+                width="32"
+                height="32"
+                [attr.viewBox]="icon.viewBox"
+                fill="none"
+                stroke="currentColor"
+                [attr.stroke-width]="icon.strokeWidth"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                [innerHTML]="icon.trustedSvg"
+              ></svg>
+            }
+          </div>
+
+          <!-- Icon name -->
+          <span class="icon-card__name">{{ icon.name }}</span>
+
+          <!-- Hover overlay -->
+          @if (hoveredIcon() === icon.name) {
+            <div class="icon-card__overlay">
+              <button
+                class="icon-card__copy-btn"
+                [class.icon-card__copy-btn--copied]="copiedIcon() === 'svg-' + icon.name"
+                (click)="copySvg(icon, $event)"
+              >
+                @if (copiedIcon() === 'svg-' + icon.name) {
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12l5 5l10 -10" />
+                  </svg>
+                  Copied!
+                } @else {
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M8 8m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z"
+                    />
+                    <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
+                  </svg>
+                  Copy SVG
+                }
+              </button>
+              <button
+                class="icon-card__copy-btn"
+                [class.icon-card__copy-btn--copied]="copiedIcon() === 'ng-' + icon.name"
+                (click)="copyAngular(icon, $event)"
+              >
+                @if (copiedIcon() === 'ng-' + icon.name) {
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12l5 5l10 -10" />
+                  </svg>
+                  Copied!
+                } @else {
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M9 12l2 2l4 -4" />
+                    <path d="M12 3l8 4.5v9l-8 4.5l-8 -4.5v-9l8 -4.5" />
+                  </svg>
+                  Copy Angular
+                }
+              </button>
+            </div>
+          }
+        </div>
+      }
+    </div>
+
+    <!-- Empty state -->
+    @if (filteredIcons().length === 0) {
+      <div class="icons-empty">
+        <svg
+          width="48"
+          height="48"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          style="opacity: 0.3"
+        >
+          <circle cx="11" cy="11" r="8" />
+          <path d="M21 21l-4.35-4.35" />
+        </svg>
+        <p>No icons found matching "{{ searchQuery() }}"</p>
+      </div>
+    }
+  }
+
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  <!-- PROPERTIES TAB                                                        -->
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  @if (activeTab() === 'properties') {
+    <div class="icons-props">
+      <p class="icons-props__intro">
+        The configurable properties available for each icon in the Prism icon set.
+      </p>
+
+      <div class="icons-props__table-wrap">
+        <table class="icons-props__table">
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Type</th>
+              <th>Default</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (prop of propertiesData; track prop.property) {
+              <tr>
+                <td>
+                  <code class="icons-props__code">{{ prop.property }}</code>
+                </td>
+                <td>
+                  <code class="icons-props__type-badge">{{ prop.type }}</code>
+                </td>
+                <td>
+                  <code class="icons-props__default">{{ prop.default }}</code>
+                </td>
+                <td>{{ prop.description }}</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Usage example -->
+      <div class="icons-props__section">
+        <h3 class="icons-props__heading">Usage</h3>
+        <div class="icons-props__code-block">
+          <pre><code>&lt;!-- Basic stroke icon --&gt;
+&lt;svg width="24" height="24" viewBox="0 0 24 24"
+     fill="none" stroke="currentColor" stroke-width="2"
+     stroke-linecap="round" stroke-linejoin="round"&gt;
+  &lt;path d="..." /&gt;
+&lt;/svg&gt;
+
+&lt;!-- Custom size and color --&gt;
+&lt;svg width="32" height="32" viewBox="0 0 24 24"
+     fill="none" stroke="#0066FF" stroke-width="1.5"
+     stroke-linecap="round" stroke-linejoin="round"&gt;
+  &lt;path d="..." /&gt;
+&lt;/svg&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  }
+
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  <!-- PLAYGROUND TAB                                                        -->
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  @if (activeTab() === 'playground') {
+    <div class="playground">
+      <div class="playground__layout">
+        <!-- Left: Preview -->
+        <div class="playground__preview-panel">
+          <div class="playground__preview-area">
+            @if (playgroundIcon(); as icon) {
+              @if (icon.iconType === 'filled') {
+                <svg
+                  [attr.width]="playgroundSize()"
+                  [attr.height]="playgroundSize()"
+                  [attr.viewBox]="icon.viewBox"
+                  [attr.fill]="playgroundColor()"
+                  [innerHTML]="getPlaygroundTrustedSvg()"
+                ></svg>
+              } @else {
+                <svg
+                  [attr.width]="playgroundSize()"
+                  [attr.height]="playgroundSize()"
+                  [attr.viewBox]="icon.viewBox"
+                  fill="none"
+                  [attr.stroke]="playgroundColor()"
+                  [attr.stroke-width]="playgroundStrokeWidth()"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  [innerHTML]="getPlaygroundTrustedSvg()"
+                ></svg>
+              }
+            } @else {
+              <p class="playground__empty-msg">Select an icon to preview</p>
+            }
+          </div>
+          @if (playgroundIcon(); as icon) {
+            <span class="playground__preview-name">{{ icon.displayName }}</span>
+          }
+
+          <!-- Copy actions below preview -->
+          <div class="playground__actions">
+            <button
+              class="playground__copy-btn"
+              [class.playground__copy-btn--copied]="playgroundCopied() === 'svg'"
+              (click)="copyPlaygroundSvg()"
+            >
+              @if (playgroundCopied() === 'svg') {
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12l5 5l10 -10" />
+                </svg>
+                Copied!
+              } @else {
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M8 8m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z"
+                  />
+                  <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
+                </svg>
+                Copy SVG
+              }
+            </button>
+            <button
+              class="playground__copy-btn"
+              [class.playground__copy-btn--copied]="playgroundCopied() === 'angular'"
+              (click)="copyPlaygroundAngular()"
+            >
+              @if (playgroundCopied() === 'angular') {
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12l5 5l10 -10" />
+                </svg>
+                Copied!
+              } @else {
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M9 12l2 2l4 -4" />
+                  <path d="M12 3l8 4.5v9l-8 4.5l-8 -4.5v-9l8 -4.5" />
+                </svg>
+                Copy Angular
+              }
+            </button>
+          </div>
+        </div>
+
+        <!-- Right: Controls -->
+        <div class="playground__controls">
+          <!-- Icon selector -->
+          <div class="playground__group">
+            <label class="playground__label">Icon</label>
+            <div class="playground__icon-selector">
+              <div class="playground__icon-search">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="11" cy="11" r="8" />
+                  <path d="M21 21l-4.35-4.35" />
+                </svg>
+                <input
+                  type="text"
+                  placeholder="Search icons..."
+                  [value]="playgroundSearchQuery()"
+                  (input)="onPlaygroundSearch($event)"
+                />
+              </div>
+              <div class="playground__icon-grid">
+                @for (icon of playgroundFilteredIcons(); track icon.name) {
+                  <button
+                    class="playground__icon-btn"
+                    [class.playground__icon-btn--active]="playgroundIcon()?.name === icon.name"
+                    (click)="selectPlaygroundIcon(icon)"
+                    [title]="icon.displayName"
+                  >
+                    @if (icon.iconType === 'filled') {
+                      <svg
+                        width="20"
+                        height="20"
+                        [attr.viewBox]="icon.viewBox"
+                        fill="currentColor"
+                        [innerHTML]="icon.trustedSvg"
+                      ></svg>
+                    } @else {
+                      <svg
+                        width="20"
+                        height="20"
+                        [attr.viewBox]="icon.viewBox"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        [innerHTML]="icon.trustedSvg"
+                      ></svg>
+                    }
+                  </button>
+                }
+              </div>
+            </div>
+          </div>
+
+          <!-- Color -->
+          <div class="playground__group">
+            <label class="playground__label">Color</label>
+            <div class="playground__color-row">
+              <input
+                type="color"
+                class="playground__color-swatch"
+                [value]="playgroundColor()"
+                (input)="playgroundColor.set($any($event.target).value)"
+              />
+              <input
+                type="text"
+                class="playground__color-text"
+                [value]="playgroundColor()"
+                (input)="playgroundColor.set($any($event.target).value)"
+              />
+            </div>
+          </div>
+
+          <!-- Size -->
+          <div class="playground__group">
+            <label class="playground__label">Size</label>
+            <div class="playground__size-row">
+              @for (size of sizeOptions; track size) {
+                <button
+                  class="playground__size-btn"
+                  [class.playground__size-btn--active]="playgroundSize() === size"
+                  (click)="playgroundSize.set(size)"
+                >
+                  {{ size }}
+                </button>
+              }
+            </div>
+          </div>
+
+          <!-- Stroke width (stroke icons only) -->
+          @if (playgroundIcon()?.iconType !== 'filled') {
+            <div class="playground__group">
+              <label class="playground__label">Stroke Width</label>
+              <div class="playground__stroke-row">
+                <input
+                  type="range"
+                  min="0.5"
+                  max="4"
+                  step="0.25"
+                  class="playground__range"
+                  [value]="playgroundStrokeWidth()"
+                  (input)="playgroundStrokeWidth.set(+$any($event.target).value)"
+                />
+                <span class="playground__range-val">{{ playgroundStrokeWidth() }}</span>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  }
+</div>

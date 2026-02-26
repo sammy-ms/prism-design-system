@@ -29,12 +29,39 @@ export const routes: Routes = [
   },
   {
     path: 'icons',
-    loadComponent: () => import('./pages/icons/icons').then((m) => m.IconsPage),
-    data: { title: 'Icons' },
+    children: [
+      { path: '', redirectTo: 'all', pathMatch: 'full' },
+      {
+        path: 'all',
+        loadComponent: () => import('./pages/icons/icons').then((m) => m.IconsPage),
+        data: { title: 'Icons', category: 'all' },
+      },
+      {
+        path: 'stroke',
+        loadComponent: () => import('./pages/icons/icons').then((m) => m.IconsPage),
+        data: { title: 'Stroke Icons', category: 'stroke' },
+      },
+      {
+        path: 'filled',
+        loadComponent: () => import('./pages/icons/icons').then((m) => m.IconsPage),
+        data: { title: 'Filled Icons', category: 'filled' },
+      },
+      {
+        path: 'flags',
+        loadComponent: () => import('./pages/icons/icons').then((m) => m.IconsPage),
+        data: { title: 'Flags', category: 'flag' },
+      },
+    ],
   },
   {
     path: 'components',
-    loadComponent: () => import('./pages/placeholder/placeholder').then((m) => m.Placeholder),
-    data: { title: 'Components' },
+    children: [
+      { path: '', redirectTo: 'code', pathMatch: 'full' },
+      {
+        path: 'code',
+        loadComponent: () => import('./pages/components/code/code').then((m) => m.CodePage),
+        data: { title: 'Code' },
+      },
+    ],
   },
 ];

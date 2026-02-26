@@ -19,6 +19,7 @@ A design system showcase and tool built with Angular 21, featuring color tokens,
 - `npm run build` — Production build with SSR
 - `npm run watch` — Dev watch mode
 - `npm test` — Run Vitest tests
+- `npm run serve:ssr:prism-design-system` — Run SSR server from dist
 
 ## Project Structure
 
@@ -27,7 +28,7 @@ prism-design-system/
 ├── src/
 │   ├── app/
 │   │   ├── layout/          # Sidebar, topbar components
-│   │   ├── pages/           # Colors, icons, placeholder pages
+│   │   ├── pages/           # Colors, icons, spacing, typography, placeholder pages
 │   │   ├── services/        # ai.service.ts, theme.service.ts
 │   │   ├── app.ts           # Root standalone component
 │   │   ├── app.routes.ts    # Lazy-loaded route definitions
@@ -53,7 +54,7 @@ prism-design-system/
 - Components: PascalCase class names (e.g., `IconsPage`, `Sidebar`)
 - Services: `*.service.ts` with `providedIn: 'root'`
 - CSS classes: `ms-*` prefix
-- CSS variables: `--semantics-*` (semantic), `--neutral-*` (primitive)
+- CSS variables: `--semantics-*` (semantic), `--primitives-*` (primitive)
 
 ### Formatting
 
@@ -78,3 +79,10 @@ prism-design-system/
 - Icons generated from Figma exports via `.mjs` build scripts, stored as TypeScript data
 - Token system: primitive tokens (colors) → semantic tokens (purposes) with light/dark variants
 - ANTHROPIC_API_KEY env var required only at runtime for AI features
+
+## Gotchas
+
+- `skipTests: true` is set in angular.json for all schematics — no test files exist yet
+- No ESLint configured — Prettier is the only code quality tool
+- AI features require `ANTHROPIC_API_KEY` at runtime only; app builds fine without it
+- Icon data (`icon-data.ts`) is auto-generated from Figma SVGs — don't edit manually

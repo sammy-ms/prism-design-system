@@ -78,7 +78,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   padding: 10px 16px;
   border: 1px solid var(--semantics-border-subtle-secondary, #e0e0e0);
   border-radius: 8px;
@@ -114,11 +114,45 @@
   }
 }
 
+// ── Section ──
+.icons-section {
+  margin-bottom: 40px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--semantics-text-subtle-primary-default, #1b1f22);
+  }
+
+  &__count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    height: 22px;
+    padding: 0 8px;
+    border-radius: 11px;
+    background: var(--semantics-fill-subtle-primary-default, #e8e8e8);
+    color: var(--semantics-text-subtle-primary-default, #1b1f22);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+  }
+}
+
 // ── Card grid ──
 .icons-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(136px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
 }
 
 // ── Icon card ──
@@ -127,10 +161,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  padding: 20px 12px 14px;
+  gap: 8px;
+  padding: 16px 10px 12px;
   border: 1px solid var(--semantics-border-subtle-secondary, #e0e0e0);
-  border-radius: 10px;
+  border-radius: 8px;
   background: var(--semantics-surface-subtle-secondary-default, #fff);
   cursor: default;
   transition:
@@ -146,15 +180,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    height: 48px;
-    color: var(--semantics-icon-subtle-primary-default, #1b1f22);
+    width: 32px;
+    height: 32px;
   }
 
   &__name {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 500;
-    line-height: 14px;
+    line-height: 13px;
     color: var(--semantics-text-subtle-primary-hover, #6a6b6d);
     text-align: center;
     word-break: break-word;
@@ -172,9 +205,9 @@
     gap: 6px;
     background: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(4px);
-    border-radius: 10px;
+    border-radius: 8px;
     z-index: 5;
-    padding: 12px;
+    padding: 10px;
   }
 
   &__copy-btn {
@@ -183,10 +216,10 @@
     justify-content: center;
     gap: 6px;
     width: 100%;
-    padding: 7px 10px;
-    font-size: 12px;
+    padding: 6px 8px;
+    font-size: 11px;
     font-weight: 500;
-    line-height: 16px;
+    line-height: 14px;
     color: var(--semantics-text-subtle-primary-default, #1b1f22);
     background: var(--semantics-surface-subtle-secondary-default, #fff);
     border: 1px solid var(--semantics-border-subtle-secondary, #e0e0e0);
@@ -604,50 +637,6 @@
       border-color: var(--semantics-text-subtle-primary-default, #1b1f22);
     }
   }
-
-  // ── Stroke width ──
-  &__stroke-row {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-
-  &__range {
-    flex: 1;
-    height: 4px;
-    -webkit-appearance: none;
-    appearance: none;
-    background: var(--semantics-border-subtle-secondary, #e0e0e0);
-    border-radius: 2px;
-    outline: none;
-
-    &::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      width: 18px;
-      height: 18px;
-      background: var(--semantics-text-subtle-primary-default, #1b1f22);
-      border-radius: 50%;
-      cursor: pointer;
-    }
-
-    &::-moz-range-thumb {
-      width: 18px;
-      height: 18px;
-      background: var(--semantics-text-subtle-primary-default, #1b1f22);
-      border-radius: 50%;
-      cursor: pointer;
-      border: none;
-    }
-  }
-
-  &__range-val {
-    font-size: 13px;
-    font-weight: 500;
-    font-family: 'Roboto Mono', monospace;
-    color: var(--semantics-text-subtle-primary-default, #1b1f22);
-    min-width: 30px;
-    text-align: right;
-  }
 }
 
 // =============================================================================
@@ -655,7 +644,7 @@
 // =============================================================================
 @media (max-width: 1200px) {
   .icons-grid {
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
   }
 }
 
@@ -700,7 +689,7 @@
   }
 
   .icons-grid {
-    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 8px;
   }
 
@@ -711,7 +700,7 @@
 
 @media (max-width: 480px) {
   .icons-grid {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
     gap: 6px;
   }
 }

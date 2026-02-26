@@ -1,0 +1,337 @@
+:host {
+  display: block;
+  width: 100%;
+  background: var(--semantics-surface-subtle-secondary-default, #fff);
+}
+
+.comp-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+// ── Header ──
+.comp-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--semantics-surface-subtle-secondary-default, #fff);
+  padding: 40px 48px 0;
+  border-bottom: 1px solid var(--semantics-border-subtle-secondary, #e0e0e0);
+
+  &__title {
+    font-size: 32px;
+    font-weight: 550;
+    line-height: 40px;
+    color: #1b1f22;
+    margin-bottom: 8px;
+    letter-spacing: -0.32px;
+  }
+
+  &__desc {
+    font-size: 16px;
+    font-weight: 450;
+    line-height: 20px;
+    color: #6a6b6d;
+    max-width: 720px;
+    margin-bottom: 20px;
+  }
+}
+
+// ── Tabs ──
+.comp-tabs {
+  display: flex;
+  gap: 0;
+
+  &__btn {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 450;
+    line-height: 20px;
+    color: #6a6b6d;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    transition: color 0.15s;
+
+    &:hover {
+      color: #1b1f22;
+    }
+
+    &--active {
+      color: #1b1f22;
+      font-weight: 550;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: #1b1f22;
+        border-radius: 2px 2px 0 0;
+      }
+    }
+  }
+}
+
+// ── Body grid ──
+.comp-body {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 40px;
+  padding: 32px 48px 80px;
+  align-items: start;
+}
+
+.comp-content {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  min-width: 0;
+}
+
+// ── Section ──
+.comp-section {
+  scroll-margin-top: 160px;
+
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #1b1f22;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  &__desc {
+    font-size: 14px;
+    font-weight: 450;
+    line-height: 20px;
+    color: #6a6b6d;
+    margin-bottom: 16px;
+  }
+}
+
+// ── Properties table ──
+.comp-props {
+  &__wrap {
+    overflow-x: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    line-height: 20px;
+
+    th {
+      text-align: left;
+      padding: 10px 16px;
+      font-weight: 600;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #6a6b6d;
+      background: #fafafa;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    td {
+      padding: 10px 16px;
+      color: #1b1f22;
+      border-bottom: 1px solid #e0e0e0;
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+  }
+
+  &__code {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    background: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  &__type {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    color: #0066ff;
+    background: rgba(0, 102, 255, 0.06);
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  &__default {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    color: #6a6b6d;
+    background: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+}
+
+// ── TOC ──
+.comp-toc {
+  position: sticky;
+  top: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-left: 1px solid #e0e0e0;
+  padding-left: 16px;
+
+  &__item {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #6a6b6d;
+    padding: 4px 0;
+    cursor: pointer;
+    border: none;
+    background: none;
+    text-align: left;
+    font-family: inherit;
+    outline: none;
+    transition: color 0.15s;
+
+    &:hover {
+      color: #1b1f22;
+    }
+
+    &--active {
+      font-weight: 500;
+      color: #1b1f22;
+    }
+  }
+}
+
+// ── Usage ──
+.comp-usage {
+  margin-top: 16px;
+  padding: 20px;
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+
+  & + & {
+    margin-top: 24px;
+  }
+
+  &__label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1b1f22;
+    margin-bottom: 12px;
+  }
+
+  &__result {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px dashed #e0e0e0;
+  }
+}
+
+// ── Playground ──
+.pg {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__controls {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 20px;
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  &__label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6a6b6d;
+  }
+
+  &__select {
+    appearance: none;
+    padding: 8px 32px 8px 12px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1b1f22;
+    background: #fff
+      url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%236a6b6d' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+      no-repeat right 12px center;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.15s;
+
+    &:hover {
+      border-color: #c0c0c0;
+    }
+
+    &:focus {
+      border-color: #0084ff;
+      box-shadow: 0 0 0 3px rgba(0, 132, 255, 0.1);
+    }
+  }
+
+  &__preview {
+    // Live preview area — no extra spacing needed, code-block has its own border
+  }
+}
+
+// ── Responsive ──
+@media (max-width: 1100px) {
+  .comp-body {
+    grid-template-columns: 1fr;
+    padding: 24px 24px 60px;
+  }
+  .comp-toc {
+    display: none;
+  }
+  .comp-header {
+    padding: 32px 24px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .comp-header {
+    padding: 24px 16px 0;
+    &__title {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+  .comp-body {
+    padding: 20px 16px 48px;
+  }
+  .pg__controls {
+    grid-template-columns: 1fr;
+  }
+}

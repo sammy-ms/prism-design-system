@@ -1,20 +1,43 @@
 <aside class="ms-sidebar" [class.ms-sidebar--collapsed]="collapsed()">
   <!-- Logo -->
   <div class="ms-sidebar__logo">
-    <img class="ms-sidebar__logo-img" src="logo.svg" alt="mobilesentrix" />
+    <img class="ms-sidebar__logo-full" src="logo.svg" alt="mobilesentrix" />
+    <img
+      class="ms-sidebar__logo-small"
+      src="logo-small.svg"
+      alt="mobilesentrix"
+      (click)="toggleCollapse()"
+    />
     <button class="ms-sidebar__collapse-btn" (click)="toggleCollapse()">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <rect
-          x="2"
-          y="2"
-          width="12"
-          height="12"
-          rx="2"
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        width="16"
+        height="16"
+        shape-rendering="geometricPrecision"
+      >
+        <path
+          d="M3 5.25C3 4.65326 3.23705 4.08097 3.65901 3.65901C4.08097 3.23705 4.65326 3 5.25 3H18.75C19.3467 3 19.919 3.23705 20.341 3.65901C20.7629 4.08097 21 4.65326 21 5.25V18.75C21 19.3467 20.7629 19.919 20.341 20.341C19.919 20.7629 19.3467 21 18.75 21H5.25C4.65326 21 4.08097 20.7629 3.65901 20.341C3.23705 19.919 3 19.3467 3 18.75V5.25Z"
           stroke="currentColor"
-          stroke-width="1.3"
-          fill="none"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
         />
-        <path d="M6 2v12" stroke="currentColor" stroke-width="1.3" />
+        <path
+          d="M8.625 3V21"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M15.375 9.75L13.125 12L15.375 14.25"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
       </svg>
     </button>
   </div>
@@ -57,155 +80,82 @@
   <!-- Navigation -->
   <nav class="ms-sidebar__nav">
     @for (item of navItems; track item.route) {
-      <a
-        class="ms-sidebar__nav-item"
-        [routerLink]="item.route"
-        routerLinkActive="ms-sidebar__nav-item--active"
-      >
-        <span class="ms-sidebar__nav-icon">
-          @switch (item.icon) {
-            @case ('book') {
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <path
-                  d="M3 2.5h4.5a1.5 1.5 0 011.5 1.5v11a1 1 0 00-1-1H3V2.5z"
-                  stroke="currentColor"
-                  stroke-width="1.3"
-                />
-                <path
-                  d="M15 2.5h-4.5a1.5 1.5 0 00-1.5 1.5v11a1 1 0 011-1H15V2.5z"
-                  stroke="currentColor"
-                  stroke-width="1.3"
-                />
-              </svg>
+      <!-- Parent nav item -->
+      @if (item.expandable && item.children) {
+        <button
+          class="ms-sidebar__nav-item"
+          [class.ms-sidebar__nav-item--expanded]="isExpanded(item)"
+          routerLinkActive="ms-sidebar__nav-item--active"
+          [routerLinkActiveOptions]="{
+            paths: 'subset',
+            queryParams: 'ignored',
+            fragment: 'ignored',
+            matrixParams: 'ignored',
+          }"
+          [routerLink]="item.children[0].route"
+          (click)="toggleExpand(item, $event)"
+        >
+          <span class="ms-sidebar__nav-icon">
+            @switch (item.icon) {
+              @case ('icons') {
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path
+                    d="M9 2l2 4h4l-3.5 3 1.5 4.5L9 11 4.5 13.5 6 9 2.5 6h4L9 2z"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              }
+              @case ('components') {
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <rect
+                    x="2"
+                    y="2"
+                    width="6"
+                    height="6"
+                    rx="1"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                  />
+                  <rect
+                    x="10"
+                    y="2"
+                    width="6"
+                    height="6"
+                    rx="1"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                  />
+                  <rect
+                    x="2"
+                    y="10"
+                    width="6"
+                    height="6"
+                    rx="1"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                  />
+                  <rect
+                    x="10"
+                    y="10"
+                    width="6"
+                    height="6"
+                    rx="1"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                  />
+                </svg>
+              }
             }
-            @case ('clock') {
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.3" />
-                <path
-                  d="M9 5.5V9l2.5 1.5"
-                  stroke="currentColor"
-                  stroke-width="1.3"
-                  stroke-linecap="round"
-                />
-              </svg>
-            }
-            @case ('type') {
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <path
-                  d="M3 4h12M7 4v10M11 4v10M5 14h4M9 14h4"
-                  stroke="currentColor"
-                  stroke-width="1.3"
-                  stroke-linecap="round"
-                />
-              </svg>
-            }
-            @case ('grid') {
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <rect
-                  x="3"
-                  y="3"
-                  width="4.5"
-                  height="4.5"
-                  rx="0.75"
-                  stroke="currentColor"
-                  stroke-width="1.3"
-                />
-                <rect
-                  x="10.5"
-                  y="3"
-                  width="4.5"
-                  height="4.5"
-                  rx="0.75"
-                  stroke="currentColor"
-                  stroke-width="1.3"
-                />
-                <rect
-                  x="3"
-                  y="10.5"
-                  width="4.5"
-                  height="4.5"
-                  rx="0.75"
-                  stroke="currentColor"
-                  stroke-width="1.3"
-                />
-                <rect
-                  x="10.5"
-                  y="10.5"
-                  width="4.5"
-                  height="4.5"
-                  rx="0.75"
-                  stroke="currentColor"
-                  stroke-width="1.3"
-                />
-              </svg>
-            }
-            @case ('palette') {
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.3" />
-                <circle cx="7" cy="7" r="1" fill="currentColor" />
-                <circle cx="11" cy="7" r="1" fill="currentColor" />
-                <circle cx="6" cy="10" r="1" fill="currentColor" />
-              </svg>
-            }
-            @case ('icons') {
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <path
-                  d="M9 2l2 4h4l-3.5 3 1.5 4.5L9 11 4.5 13.5 6 9 2.5 6h4L9 2z"
-                  stroke="currentColor"
-                  stroke-width="1.3"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            }
-            @case ('components') {
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <rect
-                  x="2"
-                  y="2"
-                  width="6"
-                  height="6"
-                  rx="1"
-                  stroke="currentColor"
-                  stroke-width="1.3"
-                />
-                <rect
-                  x="10"
-                  y="2"
-                  width="6"
-                  height="6"
-                  rx="1"
-                  stroke="currentColor"
-                  stroke-width="1.3"
-                />
-                <rect
-                  x="2"
-                  y="10"
-                  width="6"
-                  height="6"
-                  rx="1"
-                  stroke="currentColor"
-                  stroke-width="1.3"
-                />
-                <rect
-                  x="10"
-                  y="10"
-                  width="6"
-                  height="6"
-                  rx="1"
-                  stroke="currentColor"
-                  stroke-width="1.3"
-                />
-              </svg>
-            }
+          </span>
+          <span class="ms-sidebar__nav-label">{{ item.label }}</span>
+          @if (item.badge != null) {
+            <span class="ms-sidebar__nav-badge">{{ item.badge }}</span>
           }
-        </span>
-        <span class="ms-sidebar__nav-label">{{ item.label }}</span>
-        @if (item.badge) {
-          <span class="ms-sidebar__nav-badge">{{ item.badge }}</span>
-        }
-        @if (item.expandable) {
           <svg
             class="ms-sidebar__nav-chevron"
+            [class.ms-sidebar__nav-chevron--open]="isExpanded(item)"
             width="12"
             height="12"
             viewBox="0 0 12 12"
@@ -219,8 +169,121 @@
               stroke-linejoin="round"
             />
           </svg>
+        </button>
+
+        <!-- Children -->
+        @if (isExpanded(item)) {
+          <div class="ms-sidebar__nav-children">
+            @for (child of item.children; track child.route) {
+              <a
+                class="ms-sidebar__nav-child"
+                [routerLink]="child.route"
+                routerLinkActive="ms-sidebar__nav-child--active"
+              >
+                <span class="ms-sidebar__nav-label">{{ child.label }}</span>
+              </a>
+            }
+          </div>
         }
-      </a>
+      } @else {
+        <a
+          class="ms-sidebar__nav-item"
+          [routerLink]="item.route"
+          routerLinkActive="ms-sidebar__nav-item--active"
+        >
+          <span class="ms-sidebar__nav-icon">
+            @switch (item.icon) {
+              @case ('book') {
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path
+                    d="M3 2.5h4.5a1.5 1.5 0 011.5 1.5v11a1 1 0 00-1-1H3V2.5z"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                  />
+                  <path
+                    d="M15 2.5h-4.5a1.5 1.5 0 00-1.5 1.5v11a1 1 0 011-1H15V2.5z"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                  />
+                </svg>
+              }
+              @case ('clock') {
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.3" />
+                  <path
+                    d="M9 5.5V9l2.5 1.5"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              }
+              @case ('type') {
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path
+                    d="M3 4h12M7 4v10M11 4v10M5 14h4M9 14h4"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              }
+              @case ('grid') {
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <rect
+                    x="3"
+                    y="3"
+                    width="4.5"
+                    height="4.5"
+                    rx="0.75"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                  />
+                  <rect
+                    x="10.5"
+                    y="3"
+                    width="4.5"
+                    height="4.5"
+                    rx="0.75"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                  />
+                  <rect
+                    x="3"
+                    y="10.5"
+                    width="4.5"
+                    height="4.5"
+                    rx="0.75"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                  />
+                  <rect
+                    x="10.5"
+                    y="10.5"
+                    width="4.5"
+                    height="4.5"
+                    rx="0.75"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                  />
+                </svg>
+              }
+              @case ('palette') {
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.3" />
+                  <circle cx="7" cy="7" r="1" fill="currentColor" />
+                  <circle cx="11" cy="7" r="1" fill="currentColor" />
+                  <circle cx="6" cy="10" r="1" fill="currentColor" />
+                </svg>
+              }
+            }
+          </span>
+          <span class="ms-sidebar__nav-label">{{ item.label }}</span>
+          @if (item.badge != null) {
+            <span class="ms-sidebar__nav-badge">{{ item.badge }}</span>
+          }
+        </a>
+      }
     }
   </nav>
 

@@ -22,14 +22,24 @@
   &--collapsed {
     width: 64px;
 
-    .ms-sidebar__logo-img,
+    .ms-sidebar__logo {
+      justify-content: center;
+    }
+
+    .ms-sidebar__logo-full,
     .ms-sidebar__location,
     .ms-sidebar__search-text,
     .ms-sidebar__nav-label,
     .ms-sidebar__nav-badge,
     .ms-sidebar__nav-chevron,
-    .ms-sidebar__avatar-name {
+    .ms-sidebar__avatar-name,
+    .ms-sidebar__collapse-btn,
+    .ms-sidebar__nav-children {
       display: none;
+    }
+
+    .ms-sidebar__logo-small {
+      display: block;
     }
 
     .ms-sidebar__search {
@@ -44,10 +54,6 @@
     .ms-sidebar__footer {
       justify-content: center;
     }
-
-    .ms-sidebar__collapse-btn {
-      margin: 0 auto;
-    }
   }
 
   // Logo
@@ -57,14 +63,25 @@
     gap: 10px;
     padding: 8px 12px;
     margin-bottom: 16px;
+    min-height: 28px;
   }
 
-  &__logo-img {
+  &__logo-full {
     height: 28px;
     width: 120px;
     object-fit: contain;
     object-position: left;
     flex-shrink: 0;
+  }
+
+  &__logo-small {
+    display: none;
+    height: 28px;
+    width: 28px;
+    object-fit: contain;
+    flex-shrink: 0;
+    color: var(--semantics-text-subtle-primary-default);
+    cursor: pointer;
   }
 
   &__collapse-btn {
@@ -79,6 +96,7 @@
     cursor: pointer;
     color: var(--semantics-text-subtle-primary-hover);
     flex-shrink: 0;
+    margin-left: auto;
 
     &:hover {
       background: var(--semantics-sidebar-hover);
@@ -159,13 +177,19 @@
     align-items: center;
     gap: 10px;
     padding: 8px 12px;
+    border: none;
     border-radius: 6px;
+    background: transparent;
     font-size: 13px;
     font-weight: 500;
+    font-family: inherit;
     line-height: 18px;
     color: var(--semantics-text-subtle-primary-default);
     text-decoration: none;
     cursor: pointer;
+    width: 100%;
+    text-align: left;
+    outline: none;
     transition: background 0.15s ease;
 
     &:hover {
@@ -217,6 +241,46 @@
   &__nav-chevron {
     flex-shrink: 0;
     color: var(--semantics-icon-subtle-secondary-default);
+    transition: transform 0.2s ease;
+
+    &--open {
+      transform: rotate(90deg);
+    }
+  }
+
+  // Children (sub-nav)
+  &__nav-children {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-left: 27px;
+    padding-left: 12px;
+    border-left: 1px solid var(--semantics-border-subtle-secondary);
+  }
+
+  &__nav-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--semantics-text-subtle-primary-default);
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.15s ease;
+    outline: none;
+
+    &:hover {
+      background: var(--semantics-sidebar-hover);
+    }
+
+    &--active {
+      font-weight: 500;
+      color: var(--semantics-text-brand-default);
+    }
   }
 
   // Footer
@@ -256,9 +320,9 @@
   }
 }
 
-// Dark mode: invert the black text parts of the logo to white
+// Dark mode: invert the full logo, small logo uses currentColor so it adapts automatically
 :host-context([data-theme='dark']) {
-  .ms-sidebar__logo-img {
+  .ms-sidebar__logo-full {
     filter: brightness(0) invert(1);
   }
 }
@@ -267,14 +331,24 @@
   .ms-sidebar {
     width: 64px;
 
-    .ms-sidebar__logo-img,
+    .ms-sidebar__logo {
+      justify-content: center;
+    }
+
+    .ms-sidebar__logo-full,
     .ms-sidebar__location,
     .ms-sidebar__search-text,
     .ms-sidebar__nav-label,
     .ms-sidebar__nav-badge,
     .ms-sidebar__nav-chevron,
-    .ms-sidebar__avatar-name {
+    .ms-sidebar__avatar-name,
+    .ms-sidebar__collapse-btn,
+    .ms-sidebar__nav-children {
       display: none;
+    }
+
+    .ms-sidebar__logo-small {
+      display: block;
     }
 
     .ms-sidebar__search {

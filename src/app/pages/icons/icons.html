@@ -1,7 +1,7 @@
 <div class="icons-page">
   <!-- Header -->
   <header class="icons-header">
-    <h1 class="icons-header__title">Icons</h1>
+    <h1 class="icons-header__title">{{ pageTitle }}</h1>
     <p class="icons-header__desc">
       Icons are visual symbols that represent actions, objects, or concepts. Use them to enhance
       recognition, save space, and improve navigation.
@@ -51,7 +51,7 @@
       <span class="icons-search__count">{{ iconCount() }} of {{ totalCount() }}</span>
     </div>
 
-    <!-- Card grid -->
+    <!-- Icon grid -->
     <div class="icons-grid">
       @for (icon of filteredIcons(); track icon.name) {
         <div
@@ -59,31 +59,31 @@
           (mouseenter)="onIconHover(icon.name)"
           (mouseleave)="onIconHover(null)"
         >
-          <!-- Icon preview -->
+          <!-- Icon preview (16px) -->
           <div class="icon-card__preview">
             @if (icon.iconType === 'filled') {
               <svg
-                width="32"
-                height="32"
+                width="16"
+                height="16"
                 [attr.viewBox]="icon.viewBox"
-                fill="currentColor"
+                fill="#1B1F22"
                 [innerHTML]="icon.trustedSvg"
               ></svg>
             } @else if (icon.iconType === 'image') {
               <svg
-                width="32"
-                height="32"
+                width="16"
+                height="16"
                 [attr.viewBox]="icon.viewBox"
                 [innerHTML]="icon.trustedSvg"
               ></svg>
             } @else {
               <svg
-                width="32"
-                height="32"
+                width="16"
+                height="16"
                 [attr.viewBox]="icon.viewBox"
                 fill="none"
-                stroke="currentColor"
-                [attr.stroke-width]="icon.strokeWidth"
+                stroke="#1B1F22"
+                stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 [innerHTML]="icon.trustedSvg"
@@ -241,19 +241,14 @@
       <div class="icons-props__section">
         <h3 class="icons-props__heading">Usage</h3>
         <div class="icons-props__code-block">
-          <pre><code>&lt;!-- Basic stroke icon --&gt;
-&lt;svg width="24" height="24" viewBox="0 0 24 24"
-     fill="none" stroke="currentColor" stroke-width="2"
-     stroke-linecap="round" stroke-linejoin="round"&gt;
-  &lt;path d="..." /&gt;
-&lt;/svg&gt;
+          <pre><code>&lt;!-- Basic icon --&gt;
+&lt;prism-icon name="settings" [size]="24" color="currentColor" /&gt;
 
 &lt;!-- Custom size and color --&gt;
-&lt;svg width="32" height="32" viewBox="0 0 24 24"
-     fill="none" stroke="#0066FF" stroke-width="1.5"
-     stroke-linecap="round" stroke-linejoin="round"&gt;
-  &lt;path d="..." /&gt;
-&lt;/svg&gt;</code></pre>
+&lt;prism-icon name="arrow-back-up" [size]="16" color="#0066FF" /&gt;
+
+&lt;!-- Filled icon --&gt;
+&lt;prism-icon name="star-filled" [size]="20" color="#FFB800" /&gt;</code></pre>
         </div>
       </div>
     </div>
@@ -284,7 +279,7 @@
                   [attr.viewBox]="icon.viewBox"
                   fill="none"
                   [attr.stroke]="playgroundColor()"
-                  [attr.stroke-width]="playgroundStrokeWidth()"
+                  stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   [innerHTML]="getPlaygroundTrustedSvg()"
@@ -462,36 +457,17 @@
           <div class="playground__group">
             <label class="playground__label">Size</label>
             <div class="playground__size-row">
-              @for (size of sizeOptions; track size) {
+              @for (size of sizeOptions; track size.value) {
                 <button
                   class="playground__size-btn"
-                  [class.playground__size-btn--active]="playgroundSize() === size"
-                  (click)="playgroundSize.set(size)"
+                  [class.playground__size-btn--active]="playgroundSize() === size.value"
+                  (click)="playgroundSize.set(size.value)"
                 >
-                  {{ size }}
+                  {{ size.label }} ({{ size.value }})
                 </button>
               }
             </div>
           </div>
-
-          <!-- Stroke width (stroke icons only) -->
-          @if (playgroundIcon()?.iconType !== 'filled') {
-            <div class="playground__group">
-              <label class="playground__label">Stroke Width</label>
-              <div class="playground__stroke-row">
-                <input
-                  type="range"
-                  min="0.5"
-                  max="4"
-                  step="0.25"
-                  class="playground__range"
-                  [value]="playgroundStrokeWidth()"
-                  (input)="playgroundStrokeWidth.set(+$any($event.target).value)"
-                />
-                <span class="playground__range-val">{{ playgroundStrokeWidth() }}</span>
-              </div>
-            </div>
-          }
         </div>
       </div>
     </div>

@@ -1,14 +1,20 @@
 import { Component, signal, computed, inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { ICONS, IconEntry } from './icon-data';
+import { ICONS, IconEntry, IconCategory } from './icon-data';
 
 interface SanitisedIcon extends IconEntry {
   trustedSvg: SafeHtml;
 }
 
 type TabId = 'icons' | 'properties' | 'playground';
+
+interface SizeOption {
+  label: string;
+  value: number;
+}
 
 @Component({
   selector: 'app-icons',
@@ -20,6 +26,11 @@ type TabId = 'icons' | 'properties' | 'playground';
 export class IconsPage {
   private readonly platformId = inject(PLATFORM_ID);
   private readonly sanitizer = inject(DomSanitizer);
+  private readonly route = inject(ActivatedRoute);
+
+  // ── Category from route ──
+  readonly category: IconCategory | 'flag' | 'all' = this.route.snapshot.data['category'] ?? 'all';
+  readonly pageTitle: string = this.route.snapshot.data['title'] ?? 'Icons';
 
   // ── Tabs ──
   readonly activeTab = signal<TabId>('icons');
@@ -29,9 +40,14 @@ export class IconsPage {
     { id: 'playground', label: 'Playground' },
   ];
 
-  // ── All icons (sanitised) ──
+  // ── All icons (sanitised, filtered by category) ──
   readonly icons = signal<SanitisedIcon[]>(
-    ICONS.filter((i) => i.iconType !== 'placeholder').map((icon) => ({
+    ICONS.filter((i) => {
+      if (i.iconType === 'placeholder') return false;
+      if (this.category === 'all') return true;
+      if (this.category === 'flag') return i.category === 'flag' || i.category === 'logo';
+      return i.category === this.category;
+    }).map((icon) => ({
       ...icon,
       trustedSvg: this.sanitizer.bypassSecurityTrustHtml(icon.svgContent),
     })),
@@ -67,7 +83,7 @@ export class IconsPage {
       type: 'number',
       default: '24',
       description:
-        'Width and height of the icon in pixels. Supported sizes: 16, 20, 24, 32, 40, 48, 64.',
+        'Width and height of the icon in pixels. Available sizes: Small (16px), Medium (20px), Large (24px).',
     },
     {
       property: 'color',
@@ -82,11 +98,14 @@ export class IconsPage {
   readonly playgroundIcon = signal<SanitisedIcon | null>(this.icons()[0] ?? null);
   readonly playgroundColor = signal('#1B1F22');
   readonly playgroundSize = signal(24);
-  readonly playgroundStrokeWidth = signal(2);
   readonly playgroundSearchQuery = signal('');
   readonly playgroundCopied = signal<string | null>(null);
 
-  readonly sizeOptions = [16, 20, 24, 32, 40, 48, 64];
+  readonly sizeOptions: SizeOption[] = [
+    { label: 'Small', value: 16 },
+    { label: 'Medium', value: 20 },
+    { label: 'Large', value: 24 },
+  ];
 
   readonly playgroundFilteredIcons = computed(() => {
     const q = this.playgroundSearchQuery().toLowerCase().trim();
@@ -142,12 +161,7 @@ export class IconsPage {
   copyPlaygroundSvg(): void {
     const icon = this.playgroundIcon();
     if (!icon || !isPlatformBrowser(this.platformId)) return;
-    const svg = this.buildSvgString(
-      icon,
-      this.playgroundSize(),
-      this.playgroundColor(),
-      this.playgroundStrokeWidth(),
-    );
+    const svg = this.buildSvgString(icon, this.playgroundSize(), this.playgroundColor());
     this.copyToClipboard(svg).then(() => {
       this.playgroundCopied.set('svg');
       setTimeout(() => this.playgroundCopied.set(null), 1500);
@@ -157,12 +171,7 @@ export class IconsPage {
   copyPlaygroundAngular(): void {
     const icon = this.playgroundIcon();
     if (!icon || !isPlatformBrowser(this.platformId)) return;
-    const snippet = this.buildAngularSnippet(
-      icon,
-      this.playgroundSize(),
-      this.playgroundColor(),
-      this.playgroundStrokeWidth(),
-    );
+    const snippet = this.buildAngularSnippet(icon, this.playgroundSize(), this.playgroundColor());
     this.copyToClipboard(snippet).then(() => {
       this.playgroundCopied.set('angular');
       setTimeout(() => this.playgroundCopied.set(null), 1500);
@@ -205,27 +214,14 @@ export class IconsPage {
   }
 
   // ── SVG Builders ──
-  private buildSvgString(
-    icon: IconEntry,
-    size = 24,
-    color = 'currentColor',
-    strokeWidth = 2,
-  ): string {
+  private buildSvgString(icon: IconEntry, size = 24, color = 'currentColor'): string {
     if (icon.iconType === 'filled') {
       return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="${icon.viewBox}" fill="${color}">${icon.svgContent}</svg>`;
     }
-    return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="${icon.viewBox}" fill="none" stroke="${color}" stroke-width="${strokeWidth}" stroke-linecap="round" stroke-linejoin="round">${icon.svgContent}</svg>`;
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="${icon.viewBox}" fill="none" stroke="${color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${icon.svgContent}</svg>`;
   }
 
-  private buildAngularSnippet(
-    icon: IconEntry,
-    size = 24,
-    color = 'currentColor',
-    strokeWidth = 2,
-  ): string {
-    if (icon.iconType === 'filled') {
-      return `<svg width="${size}" height="${size}" viewBox="${icon.viewBox}" fill="${color}">\n  ${icon.svgContent}\n</svg>`;
-    }
-    return `<svg width="${size}" height="${size}" viewBox="${icon.viewBox}" fill="none" stroke="${color}" stroke-width="${strokeWidth}" stroke-linecap="round" stroke-linejoin="round">\n  ${icon.svgContent}\n</svg>`;
+  private buildAngularSnippet(icon: IconEntry, size = 24, color = 'currentColor'): string {
+    return `<prism-icon name="${icon.name}" [size]="${size}" color="${color}" />`;
   }
 }

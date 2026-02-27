@@ -84,6 +84,12 @@
   border-radius: 8px;
   background: var(--semantics-surface-subtle-secondary-default, #fff);
   max-width: 400px;
+  transition: border-color 0.15s;
+
+  &:focus-within {
+    border-color: #0084ff;
+    box-shadow: 0 0 0 3px rgba(0, 132, 255, 0.1);
+  }
 
   &__icon {
     flex-shrink: 0;
@@ -510,6 +516,12 @@
     gap: 8px;
     padding: 8px 12px;
     border-bottom: 1px solid var(--semantics-border-subtle-secondary, #e0e0e0);
+    transition: border-color 0.15s;
+
+    &:focus-within {
+      border-color: #0084ff;
+      box-shadow: inset 0 -1px 0 0 #0084ff;
+    }
 
     svg {
       flex-shrink: 0;

@@ -33,6 +33,7 @@
         [label]="resolvedShowCodeLink().label"
         [icon]="resolvedShowCodeLink().icon"
         [iconRotated]="isExpanded() && type() !== 'doc-collapsed'"
+        [style.margin-left.px]="indentPx()"
         (pressed)="toggleCode()"
       />
 

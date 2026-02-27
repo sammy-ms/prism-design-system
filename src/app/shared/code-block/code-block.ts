@@ -61,7 +61,7 @@ export class CodeBlock {
   readonly code = input('');
   readonly showLineNumbers = input(true);
   readonly highlightLines = input<number[]>([]);
-  readonly indentLevel = input<IndentLevel>(0);
+  readonly indentLevel = input<IndentLevel>(1);
   readonly codeTabs = input<CodeTab[]>([]);
   readonly lineConfigs = input<CodeLineConfig[] | null>(null);
 
@@ -73,6 +73,9 @@ export class CodeBlock {
   // ── Tab group config input ──
   readonly tabGroupConfig = input<Partial<TabGroupConfig>>({});
 
+  // ── Computed indent for doc container ──
+  readonly indentPx = computed(() => (this.indentLevel() - 1) * 16);
+
   // ── Internal state ──
   readonly isCopied = signal(false);
   readonly isExpanded = signal(true);
@@ -80,7 +83,7 @@ export class CodeBlock {
 
   // ── Resolved link configs ──
   readonly resolvedShowCodeLink = computed<CodeLinkConfig>(() => ({
-    size: 'medium',
+    size: 'small',
     style: 'subtle',
     state: 'default',
     showTrailingIcon: true,
@@ -147,7 +150,8 @@ export class CodeBlock {
 
     const raw = this.displayCode();
     const hlSet = new Set(this.highlightLines());
-    const indent = this.indentLevel();
+    const isDoc = this.type() !== 'line';
+    const indent = isDoc ? (1 as IndentLevel) : this.indentLevel();
     const parts = raw.split('\n');
     if (parts.length > 1 && parts[parts.length - 1].trim() === '') {
       parts.pop();

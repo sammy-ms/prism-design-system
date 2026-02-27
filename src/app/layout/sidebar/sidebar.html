@@ -10,34 +10,20 @@
     />
     <button class="ms-sidebar__collapse-btn" (click)="toggleCollapse()">
       <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="none"
         width="16"
         height="16"
-        shape-rendering="geometricPrecision"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
       >
         <path
-          d="M3 5.25C3 4.65326 3.23705 4.08097 3.65901 3.65901C4.08097 3.23705 4.65326 3 5.25 3H18.75C19.3467 3 19.919 3.23705 20.341 3.65901C20.7629 4.08097 21 4.65326 21 5.25V18.75C21 19.3467 20.7629 19.919 20.341 20.341C19.919 20.7629 19.3467 21 18.75 21H5.25C4.65326 21 4.08097 20.7629 3.65901 20.341C3.23705 19.919 3 19.3467 3 18.75V5.25Z"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          d="M4 6a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2l0 -12"
         />
-        <path
-          d="M8.625 3V21"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M15.375 9.75L13.125 12L15.375 14.25"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
+        <path d="M15 4v16" />
+        <path d="M10 10l-2 2l2 2" />
       </svg>
     </button>
   </div>
@@ -50,29 +36,32 @@
       class="ms-sidebar__location-chevron"
       width="12"
       height="12"
-      viewBox="0 0 12 12"
+      viewBox="0 0 24 24"
       fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
     >
-      <path
-        d="M3 4.5L6 7.5L9 4.5"
-        stroke="currentColor"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
+      <path d="M6 9l6 6l6 -6" />
     </svg>
   </div>
 
   <!-- Search -->
   <div class="ms-sidebar__search">
-    <svg class="ms-sidebar__search-icon" width="14" height="14" viewBox="0 0 14 14" fill="none">
-      <circle cx="6" cy="6" r="4.5" stroke="currentColor" stroke-width="1.5" />
-      <path
-        d="M9.5 9.5L12.5 12.5"
-        stroke="currentColor"
-        stroke-width="1.5"
-        stroke-linecap="round"
-      />
+    <svg
+      class="ms-sidebar__search-icon"
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+      <path d="M21 21l-6 -6" />
     </svg>
     <span class="ms-sidebar__search-text">Search...</span>
   </div>
@@ -98,52 +87,43 @@
           <span class="ms-sidebar__nav-icon">
             @switch (item.icon) {
               @case ('icons') {
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
                   <path
-                    d="M9 2l2 4h4l-3.5 3 1.5 4.5L9 11 4.5 13.5 6 9 2.5 6h4L9 2z"
-                    stroke="currentColor"
-                    stroke-width="1.3"
-                    stroke-linejoin="round"
+                    d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245"
                   />
                 </svg>
               }
               @case ('components') {
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <rect
-                    x="2"
-                    y="2"
-                    width="6"
-                    height="6"
-                    rx="1"
-                    stroke="currentColor"
-                    stroke-width="1.3"
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M4 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4"
                   />
-                  <rect
-                    x="10"
-                    y="2"
-                    width="6"
-                    height="6"
-                    rx="1"
-                    stroke="currentColor"
-                    stroke-width="1.3"
+                  <path
+                    d="M14 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4"
                   />
-                  <rect
-                    x="2"
-                    y="10"
-                    width="6"
-                    height="6"
-                    rx="1"
-                    stroke="currentColor"
-                    stroke-width="1.3"
+                  <path
+                    d="M4 15a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4"
                   />
-                  <rect
-                    x="10"
-                    y="10"
-                    width="6"
-                    height="6"
-                    rx="1"
-                    stroke="currentColor"
-                    stroke-width="1.3"
+                  <path
+                    d="M14 15a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4"
                   />
                 </svg>
               }
@@ -158,16 +138,14 @@
             [class.ms-sidebar__nav-chevron--open]="isExpanded(item)"
             width="12"
             height="12"
-            viewBox="0 0 12 12"
+            viewBox="0 0 24 24"
             fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           >
-            <path
-              d="M4.5 3L7.5 6L4.5 9"
-              stroke="currentColor"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+            <path d="M9 6l6 6l-6 6" />
           </svg>
         </button>
 
@@ -194,83 +172,86 @@
           <span class="ms-sidebar__nav-icon">
             @switch (item.icon) {
               @case ('book') {
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <path
-                    d="M3 2.5h4.5a1.5 1.5 0 011.5 1.5v11a1 1 0 00-1-1H3V2.5z"
-                    stroke="currentColor"
-                    stroke-width="1.3"
-                  />
-                  <path
-                    d="M15 2.5h-4.5a1.5 1.5 0 00-1.5 1.5v11a1 1 0 011-1H15V2.5z"
-                    stroke="currentColor"
-                    stroke-width="1.3"
-                  />
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                  <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                  <path d="M3 6l0 13" />
+                  <path d="M12 6l0 13" />
+                  <path d="M21 6l0 13" />
                 </svg>
               }
               @case ('clock') {
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.3" />
-                  <path
-                    d="M9 5.5V9l2.5 1.5"
-                    stroke="currentColor"
-                    stroke-width="1.3"
-                    stroke-linecap="round"
-                  />
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                  <path d="M12 7v5l3 3" />
                 </svg>
               }
               @case ('type') {
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <path
-                    d="M3 4h12M7 4v10M11 4v10M5 14h4M9 14h4"
-                    stroke="currentColor"
-                    stroke-width="1.3"
-                    stroke-linecap="round"
-                  />
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                >
+                  <path d="M3 4h12M7 4v10M11 4v10M5 14h4M9 14h4" />
                 </svg>
               }
               @case ('grid') {
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <rect
-                    x="3"
-                    y="3"
-                    width="4.5"
-                    height="4.5"
-                    rx="0.75"
-                    stroke="currentColor"
-                    stroke-width="1.3"
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M4 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4"
                   />
-                  <rect
-                    x="10.5"
-                    y="3"
-                    width="4.5"
-                    height="4.5"
-                    rx="0.75"
-                    stroke="currentColor"
-                    stroke-width="1.3"
+                  <path
+                    d="M14 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4"
                   />
-                  <rect
-                    x="3"
-                    y="10.5"
-                    width="4.5"
-                    height="4.5"
-                    rx="0.75"
-                    stroke="currentColor"
-                    stroke-width="1.3"
+                  <path
+                    d="M4 15a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4"
                   />
-                  <rect
-                    x="10.5"
-                    y="10.5"
-                    width="4.5"
-                    height="4.5"
-                    rx="0.75"
-                    stroke="currentColor"
-                    stroke-width="1.3"
+                  <path
+                    d="M14 15a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4"
                   />
                 </svg>
               }
               @case ('palette') {
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.3" />
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.3"
+                >
+                  <circle cx="9" cy="9" r="6.5" />
                   <circle cx="7" cy="7" r="1" fill="currentColor" />
                   <circle cx="11" cy="7" r="1" fill="currentColor" />
                   <circle cx="6" cy="10" r="1" fill="currentColor" />

@@ -85,7 +85,6 @@
   grid-template-columns: 1fr 200px;
   gap: 40px;
   padding: 32px 48px 80px;
-  align-items: start;
 }
 
 .comp-content {
@@ -95,9 +94,14 @@
   min-width: 0;
 }
 
+// ── TOC column (stretches full row height so sticky works) ──
+.comp-toc-col {
+  position: relative;
+}
+
 // ── Section ──
 .comp-section {
-  scroll-margin-top: 160px;
+  scroll-margin-top: 200px;
 
   &__title {
     font-size: 20px;
@@ -196,7 +200,7 @@
 // ── TOC ──
 .comp-toc {
   position: sticky;
-  top: 160px;
+  top: 200px;
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -259,11 +263,10 @@
   display: grid;
   grid-template-columns: 1fr 320px;
   gap: 24px;
-  align-items: start;
 
   &__preview {
     position: sticky;
-    top: 160px;
+    top: 200px;
   }
 
   &__line-wrap {
@@ -280,52 +283,98 @@
   }
 
   &__controls {
+    position: sticky;
+    top: 200px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
     padding: 20px;
     background: #fafafa;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    max-height: calc(100vh - 200px);
+    max-height: calc(100vh - 400px);
     overflow-y: auto;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1b1f22;
+  }
+
+  &__reset {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: none;
+    font-size: 18px;
+    color: #6a6b6d;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    &:hover {
+      color: #1b1f22;
+      background: #e8e8e8;
+    }
   }
 
   &__field {
     display: flex;
-    flex-direction: column;
-    gap: 6px;
-
-    &--row {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-    }
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
   }
 
   &__label {
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    font-size: 13px;
+    font-weight: 450;
     color: #6a6b6d;
+    flex-shrink: 0;
+    cursor: pointer;
+    white-space: nowrap;
+
+    &--sub {
+      display: inline-flex;
+      align-items: center;
+      gap: 2px;
+      padding-left: 4px;
+    }
+  }
+
+  &__sub-icon {
+    flex-shrink: 0;
+    color: #9b9b9b;
   }
 
   &__select {
     appearance: none;
-    padding: 8px 32px 8px 12px;
+    padding: 6px 28px 6px 10px;
     font-family: inherit;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 13px;
+    line-height: 18px;
     color: #1b1f22;
     background: #fff
       url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%236a6b6d' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
-      no-repeat right 12px center;
+      no-repeat right 10px center;
     border: 1px solid #e0e0e0;
     border-radius: 6px;
     cursor: pointer;
     outline: none;
     transition: border-color 0.15s;
+    min-width: 100px;
+    flex-shrink: 0;
 
     &:hover {
       border-color: #c0c0c0;
@@ -338,20 +387,12 @@
   }
 
   &__group-title {
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
+    font-size: 13px;
+    font-weight: 600;
     color: #1b1f22;
     margin-top: 4px;
     padding-top: 12px;
     border-top: 1px solid #e0e0e0;
-
-    &:first-child {
-      margin-top: 0;
-      padding-top: 0;
-      border-top: none;
-    }
   }
 
   &__toggle {
@@ -402,16 +443,18 @@
   }
 
   &__input {
-    padding: 8px 12px;
+    padding: 6px 10px;
     font-family: inherit;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 13px;
+    line-height: 18px;
     color: #1b1f22;
     background: #fff;
     border: 1px solid #e0e0e0;
     border-radius: 6px;
     outline: none;
     transition: border-color 0.15s;
+    min-width: 100px;
+    flex-shrink: 0;
 
     &:hover {
       border-color: #c0c0c0;
@@ -430,7 +473,7 @@
     grid-template-columns: 1fr;
     padding: 24px 24px 60px;
   }
-  .comp-toc {
+  .comp-toc-col {
     display: none;
   }
   .comp-header {

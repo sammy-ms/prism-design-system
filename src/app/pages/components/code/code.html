@@ -276,11 +276,6 @@
       <!-- ═══════════ PLAYGROUND TAB ═══════════ -->
       @if (activeTab() === 'playground') {
         <section class="comp-section">
-          <h2 class="comp-section__title">Playground</h2>
-          <p class="comp-section__desc">
-            Customize every property like Figma and see a live preview.
-          </p>
-
           <div class="pg">
             <!-- ── LIVE PREVIEW ── -->
             <div class="pg__preview">
@@ -294,6 +289,8 @@
                         [lineNumber]="line.lineNumber()"
                         [code]="line.code()"
                         [indentLevel]="line.indentLevel()"
+                        [editable]="true"
+                        (codeChange)="line.code.set($event)"
                       />
                     }
                   </div>
@@ -314,26 +311,43 @@
               }
             </div>
 
+            <!-- ── CONTROLS ── -->
             <div class="pg__controls">
-              <!-- ── CODE BLOCK ── -->
-              <div class="pg__group-title">Code Block</div>
+              <div class="pg__header">
+                <span class="pg__title">Code Block Example</span>
+                <button class="pg__reset" (click)="resetPlayground()">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" />
+                    <path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4" />
+                  </svg>
+                </button>
+              </div>
 
-              <div class="pg__field">
+              <div class="pg__field pg__field--row">
                 <label class="pg__label">Type</label>
                 <select class="pg__select" [value]="pgType()" (change)="onPgType($event)">
                   <option value="line">With Line</option>
-                  <option value="doc-expanded">Documentation Expanded</option>
-                  <option value="doc-collapsed">Documentation Collapsed</option>
+                  <option value="doc-expanded">Documentation Exp...</option>
+                  <option value="doc-collapsed">Documentation Coll...</option>
                 </select>
               </div>
 
-              <!-- ══ LINE TYPE: per-line controls ══ -->
+              <!-- ══ WITH LINE: per-line controls ══ -->
               @if (pgType() === 'line') {
                 @for (line of pgLines; track $index; let i = $index) {
-                  <div class="pg__group-title">Line {{ i + 1 }}</div>
+                  <div class="pg__group-title">Code Parts/Molecule/Code Line</div>
 
                   <div class="pg__field pg__field--row">
-                    <label class="pg__label">Highlight</label>
+                    <label class="pg__label" (click)="onToggle(line.highlight)">Highlight</label>
                     <button
                       class="pg__toggle"
                       [class.pg__toggle--on]="line.highlight()"
@@ -342,7 +356,9 @@
                   </div>
 
                   <div class="pg__field pg__field--row">
-                    <label class="pg__label">Show Line Number</label>
+                    <label class="pg__label" (click)="onToggle(line.showLineNumber)"
+                      >Show Line Numbers</label
+                    >
                     <button
                       class="pg__toggle"
                       [class.pg__toggle--on]="line.showLineNumber()"
@@ -351,8 +367,23 @@
                   </div>
 
                   @if (line.showLineNumber()) {
-                    <div class="pg__field">
-                      <label class="pg__label">Number</label>
+                    <div class="pg__field pg__field--row">
+                      <label class="pg__label pg__label--sub"
+                        ><svg
+                          class="pg__sub-icon"
+                          width="12"
+                          height="12"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="M9 6l6 6l-6 6" />
+                        </svg>
+                        Number</label
+                      >
                       <input
                         class="pg__input"
                         type="number"
@@ -362,8 +393,23 @@
                     </div>
                   }
 
-                  <div class="pg__field">
-                    <label class="pg__label">Code</label>
+                  <div class="pg__field pg__field--row">
+                    <label class="pg__label pg__label--sub"
+                      ><svg
+                        class="pg__sub-icon"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M9 6l6 6l-6 6" />
+                      </svg>
+                      Code</label
+                    >
                     <input
                       class="pg__input"
                       type="text"
@@ -372,14 +418,15 @@
                     />
                   </div>
 
-                  <div class="pg__field">
-                    <label class="pg__label">Indent Level</label>
+                  <div class="pg__group-title">Code Parts/Atomic/Indent</div>
+
+                  <div class="pg__field pg__field--row">
+                    <label class="pg__label">Level</label>
                     <select
                       class="pg__select"
                       [value]="line.indentLevel()"
                       (change)="onIndent(line.indentLevel, $event)"
                     >
-                      <option value="0">0</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
@@ -393,14 +440,15 @@
 
               <!-- ══ DOC TYPES: indent + links ══ -->
               @if (pgType() !== 'line') {
-                <div class="pg__field">
-                  <label class="pg__label">Indent Level</label>
+                <div class="pg__group-title">Code Parts/Atomic/Indent</div>
+
+                <div class="pg__field pg__field--row">
+                  <label class="pg__label">Level</label>
                   <select
                     class="pg__select"
                     [value]="pgIndentLevel()"
                     (change)="onIndent(pgIndentLevel, $event)"
                   >
-                    <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -410,10 +458,10 @@
                   </select>
                 </div>
 
-                <!-- ── SHOW CODE LINK ── -->
-                <div class="pg__group-title">Show Code Link</div>
+                <!-- ── Link: Show code ── -->
+                <div class="pg__group-title">Link</div>
 
-                <div class="pg__field">
+                <div class="pg__field pg__field--row">
                   <label class="pg__label">Size</label>
                   <select
                     class="pg__select"
@@ -426,7 +474,7 @@
                   </select>
                 </div>
 
-                <div class="pg__field">
+                <div class="pg__field pg__field--row">
                   <label class="pg__label">Style</label>
                   <select
                     class="pg__select"
@@ -440,7 +488,7 @@
                   </select>
                 </div>
 
-                <div class="pg__field">
+                <div class="pg__field pg__field--row">
                   <label class="pg__label">State</label>
                   <select
                     class="pg__select"
@@ -455,7 +503,9 @@
                 </div>
 
                 <div class="pg__field pg__field--row">
-                  <label class="pg__label">Show Trailing Icon</label>
+                  <label class="pg__label" (click)="onToggle(pgShowCode.showTrailingIcon)"
+                    >Show Trailing Icon</label
+                  >
                   <button
                     class="pg__toggle"
                     [class.pg__toggle--on]="pgShowCode.showTrailingIcon()"
@@ -464,7 +514,9 @@
                 </div>
 
                 <div class="pg__field pg__field--row">
-                  <label class="pg__label">Show Label</label>
+                  <label class="pg__label" (click)="onToggle(pgShowCode.showLabel)"
+                    >Show Label</label
+                  >
                   <button
                     class="pg__toggle"
                     [class.pg__toggle--on]="pgShowCode.showLabel()"
@@ -473,8 +525,23 @@
                 </div>
 
                 @if (pgShowCode.showLabel()) {
-                  <div class="pg__field">
-                    <label class="pg__label">Label</label>
+                  <div class="pg__field pg__field--row">
+                    <label class="pg__label pg__label--sub"
+                      ><svg
+                        class="pg__sub-icon"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M9 6l6 6l-6 6" />
+                      </svg>
+                      Label Text</label
+                    >
                     <input
                       class="pg__input"
                       type="text"
@@ -484,10 +551,10 @@
                   </div>
                 }
 
-                <!-- ── COPY LINK ── -->
-                <div class="pg__group-title">Copy Link</div>
+                <!-- ── Link: Copy ── -->
+                <div class="pg__group-title">Link</div>
 
-                <div class="pg__field">
+                <div class="pg__field pg__field--row">
                   <label class="pg__label">Size</label>
                   <select
                     class="pg__select"
@@ -500,7 +567,7 @@
                   </select>
                 </div>
 
-                <div class="pg__field">
+                <div class="pg__field pg__field--row">
                   <label class="pg__label">Style</label>
                   <select
                     class="pg__select"
@@ -514,7 +581,7 @@
                   </select>
                 </div>
 
-                <div class="pg__field">
+                <div class="pg__field pg__field--row">
                   <label class="pg__label">State</label>
                   <select
                     class="pg__select"
@@ -529,7 +596,9 @@
                 </div>
 
                 <div class="pg__field pg__field--row">
-                  <label class="pg__label">Show Trailing Icon</label>
+                  <label class="pg__label" (click)="onToggle(pgCopy.showTrailingIcon)"
+                    >Show Trailing Icon</label
+                  >
                   <button
                     class="pg__toggle"
                     [class.pg__toggle--on]="pgCopy.showTrailingIcon()"
@@ -538,7 +607,7 @@
                 </div>
 
                 <div class="pg__field pg__field--row">
-                  <label class="pg__label">Show Label</label>
+                  <label class="pg__label" (click)="onToggle(pgCopy.showLabel)">Show Label</label>
                   <button
                     class="pg__toggle"
                     [class.pg__toggle--on]="pgCopy.showLabel()"
@@ -547,8 +616,23 @@
                 </div>
 
                 @if (pgCopy.showLabel()) {
-                  <div class="pg__field">
-                    <label class="pg__label">Label</label>
+                  <div class="pg__field pg__field--row">
+                    <label class="pg__label pg__label--sub"
+                      ><svg
+                        class="pg__sub-icon"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M9 6l6 6l-6 6" />
+                      </svg>
+                      Label Text</label
+                    >
                     <input
                       class="pg__input"
                       type="text"
@@ -558,10 +642,10 @@
                   </div>
                 }
 
-                <!-- ── EDIT LINK ── -->
-                <div class="pg__group-title">Edit Link</div>
+                <!-- ── Link: Edit ── -->
+                <div class="pg__group-title">Link</div>
 
-                <div class="pg__field">
+                <div class="pg__field pg__field--row">
                   <label class="pg__label">Size</label>
                   <select
                     class="pg__select"
@@ -574,7 +658,7 @@
                   </select>
                 </div>
 
-                <div class="pg__field">
+                <div class="pg__field pg__field--row">
                   <label class="pg__label">Style</label>
                   <select
                     class="pg__select"
@@ -588,7 +672,7 @@
                   </select>
                 </div>
 
-                <div class="pg__field">
+                <div class="pg__field pg__field--row">
                   <label class="pg__label">State</label>
                   <select
                     class="pg__select"
@@ -603,7 +687,9 @@
                 </div>
 
                 <div class="pg__field pg__field--row">
-                  <label class="pg__label">Show Trailing Icon</label>
+                  <label class="pg__label" (click)="onToggle(pgEdit.showTrailingIcon)"
+                    >Show Trailing Icon</label
+                  >
                   <button
                     class="pg__toggle"
                     [class.pg__toggle--on]="pgEdit.showTrailingIcon()"
@@ -612,7 +698,7 @@
                 </div>
 
                 <div class="pg__field pg__field--row">
-                  <label class="pg__label">Show Label</label>
+                  <label class="pg__label" (click)="onToggle(pgEdit.showLabel)">Show Label</label>
                   <button
                     class="pg__toggle"
                     [class.pg__toggle--on]="pgEdit.showLabel()"
@@ -621,8 +707,23 @@
                 </div>
 
                 @if (pgEdit.showLabel()) {
-                  <div class="pg__field">
-                    <label class="pg__label">Label</label>
+                  <div class="pg__field pg__field--row">
+                    <label class="pg__label pg__label--sub"
+                      ><svg
+                        class="pg__sub-icon"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M9 6l6 6l-6 6" />
+                      </svg>
+                      Label Text</label
+                    >
                     <input
                       class="pg__input"
                       type="text"
@@ -635,10 +736,12 @@
 
               <!-- ══ DOC-EXPANDED ONLY: code lines + tabs ══ -->
               @if (pgType() === 'doc-expanded') {
-                <div class="pg__group-title">Code Lines</div>
+                <div class="pg__group-title">Code Parts/Molecule/Code Line</div>
 
                 <div class="pg__field pg__field--row">
-                  <label class="pg__label">Show Line Numbers</label>
+                  <label class="pg__label" (click)="onToggle(pgShowLineNumbers)"
+                    >Show Line Numbers</label
+                  >
                   <button
                     class="pg__toggle"
                     [class.pg__toggle--on]="pgShowLineNumbers()"
@@ -646,7 +749,7 @@
                   ></button>
                 </div>
 
-                <div class="pg__field">
+                <div class="pg__field pg__field--row">
                   <label class="pg__label">Highlighted Lines</label>
                   <select
                     class="pg__select"
@@ -661,7 +764,7 @@
 
                 <div class="pg__group-title">Tab Group</div>
 
-                <div class="pg__field">
+                <div class="pg__field pg__field--row">
                   <label class="pg__label">Type</label>
                   <select
                     class="pg__select"
@@ -674,7 +777,7 @@
                   </select>
                 </div>
 
-                <div class="pg__field">
+                <div class="pg__field pg__field--row">
                   <label class="pg__label">Orientation</label>
                   <select
                     class="pg__select"
@@ -686,12 +789,11 @@
                   </select>
                 </div>
 
-                <!-- ── TAB 1–10 ── -->
-                @for (tabItem of pgTabItems; track tabItem.label; let i = $index) {
-                  <div class="pg__group-title">Tab {{ i + 1 }}: {{ tabItem.label }}</div>
+                @for (tabItem of pgTabItems; track $index; let i = $index) {
+                  <div class="pg__group-title">Tab {{ i + 1 }}: {{ tabItem.label() }}</div>
 
                   <div class="pg__field pg__field--row">
-                    <label class="pg__label">Show</label>
+                    <label class="pg__label" (click)="onToggle(tabItem.show)">Show</label>
                     <button
                       class="pg__toggle"
                       [class.pg__toggle--on]="tabItem.show()"
@@ -700,7 +802,7 @@
                   </div>
 
                   @if (tabItem.show()) {
-                    <div class="pg__field">
+                    <div class="pg__field pg__field--row">
                       <label class="pg__label">State</label>
                       <select
                         class="pg__select"
@@ -718,7 +820,7 @@
                     </div>
 
                     <div class="pg__field pg__field--row">
-                      <label class="pg__label">Focus</label>
+                      <label class="pg__label" (click)="onToggle(tabItem.focus)">Focus</label>
                       <button
                         class="pg__toggle"
                         [class.pg__toggle--on]="tabItem.focus()"
@@ -727,7 +829,9 @@
                     </div>
 
                     <div class="pg__field pg__field--row">
-                      <label class="pg__label">Show Label</label>
+                      <label class="pg__label" (click)="onToggle(tabItem.showLabel)"
+                        >Show Label</label
+                      >
                       <button
                         class="pg__toggle"
                         [class.pg__toggle--on]="tabItem.showLabel()"
@@ -735,8 +839,37 @@
                       ></button>
                     </div>
 
+                    @if (tabItem.showLabel()) {
+                      <div class="pg__field pg__field--row">
+                        <label class="pg__label pg__label--sub"
+                          ><svg
+                            class="pg__sub-icon"
+                            width="12"
+                            height="12"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="M9 6l6 6l-6 6" />
+                          </svg>
+                          Label Text</label
+                        >
+                        <input
+                          class="pg__input"
+                          type="text"
+                          [value]="tabItem.label()"
+                          (input)="onText(tabItem.label, $event)"
+                        />
+                      </div>
+                    }
+
                     <div class="pg__field pg__field--row">
-                      <label class="pg__label">Show Trailing Icon</label>
+                      <label class="pg__label" (click)="onToggle(tabItem.showTrailingIcon)"
+                        >Show Trailing Icon</label
+                      >
                       <button
                         class="pg__toggle"
                         [class.pg__toggle--on]="tabItem.showTrailingIcon()"
@@ -754,17 +887,19 @@
 
     <!-- ═══════════ STICKY TOC SIDEBAR ═══════════ -->
     @if (tocItems().length) {
-      <nav class="comp-toc">
-        @for (item of tocItems(); track item.id) {
-          <button
-            class="comp-toc__item"
-            [class.comp-toc__item--active]="activeSection() === item.id"
-            (click)="scrollTo(item.id)"
-          >
-            {{ item.label }}
-          </button>
-        }
-      </nav>
+      <aside class="comp-toc-col">
+        <nav class="comp-toc">
+          @for (item of tocItems(); track item.id) {
+            <button
+              class="comp-toc__item"
+              [class.comp-toc__item--active]="activeSection() === item.id"
+              (click)="scrollTo(item.id)"
+            >
+              {{ item.label }}
+            </button>
+          }
+        </nav>
+      </aside>
     }
   </div>
 </div>

@@ -64,6 +64,15 @@
     color: var(--semantics-icon-subtle-secondary-default, #9b9b9b);
   }
 
+  &__search {
+    transition: border-color 0.15s;
+
+    &:focus-within {
+      border-color: #0084ff;
+      box-shadow: 0 0 0 3px rgba(0, 132, 255, 0.1);
+    }
+  }
+
   &__search-input {
     border: none;
     outline: none;

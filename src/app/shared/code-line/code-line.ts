@@ -1,13 +1,23 @@
-import { Component, input, inject, computed } from '@angular/core';
+import {
+  Component,
+  input,
+  inject,
+  computed,
+  signal,
+  output,
+  ElementRef,
+  viewChild,
+} from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
-export type IndentLevel = 0 | 1 | 2 | 3 | 4 | 5 | 6;
+export type IndentLevel = 1 | 2 | 3 | 4 | 5 | 6;
 
 @Component({
   selector: 'app-code-line',
   standalone: true,
   templateUrl: './code-line.html',
   styleUrl: './code-line.scss',
+  host: { '[class.cline-host--editable]': 'editable()' },
 })
 export class CodeLineComponent {
   private readonly sanitizer = inject(DomSanitizer);
@@ -16,9 +26,45 @@ export class CodeLineComponent {
   readonly showLineNumber = input(true);
   readonly lineNumber = input(1);
   readonly code = input('');
-  readonly indentLevel = input<IndentLevel>(0);
+  readonly indentLevel = input<IndentLevel>(1);
+  readonly editable = input(false);
 
-  readonly indentPx = computed(() => this.indentLevel() * 16);
+  readonly editing = signal(false);
+  readonly codeChange = output<string>();
+
+  readonly editInput = viewChild<ElementRef<HTMLInputElement>>('editInput');
+
+  enterEdit(): void {
+    if (!this.editable()) return;
+    this.editing.set(true);
+    // Focus after Angular renders the input
+    queueMicrotask(() => {
+      const el = this.editInput()?.nativeElement;
+      if (el) {
+        el.focus();
+        el.select();
+      }
+    });
+  }
+
+  confirmEdit(value: string): void {
+    this.editing.set(false);
+    this.codeChange.emit(value);
+  }
+
+  cancelEdit(): void {
+    this.editing.set(false);
+  }
+
+  onEditKeydown(event: KeyboardEvent): void {
+    if (event.key === 'Enter') {
+      this.confirmEdit((event.target as HTMLInputElement).value);
+    } else if (event.key === 'Escape') {
+      this.cancelEdit();
+    }
+  }
+
+  readonly indentPx = computed(() => (this.indentLevel() - 1) * 16);
 
   readonly colorizedHtml = computed(() => this.colorize(this.code()));
 

@@ -2,10 +2,24 @@
   @if (showLineNumber()) {
     <span class="cline__num" [class.cline__num--hl]="highlight()">{{ lineNumber() }}</span>
   }
-  <span
-    class="cline__code"
-    [class.cline__code--hl]="highlight()"
-    [style.padding-left.px]="indentPx() + 16"
-    [innerHTML]="colorizedHtml()"
-  ></span>
+  @if (editing()) {
+    <input
+      #editInput
+      class="cline__edit"
+      type="text"
+      [value]="code()"
+      [style.padding-left.px]="indentPx() + 16"
+      (blur)="confirmEdit($any($event.target).value)"
+      (keydown)="onEditKeydown($event)"
+    />
+  } @else {
+    <span
+      class="cline__code"
+      [class.cline__code--hl]="highlight()"
+      [class.cline__code--editable]="editable()"
+      [style.padding-left.px]="indentPx() + 16"
+      [innerHTML]="colorizedHtml()"
+      (click)="enterEdit()"
+    ></span>
+  }
 </div>

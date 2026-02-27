@@ -16,15 +16,9 @@ import {
   CodeTab,
   CodeLinkConfig,
 } from '../../../shared/code-block/code-block';
-import {
-  CodeLink,
-  CodeLinkSize,
-  CodeLinkStyle,
-  CodeLinkState,
-} from '../../../shared/code-link/code-link';
+import { CodeLinkSize, CodeLinkStyle, CodeLinkState } from '../../../shared/code-link/code-link';
 import { CodeLineComponent, IndentLevel } from '../../../shared/code-line/code-line';
 import {
-  CodeTabGroup,
   TabGroupType,
   TabOrientation,
   TabState,
@@ -48,7 +42,7 @@ interface TabSignals {
   focus: WritableSignal<boolean>;
   showLabel: WritableSignal<boolean>;
   showTrailingIcon: WritableSignal<boolean>;
-  label: string;
+  label: WritableSignal<string>;
 }
 
 interface LineSignals {
@@ -62,7 +56,7 @@ interface LineSignals {
 @Component({
   selector: 'app-code-page',
   standalone: true,
-  imports: [CodeBlock, CodeLink, CodeLineComponent, CodeTabGroup],
+  imports: [CodeBlock, CodeLineComponent],
   templateUrl: './code.html',
   styleUrl: './code.scss',
 })
@@ -143,9 +137,17 @@ export class CodePage implements AfterViewInit, OnDestroy {
     },
     {
       property: 'indentLevel',
-      type: '0 | 1 | 2 | 3 | 4 | 5 | 6',
-      default: '0',
-      description: 'Global indent level applied to all code lines (16px per level).',
+      type: '1 | 2 | 3 | 4 | 5 | 6',
+      default: '1',
+      description:
+        'Indent level. For "line" type, applies to all code lines. For doc types, shifts the Show code link only (16px per level, level 1 = no indent).',
+    },
+    {
+      property: 'lineConfigs',
+      type: 'CodeLineConfig[] | null',
+      default: 'null',
+      description:
+        'Direct per-line config array. When provided, overrides code/highlightLines/indentLevel parsing.',
     },
     {
       property: 'showCodeLink',
@@ -223,6 +225,12 @@ export class CodePage implements AfterViewInit, OnDestroy {
       default: 'false',
       description: 'Rotate the icon 90 degrees (used for expanded chevron).',
     },
+    {
+      property: 'pressed',
+      type: 'OutputEmitterRef<void>',
+      default: '—',
+      description: 'Emitted when the link is clicked (unless disabled).',
+    },
   ];
 
   readonly codeLineProps = [
@@ -252,9 +260,9 @@ export class CodePage implements AfterViewInit, OnDestroy {
     },
     {
       property: 'indentLevel',
-      type: '0 | 1 | 2 | 3 | 4 | 5 | 6',
-      default: '0',
-      description: 'Indent level (16px per level).',
+      type: '1 | 2 | 3 | 4 | 5 | 6',
+      default: '1',
+      description: 'Indent level (16px per level, level 1 = no indent).',
     },
   ];
 
@@ -282,6 +290,12 @@ export class CodePage implements AfterViewInit, OnDestroy {
       type: 'number',
       default: '0',
       description: 'Index of the currently selected tab.',
+    },
+    {
+      property: 'tabSelected',
+      type: 'OutputEmitterRef<number>',
+      default: '—',
+      description: 'Emitted with the tab index when a tab is clicked.',
     },
   ];
 
@@ -397,14 +411,14 @@ export default Button;`;
   [type]="'line'"
   [showLineNumbers]="true"
   [highlightLines]="[2, 4]"
-  [indentLevel]="0"
+  [indentLevel]="1"
 />`;
 
   readonly usageDocCode = `<app-code-block
   [type]="'doc-expanded'"
   [codeTabs]="myTabs"
   [tabGroupConfig]="{ type: 'white-pill' }"
-  [showCodeLink]="{ size: 'medium', style: 'subtle' }"
+  [showCodeLink]="{ size: 'small', style: 'subtle' }"
   [copyLink]="{ label: 'Copy' }"
   [editLink]="{ label: 'Edit' }"
 />`;
@@ -448,28 +462,24 @@ export default greet;`,
   readonly pgType = signal<CodeBlockType>('line');
 
   // ── Per-line config (line type) ──
-  readonly pgLineCode = `const greet = (name) => {
-  return 'Hello, ' + name;
-};
+  private readonly pgIndentLevels: IndentLevel[] = [1, 1, 1, 1, 2, 3, 1, 3, 4, 5, 4, 3, 2, 1, 1, 1];
 
-export default greet;`;
-
-  readonly pgLines: LineSignals[] = this.pgLineCode.split('\n').map((text, i) => ({
-    highlight: signal(i === 1),
+  readonly pgLines: LineSignals[] = this.reactCode.split('\n').map((text, i) => ({
+    highlight: signal(false),
     showLineNumber: signal(true),
     lineNumber: signal(i + 1),
     code: signal(text),
-    indentLevel: signal<IndentLevel>(0),
+    indentLevel: signal<IndentLevel>(this.pgIndentLevels[i] ?? 1),
   }));
 
   // ── Doc type globals ──
-  readonly pgIndentLevel = signal<IndentLevel>(0);
+  readonly pgIndentLevel = signal<IndentLevel>(1);
   readonly pgShowLineNumbers = signal(true);
   readonly pgHighlight = signal<'none' | 'few' | 'many'>('none');
 
   // ── Show Code link ──
   readonly pgShowCode: LinkSignals = {
-    size: signal<CodeLinkSize>('medium'),
+    size: signal<CodeLinkSize>('small'),
     style: signal<CodeLinkStyle>('subtle'),
     state: signal<CodeLinkState>('default'),
     showTrailingIcon: signal(true),
@@ -502,88 +512,27 @@ export default greet;`;
   readonly pgTabOrientation = signal<TabOrientation>('horizontal');
 
   // ── Per-tab config (1–10, 5 pre-filled) ──
-  readonly pgTabItems: TabSignals[] = [
-    {
-      show: signal(true),
-      state: signal<TabState>('rest'),
-      focus: signal(false),
-      showLabel: signal(true),
-      showTrailingIcon: signal(false),
-      label: 'React',
-    },
-    {
-      show: signal(true),
-      state: signal<TabState>('rest'),
-      focus: signal(false),
-      showLabel: signal(true),
-      showTrailingIcon: signal(false),
-      label: 'HTML',
-    },
-    {
-      show: signal(false),
-      state: signal<TabState>('rest'),
-      focus: signal(false),
-      showLabel: signal(true),
-      showTrailingIcon: signal(false),
-      label: 'CSS',
-    },
-    {
-      show: signal(false),
-      state: signal<TabState>('rest'),
-      focus: signal(false),
-      showLabel: signal(true),
-      showTrailingIcon: signal(false),
-      label: 'Vue',
-    },
-    {
-      show: signal(false),
-      state: signal<TabState>('rest'),
-      focus: signal(false),
-      showLabel: signal(true),
-      showTrailingIcon: signal(false),
-      label: 'Svelte',
-    },
-    {
-      show: signal(false),
-      state: signal<TabState>('rest'),
-      focus: signal(false),
-      showLabel: signal(true),
-      showTrailingIcon: signal(false),
-      label: 'Tab 6',
-    },
-    {
-      show: signal(false),
-      state: signal<TabState>('rest'),
-      focus: signal(false),
-      showLabel: signal(true),
-      showTrailingIcon: signal(false),
-      label: 'Tab 7',
-    },
-    {
-      show: signal(false),
-      state: signal<TabState>('rest'),
-      focus: signal(false),
-      showLabel: signal(true),
-      showTrailingIcon: signal(false),
-      label: 'Tab 8',
-    },
-    {
-      show: signal(false),
-      state: signal<TabState>('rest'),
-      focus: signal(false),
-      showLabel: signal(true),
-      showTrailingIcon: signal(false),
-      label: 'Tab 9',
-    },
-    {
-      show: signal(false),
-      state: signal<TabState>('rest'),
-      focus: signal(false),
-      showLabel: signal(true),
-      showTrailingIcon: signal(false),
-      label: 'Tab 10',
-    },
+  private readonly defaultTabLabels = [
+    'React',
+    'HTML',
+    'Tab',
+    'Tab',
+    'Tab',
+    'Tab',
+    'Tab',
+    'Tab',
+    'Tab',
+    'Tab',
   ];
+
+  readonly pgTabItems: TabSignals[] = this.defaultTabLabels.map((name, i) => ({
+    show: signal(i < 2),
+    state: signal<TabState>('rest'),
+    focus: signal(false),
+    showLabel: signal(true),
+    showTrailingIcon: signal(false),
+    label: signal(name),
+  }));
 
   // ── Computed playground configs ──
 
@@ -631,7 +580,7 @@ export default greet;`;
       .filter((_, i) => i < items.length && items[i].show())
       .map((tab, i) => {
         const matchIdx = this.playgroundTabs.indexOf(tab);
-        return { label: items[matchIdx]?.label ?? tab.label, code: tab.code };
+        return { label: items[matchIdx]?.label() ?? tab.label, code: tab.code };
       });
   });
 
@@ -642,7 +591,7 @@ export default greet;`;
       (t) =>
         ({
           show: t.show(),
-          label: t.label,
+          label: t.label(),
           showLabel: t.showLabel(),
           showTrailingIcon: t.showTrailingIcon(),
           state: t.state(),
@@ -707,6 +656,54 @@ export default greet;`;
     this.pgHighlight.set((event.target as HTMLSelectElement).value as 'none' | 'few' | 'many');
   }
 
+  resetPlayground(): void {
+    this.pgType.set('line');
+    this.pgIndentLevel.set(1);
+    this.pgShowLineNumbers.set(true);
+    this.pgHighlight.set('none');
+
+    const lines = this.reactCode.split('\n');
+    this.pgLines.forEach((line, i) => {
+      line.highlight.set(false);
+      line.showLineNumber.set(true);
+      line.lineNumber.set(i + 1);
+      line.code.set(lines[i] ?? '');
+      line.indentLevel.set(this.pgIndentLevels[i] ?? 1);
+    });
+
+    this.pgShowCode.size.set('small');
+    this.pgShowCode.style.set('subtle');
+    this.pgShowCode.state.set('default');
+    this.pgShowCode.showTrailingIcon.set(true);
+    this.pgShowCode.showLabel.set(true);
+    this.pgShowCode.label.set('Show code');
+
+    this.pgCopy.size.set('medium');
+    this.pgCopy.style.set('primary');
+    this.pgCopy.state.set('default');
+    this.pgCopy.showTrailingIcon.set(true);
+    this.pgCopy.showLabel.set(true);
+    this.pgCopy.label.set('Copy');
+
+    this.pgEdit.size.set('medium');
+    this.pgEdit.style.set('primary');
+    this.pgEdit.state.set('default');
+    this.pgEdit.showTrailingIcon.set(true);
+    this.pgEdit.showLabel.set(true);
+    this.pgEdit.label.set('Edit');
+
+    this.pgTabType.set('underline');
+    this.pgTabOrientation.set('horizontal');
+    this.pgTabItems.forEach((tab, i) => {
+      tab.show.set(i < 2);
+      tab.state.set('rest');
+      tab.focus.set(false);
+      tab.showLabel.set(true);
+      tab.showTrailingIcon.set(false);
+      tab.label.set(this.defaultTabLabels[i]);
+    });
+  }
+
   private setupObserver(): void {
     if (!isPlatformBrowser(this.platformId)) return;
     this.observer?.disconnect();
@@ -719,7 +716,7 @@ export default greet;`;
           }
         }
       },
-      { rootMargin: '-160px 0px -60% 0px', threshold: 0 },
+      { rootMargin: '-200px 0px -60% 0px', threshold: 0 },
     );
 
     const sections = this.el.nativeElement.querySelectorAll('.comp-section');
